@@ -1,5 +1,5 @@
-# Your Project's Title...
-Your project's description...
+# boilerplate
+AEM Franklin POC
 
 ## Environments
 - Preview: https://main--boilerplate--arja-sankar.hlx.page/
