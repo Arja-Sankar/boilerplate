@@ -1,8 +1,8 @@
-footer {
+/*footer {
   padding: 2rem;
   background-color: var(--overlay-background-color);
   font-size: var(--body-font-size-s);
-}
+}*/
 
 footer .footer {
   max-width: 1200px;
@@ -20,7 +20,7 @@ body {
     background-color: #fff;
 }
 
-#footer {
+footer {
     background: #F8F8F8;
     color: #333;
     /* padding: 50px 0; */
