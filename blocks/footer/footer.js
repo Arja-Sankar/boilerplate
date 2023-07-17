@@ -19,12 +19,6 @@ export default async function decorate(block) {
    const footer = document.createElement('div');
     footer.innerHTML = html;
 
-    decorateIcons(footer);
-  /*   block.append(footer); */
-
-      //Adding id to footer
-        document.querySelector("footer").id += 'footer';
-
         //Loop used to set same className to div
         [...document.querySelectorAll("div")].forEach((element) => {
             element.className = "col-lg-2 col-md-3 col-sm-4 col-xs-12";
@@ -48,6 +42,12 @@ export default async function decorate(block) {
 
             //Adding className to lastLoop ul tag in connect with us innerHtml div
         document.querySelector("ul").offsetParent.lastChild.ownerDocument.all[73].classList = 'list-inline footer-txt';
+
+    decorateIcons(footer);
+    block.append(footer); 
+
+      //Adding id to footer
+         /*  document.querySelector("footer").id += 'footer'; */
 
   }
 }
