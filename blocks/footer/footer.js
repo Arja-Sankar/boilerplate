@@ -16,11 +16,11 @@ export default async function decorate(block) {
     const html = await resp.text();
 
     // decorate footer DOM
-  /*  const footer = document.createElement('div');
+   const footer = document.createElement('div');
     footer.innerHTML = html;
 
     decorateIcons(footer);
-    block.append(footer); */
+  /*   block.append(footer); */
 
       //Adding id to footer
         document.querySelector("footer").id += 'footer';
