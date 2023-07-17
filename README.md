@@ -3,7 +3,7 @@ AEM Franklin POC
 
 ## Environments
 - Preview: https://main--boilerplate--arja-sankar.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Live: https://main--boilerplate--arja-sankar.hlx.live/
 
 ## Installation
 
