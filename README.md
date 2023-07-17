@@ -1,9 +1,9 @@
-# Your Project's Title...
-Your project's description...
+# boilerplate
+AEM Franklin POC
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--boilerplate--arja-sankar.hlx.page/
+- Live: https://main--boilerplate--arja-sankar.hlx.live/
 
 ## Installation
 
