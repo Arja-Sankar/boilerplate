@@ -16,11 +16,11 @@ export default async function decorate(block) {
    const html = await resp.text();
 
     // decorate footer DOM
- //  const footer = document.createElement('div');
-//    footer.innerHTML = html;
+ const footer = document.createElement('div');
+ footer.innerHTML = html;
 
-//    decorateIcons(footer);
-//    block.append(footer); 
+   decorateIcons(footer);
+   block.append(footer); 
     
     //latest updated Footer js code
            if(document.body.childNodes.item('').nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.className == 'footer block'){
@@ -46,8 +46,8 @@ export default async function decorate(block) {
             elem.append(target,elemul);
 
             //Loop used to set same className to that tag conatins(h3,ul)
-            [...document.querySelectorAll("div > div > div > div")].forEach((block) => {
-                block.className = "col-lg-2 col-md-3 col-sm-4 col-xs-12";
+            [...document.querySelectorAll("div > div > div > div")].forEach((element) => {
+                element.className = "col-lg-2 col-md-3 col-sm-4 col-xs-12";
                 });
             }
 
