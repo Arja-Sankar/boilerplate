@@ -5,7 +5,7 @@
             document.querySelector(".footer > div").className += 'container pt50 pb50'; 
 
              //adding className to second Div in footer
-            document.querySelector("div > .container > div").className += 'row';
+              document.querySelector(".footer > .container > div").className += 'row';
 
             //creating div to append Loop (h3,ul) tags starts here ---
             
