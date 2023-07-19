@@ -23,18 +23,18 @@
             elem.append(target,elemul);
 
             //Loop used to set same className to that tag conatins(h3,ul)
-            [...document.querySelectorAll("div > div > div > div")].forEach((element) => {
+            [...document.querySelectorAll(".footer > .container > .row > div")].forEach((element) => {
                 element.className = "col-lg-2 col-md-3 col-sm-4 col-xs-12";
                 });
             }
 
             //Loop used to set same className to h3
-            [...document.querySelectorAll("h3")].forEach((element) => {
+            [...document.querySelectorAll(".footer > .container > .row > h3")].forEach((element) => {
                 element.className = "ftr-head mt-xs-20";
                 });
                 
             //Loop used to set same className to ul
-            [...document.querySelectorAll("ul")].forEach((element) => {
+            [...document.querySelectorAll(".footer > .container > .row > ul")].forEach((element) => {
             element.className = "list-unstyled footer-txt";
             });
 
