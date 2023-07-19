@@ -23,11 +23,15 @@
             for(var i=0; i< document.querySelectorAll(".ftr-head").length;i++){
                 const elem = document.createElement('div');
                 const target = document.querySelectorAll(".ftr-head")[i];
-                const elemul = document.querySelectorAll(".footer > .container > .row > ul")[i];
+                const elemul = document.querySelectorAll(".footer-txt")[i];
+                var rowDiv = document.querySelector('.footer > .container > .row');
+            // insert the h3 and ul element into div element
+                elem.appendChild(target);
+                elem.appendChild(elemul);
 
-            // insert the element before target element
-               target.parentNode.insertBefore(elem, target);
-                elem.append(target,elemul);
+               //adding div element into row Div
+                rowDiv.appendChild(elem);
+               
 
             //Loop used to set same className to that tag conatins(h3,ul)
             [...document.querySelectorAll(".footer > .container > .row > div")].forEach((element) => {
