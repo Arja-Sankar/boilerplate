@@ -1,6 +1,7 @@
 
    //latest updated Footer js code
-           if(document.body.childNodes.item('').nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.className == 'footer block'){
+        //   if(document.body.childNodes.item('').nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.className == 'footer block'){
+
             //adding className to first Div in footer
             document.querySelector(".footer > div").className += 'container pt50 pb50'; 
 
@@ -9,18 +10,14 @@
 
             //creating div to append Loop (h3,ul) tags starts here ---
             
-            for(var i=0; i< document.getElementsByTagName("H3").length;i++){
+            for(var i=0; i< document.querySelectorAll(".footer > H3").length;i++){
                 const elem = document.createElement('div');
-                const target = document.getElementsByTagName("H3")[i];
-                const elemul = document.getElementsByTagName("ul")[i];
-          
-            // grab target element reference
-           // const target = document.querySelector('H3')[i]
-          // const elemul = document.querySelector('ul')
+                const target = document.querySelectorAll(".footer > H3")[i];
+                const elemul = document.querySelectorAll(".footer > ul")[i];
 
             // insert the element before target element
-            target.parentNode.insertBefore(elem, target);
-            elem.append(target,elemul);
+               target.parentNode.insertBefore(elem, target);
+                elem.append(target,elemul);
 
             //Loop used to set same className to that tag conatins(h3,ul)
             [...document.querySelectorAll(".footer > .container > .row > div")].forEach((element) => {
@@ -44,4 +41,4 @@
             //Loop ends here ---list-inline footer-txt
 
                 
-        }
+      //  }
