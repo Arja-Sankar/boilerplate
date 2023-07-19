@@ -8,7 +8,7 @@
              //adding className to second Div in footer
               document.querySelector(".footer > .container > div").className += 'row';
 
-            //creating div to append Loop (h3,ul) tags starts here ---
+            //creating div to append Loop (h3,ul) tags starts here ---!
             
             for(var i=0; i< document.querySelectorAll(".footer > H3").length;i++){
                 const elem = document.createElement('div');
@@ -36,9 +36,9 @@
             });
 
             //updating className to lastchild of ul containing in last div with innerHTML as Connect With Us
-            document.body.children.item('footer-wrapper').lastElementChild.parentElement.firstElementChild.children.item("").firstChild.nextElementSibling.lastElementChild.lastChild.className = 'list-inline footer-txt';
-                
-            //Loop ends here ---list-inline footer-txt
+           document.querySelector('.footer > .container > .row').lastElementChild.className = 'list-inline footer-txt'; 
+
+            //Loop ends here ---!
 
                 
       //  }
