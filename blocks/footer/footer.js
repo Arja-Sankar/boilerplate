@@ -2,10 +2,10 @@
    //latest updated Footer js code
            if(document.body.childNodes.item('').nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.className == 'footer block'){
             //adding className to first Div in footer
-            document.querySelector("div > div").className += 'container pt50 pb50'; 
+            document.querySelector(".footer > div").className += 'container pt50 pb50'; 
 
              //adding className to second Div in footer
-            document.querySelector("div > div > div").className += 'row';
+            document.querySelector("div > .container > div").className += 'row';
 
             //creating div to append Loop (h3,ul) tags starts here ---
             
