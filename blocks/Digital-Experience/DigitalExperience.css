@@ -1,7 +1,7 @@
 #overview {
     padding: 75px 0;
-    position: relative;
-    /* position: absolute; */
+    /*position: relative;*/
+    position: absolute;
     z-index: -1;
     content: "";
     width: 100%;
