@@ -1,0 +1,109 @@
+#overview {
+    padding: 75px 0;
+    position: relative;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}   
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.col-xs-12 {
+    width: 100%;
+}
+.h1-heading {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 500;
+    font-family: 'tungstenw05-medium', 'Oswald', sans-serif;
+}
+.mb50 {
+    margin-bottom: 50px !important;
+}
+.text-center {
+    text-align: center;
+}
+.para-ovr {
+    font-size: 30px;
+    line-height: 45px;
+    padding-top: 10px;
+    font-weight: 300;
+}
+p {
+    margin: 0 0 10px;
+}
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+.insight-btn {
+    border: 1px solid #000 !important;
+    color: #000 !important;
+    min-width: 200px;
+    padding-bottom: 15px !important;
+    padding-top: 15px !important;
+    text-transform: uppercase;
+    margin: 0 auto !important;
+    display: table !important;
+    margin-top: 40px !important;
+}
+.btn-shutter-more {
+    color: #fff;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 12px 50px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
