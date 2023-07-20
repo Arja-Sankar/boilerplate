@@ -78,10 +78,6 @@ p {
     font-weight: 700;
     font-size: 14px;
 }
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
 .btn {
     display: inline-block;
     padding: 6px 12px;
