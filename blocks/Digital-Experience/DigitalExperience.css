@@ -1,6 +1,21 @@
 #overview {
     padding: 75px 0;
     position: relative;
+    /* position: absolute; */
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 600px;
+    left: 0;
+    top: 0;
+    background-image: url(background-image/pattern-bg.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
 }
 .container {
     padding-right: 15px;
