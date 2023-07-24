@@ -1,9 +1,4 @@
-import { readBlockConfig, decorateIcons } from '../../scripts/scripts.js';
-
-/**
- * loads and decorates the footer
- * @param {Element} block The header block element
- */
+import { createOptimizedPicture } from '../../scripts/scripts.js';
 
 // window.onload = function () {
 
