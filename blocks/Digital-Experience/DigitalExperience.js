@@ -8,7 +8,7 @@ import { readBlockConfig, decorateIcons } from '../../scripts/scripts.js';
 // window.onload = function () {
 
  // Get the target element to replace
-  const targetElement = document.querySelector('.dx-text-media');
+  const targetElement = document.querySelector('.dx-text-media-wrapper');
 
    // Create a new <div> element
   const newElement = document.createElement('div');
