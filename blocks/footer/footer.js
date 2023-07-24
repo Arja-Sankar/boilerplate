@@ -1,48 +1,77 @@
-
-   //latest updated Footer js code
-        //   if(document.body.childNodes.item('').nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.className == 'footer block'){
-
-            //adding className to first Div in footer
+   // Add list to body (or anywhere else)
+     window.onload = function (block) {
+            //Getting footer tag
+            var mainFooter = document.querySelector('.footer-wrapper');
+            //setting ID to footer tag
+            mainFooter.setAttribute('id','footer');
+            //creating article inside footer
+            var footerArticleElem = document.createElement('article');
+            //Getting whole div inside footer to append inside article
+            var footerMainDiv = document.querySelector('.footer-wrapper > div');
+            //adding className to first Div in footer Div
             document.querySelector(".footer > div").className += 'container pt50 pb50'; 
-
-             //adding className to second Div in footer
-              document.querySelector(".footer > .container > div").className += 'row';
-
+            //adding className to second Div in footer Div
+            document.querySelector(".footer > .container > div").className += 'row';
             //Loop used to set same className to h3
             [...document.querySelectorAll(".footer > .container > .row > h3")].forEach((element) => {
-                element.className = "ftr-head mt-xs-20";
-                });
-                
+            element.className = "ftr-head mt-xs-20";
+            });
             //Loop used to set same className to ul
             [...document.querySelectorAll(".footer > .container > .row > ul")].forEach((element) => {
             element.className = "list-unstyled footer-txt";
             });
 
-            //creating div to append Loop (h3,ul) tags starts here ---!
-            
+            // [...document.querySelectorAll(".footer > .container > .row > div")].forEach((element) => {
+            //   element.className = "col-lg-2 col-md-3 col-sm-4 col-xs-12";
+            //   });
+          
+      
             for(var i=0; i< document.querySelectorAll(".ftr-head").length;i++){
-                const elem = document.createElement('div');
-                const target = document.querySelectorAll(".ftr-head")[i];
-                const elemul = document.querySelectorAll(".footer-txt")[i];
-                var rowDiv = document.querySelector('.footer > .container > .row');
-            // insert the h3 and ul element into div element
+                var elem = document.createElement('div');
+                var target = document.querySelectorAll(".ftr-head")[i];
+                var elemul = document.querySelectorAll(".footer-txt")[i];
+                var d = document.querySelector('.footer > .container > .row')
+                // var E = document.querySelectorAll('.footer > .container > .row > div')[i];
                 elem.appendChild(target);
                 elem.appendChild(elemul);
-
-               //adding div element into row Div
-                rowDiv.appendChild(elem);
-               
-
-            //Loop used to set same className to that tag conatins(h3,ul)
-            [...document.querySelectorAll(".footer > .container > .row > div")].forEach((element) => {
+                d.appendChild(elem);
+             //Loop used to set same className to that tag conatins(h3,ul)
+             [...document.querySelectorAll(".footer > .container > .row > div")].forEach((element) => {
                 element.className = "col-lg-2 col-md-3 col-sm-4 col-xs-12";
                 });
+
+
+             // insert the element before target element
+             //    target.parentNode.insertBefore(elem, target);
+                //     elem.append(target,elemul);
+
+            
+                //elem.appendChild(target,elem);
+               
+
+
+            
+
+                // target.parentNode.insertBefore(elem, target);
+                // elem.append(target,elemul);
+                // target.append(elemul);
+                // elem.append(target);
+              //  E.appendChild(target,E);
+
+            
+
             }
 
             //updating className to lastchild of ul containing in last div with innerHTML as Connect With Us
-           document.querySelector('.footer > .container > .row').lastElementChild.className = 'list-inline footer-txt'; 
+          // document.querySelector('.footer > .container > .row').lastElementChild.className = 'list-inline footer-txt'; 
 
             //Loop ends here ---!
 
-                
-      //  }
+
+            //appending everything starts here
+            mainFooter.appendChild(footerArticleElem);
+            footerArticleElem.appendChild(footerMainDiv);
+            //appending everything ends here
+
+        }
+  
