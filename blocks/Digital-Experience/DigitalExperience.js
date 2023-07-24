@@ -1,3 +1,8 @@
+import {
+  createOptimizedPicture,
+  normalizeHeadings,
+} from '../../scripts/scripts.js';
+
 // window.onload = function () {
 export default function decorate(block) {
     //Getting main Div container
