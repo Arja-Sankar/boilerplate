@@ -30,7 +30,7 @@ import { readBlockConfig, decorateIcons } from '../../scripts/scripts.js';
   const containerDiv = newElement.querySelector('#overview > .container > .row');
 
   export default function decorate(block) {
-   [...block.children].forEach((item) => {
+   // [...block.children].forEach((item) => {
      //creating div inside Div Container
     var InsideContainerFirstDiv = document.createElement('div');
     //adding className to container first Div
@@ -114,10 +114,8 @@ import { readBlockConfig, decorateIcons } from '../../scripts/scripts.js';
     containerDiv.appendChild(InsideRowSecondDiv);
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
     articleElem.appendChild(outsideRowanchor);
-    block.append(mainDiv);
     //appending everything ends here
-    serviceOfferingContainer.appendChild(offeringElement);
-  });
+  // });
 }
   // Replace the target element with the new element
   targetElement.parentNode.replaceChild(newElement, targetElement);
