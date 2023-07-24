@@ -1,4 +1,5 @@
-window.onload = function () {
+// window.onload = function () {
+export default function decorate(block) {
     //Getting main Div container
     var mainDiv = document.querySelector('.dx-text-media');
     //adding classNames to main Div
@@ -102,5 +103,7 @@ window.onload = function () {
     containerDiv.appendChild(InsideRowSecondDiv);
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
     articleElem.appendChild(outsideRowanchor);
+    block.innerHTML = '';
+    block.append(mainDiv);
     //appending everything ends here
 }
