@@ -1,4 +1,4 @@
-window.onload = function () {
+//window.onload = function () {
     //Getting main Div container
     var mainDiv = document.querySelector('.request-for-services-wrapper');
     //Getting whole Div from plain.html
@@ -367,4 +367,4 @@ window.onload = function () {
       }
     // FORM VALIDATION SCRIPT ends here
 
-}
+//}
