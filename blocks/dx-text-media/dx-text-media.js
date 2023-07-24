@@ -27,7 +27,7 @@ import { createOptimizedPicture } from '../../scripts/scripts.js';
   export default function decorate(block) {
    [...block.children].forEach((item) => {
      //creating div inside Div Container
-    var InsideContainerFirstDiv = document.createElement('div');
+    var InsideContainerFirstDiv = item.createElement('div');
     //adding className to container first Div
     InsideContainerFirstDiv.classList.add('col-md-8','col-md-offset-2','col-sm-12','col-xs-12','wow','fadeInUp','animated');
     //adding attribute to container first Div
