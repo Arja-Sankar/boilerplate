@@ -103,7 +103,7 @@ export default function decorate(block) {
     containerDiv.appendChild(InsideRowSecondDiv);
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
     articleElem.appendChild(outsideRowanchor);
-    block.innerHTML = '';
-    block.append(mainDiv);
+    //block.innerHTML = '';
+    block.replace(mainDiv);
     //appending everything ends here
 }
