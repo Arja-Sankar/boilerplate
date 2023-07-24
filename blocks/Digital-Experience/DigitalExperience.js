@@ -2,6 +2,9 @@ import {
   createOptimizedPicture,
   normalizeHeadings,
 } from '../../scripts/scripts.js';
+import { createTag } from '../block-helpers.js';
+
+export default function decorate(block) {
 
 // window.onload = function () {
 export default function decorate(block) {
@@ -108,7 +111,6 @@ export default function decorate(block) {
     containerDiv.appendChild(InsideRowSecondDiv);
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
     articleElem.appendChild(outsideRowanchor);
-    //block.innerHTML = '';
-    block.replace(mainDiv);
+    block.append(mainDiv);
     //appending everything ends here
 }
