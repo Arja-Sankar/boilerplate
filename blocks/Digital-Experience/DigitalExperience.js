@@ -4,8 +4,6 @@ import {
 } from '../../scripts/scripts.js';
 import { createTag } from '../block-helpers.js';
 
-export default function decorate(block) {
-
 // window.onload = function () {
 export default function decorate(block) {
     //Getting main Div container
