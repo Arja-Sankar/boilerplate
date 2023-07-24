@@ -1,28 +1,37 @@
-import {
-  createOptimizedPicture,
-  normalizeHeadings,
-} from '../../scripts/scripts.js';
-import { createTag } from '../block-helpers.js';
+import { readBlockConfig, decorateIcons } from '../../scripts/scripts.js';
+
+/**
+ * loads and decorates the footer
+ * @param {Element} block The header block element
+ */
 
 // window.onload = function () {
-export default function decorate(block) {
-    //Getting main Div container
-    var mainDiv = document.querySelector('.dx-text-media');
-    //adding classNames to main Div
-    mainDiv.classList.add('freeflowhtml','aem-GridColumn','aem-GridColumn--default--12');
-    //creating section element
-    var sectionElem = document.createElement('section');
-    //adding Id to section
-    sectionElem.setAttribute('id','overview');
-    //creating article
-    var articleElem = document.createElement('article');
-    //adding class to article
-    articleElem.setAttribute('class','container');
-    //creating div
-    var containerDiv = document.createElement('div');
-    //adding class to container Div
-    containerDiv.setAttribute('class','row');    
-    //creating div inside Div Container
+
+ // Get the target element to replace
+  const targetElement = document.querySelector('.dx-text-media');
+
+   // Create a new <div> element
+  const newElement = document.createElement('div');
+  newElement.className = 'freeflowhtml aem-GridColumn aem-GridColumn--default--12';
+
+  // Set the HTML content for the new element
+  newElement.innerHTML = `
+        <section id="overview">
+         <article class="container">
+         <div class="row">
+           <!-- JavaScript will insert the content here -->
+          </div>
+          </div>
+          </article>
+            <!-- JavaScript will insert the content here -->
+        </section>
+  `;
+// Get the container element for the row
+  const containerDiv = newElement.querySelector('#overview > .container > .row');
+
+  export default function decorate(block) {
+   [...block.children].forEach((item) => {
+     //creating div inside Div Container
     var InsideContainerFirstDiv = document.createElement('div');
     //adding className to container first Div
     InsideContainerFirstDiv.classList.add('col-md-8','col-md-offset-2','col-sm-12','col-xs-12','wow','fadeInUp','animated');
@@ -95,12 +104,8 @@ export default function decorate(block) {
     outsideRowanchor.setAttribute('aria-label','Read More about undefined');
     //setting data to anchor tag after row Div
     outsideRowanchor.innerHTML = 'Read More';
-    // img tag inside video tag to append in second div inside row Div reference link: 'https://play.vidyard.com/RjFVtvoiRvUJSA1EGC2Cmf.jpg'
+   //appending everything starts Here
     
-    //appending everything starts Here
-    mainDiv.appendChild(sectionElem);
-    sectionElem.appendChild(articleElem);
-    articleElem.appendChild(containerDiv);
     containerDiv.appendChild(InsideContainerFirstDiv);
     InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
     containerDiv.appendChild(InsideMainDiv);
@@ -111,4 +116,11 @@ export default function decorate(block) {
     articleElem.appendChild(outsideRowanchor);
     block.append(mainDiv);
     //appending everything ends here
+    serviceOfferingContainer.appendChild(offeringElement);
+  });
 }
+  // Replace the target element with the new element
+  targetElement.parentNode.replaceChild(newElement, targetElement);
+
+
+
