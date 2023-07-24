@@ -1,7 +1,7 @@
 import { createOptimizedPicture } from '../../scripts/scripts.js';
 
 // Get the target element to replace
-const targetElement = document.querySelector('.success-stories-wrapper');
+const targetElement = document.querySelector('.dx-text-media-wrapper');
 
 // Create a new <div> element
 const newElement = document.createElement('div');
@@ -29,7 +29,7 @@ newElement.innerHTML = `
 const successStoriesContainer = newElement.querySelector('.equal-heights');
 
 // Get the data from [1] HTML
-const successStories = targetElement.querySelectorAll('.success-stories');
+const successStories = targetElement.querySelectorAll('.dx-text-media');
 
 export default function decorate(block) {
   [...block.children].forEach((story) => {
