@@ -29,6 +29,14 @@
     InsideContainerFirstDiv.style.webkitAnimationDelay = '0.3s';
     InsideContainerFirstDiv.style.mozAnimationDelay = '0.3s';
     InsideContainerFirstDiv.style.animationDelay = '0.3s';
+
+export default function decorate(block) {
+  [...block.children].forEach((experience) => {
+      const description = experience.querySelector('div').textContent;
+  }
+                              }
+
+
     //Creating second Div inside Div Conatiner
     var InsideContainerSecondDiv = document.createElement('div');
     //adding className to above Div
@@ -55,7 +63,8 @@
     //adding class to para inside row Div
     InsideRowPara.setAttribute('class','para-ovr');
     //setting data to para inside row Div
-    InsideRowPara.innerHTML = 'Infosys Digital Experience (DX) powers businesses across the entire Customer Experience (CX) journey. We re-imagine, create and deliver integrated and personalized experiences by creating human-centered digital platforms. We help enterprises stay relevant by transforming business models, future proofing, bringing agility and responsiveness.';
+    InsideRowPara.innerHTML = ${description};
+// Infosys Digital Experience (DX) powers businesses across the entire Customer Experience (CX) journey. We re-imagine, create and deliver integrated and personalized experiences by creating human-centered digital platforms. We help enterprises stay relevant by transforming business models, future proofing, bringing agility and responsiveness.
     //creating second div inside row Div
     var InsideRowSecondDiv = document.createElement('div');
     //adding className to second div inside row Div 
