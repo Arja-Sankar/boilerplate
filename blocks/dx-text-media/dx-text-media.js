@@ -51,7 +51,7 @@
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
-  const description = block.Selector('.freeflowhtml > div').textContent;
+  const description = document.Selector('.freeflowhtml > div').textContent;
      
     //setting data to para inside row Div
    // InsideRowPara.innerHTML = ${description};
