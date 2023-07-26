@@ -63,7 +63,7 @@ export default function decorate(block) {
     //adding class to para inside row Div
     InsideRowPara.setAttribute('class','para-ovr');
     //setting data to para inside row Div
-    InsideRowPara.innerHTML = ${description};
+    InsideRowPara.innerHTML = '${description}';
 // Infosys Digital Experience (DX) powers businesses across the entire Customer Experience (CX) journey. We re-imagine, create and deliver integrated and personalized experiences by creating human-centered digital platforms. We help enterprises stay relevant by transforming business models, future proofing, bringing agility and responsiveness.
     //creating second div inside row Div
     var InsideRowSecondDiv = document.createElement('div');
