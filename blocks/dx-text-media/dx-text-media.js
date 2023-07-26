@@ -121,7 +121,7 @@ export default function decorate(block) {
     InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
     //containerDiv.appendChild(InsideMainDiv);
     containerDiv.appendChild(InsideRowFirstDiv);
-    InsideRowFirstDiv.appendChild(InsideRowPara);
+   // InsideRowFirstDiv.appendChild(InsideRowPara);
     containerDiv.appendChild(InsideRowSecondDiv);
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
     articleElem.appendChild(outsideRowanchor);
