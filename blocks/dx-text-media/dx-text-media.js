@@ -32,7 +32,7 @@
 
 export default function decorate(block) {
   [...block.children].forEach((experience) => {
-      const description = experience.querySelector('div').textContent;
+      const description = experience.querySelector('.freeflowhtml > div').textContent;
   });
                               }
 
@@ -108,7 +108,7 @@ export default function decorate(block) {
     articleElem.appendChild(containerDiv);
     containerDiv.appendChild(InsideContainerFirstDiv);
     InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
-    containerDiv.appendChild(InsideMainDiv);
+    //containerDiv.appendChild(InsideMainDiv);
     containerDiv.appendChild(InsideRowFirstDiv);
     InsideRowFirstDiv.appendChild(InsideRowPara);
     containerDiv.appendChild(InsideRowSecondDiv);
