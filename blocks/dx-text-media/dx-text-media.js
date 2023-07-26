@@ -2,22 +2,28 @@
     //Getting main Div container
     var mainDiv = document.querySelector('.dx-text-media');
      mainDiv.setAttribute('class','freeflowhtml');
+
       //adding classNames to main Div
       mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
-    //adding classNames to main Div
-   // mainDiv.classList.add('freeflowhtml','aem-GridColumn','aem-GridColumn--default--12');
+  
     //creating section element
     var sectionElem = document.createElement('section');
     //adding Id to section
     sectionElem.setAttribute('id','overview');
+     mainDiv.appendChild(sectionElem);
+   
     //creating article
     var articleElem = document.createElement('article');
     //adding class to article
     articleElem.setAttribute('class','container');
+     sectionElem.appendChild(articleElem);
+   
     //creating div
     var containerDiv = document.createElement('div');
     //adding class to container Div
-    containerDiv.setAttribute('class','row');    
+    containerDiv.setAttribute('class','row');  
+     articleElem.appendChild(containerDiv);
+   
     //creating div inside Div Container
     var InsideContainerFirstDiv = document.createElement('div');
     //adding className to container first Div
@@ -29,15 +35,19 @@
     InsideContainerFirstDiv.style.webkitAnimationDelay = '0.3s';
     InsideContainerFirstDiv.style.mozAnimationDelay = '0.3s';
     InsideContainerFirstDiv.style.animationDelay = '0.3s';
-
+    containerDiv.appendChild(InsideContainerFirstDiv);
+    
     //Creating second Div inside Div Conatiner
     var InsideContainerSecondDiv = document.createElement('div');
     //adding className to above Div
     InsideContainerSecondDiv.classList.add('h1-heading','text-center','mb50');
     //adding text to above div
     InsideContainerSecondDiv.innerHTML='Digital Experience';
+    InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
+
     //Getting div container presented from plain.html For Hiding
     var InsideMainDiv = document.querySelector('.freeflowhtml > div');
+    const paraContent = document.queryselector('.freeflowhtml > div').textContent;
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
     var InsideRowFirstDiv = document.createElement('div');
@@ -50,7 +60,13 @@
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
-    const description = document.queryselector('.freeflowhtml > div').textContent;
+     //creating para inside row Div
+    InsideRowFirstDiv.innerHTML = `
+    <p class="para-ovr"></p>
+     `;
+   
+    $('p.para-ovr').append(paraContent);
+    containerDiv.appendChild(InsideRowFirstDiv); 
      
     //setting data to para inside row Div
    // InsideRowPara.innerHTML = ${description};
@@ -58,11 +74,7 @@
 
       
 
-      //creating para inside row Div
-    InsideRowFirstDiv.innerHTML = `
-    <p class="para-ovr">${description}</p>
-     `;
-      containerDiv.appendChild(InsideRowFirstDiv); 
+     
 //    Array.prototype.forEach.call(children, function(child) {
 //   one.appendChild(child);
 // });
@@ -106,11 +118,7 @@
     // img tag inside video tag to append in second div inside row Div reference link: 'https://play.vidyard.com/RjFVtvoiRvUJSA1EGC2Cmf.jpg'
     
     //appending everything starts Here
-    mainDiv.appendChild(sectionElem);
-    sectionElem.appendChild(articleElem);
-    articleElem.appendChild(containerDiv);
-    containerDiv.appendChild(InsideContainerFirstDiv);
-    InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
+   
     //containerDiv.appendChild(InsideMainDiv);
    
    // InsideRowFirstDiv.appendChild(InsideRowPara);
