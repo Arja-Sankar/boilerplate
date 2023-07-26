@@ -62,7 +62,7 @@
     InsideRowFirstDiv.style.animationDelay = '0.6s';
      //creating para inside row Div
     InsideRowFirstDiv.innerHTML = `
-    <p class="para-ovr">$('p.para-ovr').append(paraContent)</p>
+    <p class="para-ovr">$(paraContent)</p>
      `;
 
     containerDiv.appendChild(InsideRowFirstDiv); 
