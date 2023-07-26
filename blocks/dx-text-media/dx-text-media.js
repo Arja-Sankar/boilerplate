@@ -51,19 +51,26 @@
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
-  //creating para inside row Div
-    var InsideRowPara = document.createElement('p');
-    //adding class to para inside row Div
-    InsideRowPara.setAttribute('class','para-ovr');
-
 
 export default function decorate(block) {
   [...block.children].forEach((experience) => {
       const description = experience.querySelector('.freeflowhtml > div').textContent;
      
     //setting data to para inside row Div
-    InsideRowPara.innerHTML = ${description};
+   // InsideRowPara.innerHTML = ${description};
+
+      //creating para inside row Div
+    InsideRowFirstDiv.innerHTML = `
+    <p class="para-ovr">${description}</p>
+    `
   });
+  
+  //  var InsideRowPara = document.createElement('p');
+    //adding class to para inside row Div
+  //  InsideRowPara.setAttribute('class','para-ovr');
+
+
+
                               }
 // Infosys Digital Experience (DX) powers businesses across the entire Customer Experience (CX) journey. We re-imagine, create and deliver integrated and personalized experiences by creating human-centered digital platforms. We help enterprises stay relevant by transforming business models, future proofing, bringing agility and responsiveness.
     //creating second div inside row Div
