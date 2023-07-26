@@ -51,16 +51,16 @@
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
-
+  //creating para inside row Div
+    var InsideRowPara = document.createElement('p');
+    //adding class to para inside row Div
+    InsideRowPara.setAttribute('class','para-ovr');
 
 
 export default function decorate(block) {
   [...block.children].forEach((experience) => {
       const description = experience.querySelector('.freeflowhtml > div').textContent;
-       //creating para inside row Div
-    var InsideRowPara = document.createElement('p');
-    //adding class to para inside row Div
-    InsideRowPara.setAttribute('class','para-ovr');
+     
     //setting data to para inside row Div
     InsideRowPara.innerHTML = '${description}';
   });
