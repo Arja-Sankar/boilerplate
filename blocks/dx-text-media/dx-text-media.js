@@ -60,10 +60,16 @@
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
+
      //creating para inside row Div
-    InsideRowFirstDiv.innerHTML = `
-    <p class="para-ovr">$(paraContent)</p>
-     `;
+     var InsideRowPara = document.createElement('p');
+    //adding class to para inside row Div
+    InsideRowPara.setAttribute('class','para-ovr');
+    $('.para-ovr').html($(paraContent));
+  InsideRowFirstDiv.appendChild(InsideRowPara);
+    // InsideRowFirstDiv.innerHTML = `
+    // <p class="para-ovr">$(paraContent)</p>
+    //  `;
 
     containerDiv.appendChild(InsideRowFirstDiv); 
      
