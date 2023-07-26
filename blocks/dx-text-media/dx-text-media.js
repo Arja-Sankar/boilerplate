@@ -40,18 +40,7 @@
     var InsideMainDiv = document.querySelector('.freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
-   
-
-export default function decorate(block) {
-  [...block.children].forEach((experience) => {
-      const description = experience.querySelector('.freeflowhtml > div').textContent;
-     
-    //setting data to para inside row Div
-   // InsideRowPara.innerHTML = ${description};
-
-
-      
- //creating div for para
+    //creating div for para
     var InsideRowFirstDiv = document.createElement('div');
     //adding class to row Div
     InsideRowFirstDiv.classList.add('col-md-6','col-sm-12','col-xs-12','mb-sm-20','wow','fadeInLeft','animated');   
@@ -62,6 +51,17 @@ export default function decorate(block) {
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
+
+export default function decorate(block) {
+  [...block.children].forEach((experience) => {
+      const description = experience.querySelector('.freeflowhtml > div').textContent;
+     
+    //setting data to para inside row Div
+   // InsideRowPara.innerHTML = ${description};
+
+
+      
+
       //creating para inside row Div
     InsideRowFirstDiv.innerHTML = `
     <p class="para-ovr">${description}</p>
