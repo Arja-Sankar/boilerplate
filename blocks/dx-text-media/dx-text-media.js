@@ -1,8 +1,11 @@
 
     //Getting main Div container
     var mainDiv = document.querySelector('.dx-text-media');
+     mainDiv.setAttribute('class','freeflowhtml');
+      //adding classNames to main Div
+      mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
     //adding classNames to main Div
-    mainDiv.classList.add('freeflowhtml','aem-GridColumn','aem-GridColumn--default--12');
+   // mainDiv.classList.add('freeflowhtml','aem-GridColumn','aem-GridColumn--default--12');
     //creating section element
     var sectionElem = document.createElement('section');
     //adding Id to section
@@ -33,7 +36,7 @@
     //adding text to above div
     InsideContainerSecondDiv.innerHTML='Digital Experience';
     //Getting div container presented from plain.html For Hiding
-    var InsideMainDiv = document.querySelector('.dx-text-media > div');
+    var InsideMainDiv = document.querySelector('.freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
     //creating div for para
