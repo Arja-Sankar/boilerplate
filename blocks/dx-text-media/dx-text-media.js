@@ -33,7 +33,7 @@
 export default function decorate(block) {
   [...block.children].forEach((experience) => {
       const description = experience.querySelector('div').textContent;
-  }
+  });
                               }
 
 
