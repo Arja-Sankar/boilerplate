@@ -47,9 +47,9 @@
 
     //Getting div container presented from plain.html For Hiding
     var InsideMainDiv = document.querySelector('.freeflowhtml > div');
-    const paraContent = document.queryselector('.freeflowhtml > div').textContent;
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
+    const paraContent = document.queryselector('.freeflowhtml > div').textContent;
     var InsideRowFirstDiv = document.createElement('div');
     //adding class to row Div
     InsideRowFirstDiv.classList.add('col-md-6','col-sm-12','col-xs-12','mb-sm-20','wow','fadeInLeft','animated');   
@@ -62,10 +62,9 @@
     InsideRowFirstDiv.style.animationDelay = '0.6s';
      //creating para inside row Div
     InsideRowFirstDiv.innerHTML = `
-    <p class="para-ovr"></p>
+    <p class="para-ovr">$('p.para-ovr').append(paraContent)</p>
      `;
-   
-    $('p.para-ovr').append(paraContent);
+
     containerDiv.appendChild(InsideRowFirstDiv); 
      
     //setting data to para inside row Div
