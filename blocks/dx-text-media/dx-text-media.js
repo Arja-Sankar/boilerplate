@@ -63,9 +63,9 @@
     <p class="para-ovr">${description}</p>
      `;
       containerDiv.appendChild(InsideRowFirstDiv); 
-   Array.prototype.forEach.call(children, function(child) {
-  one.appendChild(child);
-});
+//    Array.prototype.forEach.call(children, function(child) {
+//   one.appendChild(child);
+// });
 
 // Infosys Digital Experience (DX) powers businesses across the entire Customer Experience (CX) journey. We re-imagine, create and deliver integrated and personalized experiences by creating human-centered digital platforms. We help enterprises stay relevant by transforming business models, future proofing, bringing agility and responsiveness.
     //creating second div inside row Div
