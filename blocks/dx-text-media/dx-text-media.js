@@ -40,10 +40,6 @@
     var InsideMainDiv = document.querySelector('.freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
-   
-export default function decorate(block) {
-  [...block.children].forEach((experience) => {
-     //creating div for para
     var InsideRowFirstDiv = document.createElement('div');
     //adding class to row Div
     InsideRowFirstDiv.classList.add('col-md-6','col-sm-12','col-xs-12','mb-sm-20','wow','fadeInLeft','animated');   
@@ -54,7 +50,7 @@ export default function decorate(block) {
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
-    const description = experience.Selector('.freeflowhtml > div').textContent;
+    const description = document.queryselector('.freeflowhtml > div').textContent;
      
     //setting data to para inside row Div
    // InsideRowPara.innerHTML = ${description};
@@ -67,15 +63,10 @@ export default function decorate(block) {
     <p class="para-ovr">${description}</p>
      `;
       containerDiv.appendChild(InsideRowFirstDiv); 
-  });
-  
-   // var InsideRowPara = document.createElement('p');
-   //  adding class to para inside row Div
-   // InsideRowPara.setAttribute('class','para-ovr');
+   Array.prototype.forEach.call(children, function(child) {
+  one.appendChild(child);
+});
 
-
-
-                              }
 // Infosys Digital Experience (DX) powers businesses across the entire Customer Experience (CX) journey. We re-imagine, create and deliver integrated and personalized experiences by creating human-centered digital platforms. We help enterprises stay relevant by transforming business models, future proofing, bringing agility and responsiveness.
     //creating second div inside row Div
     var InsideRowSecondDiv = document.createElement('div');
