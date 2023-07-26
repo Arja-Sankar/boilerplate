@@ -51,10 +51,7 @@
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
-
-export default function decorate(block) {
-  [...block.children].forEach((experience) => {
-      const description = experience.querySelector('.freeflowhtml > div').textContent;
+  const description = block.Selector('.freeflowhtml > div').textContent;
      
     //setting data to para inside row Div
    // InsideRowPara.innerHTML = ${description};
@@ -65,8 +62,11 @@ export default function decorate(block) {
       //creating para inside row Div
     InsideRowFirstDiv.innerHTML = `
     <p class="para-ovr">${description}</p>
-    `
-  });
+     `
+// export default function decorate(block) {
+//   [...block.children].forEach((experience) => {
+    
+//   });
   
   //  var InsideRowPara = document.createElement('p');
     //adding class to para inside row Div
