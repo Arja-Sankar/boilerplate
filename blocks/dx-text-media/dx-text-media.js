@@ -40,7 +40,10 @@
     var InsideMainDiv = document.querySelector('.freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
-    //creating div for para
+   
+export default function decorate(block) {
+  [...block.children].forEach((experience) => {
+     //creating div for para
     var InsideRowFirstDiv = document.createElement('div');
     //adding class to row Div
     InsideRowFirstDiv.classList.add('col-md-6','col-sm-12','col-xs-12','mb-sm-20','wow','fadeInLeft','animated');   
@@ -51,7 +54,7 @@
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
-  const description = document.Selector('.freeflowhtml > div').textContent;
+    const description = experience.Selector('.freeflowhtml > div').textContent;
      
     //setting data to para inside row Div
    // InsideRowPara.innerHTML = ${description};
@@ -62,15 +65,13 @@
       //creating para inside row Div
     InsideRowFirstDiv.innerHTML = `
     <p class="para-ovr">${description}</p>
-     `
-// export default function decorate(block) {
-//   [...block.children].forEach((experience) => {
-    
-//   });
+     `;
+      containerDiv.appendChild(InsideRowFirstDiv); 
+  });
   
-  //  var InsideRowPara = document.createElement('p');
-    //adding class to para inside row Div
-  //  InsideRowPara.setAttribute('class','para-ovr');
+   // var InsideRowPara = document.createElement('p');
+   //  adding class to para inside row Div
+   // InsideRowPara.setAttribute('class','para-ovr');
 
 
 
@@ -120,7 +121,7 @@
     containerDiv.appendChild(InsideContainerFirstDiv);
     InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
     //containerDiv.appendChild(InsideMainDiv);
-    containerDiv.appendChild(InsideRowFirstDiv);
+   
    // InsideRowFirstDiv.appendChild(InsideRowPara);
     containerDiv.appendChild(InsideRowSecondDiv);
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
