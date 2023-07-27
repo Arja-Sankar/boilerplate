@@ -43,7 +43,7 @@
     InsideContainerSecondDiv.classList.add('h1-heading','text-center','mb50');
     //adding text to above div
     var insideHeading  = document.querySelectorAll('.freeflowhtml')[0].innerText;
-    InsideContainerSecondDiv.appendChild(insideHeading);
+    InsideContainerSecondDiv.innerHTML = insideHeading;
     InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
 
     //Getting div container presented from plain.html For Hiding
@@ -66,7 +66,7 @@
      var InsideRowPara = document.createElement('p');
     //adding class to para inside row Div
     InsideRowPara.setAttribute('class','para-ovr');
-   InsideRowPara.append(paraContent);
+   InsideRowPara.innerHTML = paraContent;
   InsideRowFirstDiv.appendChild(InsideRowPara);
     // InsideRowFirstDiv.innerHTML = `
     // <p class="para-ovr">$(paraContent)</p>
