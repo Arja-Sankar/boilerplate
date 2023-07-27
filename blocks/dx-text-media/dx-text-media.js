@@ -1,6 +1,7 @@
 
     //Getting main Div container
     var mainDiv = document.querySelector('.dx-text-media');
+    var mainClassHeading = document.querySelector('.dx-text-media').className;
      mainDiv.setAttribute('class','freeflowhtml');
 
       //adding classNames to main Div
@@ -43,7 +44,7 @@
     InsideContainerSecondDiv.classList.add('h1-heading','text-center','mb50');
     //adding text to above div
     var insideHeading  = document.querySelectorAll('.freeflowhtml')[0].innerText;
-    InsideContainerSecondDiv.innerHTML = insideHeading;
+    InsideContainerSecondDiv.innerHTML = mainClassHeading;
     InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
 
     //Getting div container presented from plain.html For Hiding
