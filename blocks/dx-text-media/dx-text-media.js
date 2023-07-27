@@ -49,7 +49,7 @@
     var InsideMainDiv = document.querySelector('.freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
-    const paraContent = document.querySelector('.freeflowhtml > div').textContent;
+    const paraContent = document.querySelector('.freeflowhtml > div > div')[0].textContent;
     var InsideRowFirstDiv = document.createElement('div');
     //adding class to row Div
     InsideRowFirstDiv.classList.add('col-md-6','col-sm-12','col-xs-12','mb-sm-20','wow','fadeInLeft','animated');   
@@ -65,7 +65,7 @@
      var InsideRowPara = document.createElement('p');
     //adding class to para inside row Div
     InsideRowPara.setAttribute('class','para-ovr');
-    $('.para-ovr').html($(paraContent));
+   InsideRowPara.append(paraContent);
   InsideRowFirstDiv.appendChild(InsideRowPara);
     // InsideRowFirstDiv.innerHTML = `
     // <p class="para-ovr">$(paraContent)</p>
