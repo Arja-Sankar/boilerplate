@@ -1,9 +1,9 @@
 
     //Getting main Div container
     var mainDiv = document.querySelector('.dx-text-media');
-    var mainClassHeading =  document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
+    
      mainDiv.setAttribute('class','freeflowhtml');
-
+    var mainClassHeading =  document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
       //adding classNames to main Div
       mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
    
