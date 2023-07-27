@@ -6,7 +6,8 @@
 
       //adding classNames to main Div
       mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
-  
+    var paraContent = document.querySelector('.freeflowhtml > div > div')[0].textContent;
+    var videoUrl = document.querySelector('.freeflowhtml > div > div')[1].textContent;
     //creating section element
     var sectionElem = document.createElement('section');
     //adding Id to section
@@ -66,7 +67,7 @@
      var InsideRowPara = document.createElement('p');
     //adding class to para inside row Div
     InsideRowPara.setAttribute('class','para-ovr');
-    var paraContent = document.querySelector('.freeflowhtml > div > div')[0].textContent;
+  
    InsideRowPara.innerHTML = paraContent;
   InsideRowFirstDiv.appendChild(InsideRowPara);
 
@@ -86,7 +87,7 @@
     //A variable that creates video tag to append in second div inside row Div 
     var InsideRowSecondDivVideo = document.createElement('video');
     // Local file to append in second div inside row Div 
-    var videoUrl = document.querySelector('.freeflowhtml > div > div')[1].textContent;
+    
     InsideRowSecondDivVideo.src = videoUrl;
     InsideRowSecondDivVideo.autoplay = true;
     InsideRowSecondDivVideo.loop = true;
