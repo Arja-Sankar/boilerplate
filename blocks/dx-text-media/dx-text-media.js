@@ -42,7 +42,8 @@
     //adding className to above Div
     InsideContainerSecondDiv.classList.add('h1-heading','text-center','mb50');
     //adding text to above div
-    InsideContainerSecondDiv.innerHTML='Digital Experience';
+    var insideHeading  = document.querySelectorAll('.freeflowhtml')[0].innerText;
+    InsideContainerSecondDiv.appendChild(insideHeading);
     InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
 
     //Getting div container presented from plain.html For Hiding
