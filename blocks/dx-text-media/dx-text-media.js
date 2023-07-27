@@ -6,8 +6,7 @@
 
       //adding classNames to main Div
       mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
-    var paraContent = document.querySelector('.freeflowhtml > div > div')[0].textContent;
-    var videoUrl = document.querySelector('.freeflowhtml > div > div')[1].textContent;
+   
     //creating section element
     var sectionElem = document.createElement('section');
     //adding Id to section
@@ -51,7 +50,8 @@
     var InsideMainDiv = document.querySelector('.freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
-
+     var paraContent = document.querySelector('.freeflowhtml > div > div')[0].textContent;
+    var videoUrl = document.querySelector('.freeflowhtml > div > div')[1].textContent;
     var InsideRowFirstDiv = document.createElement('div');
     //adding class to row Div
     InsideRowFirstDiv.classList.add('col-md-6','col-sm-12','col-xs-12','mb-sm-20','wow','fadeInLeft','animated');   
