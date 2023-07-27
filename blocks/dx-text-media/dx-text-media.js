@@ -1,7 +1,7 @@
 
     //Getting main Div container
     var mainDiv = document.querySelector('.dx-text-media');
-    var mainClassHeading = document.querySelector('.dx-text-media').classList[0];
+    var mainClassHeading =  document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
      mainDiv.setAttribute('class','freeflowhtml');
 
       //adding classNames to main Div
@@ -50,8 +50,8 @@
     var InsideMainDiv = document.querySelector('.freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
-     var paraContent = document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
-     var videoUrl = document.querySelectorAll(".freeflowhtml > div > div")[1].textContent;
+     var paraContent = document.querySelectorAll('.freeflowhtml > div > div')[1].textContent;
+     var videoUrl = document.querySelectorAll(".freeflowhtml > div > div")[2].textContent;
     var InsideRowFirstDiv = document.createElement('div');
     //adding class to row Div
     InsideRowFirstDiv.classList.add('col-md-6','col-sm-12','col-xs-12','mb-sm-20','wow','fadeInLeft','animated');   
