@@ -8,14 +8,14 @@
   const resp = await fetch(`${footerPath}.plain.html`, window.location.pathname.endsWith('/footer') ? { cache: 'reload' } : {});
 
   if (resp.ok) {
-    const html = await resp.text();
-  }
+  //   const html = await resp.text();
+  // }
     // decorate footer DOM
-    const footer = document.createElement('div');
-    footer.innerHTML = html;
+    // const footer = document.createElement('div');
+    // footer.innerHTML = html;
 
-    //decorateIcons(footer);
-    block.append(footer);
+    // //decorateIcons(footer);
+    // block.append(footer);
 
             //Getting footer tag
             var mainFooter = document.querySelector('.footer-wrapper');
@@ -90,7 +90,7 @@
             footerArticleElem.appendChild(footerMainDiv);
             //appending everything ends here
 
-     //   }
+       }
   
 
 
