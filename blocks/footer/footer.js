@@ -1,4 +1,4 @@
-
+ import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
 
 // // Add list to body (or anywhere else)
 //      window.onload = function (block) {
