@@ -9,9 +9,9 @@
       //adding classNames to main Div
       mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
    //setting background banner
-var a = document.querySelectorAll('.freeflowhtml > div > div')[0].querySelector('img').src;
-document.querySelector('.dx-text-media-wrapper').style.backgroundImage = url(a);    
-//mainDiv.style.backgroundImage = document.querySelectorAll('.freeflowhtml > div > div')[0].querySelector('img').src;
+// var a = document.querySelectorAll('.freeflowhtml > div > div')[0].querySelector('img').src;
+// document.querySelector('.dx-text-media-wrapper').style.backgroundImage = url(a);    
+mainDiv.style.backgroundImage = url(document.querySelectorAll('.freeflowhtml > div > div')[0].querySelector('img').src);
 
     //creating section element
     var sectionElem = document.createElement('section');
