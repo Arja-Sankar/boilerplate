@@ -3,7 +3,7 @@
     var mainDiv = document.querySelector('.dx-text-media');
     
      mainDiv.setAttribute('class','freeflowhtml');
-     var mainClassHeading , paraContent , videoUrl;
+     var mainClassHeading , paraContent , videoUrl , outsideRowanchorText;
      
    // var mainClassHeading =  document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
       //adding classNames to main Div
@@ -94,25 +94,7 @@
     InsideRowSecondDivVideo.controls = true;
    // InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
 
-    for(let i=0; i < document.querySelectorAll('.freeflowhtml > div > div').length; i++){
-
-      if(i == 0){
-        mainClassHeading = document.querySelectorAll('.freeflowhtml > div > div')[i].textContent ;
-        InsideContainerSecondDiv.innerHTML = mainClassHeading;
-        InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
-      }else if(i == 1){
-       
-        
-        paraContent = document.querySelectorAll('.freeflowhtml > div > div')[i].textContent ;
-        InsideRowPara.innerHTML = paraContent;
-        InsideRowFirstDiv.appendChild(InsideRowPara);
-      }else if(i == 2){
-        videoUrl = document.querySelectorAll('.freeflowhtml > div > div')[i].textContent ;
-        InsideRowSecondDivVideo.src = videoUrl;
-        InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
-      }
-      console.log( document.querySelectorAll('.freeflowhtml > div > div')[i].textContent);
-   }
+   
 
     //creating anchor tag after row Div
     var outsideRowanchor = document.createElement('a');
@@ -129,9 +111,29 @@
     outsideRowanchor.style.animationDelay = '0.6s';
     //adding another attribute to anchor tag after row Div 
     outsideRowanchor.setAttribute('aria-label','Read More about undefined');
-    //setting data to anchor tag after row Div
+
+ for(let i=0; i < document.querySelectorAll('.freeflowhtml > div > div').length; i++){
+
+      if(i == 1){
+        mainClassHeading = document.querySelectorAll('.freeflowhtml > div > div')[i].textContent ;
+        InsideContainerSecondDiv.innerHTML = mainClassHeading;
+        InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
+      }else if(i == 2){
+        paraContent = document.querySelectorAll('.freeflowhtml > div > div')[i].textContent ;
+        InsideRowPara.innerHTML = paraContent;
+        InsideRowFirstDiv.appendChild(InsideRowPara);
+      }else if(i == 3){
+        videoUrl = document.querySelectorAll('.freeflowhtml > div > div')[i].textContent ;
+        InsideRowSecondDivVideo.src = videoUrl;
+        InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
+      }else if(i == 4){
+    outsideRowanchorText = document.querySelectorAll('.freeflowhtml > div > div')[i].textContent ;
+           //setting data to anchor tag after row Div
     outsideRowanchor.innerHTML = 'Read More';
      articleElem.appendChild(outsideRowanchor);
+      }
+      console.log( document.querySelectorAll('.freeflowhtml > div > div')[i].textContent);
+   }
     // img tag inside video tag to append in second div inside row Div reference link: 'https://play.vidyard.com/RjFVtvoiRvUJSA1EGC2Cmf.jpg'
 
 
