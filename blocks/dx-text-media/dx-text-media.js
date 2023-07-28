@@ -8,7 +8,9 @@
    // var mainClassHeading =  document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
       //adding classNames to main Div
       mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
-   
+   //setting background banner
+    mainDiv.style.backgroundImage = document.querySelectorAll('.freeflowhtml > div > div')[0].querySelector('img').src;
+
     //creating section element
     var sectionElem = document.createElement('section');
     //adding Id to section
@@ -134,10 +136,7 @@
       }
       console.log( document.querySelectorAll('.freeflowhtml > div > div')[i].textContent);
    }
-//setting background banner
-var divBackgroundImage = document.querySelector('.freeflowhtml');
-divBackgroundImage.style.backgroundImage = document.querySelectorAll('.freeflowhtml > div > div')[0].querySelector('img').src;
-    // img tag inside video tag to append in second div inside row Div reference link: 'https://play.vidyard.com/RjFVtvoiRvUJSA1EGC2Cmf.jpg'
+// img tag inside video tag to append in second div inside row Div reference link: 'https://play.vidyard.com/RjFVtvoiRvUJSA1EGC2Cmf.jpg'
 
 
 
