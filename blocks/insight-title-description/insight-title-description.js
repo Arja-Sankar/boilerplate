@@ -1,7 +1,7 @@
 
 (function () {
     let desc = {}
-    let targetELEMENT = document.querySelector(".title-description-wrapper")
+    let targetELEMENT = document.querySelector(".insight-title-description")
     targetELEMENT.classList.add('titledescription','aem-GridColumn','aem-GridColumn--default--12')
 
     let newELEMENT = (desc) => {
@@ -17,10 +17,10 @@
                     </article>
                 </section>`
     }
-    let block_DATA = target_ELEMENT.querySelectorAll('.title-description.block > div > div')
-    desc.imgsrc=block_DATA[0].querySelector('img').src
-    desc.heading=block_DATA[1].textContent
-    desc.para=block_DATA[2].textContent
+    let blockDATA = targetELEMENT.querySelectorAll('.title-description.block > div > div')
+    desc.imgsrc=blockDATA[0].querySelector('img').src
+    desc.heading=blockDATA[1].textContent
+    desc.para=blockDATA[2].textContent
     targetELEMENT.innerHTML=newELEMENT(desc)
 })();
 
