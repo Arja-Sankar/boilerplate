@@ -136,7 +136,7 @@
    }
 //setting background banner
 var divBackgroundImage = document.querySelector('.freeflowhtml');
-divBackgroundImage.style.backgroundImage = document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
+divBackgroundImage.style.backgroundImage = document.querySelectorAll('.freeflowhtml > div > div')[0].querySelector('img').src;
     // img tag inside video tag to append in second div inside row Div reference link: 'https://play.vidyard.com/RjFVtvoiRvUJSA1EGC2Cmf.jpg'
 
 
