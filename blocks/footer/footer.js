@@ -2,6 +2,21 @@
 
 // // Add list to body (or anywhere else)
 //      window.onload = function (block) {
+
+// fetch footer content
+  const footerPath = cfg.footer || '/footer';
+  const resp = await fetch(`${footerPath}.plain.html`, window.location.pathname.endsWith('/footer') ? { cache: 'reload' } : {});
+
+  if (resp.ok) {
+    const html = await resp.text();
+  }
+    // decorate footer DOM
+    const footer = document.createElement('div');
+    footer.innerHTML = html;
+
+    //decorateIcons(footer);
+    block.append(footer);
+
             //Getting footer tag
             var mainFooter = document.querySelector('.footer-wrapper');
             //setting ID to footer tag
