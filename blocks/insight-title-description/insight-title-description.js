@@ -55,7 +55,7 @@ mainInsightTitleHeading.classList.add('aem-GridColumn','aem-GridColumn--default-
     containerPara.classList.add('col-md-8', 'col-md-offset-2', 'para-txt', 'light-gray', 'mb50');
    
     var imgsrclink , headingcontent , paragraphcontent ;
-            imgsrclink = document.querySelector('.insight-title-description > div > div > picture >img').src
+            imgsrclink = document.querySelector('.titledescription  > div > div > picture >img').src
             containerImg.src = imgsrclink;
              insightTitleContainerFirstDiv.appendChild(containerImg);
     for(let i=1; i < document.querySelectorAll('.titledescription > div').length; i++){
