@@ -32,7 +32,7 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     var insightContentDiv = document.createElement('div');
     //adding className to above Div
     insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
- for(let i=0;i < document.querySelectorAll('.insights > div').length; i++){
+ for(var i=0;i < document.querySelectorAll('.insights > div').length; i++){
       
     insightContainerFirstDiv.appendChild(insightContentDiv);
  }
