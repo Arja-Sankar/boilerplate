@@ -58,7 +58,7 @@ mainInsightTitleHeading.classList.add('aem-GridColumn','aem-GridColumn--default-
             imgsrclink = document.querySelector('.titledescription  > div > div > picture >img').src
             containerImg.src = imgsrclink;
              insightTitleContainerFirstDiv.appendChild(containerImg);
-    for(let i=1; i < document.querySelectorAll('.titledescription > div').length; i++){
+    for(let i=1; i < document.querySelectorAll('.titledescription > div > div').length; i++){
           if(i == 1){
             headingcontent = document.querySelectorAll('.titledescription > div > div')[1].innerText
              containerHeading.innerHTML = headingcontent;
