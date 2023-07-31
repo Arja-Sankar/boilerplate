@@ -2,7 +2,7 @@
 var mainInsightTitleHeading = document.querySelector('.insight-title-description-wrapper > .insight-title-description');
  //adding classNames to main Div
 mainInsightTitleHeading.setAttribute('class','titledescription');
-mainInsightTitleHeading.classList.add(aem-GridColumn','aem-GridColumn--default--12');
+mainInsightTitleHeading.classList.add('aem-GridColumn','aem-GridColumn--default--12');
 //creating section element
     var insightTitleSectionElem = document.createElement('section');
     //adding Id to section
