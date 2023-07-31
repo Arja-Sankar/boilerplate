@@ -8,7 +8,12 @@ mainInsightTitleHeading.classList.add(aem-GridColumn','aem-GridColumn--default--
     //adding Id to section
     insightTitleSectionElem.setAttribute('class','pt75');
      mainInsightTitleHeading.appendChild(insightTitleSectionElem);
-   
+
+   //Getting div container presented from plain.html For Hiding
+    var InsideTitleMainDiv = document.querySelector('.titledescription > div');
+    //Hiding the Inside Main Div From Plain Html
+    InsideTitleMainDiv.style.display = 'none';
+
     //creating article
     var insightTitleArticleElem = document.createElement('article');
     //adding class to article
