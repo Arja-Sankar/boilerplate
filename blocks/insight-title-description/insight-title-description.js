@@ -65,7 +65,7 @@ mainInsightTitleHeading.classList.add(aem-GridColumn','aem-GridColumn--default--
            insightTitleContainerFirstDiv.appendChild(containerHeading);
           }
         if(i == 2){
-                headingcontent = document.querySelectorAll('.titledescription > div > div')[1].innerText
+                headingcontent = document.querySelectorAll('.titledescription > div > div')[2].innerText
                  containerPara.innerHTML = headingcontent;
                 insightTitleContainerFirstDiv.appendChild(containerPara);
 
