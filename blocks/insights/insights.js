@@ -28,16 +28,14 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     insightContainerFirstDiv.style.mozAnimationDelay = '0.6s';
     insightContainerFirstDiv.style.animationDelay = '0.6s';
     insightArticleElem.appendChild(insightContainerFirstDiv);
- //content loop div
-    var insightContentDiv = document.createElement('div');
-    //adding className to above Div
-    insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
-var df = document.createDocumentFragment();
- for(var i=0;i < document.querySelectorAll('.insights > div').length; i++){
-      df.appendChild(insightContentDiv);
-    
+
+  
+ for(let i=0;i < document.querySelectorAll('.insights > div').length; i++){
+     let insightContentDiv = document.createElement('div');
+    insightContainerFirstDiv.appendChild(insightContentDiv);
+   insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
  }
-insightContainerFirstDiv.appendChild(df);
+
 
 
 
