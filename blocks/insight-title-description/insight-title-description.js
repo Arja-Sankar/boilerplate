@@ -50,21 +50,18 @@ mainInsightTitleHeading.classList.add(aem-GridColumn','aem-GridColumn--default--
     containerPara.classList.add('col-md-8', 'col-md-offset-2', 'para-txt', 'light-gray', 'mb50');
    
     var imgsrclink , headingcontent , paragraphcontent ;
-
-    for(let i=0; i < document.querySelectorAll('.insight-title-description > div').length; i++){
-        if(i == 0){
-            imgsrclink = document.querySelectorAll('.insight-title-description > div')[i].textContent ;
+            imgsrclink = document.querySelector('.insight-title-description > div > div > picture >img').src
             containerImg.src = imgsrclink;
              insightTitleContainerFirstDiv.appendChild(containerImg);
-          }
+    for(let i=1; i < document.querySelectorAll('.titledescription > div').length; i++){
           if(i == 1){
-            headingcontent = document.querySelectorAll('.insight-title-description > div')[i].textContent ;
-            containerHeading.innerHTML = headingcontent;
+            headingcontent = document.querySelectorAll('.titledescription > div > div')[1].innerText
+             containerHeading.innerHTML = headingcontent;
            insightTitleContainerFirstDiv.appendChild(containerHeading);
           }
         if(i == 2){
-                headingcontent = document.querySelectorAll('.insight-title-description > div')[i].textContent ;
-                containerPara.innerHTML = headingcontent;
+                headingcontent = document.querySelectorAll('.titledescription > div > div')[1].innerText
+                 containerPara.innerHTML = headingcontent;
                 insightTitleContainerFirstDiv.appendChild(containerPara);
 
               }
