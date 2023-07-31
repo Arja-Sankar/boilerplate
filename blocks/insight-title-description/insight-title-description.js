@@ -70,7 +70,7 @@ mainInsightTitleHeading.classList.add(aem-GridColumn','aem-GridColumn--default--
                 insightTitleContainerFirstDiv.appendChild(containerPara);
 
               }
-    `}
+    }
     
 
 // (function () {
