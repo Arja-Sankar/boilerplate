@@ -129,7 +129,7 @@
       }else if(i == 4){
     outsideRowanchorText = document.querySelectorAll('.freeflowhtml > div > div')[i].textContent ;
            //setting data to anchor tag after row Div
-    outsideRowanchor.innerHTML = 'Read More';
+    outsideRowanchor.innerHTML = outsideRowanchorText;
      articleElem.appendChild(outsideRowanchor);
       }
       console.log( document.querySelectorAll('.freeflowhtml > div > div')[i].textContent);
