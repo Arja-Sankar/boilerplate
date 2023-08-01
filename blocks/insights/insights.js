@@ -74,17 +74,19 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
   commonImg.setAttribute('alt',para);
   commonMainDiv.appendChild(commonImg);
 
-  // commonClassThree = 'txt-reseach';
-  // commonMainSecDiv.setAttribute('class',commonClassThree);
-  // commonMainDiv.appendChild(commonMainSecDiv);
+  commonClassThree = 'txt-reseach';
+  commonMainSecDiv.setAttribute('class',commonClassThree);
+  commonMainDiv.appendChild(commonMainSecDiv);
 
-  // commonHeaderClass.classList.add('insight-title','pb0');
-  // commonHeader.setAttribute('class',commonHeaderClass);
-  // commonClassThree.appendChild(commonHeader);
+  commonHeader.classList.add('insight-title','pb0');
+  commonHeader.innerHTML = heading;
+  commonClassThree.appendChild(commonHeader);
 
-  // commonParagraphClass = 'insight-text';
-  // commonParagraph.setAttribute('class',commonParagraphClass);
-  // commonClassThree.appendChild(commonParagraph);
+  commonParagraphClass = 'insight-text';
+  commonParagraph.setAttribute('class',commonParagraphClass);
+   commonParagraph.innerHTML = para;
+  commonClassThree.appendChild(commonParagraph);
+   
   }
 
 
