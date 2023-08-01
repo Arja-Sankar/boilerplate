@@ -80,8 +80,8 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
 
   let commonInsightHeader = document.createElement('h5');
    commonInsightHeader.setAttribute('class','insight-title');
-  commonInsightHeader.setAttribute('class','pb0');
-  commonInsightHeader.innerHTML = heading;
+  // commonInsightHeader.setAttribute('class','pb0');
+  // commonInsightHeader.innerHTML = heading;
   commonClassThree.appendChild(commonInsightHeader);
 
   // commonParagraphClass = 'insight-text';
