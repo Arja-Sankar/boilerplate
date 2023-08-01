@@ -84,7 +84,7 @@ let imgsrc = blockDataImg[i].querySelector('img').src;
    commonParagraph.innerHTML = para;
    commonMainSecDiv.appendChild(commonParagraph);
 
- for(let i=0;i < document.querySelectorAll('.insights > div').length-2; i++){
+ for(let i=2;i < document.querySelectorAll('.insights > div').length; i++){
      
      let insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
