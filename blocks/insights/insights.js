@@ -36,7 +36,54 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
 
- for(let i=0;i < document.querySelectorAll('.insights > div').length-1; i++){
+let imgsrc = blockDataImg[i].querySelector('img').src;
+    let commonAnchor = document.createElement('a'); 
+    let commonDiv = document.createElement('div');
+    let commonMainDiv = document.createElement('div');
+    let commonMainSecDiv = document.createElement('div');
+    let commonImg = document.createElement('img');
+    let commonInsightHeader = document.createElement('h5');
+    let commonParagraph = document.createElement('p');
+    let data = document.querySelectorAll('#insights >.container > .row > div')[0];
+    let heading = blockData[1].textContent;
+    let para = blockData[2].textContent;
+    let hreflink = blockData[3].textContent;
+ 
+    console.log(data);
+  commonAnchor.setAttribute('href',hreflink);
+  commonAnchor.setAttribute('target','_blank');
+  commonAnchor.setAttribute('title',para);
+  data.appendChild(commonAnchor);
+ 
+  commonClassOne = 'col-eq-ht';
+  commonDiv.setAttribute('class',commonClassOne);
+  commonAnchor.appendChild(commonDiv);
+
+  commonClassTwo = 'bg-color1';
+  commonMainDiv.setAttribute('class',commonClassTwo);
+  commonDiv.appendChild(commonMainDiv);
+
+  commonImgclass = 'img-responsive';
+  commonImg.setAttribute('class',commonImgclass);
+  commonImg.setAttribute('src',imgsrc);
+  commonImg.setAttribute('alt',para);
+  commonMainDiv.appendChild(commonImg);
+
+  commonClassThree = 'txt-reseach';
+  commonMainSecDiv.setAttribute('class',commonClassThree);
+  commonMainDiv.appendChild(commonMainSecDiv);
+
+   commonInsightHeader.setAttribute('class','insight-title');
+  commonInsightHeader.setAttribute('class','pb0');
+  commonInsightHeader.innerHTML = heading;
+  commonMainSecDiv.appendChild(commonInsightHeader);
+
+   commonParagraphClass = 'insight-text';
+   commonParagraph.setAttribute('class',commonParagraphClass);
+   commonParagraph.innerHTML = para;
+   commonMainSecDiv.appendChild(commonParagraph);
+
+ for(let i=0;i < document.querySelectorAll('.insights > div').length-2; i++){
      
      let insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
