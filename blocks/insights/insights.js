@@ -37,39 +37,7 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
      let insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
-  let blockDataImg = document.querySelectorAll('.insights > div');
-    let blockData = document.querySelectorAll('.insights > div > div');
-    let imgsrc = blockDataImg[i].querySelector('img').src;
-    let heading = blockData[i].textContent;
-    let para = blockData[i].textContent;
-    let hreflink = blockData[i].textContent;
-   let commonAnchor = document.createElement('a'); 
-  let commonDiv = document.createElement('div');
-  let commonMainDiv = document.createElement('div');
-  let commonImg = document.createElement('img');
-    let commonHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-  let d = document.querySelectorAll('#insights >.container > .row > div')[i];
-var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonClassTwo , commonClassThree;
 
-  commonAnchor.setAttribute('href',hreflink);
-  commonAnchor.setAttribute('target','_blank');
-  commonAnchor.setAttribute('title',para);
-  d.appendChild(commonAnchor);
- 
-  commonClassOne = '';
- commonDiv.setAttribute('class',commonClassOne);
- commonAnchor.appendChild(commonDiv);
-
-  commonClassTwo = '';
- commonMainDiv.setAttribute('class',commonClassTwo);
- commonDiv.appendChild(commonMainDiv);
-
-  commonImgclass = '';
-  commonImg.setAttribute('class',commonImgclass);
-  commonImg.setAttribute('src',imgsrc);
-  commonImg.setAttribute('alt',commonParagraph);
-commonMainDiv.appendChild(commonImg);
   
 // d.innerHTML = `<a href=hreflink target="_blank" title=para>
 //            <div class=commonClassOne>
