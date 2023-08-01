@@ -30,7 +30,7 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     insightArticleElem.appendChild(insightContainerFirstDiv);
 
     
-var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonClassTwo , commonClassThree;
+var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne , commonClassTwo , commonClassThree;
 
   
  for(let i=0;i < document.querySelectorAll('.insights > div').length; i++){
@@ -76,14 +76,14 @@ var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonCla
 
   commonClassThree = 'txt-reseach';
   commonMainSecDiv.setAttribute('class',commonClassThree);
-  commonDiv.appendChild(commonMainSecDiv);
+  commonMainDiv.appendChild(commonMainSecDiv);
 
   commonHeaderClass = 'insight-title pb0';
   commonHeader.setAttribute('class',commonHeaderClass);
   commonClassThree.appendChild(commonHeader);
 
-  commonParagraph = 'insight-text';
-  commonParagraph.setAttribute('class',commonParagraph);
+  commonParagraphClass = 'insight-text';
+  commonParagraph.setAttribute('class',commonParagraphClass);
   commonClassThree.appendChild(commonParagraph);
   }
 
