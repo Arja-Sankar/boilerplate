@@ -43,7 +43,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     let blockData = document.querySelectorAll('.insights > div > div');
   
     let imgsrc = blockDataImg[i].querySelector('img').src;
-    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
+   
     let commonAnchor = document.createElement('a'); 
     let commonDiv = document.createElement('div');
     let commonMainDiv = document.createElement('div');
@@ -56,7 +56,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     let heading = blockData[1].textContent;
     let para = blockData[2].textContent;
     let hreflink = blockData[3].textContent;
-
+ let data = document.querySelectorAll('#insights >.container > .row > div')[i];
     console.log(data);
   commonAnchor.setAttribute('href',hreflink);
   commonAnchor.setAttribute('target','_blank');
