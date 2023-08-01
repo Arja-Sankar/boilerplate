@@ -41,7 +41,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
 
     let blockDataImg = document.querySelectorAll('.insights > div');
     let blockData = document.querySelectorAll('.insights > div > div');
-  if(i == 0){
+  
     let imgsrc = blockDataImg[i].querySelector('img').src;
     let heading = blockData[1].textContent;
     let para = blockData[2].textContent;
@@ -51,8 +51,11 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     let commonMainDiv = document.createElement('div');
     let commonMainSecDiv = document.createElement('div');
     let commonImg = document.createElement('img');
-
+    let commonInsightHeader = document.createElement('h5');
     let commonParagraph = document.createElement('p');
+  
+  if(i == 0){
+
     let data = document.querySelectorAll('#insights >.container > .row > div')[i];
     console.log(data);
   commonAnchor.setAttribute('href',hreflink);
@@ -78,7 +81,6 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
   commonMainSecDiv.setAttribute('class',commonClassThree);
   commonMainDiv.appendChild(commonMainSecDiv);
 
-  let commonInsightHeader = document.createElement('h5');
    commonInsightHeader.setAttribute('class','insight-title');
   commonInsightHeader.setAttribute('class','pb0');
   commonInsightHeader.innerHTML = heading;
@@ -90,27 +92,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    commonMainSecDiv.appendChild(commonParagraph);
    
   }
-
-
-
-  
-// var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonClassTwo , commonClassThree;
-
  
-
-  
-// d.innerHTML = `<a href=hreflink target="_blank" title=para>
-//            <div class=commonClassOne>
-//                 <div class=commonClassTwo>
-//                      <img src=imgsrc alt=data.para class=data.commonImgclass>
-//                           <div class=commonClassThree>    
-//                                <h5 class=commonHeader>heading</h5>
-//                                   <p class=commonParagraph>$(para)</p>
-//                         </div>
-//               </div>
-//          </div>
-//                 </a>`
-     
     }   
 
 
