@@ -43,9 +43,9 @@ var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonCla
     let blockData = document.querySelectorAll('.insights > div > div');
   if(i == 0){
     let imgsrc = blockDataImg[i].querySelector('img').src;
-    let heading = blockData[i].textContent;
-    let para = blockData[i].textContent;
-    let hreflink = blockData[i].textContent;
+    let heading = blockData[i+1].textContent;
+    let para = blockData[i+1].textContent;
+    let hreflink = blockData[i+1].textContent;
    let commonAnchor = document.createElement('a'); 
   let commonDiv = document.createElement('div');
   let commonMainDiv = document.createElement('div');
