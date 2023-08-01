@@ -78,7 +78,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
   commonMainSecDiv.setAttribute('class',commonClassThree);
   commonMainDiv.appendChild(commonMainSecDiv);
 
-  commonHeaderClass = 'insight-title pb0';
+  commonHeaderClass.classList.add('insight-title;,'pb0');
   commonHeader.setAttribute('class',commonHeaderClass);
   commonClassThree.appendChild(commonHeader);
 
