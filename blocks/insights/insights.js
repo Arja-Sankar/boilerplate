@@ -59,18 +59,18 @@ var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonCla
   commonAnchor.setAttribute('title',para);
   d.appendChild(commonAnchor);
  
-  commonClassOne = '';
+  commonClassOne = 'col-eq-ht';
  commonDiv.setAttribute('class',commonClassOne);
  commonAnchor.appendChild(commonDiv);
 
-  commonClassTwo = '';
+  commonClassTwo = 'bg-color1';
  commonMainDiv.setAttribute('class',commonClassTwo);
  commonDiv.appendChild(commonMainDiv);
 
-  commonImgclass = '';
+  commonImgclass = 'img-responsive';
   commonImg.setAttribute('class',commonImgclass);
   commonImg.setAttribute('src',imgsrc);
-  commonImg.setAttribute('alt',commonParagraph);
+  commonImg.setAttribute('alt',para);
 commonMainDiv.appendChild(commonImg);
   }
 // var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonClassTwo , commonClassThree;
