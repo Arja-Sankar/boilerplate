@@ -51,7 +51,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     let commonMainDiv = document.createElement('div');
     let commonMainSecDiv = document.createElement('div');
     let commonImg = document.createElement('img');
-    let commonHeader = document.createElement('h5');
+
     let commonParagraph = document.createElement('p');
     let data = document.querySelectorAll('#insights >.container > .row > div')[i];
     console.log(data);
@@ -78,10 +78,11 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
   commonMainSecDiv.setAttribute('class',commonClassThree);
   commonMainDiv.appendChild(commonMainSecDiv);
 
-   commonHeader.setAttribute('class','insight-title');
-  commonHeader.setAttribute('pb0');
-  commonHeader.innerHTML = heading;
-  commonClassThree.appendChild(commonHeader);
+  let commonInsightHeader = document.createElement('h5');
+   commonInsightHeader.setAttribute('class','insight-title');
+  commonInsightHeader.setAttribute('class','pb0');
+  commonInsightHeader.innerHTML = heading;
+  commonClassThree.appendChild(commonInsightHeader);
 
   // commonParagraphClass = 'insight-text';
   // commonParagraph.setAttribute('class',commonParagraphClass);
