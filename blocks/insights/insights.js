@@ -29,16 +29,36 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     insightContainerFirstDiv.style.animationDelay = '0.6s';
     insightArticleElem.appendChild(insightContainerFirstDiv);
 
+    // let commonDiv = document.createElement('div');
+    //  let commonHeader = document.createElement('h5');
+    //  let commonParagraph = document.createElement('p');
   
  for(let i=0;i < document.querySelectorAll('.insights > div').length; i++){
+     
      let insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
  }
 
-
-
-
+//      let newELEMENT = (data) => {
+//         return `<a href= target="_blank" title=>
+//           <div class=>
+//                <div class=>
+//                     <img src= alt= class=>
+//                          <div class=>    
+//                               <h5 class=></h5>
+//                                   <p class=></p>
+//                          </div>
+//                </div>
+//           </div>
+//                 </a>`
+//     }   
+// let blockDataImg = document.querySelectorAll('.insights > div');
+// let blockData = document.querySelectorAll('.insights > div > div');
+//     data.imgsrc = blockDataImg[i].querySelector('img').src;
+//     data.heading = blockData[i].textContent;
+//     data.para = blockData[i].textContent;
+//     data.hreflink = blockData[i].textContent;
 
 
 
