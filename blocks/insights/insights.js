@@ -78,7 +78,8 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
   commonMainSecDiv.setAttribute('class',commonClassThree);
   commonMainDiv.appendChild(commonMainSecDiv);
 
-  commonHeader.classList.add('insight-title','pb0');
+   commonHeader.setAttribute('class','insight-title');
+  commonHeader.setAttribute('pb0');
   commonHeader.innerHTML = heading;
   commonClassThree.appendChild(commonHeader);
 
