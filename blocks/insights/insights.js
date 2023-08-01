@@ -30,6 +30,7 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     insightArticleElem.appendChild(insightContainerFirstDiv);
 
     
+var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonClassTwo , commonClassThree;
 
   
  for(let i=0;i < document.querySelectorAll('.insights > div').length; i++){
@@ -40,6 +41,7 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
 
     let blockDataImg = document.querySelectorAll('.insights > div');
     let blockData = document.querySelectorAll('.insights > div > div');
+  if(i == 0){
     let imgsrc = blockDataImg[i].querySelector('img').src;
     let heading = blockData[i].textContent;
     let para = blockData[i].textContent;
@@ -52,26 +54,28 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     let commonParagraph = document.createElement('p');
   let d = document.querySelectorAll('#insights >.container > .row > div')[i];
   console.log(d);
+    commonAnchor.setAttribute('href',hreflink);
+  commonAnchor.setAttribute('target','_blank');
+  commonAnchor.setAttribute('title',para);
+  d.appendChild(commonAnchor);
+ 
+  commonClassOne = '';
+ commonDiv.setAttribute('class',commonClassOne);
+ commonAnchor.appendChild(commonDiv);
+
+  commonClassTwo = '';
+ commonMainDiv.setAttribute('class',commonClassTwo);
+ commonDiv.appendChild(commonMainDiv);
+
+  commonImgclass = '';
+  commonImg.setAttribute('class',commonImgclass);
+  commonImg.setAttribute('src',imgsrc);
+  commonImg.setAttribute('alt',commonParagraph);
+commonMainDiv.appendChild(commonImg);
+  }
 // var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonClassTwo , commonClassThree;
 
-//   commonAnchor.setAttribute('href',hreflink);
-//   commonAnchor.setAttribute('target','_blank');
-//   commonAnchor.setAttribute('title',para);
-//   d.appendChild(commonAnchor);
  
-//   commonClassOne = '';
-//  commonDiv.setAttribute('class',commonClassOne);
-//  commonAnchor.appendChild(commonDiv);
-
-//   commonClassTwo = '';
-//  commonMainDiv.setAttribute('class',commonClassTwo);
-//  commonDiv.appendChild(commonMainDiv);
-
-//   commonImgclass = '';
-//   commonImg.setAttribute('class',commonImgclass);
-//   commonImg.setAttribute('src',imgsrc);
-//   commonImg.setAttribute('alt',commonParagraph);
-// commonMainDiv.appendChild(commonImg);
 
   
 // d.innerHTML = `<a href=hreflink target="_blank" title=para>
