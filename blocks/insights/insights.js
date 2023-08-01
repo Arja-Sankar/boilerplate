@@ -39,34 +39,6 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
 
-  let newELEMENT = (data) => {
-        return `<a href=${data.hreflink} target="_blank" title=${data.para}>
-          <div class=${data.commonClassOne}>
-               <div class=${data.commonClassTwo}>
-                    <img src=${data.imgsrc} alt=${data.para} class=${data.commonImgclass}>
-                         <div class=${data.commonClassThree}>    
-                              <h5 class=${data.commonHeader}>${data.heading}</h5>
-                                  <p class=${data.commonParagraph}>${data.para}</p>
-                         </div>
-               </div>
-          </div>
-                </a>`
- }
-    let blockDataImg = document.querySelectorAll('.insights > div');
-let blockData = document.querySelectorAll('.insights > div > div');
-let data.commonImgclass , data.commonHeader , data.commonParagraph , data.commonClassOne , data.commonClassTwo , data.commonClassThree;
-     data.commonImgclass = 'img-responsive';
-     data.commonHeader = 'insight-title pb0';
-     data.commonParagraph = 'insight-text';
-     data.commonClassOne = 'col-eq-ht';
-     data.commonClassTwo = 'bg-color1';
-     data.commonClassThree = 'txt-reseach';
-    data.imgsrc = blockDataImg[i].querySelector('img').src;
-    data.heading = blockData[i].textContent;
-    data.para = blockData[i].textContent;
-    data.hreflink = blockData[i].textContent;
-var d = document.querySelector('#insights >.container > .row > div');
-  d.appendChild(data);
      
     }   
 
