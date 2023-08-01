@@ -37,7 +37,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
  let blockDataImg = document.querySelectorAll('.insights > div');
     let blockData = document.querySelectorAll('.insights > div > div');
-let imgsrc = blockDataImg[i].querySelector('img').src;
+let imgsrc = blockDataImg[0].querySelector('img').src;
     let commonAnchor = document.createElement('a'); 
     let commonDiv = document.createElement('div');
     let commonMainDiv = document.createElement('div');
