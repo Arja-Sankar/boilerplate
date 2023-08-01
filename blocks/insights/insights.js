@@ -92,55 +92,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    commonMainSecDiv.appendChild(commonParagraph);
    
   }
-   if(i == 0){
-    let imgsrc = blockDataImg[i].querySelector('img').src;
-    let commonAnchor = document.createElement('a'); 
-    let commonDiv = document.createElement('div');
-    let commonMainDiv = document.createElement('div');
-    let commonMainSecDiv = document.createElement('div');
-    let commonImg = document.createElement('img');
-    let commonInsightHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-    let heading = blockData[1].textContent;
-    let para = blockData[2].textContent;
-    let hreflink = blockData[3].textContent;
- 
-    console.log(data);
-  commonAnchor.setAttribute('href',hreflink);
-  commonAnchor.setAttribute('target','_blank');
-  commonAnchor.setAttribute('title',para);
-  data.appendChild(commonAnchor);
- 
-  commonClassOne = 'col-eq-ht';
-  commonDiv.setAttribute('class',commonClassOne);
-  commonAnchor.appendChild(commonDiv);
-
-  commonClassTwo = 'bg-color1';
-  commonMainDiv.setAttribute('class',commonClassTwo);
-  commonDiv.appendChild(commonMainDiv);
-
-  commonImgclass = 'img-responsive';
-  commonImg.setAttribute('class',commonImgclass);
-  commonImg.setAttribute('src',imgsrc);
-  commonImg.setAttribute('alt',para);
-  commonMainDiv.appendChild(commonImg);
-
-  commonClassThree = 'txt-reseach';
-  commonMainSecDiv.setAttribute('class',commonClassThree);
-  commonMainDiv.appendChild(commonMainSecDiv);
-
-   commonInsightHeader.setAttribute('class','insight-title');
-  commonInsightHeader.setAttribute('class','pb0');
-  commonInsightHeader.innerHTML = heading;
-  commonMainSecDiv.appendChild(commonInsightHeader);
-
-   commonParagraphClass = 'insight-text';
-   commonParagraph.setAttribute('class',commonParagraphClass);
-   commonParagraph.innerHTML = para;
-   commonMainSecDiv.appendChild(commonParagraph);
-   
-  }
+  
    if(i == 1){
     let imgsrc = blockDataImg[i].querySelector('img').src;
     let commonAnchor = document.createElement('a'); 
@@ -190,300 +142,300 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    commonMainSecDiv.appendChild(commonParagraph);
    
   }
-   if(i == 2){
-    let imgsrc = blockDataImg[i].querySelector('img').src;
-    let commonAnchor = document.createElement('a'); 
-    let commonDiv = document.createElement('div');
-    let commonMainDiv = document.createElement('div');
-    let commonMainSecDiv = document.createElement('div');
-    let commonImg = document.createElement('img');
-    let commonInsightHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-    let heading = blockData[7].textContent;
-    let para = blockData[8].textContent;
-    let hreflink = blockData[9].textContent;
+  //  if(i == 2){
+  //   let imgsrc = blockDataImg[i].querySelector('img').src;
+  //   let commonAnchor = document.createElement('a'); 
+  //   let commonDiv = document.createElement('div');
+  //   let commonMainDiv = document.createElement('div');
+  //   let commonMainSecDiv = document.createElement('div');
+  //   let commonImg = document.createElement('img');
+  //   let commonInsightHeader = document.createElement('h5');
+  //   let commonParagraph = document.createElement('p');
+  //   let data = document.querySelectorAll('#insights >.container > .row > div')[i];
+  //   let heading = blockData[7].textContent;
+  //   let para = blockData[8].textContent;
+  //   let hreflink = blockData[9].textContent;
  
-    console.log(data);
-  commonAnchor.setAttribute('href',hreflink);
-  commonAnchor.setAttribute('target','_blank');
-  commonAnchor.setAttribute('title',para);
-  data.appendChild(commonAnchor);
+  //   console.log(data);
+  // commonAnchor.setAttribute('href',hreflink);
+  // commonAnchor.setAttribute('target','_blank');
+  // commonAnchor.setAttribute('title',para);
+  // data.appendChild(commonAnchor);
  
-  commonClassOne = 'col-eq-ht';
-  commonDiv.setAttribute('class',commonClassOne);
-  commonAnchor.appendChild(commonDiv);
+  // commonClassOne = 'col-eq-ht';
+  // commonDiv.setAttribute('class',commonClassOne);
+  // commonAnchor.appendChild(commonDiv);
 
-  commonClassTwo = 'bg-color1';
-  commonMainDiv.setAttribute('class',commonClassTwo);
-  commonDiv.appendChild(commonMainDiv);
+  // commonClassTwo = 'bg-color1';
+  // commonMainDiv.setAttribute('class',commonClassTwo);
+  // commonDiv.appendChild(commonMainDiv);
 
-  commonImgclass = 'img-responsive';
-  commonImg.setAttribute('class',commonImgclass);
-  commonImg.setAttribute('src',imgsrc);
-  commonImg.setAttribute('alt',para);
-  commonMainDiv.appendChild(commonImg);
+  // commonImgclass = 'img-responsive';
+  // commonImg.setAttribute('class',commonImgclass);
+  // commonImg.setAttribute('src',imgsrc);
+  // commonImg.setAttribute('alt',para);
+  // commonMainDiv.appendChild(commonImg);
 
-  commonClassThree = 'txt-reseach';
-  commonMainSecDiv.setAttribute('class',commonClassThree);
-  commonMainDiv.appendChild(commonMainSecDiv);
+  // commonClassThree = 'txt-reseach';
+  // commonMainSecDiv.setAttribute('class',commonClassThree);
+  // commonMainDiv.appendChild(commonMainSecDiv);
 
-   commonInsightHeader.setAttribute('class','insight-title');
-  commonInsightHeader.setAttribute('class','pb0');
-  commonInsightHeader.innerHTML = heading;
-  commonMainSecDiv.appendChild(commonInsightHeader);
+  //  commonInsightHeader.setAttribute('class','insight-title');
+  // commonInsightHeader.setAttribute('class','pb0');
+  // commonInsightHeader.innerHTML = heading;
+  // commonMainSecDiv.appendChild(commonInsightHeader);
 
-   commonParagraphClass = 'insight-text';
-   commonParagraph.setAttribute('class',commonParagraphClass);
-   commonParagraph.innerHTML = para;
-   commonMainSecDiv.appendChild(commonParagraph);
+  //  commonParagraphClass = 'insight-text';
+  //  commonParagraph.setAttribute('class',commonParagraphClass);
+  //  commonParagraph.innerHTML = para;
+  //  commonMainSecDiv.appendChild(commonParagraph);
    
-  }
-   if(i == 3){
-    let imgsrc = blockDataImg[i].querySelector('img').src;
-    let commonAnchor = document.createElement('a'); 
-    let commonDiv = document.createElement('div');
-    let commonMainDiv = document.createElement('div');
-    let commonMainSecDiv = document.createElement('div');
-    let commonImg = document.createElement('img');
-    let commonInsightHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-    let heading = blockData[10].textContent;
-    let para = blockData[11].textContent;
-    let hreflink = blockData[12].textContent;
+  // }
+  //  if(i == 3){
+  //   let imgsrc = blockDataImg[i].querySelector('img').src;
+  //   let commonAnchor = document.createElement('a'); 
+  //   let commonDiv = document.createElement('div');
+  //   let commonMainDiv = document.createElement('div');
+  //   let commonMainSecDiv = document.createElement('div');
+  //   let commonImg = document.createElement('img');
+  //   let commonInsightHeader = document.createElement('h5');
+  //   let commonParagraph = document.createElement('p');
+  //   let data = document.querySelectorAll('#insights >.container > .row > div')[i];
+  //   let heading = blockData[10].textContent;
+  //   let para = blockData[11].textContent;
+  //   let hreflink = blockData[12].textContent;
  
-    console.log(data);
-  commonAnchor.setAttribute('href',hreflink);
-  commonAnchor.setAttribute('target','_blank');
-  commonAnchor.setAttribute('title',para);
-  data.appendChild(commonAnchor);
+  //   console.log(data);
+  // commonAnchor.setAttribute('href',hreflink);
+  // commonAnchor.setAttribute('target','_blank');
+  // commonAnchor.setAttribute('title',para);
+  // data.appendChild(commonAnchor);
  
-  commonClassOne = 'col-eq-ht';
-  commonDiv.setAttribute('class',commonClassOne);
-  commonAnchor.appendChild(commonDiv);
+  // commonClassOne = 'col-eq-ht';
+  // commonDiv.setAttribute('class',commonClassOne);
+  // commonAnchor.appendChild(commonDiv);
 
-  commonClassTwo = 'bg-color1';
-  commonMainDiv.setAttribute('class',commonClassTwo);
-  commonDiv.appendChild(commonMainDiv);
+  // commonClassTwo = 'bg-color1';
+  // commonMainDiv.setAttribute('class',commonClassTwo);
+  // commonDiv.appendChild(commonMainDiv);
 
-  commonImgclass = 'img-responsive';
-  commonImg.setAttribute('class',commonImgclass);
-  commonImg.setAttribute('src',imgsrc);
-  commonImg.setAttribute('alt',para);
-  commonMainDiv.appendChild(commonImg);
+  // commonImgclass = 'img-responsive';
+  // commonImg.setAttribute('class',commonImgclass);
+  // commonImg.setAttribute('src',imgsrc);
+  // commonImg.setAttribute('alt',para);
+  // commonMainDiv.appendChild(commonImg);
 
-  commonClassThree = 'txt-reseach';
-  commonMainSecDiv.setAttribute('class',commonClassThree);
-  commonMainDiv.appendChild(commonMainSecDiv);
+  // commonClassThree = 'txt-reseach';
+  // commonMainSecDiv.setAttribute('class',commonClassThree);
+  // commonMainDiv.appendChild(commonMainSecDiv);
 
-   commonInsightHeader.setAttribute('class','insight-title');
-  commonInsightHeader.setAttribute('class','pb0');
-  commonInsightHeader.innerHTML = heading;
-  commonMainSecDiv.appendChild(commonInsightHeader);
+  //  commonInsightHeader.setAttribute('class','insight-title');
+  // commonInsightHeader.setAttribute('class','pb0');
+  // commonInsightHeader.innerHTML = heading;
+  // commonMainSecDiv.appendChild(commonInsightHeader);
 
-   commonParagraphClass = 'insight-text';
-   commonParagraph.setAttribute('class',commonParagraphClass);
-   commonParagraph.innerHTML = para;
-   commonMainSecDiv.appendChild(commonParagraph);
+  //  commonParagraphClass = 'insight-text';
+  //  commonParagraph.setAttribute('class',commonParagraphClass);
+  //  commonParagraph.innerHTML = para;
+  //  commonMainSecDiv.appendChild(commonParagraph);
    
-  }
-   if(i == 4){
-    let imgsrc = blockDataImg[i].querySelector('img').src;
-    let commonAnchor = document.createElement('a'); 
-    let commonDiv = document.createElement('div');
-    let commonMainDiv = document.createElement('div');
-    let commonMainSecDiv = document.createElement('div');
-    let commonImg = document.createElement('img');
-    let commonInsightHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-    let heading = blockData[13].textContent;
-    let para = blockData[14].textContent;
-    let hreflink = blockData[15].textContent;
+  // }
+  //  if(i == 4){
+  //   let imgsrc = blockDataImg[i].querySelector('img').src;
+  //   let commonAnchor = document.createElement('a'); 
+  //   let commonDiv = document.createElement('div');
+  //   let commonMainDiv = document.createElement('div');
+  //   let commonMainSecDiv = document.createElement('div');
+  //   let commonImg = document.createElement('img');
+  //   let commonInsightHeader = document.createElement('h5');
+  //   let commonParagraph = document.createElement('p');
+  //   let data = document.querySelectorAll('#insights >.container > .row > div')[i];
+  //   let heading = blockData[13].textContent;
+  //   let para = blockData[14].textContent;
+  //   let hreflink = blockData[15].textContent;
  
-    console.log(data);
-  commonAnchor.setAttribute('href',hreflink);
-  commonAnchor.setAttribute('target','_blank');
-  commonAnchor.setAttribute('title',para);
-  data.appendChild(commonAnchor);
+  //   console.log(data);
+  // commonAnchor.setAttribute('href',hreflink);
+  // commonAnchor.setAttribute('target','_blank');
+  // commonAnchor.setAttribute('title',para);
+  // data.appendChild(commonAnchor);
  
-  commonClassOne = 'col-eq-ht';
-  commonDiv.setAttribute('class',commonClassOne);
-  commonAnchor.appendChild(commonDiv);
+  // commonClassOne = 'col-eq-ht';
+  // commonDiv.setAttribute('class',commonClassOne);
+  // commonAnchor.appendChild(commonDiv);
 
-  commonClassTwo = 'bg-color1';
-  commonMainDiv.setAttribute('class',commonClassTwo);
-  commonDiv.appendChild(commonMainDiv);
+  // commonClassTwo = 'bg-color1';
+  // commonMainDiv.setAttribute('class',commonClassTwo);
+  // commonDiv.appendChild(commonMainDiv);
 
-  commonImgclass = 'img-responsive';
-  commonImg.setAttribute('class',commonImgclass);
-  commonImg.setAttribute('src',imgsrc);
-  commonImg.setAttribute('alt',para);
-  commonMainDiv.appendChild(commonImg);
+  // commonImgclass = 'img-responsive';
+  // commonImg.setAttribute('class',commonImgclass);
+  // commonImg.setAttribute('src',imgsrc);
+  // commonImg.setAttribute('alt',para);
+  // commonMainDiv.appendChild(commonImg);
 
-  commonClassThree = 'txt-reseach';
-  commonMainSecDiv.setAttribute('class',commonClassThree);
-  commonMainDiv.appendChild(commonMainSecDiv);
+  // commonClassThree = 'txt-reseach';
+  // commonMainSecDiv.setAttribute('class',commonClassThree);
+  // commonMainDiv.appendChild(commonMainSecDiv);
 
-   commonInsightHeader.setAttribute('class','insight-title');
-  commonInsightHeader.setAttribute('class','pb0');
-  commonInsightHeader.innerHTML = heading;
-  commonMainSecDiv.appendChild(commonInsightHeader);
+  //  commonInsightHeader.setAttribute('class','insight-title');
+  // commonInsightHeader.setAttribute('class','pb0');
+  // commonInsightHeader.innerHTML = heading;
+  // commonMainSecDiv.appendChild(commonInsightHeader);
 
-   commonParagraphClass = 'insight-text';
-   commonParagraph.setAttribute('class',commonParagraphClass);
-   commonParagraph.innerHTML = para;
-   commonMainSecDiv.appendChild(commonParagraph);
+  //  commonParagraphClass = 'insight-text';
+  //  commonParagraph.setAttribute('class',commonParagraphClass);
+  //  commonParagraph.innerHTML = para;
+  //  commonMainSecDiv.appendChild(commonParagraph);
    
-  }
-   if(i == 5){
-    let imgsrc = blockDataImg[i].querySelector('img').src;
-    let commonAnchor = document.createElement('a'); 
-    let commonDiv = document.createElement('div');
-    let commonMainDiv = document.createElement('div');
-    let commonMainSecDiv = document.createElement('div');
-    let commonImg = document.createElement('img');
-    let commonInsightHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-    let heading = blockData[16].textContent;
-    let para = blockData[17].textContent;
-    let hreflink = blockData[18].textContent;
+  // }
+  //  if(i == 5){
+  //   let imgsrc = blockDataImg[i].querySelector('img').src;
+  //   let commonAnchor = document.createElement('a'); 
+  //   let commonDiv = document.createElement('div');
+  //   let commonMainDiv = document.createElement('div');
+  //   let commonMainSecDiv = document.createElement('div');
+  //   let commonImg = document.createElement('img');
+  //   let commonInsightHeader = document.createElement('h5');
+  //   let commonParagraph = document.createElement('p');
+  //   let data = document.querySelectorAll('#insights >.container > .row > div')[i];
+  //   let heading = blockData[16].textContent;
+  //   let para = blockData[17].textContent;
+  //   let hreflink = blockData[18].textContent;
  
-    console.log(data);
-  commonAnchor.setAttribute('href',hreflink);
-  commonAnchor.setAttribute('target','_blank');
-  commonAnchor.setAttribute('title',para);
-  data.appendChild(commonAnchor);
+  //   console.log(data);
+  // commonAnchor.setAttribute('href',hreflink);
+  // commonAnchor.setAttribute('target','_blank');
+  // commonAnchor.setAttribute('title',para);
+  // data.appendChild(commonAnchor);
  
-  commonClassOne = 'col-eq-ht';
-  commonDiv.setAttribute('class',commonClassOne);
-  commonAnchor.appendChild(commonDiv);
+  // commonClassOne = 'col-eq-ht';
+  // commonDiv.setAttribute('class',commonClassOne);
+  // commonAnchor.appendChild(commonDiv);
 
-  commonClassTwo = 'bg-color1';
-  commonMainDiv.setAttribute('class',commonClassTwo);
-  commonDiv.appendChild(commonMainDiv);
+  // commonClassTwo = 'bg-color1';
+  // commonMainDiv.setAttribute('class',commonClassTwo);
+  // commonDiv.appendChild(commonMainDiv);
 
-  commonImgclass = 'img-responsive';
-  commonImg.setAttribute('class',commonImgclass);
-  commonImg.setAttribute('src',imgsrc);
-  commonImg.setAttribute('alt',para);
-  commonMainDiv.appendChild(commonImg);
+  // commonImgclass = 'img-responsive';
+  // commonImg.setAttribute('class',commonImgclass);
+  // commonImg.setAttribute('src',imgsrc);
+  // commonImg.setAttribute('alt',para);
+  // commonMainDiv.appendChild(commonImg);
 
-  commonClassThree = 'txt-reseach';
-  commonMainSecDiv.setAttribute('class',commonClassThree);
-  commonMainDiv.appendChild(commonMainSecDiv);
+  // commonClassThree = 'txt-reseach';
+  // commonMainSecDiv.setAttribute('class',commonClassThree);
+  // commonMainDiv.appendChild(commonMainSecDiv);
 
-   commonInsightHeader.setAttribute('class','insight-title');
-  commonInsightHeader.setAttribute('class','pb0');
-  commonInsightHeader.innerHTML = heading;
-  commonMainSecDiv.appendChild(commonInsightHeader);
+  //  commonInsightHeader.setAttribute('class','insight-title');
+  // commonInsightHeader.setAttribute('class','pb0');
+  // commonInsightHeader.innerHTML = heading;
+  // commonMainSecDiv.appendChild(commonInsightHeader);
 
-   commonParagraphClass = 'insight-text';
-   commonParagraph.setAttribute('class',commonParagraphClass);
-   commonParagraph.innerHTML = para;
-   commonMainSecDiv.appendChild(commonParagraph);
+  //  commonParagraphClass = 'insight-text';
+  //  commonParagraph.setAttribute('class',commonParagraphClass);
+  //  commonParagraph.innerHTML = para;
+  //  commonMainSecDiv.appendChild(commonParagraph);
    
-  }
-   if(i == 6){
-    let imgsrc = blockDataImg[i].querySelector('img').src;
-    let commonAnchor = document.createElement('a'); 
-    let commonDiv = document.createElement('div');
-    let commonMainDiv = document.createElement('div');
-    let commonMainSecDiv = document.createElement('div');
-    let commonImg = document.createElement('img');
-    let commonInsightHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-    let heading = blockData[19].textContent;
-    let para = blockData[20].textContent;
-    let hreflink = blockData[21].textContent;
+  // }
+  //  if(i == 6){
+  //   let imgsrc = blockDataImg[i].querySelector('img').src;
+  //   let commonAnchor = document.createElement('a'); 
+  //   let commonDiv = document.createElement('div');
+  //   let commonMainDiv = document.createElement('div');
+  //   let commonMainSecDiv = document.createElement('div');
+  //   let commonImg = document.createElement('img');
+  //   let commonInsightHeader = document.createElement('h5');
+  //   let commonParagraph = document.createElement('p');
+  //   let data = document.querySelectorAll('#insights >.container > .row > div')[i];
+  //   let heading = blockData[19].textContent;
+  //   let para = blockData[20].textContent;
+  //   let hreflink = blockData[21].textContent;
  
-    console.log(data);
-  commonAnchor.setAttribute('href',hreflink);
-  commonAnchor.setAttribute('target','_blank');
-  commonAnchor.setAttribute('title',para);
-  data.appendChild(commonAnchor);
+  //   console.log(data);
+  // commonAnchor.setAttribute('href',hreflink);
+  // commonAnchor.setAttribute('target','_blank');
+  // commonAnchor.setAttribute('title',para);
+  // data.appendChild(commonAnchor);
  
-  commonClassOne = 'col-eq-ht';
-  commonDiv.setAttribute('class',commonClassOne);
-  commonAnchor.appendChild(commonDiv);
+  // commonClassOne = 'col-eq-ht';
+  // commonDiv.setAttribute('class',commonClassOne);
+  // commonAnchor.appendChild(commonDiv);
 
-  commonClassTwo = 'bg-color1';
-  commonMainDiv.setAttribute('class',commonClassTwo);
-  commonDiv.appendChild(commonMainDiv);
+  // commonClassTwo = 'bg-color1';
+  // commonMainDiv.setAttribute('class',commonClassTwo);
+  // commonDiv.appendChild(commonMainDiv);
 
-  commonImgclass = 'img-responsive';
-  commonImg.setAttribute('class',commonImgclass);
-  commonImg.setAttribute('src',imgsrc);
-  commonImg.setAttribute('alt',para);
-  commonMainDiv.appendChild(commonImg);
+  // commonImgclass = 'img-responsive';
+  // commonImg.setAttribute('class',commonImgclass);
+  // commonImg.setAttribute('src',imgsrc);
+  // commonImg.setAttribute('alt',para);
+  // commonMainDiv.appendChild(commonImg);
 
-  commonClassThree = 'txt-reseach';
-  commonMainSecDiv.setAttribute('class',commonClassThree);
-  commonMainDiv.appendChild(commonMainSecDiv);
+  // commonClassThree = 'txt-reseach';
+  // commonMainSecDiv.setAttribute('class',commonClassThree);
+  // commonMainDiv.appendChild(commonMainSecDiv);
 
-   commonInsightHeader.setAttribute('class','insight-title');
-  commonInsightHeader.setAttribute('class','pb0');
-  commonInsightHeader.innerHTML = heading;
-  commonMainSecDiv.appendChild(commonInsightHeader);
+  //  commonInsightHeader.setAttribute('class','insight-title');
+  // commonInsightHeader.setAttribute('class','pb0');
+  // commonInsightHeader.innerHTML = heading;
+  // commonMainSecDiv.appendChild(commonInsightHeader);
 
-   commonParagraphClass = 'insight-text';
-   commonParagraph.setAttribute('class',commonParagraphClass);
-   commonParagraph.innerHTML = para;
-   commonMainSecDiv.appendChild(commonParagraph);
+  //  commonParagraphClass = 'insight-text';
+  //  commonParagraph.setAttribute('class',commonParagraphClass);
+  //  commonParagraph.innerHTML = para;
+  //  commonMainSecDiv.appendChild(commonParagraph);
    
-  }
-   if(i == 7){
-    let imgsrc = blockDataImg[i].querySelector('img').src;
-    let commonAnchor = document.createElement('a'); 
-    let commonDiv = document.createElement('div');
-    let commonMainDiv = document.createElement('div');
-    let commonMainSecDiv = document.createElement('div');
-    let commonImg = document.createElement('img');
-    let commonInsightHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-    let heading = blockData[22].textContent;
-    let para = blockData[23].textContent;
-    let hreflink = blockData[24].textContent;
+  // }
+  //  if(i == 7){
+  //   let imgsrc = blockDataImg[i].querySelector('img').src;
+  //   let commonAnchor = document.createElement('a'); 
+  //   let commonDiv = document.createElement('div');
+  //   let commonMainDiv = document.createElement('div');
+  //   let commonMainSecDiv = document.createElement('div');
+  //   let commonImg = document.createElement('img');
+  //   let commonInsightHeader = document.createElement('h5');
+  //   let commonParagraph = document.createElement('p');
+  //   let data = document.querySelectorAll('#insights >.container > .row > div')[i];
+  //   let heading = blockData[22].textContent;
+  //   let para = blockData[23].textContent;
+  //   let hreflink = blockData[24].textContent;
  
-    console.log(data);
-  commonAnchor.setAttribute('href',hreflink);
-  commonAnchor.setAttribute('target','_blank');
-  commonAnchor.setAttribute('title',para);
-  data.appendChild(commonAnchor);
+  //   console.log(data);
+  // commonAnchor.setAttribute('href',hreflink);
+  // commonAnchor.setAttribute('target','_blank');
+  // commonAnchor.setAttribute('title',para);
+  // data.appendChild(commonAnchor);
  
-  commonClassOne = 'col-eq-ht';
-  commonDiv.setAttribute('class',commonClassOne);
-  commonAnchor.appendChild(commonDiv);
+  // commonClassOne = 'col-eq-ht';
+  // commonDiv.setAttribute('class',commonClassOne);
+  // commonAnchor.appendChild(commonDiv);
 
-  commonClassTwo = 'bg-color1';
-  commonMainDiv.setAttribute('class',commonClassTwo);
-  commonDiv.appendChild(commonMainDiv);
+  // commonClassTwo = 'bg-color1';
+  // commonMainDiv.setAttribute('class',commonClassTwo);
+  // commonDiv.appendChild(commonMainDiv);
 
-  commonImgclass = 'img-responsive';
-  commonImg.setAttribute('class',commonImgclass);
-  commonImg.setAttribute('src',imgsrc);
-  commonImg.setAttribute('alt',para);
-  commonMainDiv.appendChild(commonImg);
+  // commonImgclass = 'img-responsive';
+  // commonImg.setAttribute('class',commonImgclass);
+  // commonImg.setAttribute('src',imgsrc);
+  // commonImg.setAttribute('alt',para);
+  // commonMainDiv.appendChild(commonImg);
 
-  commonClassThree = 'txt-reseach';
-  commonMainSecDiv.setAttribute('class',commonClassThree);
-  commonMainDiv.appendChild(commonMainSecDiv);
+  // commonClassThree = 'txt-reseach';
+  // commonMainSecDiv.setAttribute('class',commonClassThree);
+  // commonMainDiv.appendChild(commonMainSecDiv);
 
-   commonInsightHeader.setAttribute('class','insight-title');
-  commonInsightHeader.setAttribute('class','pb0');
-  commonInsightHeader.innerHTML = heading;
-  commonMainSecDiv.appendChild(commonInsightHeader);
+  //  commonInsightHeader.setAttribute('class','insight-title');
+  // commonInsightHeader.setAttribute('class','pb0');
+  // commonInsightHeader.innerHTML = heading;
+  // commonMainSecDiv.appendChild(commonInsightHeader);
 
-   commonParagraphClass = 'insight-text';
-   commonParagraph.setAttribute('class',commonParagraphClass);
-   commonParagraph.innerHTML = para;
-   commonMainSecDiv.appendChild(commonParagraph);
+  //  commonParagraphClass = 'insight-text';
+  //  commonParagraph.setAttribute('class',commonParagraphClass);
+  //  commonParagraph.innerHTML = para;
+  //  commonMainSecDiv.appendChild(commonParagraph);
    
-  }
+  // }
  
     }   
 
