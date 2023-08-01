@@ -49,30 +49,44 @@ var commonImgclass , commonHeader , commonParagraph , commonClassOne , commonCla
     let commonAnchor = document.createElement('a'); 
     let commonDiv = document.createElement('div');
     let commonMainDiv = document.createElement('div');
+    let commonMainSecDiv = document.createElement('div');
     let commonImg = document.createElement('img');
     let commonHeader = document.createElement('h5');
     let commonParagraph = document.createElement('p');
-    let d = document.querySelectorAll('#insights >.container > .row > div')[i];
-  console.log(d);
-    commonAnchor.setAttribute('href',hreflink);
+    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
+    console.log(data);
+  commonAnchor.setAttribute('href',hreflink);
   commonAnchor.setAttribute('target','_blank');
   commonAnchor.setAttribute('title',para);
-  d.appendChild(commonAnchor);
+  data.appendChild(commonAnchor);
  
- commonClassOne = 'col-eq-ht';
- commonDiv.setAttribute('class',commonClassOne);
- commonAnchor.appendChild(commonDiv);
+  commonClassOne = 'col-eq-ht';
+  commonDiv.setAttribute('class',commonClassOne);
+  commonAnchor.appendChild(commonDiv);
 
- commonClassTwo = 'bg-color1';
- commonDiv.setAttribute('class',commonClassTwo);
- commonDiv.appendChild(commonDiv);
+  commonClassTwo = 'bg-color1';
+  commonMainDiv.setAttribute('class',commonClassTwo);
+  commonDiv.appendChild(commonMainDiv);
 
   commonImgclass = 'img-responsive';
   commonImg.setAttribute('class',commonImgclass);
   commonImg.setAttribute('src',imgsrc);
   commonImg.setAttribute('alt',para);
   commonMainDiv.appendChild(commonImg);
+
+  commonClassThree = 'txt-reseach';
+  commonMainSecDiv.setAttribute('class',commonClassThree);
+  commonDiv.appendChild(commonMainSecDiv);
+
+  commonHeaderClass = 'insight-title pb0';
+  commonHeader.setAttribute('class',commonHeaderClass);
+  commonClassThree.appendChild(commonHeader);
+
+  commonParagraph = 'insight-text';
+  commonParagraph.setAttribute('class',commonParagraph);
+  commonClassThree.appendChild(commonParagraph);
   }
+
 
 
   
