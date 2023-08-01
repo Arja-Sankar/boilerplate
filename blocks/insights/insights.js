@@ -82,10 +82,10 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
   commonHeader.innerHTML = heading;
   commonClassThree.appendChild(commonHeader);
 
-  commonParagraphClass = 'insight-text';
-  commonParagraph.setAttribute('class',commonParagraphClass);
-   commonParagraph.innerHTML = para;
-  commonClassThree.appendChild(commonParagraph);
+  // commonParagraphClass = 'insight-text';
+  // commonParagraph.setAttribute('class',commonParagraphClass);
+  //  commonParagraph.innerHTML = para;
+  // commonClassThree.appendChild(commonParagraph);
    
   }
 
