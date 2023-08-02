@@ -357,10 +357,10 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     var dataSix = document.querySelectorAll('#insights >.container > .row > div')[6];
     var InsightTwoheading = document.querySelectorAll('.insights > div > div')[26].textContent;
     var InsightTwohreflink = document.querySelectorAll('.insights > div > div')[27].textContent;
-    var InsightTwopara = document.querySelectorAll('.insights > div > div')[29].textContent;
-    var InsightsubPara = document.querySelectorAll('.insights > div > div')[28].textContent;
+    var InsightTwopara = document.querySelectorAll('.insights > div > div')[28].textContent;
+    var InsightsubPara = document.querySelectorAll('.insights > div > div')[29].textContent;
 
-commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
+  commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
   commonInsightTwoAnchor.setAttribute('target','_blank');
   commonInsightTwoAnchor.setAttribute('title',InsightTwopara);
   dataSix.appendChild(commonInsightTwoAnchor);
@@ -398,5 +398,19 @@ commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
   } 
   
  }
- 
+ var endingAnchor = document.createElement('a');
+ var insightContentOne = document.querySelectorAll('.insights > div > div')[30].textContent;
+ var insightContentTwo = document.querySelectorAll('.insights > div > div')[31].textContent;
+  endingAnchor.setAttribute('href',insightContentOne);
+  endingAnchor.setAttribute('target','_self');
+  endingAnchor.setAttribute('title',insightContentTwo);
+  endingAnchor.classList.add('btn', 'btn-shutter-more', 'insight-btn', 'wow', 'fadeInUp', 'animated');
+    //adding attribute to container first Div
+    endingAnchor.setAttribute('data-wow-delay','0.9s');
+    //Adding Inline CSS to container first Div
+    endingAnchor.style.visibility = 'visible';
+    endingAnchor.style.webkitAnimationDelay = '0.9s';
+    endingAnchor.style.mozAnimationDelay = '0.9s';
+    endingAnchor.style.animationDelay = '0.9s';
+  insightArticleElem.appendChild(endingAnchor);
  
