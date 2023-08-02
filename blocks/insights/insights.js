@@ -159,7 +159,50 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     commonInsightTwoSubParagraph.classList.add('black-color', 'readmore-top');
    commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
    commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoSubParagraph);
-  }  
+  }  else  if(i == 3){
+
+    var dataTwo = document.querySelectorAll('#insights >.container > .row > div')[2];
+    var InsightTwoheading = document.querySelectorAll('.insights > div > div')[9].textContent;
+    var InsightTwopara = document.querySelectorAll('.insights > div > div')[10].textContent;
+    var InsightsubPara = document.querySelectorAll('.insights > div > div')[11].textContent;
+    var InsightTwohreflink = document.querySelectorAll('.insights > div > div')[12].textContent;
+
+  commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
+  commonInsightTwoAnchor.setAttribute('target','_blank');
+  commonInsightTwoAnchor.setAttribute('title',InsightTwopara);
+  dataTwo.appendChild(commonInsightTwoAnchor);
+ 
+  commonClassOnee = 'col-eq-ht';
+  commonInsightTwoDiv.setAttribute('class',commonClassOnee);
+  commonInsightTwoDiv.classList.add('bg-pressrelease');
+  commonInsightTwoAnchor.appendChild(commonInsightTwoDiv);
+
+  commonClassTwoo = 'txt-section';
+  commonInsightTwoMainDiv.setAttribute('class',commonClassTwoo);
+  commonInsightTwoDiv.appendChild(commonInsightTwoMainDiv);
+
+  commonClassThreee = 'txt-blog';
+  commonInsightTwoMainThrdDiv.setAttribute('class',commonClassThreee);
+  commonInsightTwoMainDiv.appendChild(commonInsightTwoMainThrdDiv);
+    
+  commonHeaderOneClass = 'insight-title';
+  commonInsightTwoHeader.setAttribute('class',commonHeaderOneClass);
+  commonInsightTwoHeader.classList.add('white-color');
+  commonInsightTwoHeader.innerHTML = InsightTwoheading;
+  commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoHeader);
+
+   commonParagraphOneClass = 'size-md-20';    
+   commonInsightTwoParagraph.setAttribute('class',commonParagraphOneClass);
+   commonInsightTwoParagraph.classList.add('fontweight400', 'black-color', 'line-height-26', 'pt40');
+   commonInsightTwoParagraph.innerHTML = InsightTwopara;
+   commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoParagraph);
+
+   commonSubParagraphClass = 'more';
+   commonInsightTwoSubParagraph.setAttribute('class',commonSubParagraphClass);
+    commonInsightTwoSubParagraph.classList.add('readmore-top', 'white-color');
+   commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
+   commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoSubParagraph);
+  } 
  }
  
  
