@@ -32,23 +32,23 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     
 var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne , commonClassTwo , commonClassThree;
 
-  let insightContentDiv = document.createElement('div');
+  var insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
-    let blockDataImg = document.querySelectorAll('.insights > div');
-    let blockData = document.querySelectorAll('.insights > div > div');
-    let imgsrc = blockDataImg[0].querySelector('img').src;
-    let commonAnchor = document.createElement('a'); 
-    let commonDiv = document.createElement('div');
-    let commonMainDiv = document.createElement('div');
-    let commonMainSecDiv = document.createElement('div');
-    let commonImg = document.createElement('img');
-    let commonInsightHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-    let data = document.querySelectorAll('#insights >.container > .row > div')[0];
-    let heading = blockData[1].textContent;
-    let para = blockData[2].textContent;
-    let hreflink = blockData[3].textContent;
+    var blockDataImg = document.querySelectorAll('.insights > div');
+    var blockData = document.querySelectorAll('.insights > div > div');
+    var imgsrc = blockDataImg[0].querySelector('img').src;
+    var commonAnchor = document.createElement('a'); 
+    var commonDiv = document.createElement('div');
+    var commonMainDiv = document.createElement('div');
+    var commonMainSecDiv = document.createElement('div');
+    var commonImg = document.createElement('img');
+    var commonInsightHeader = document.createElement('h5');
+    var commonParagraph = document.createElement('p');
+    var data = document.querySelectorAll('#insights >.container > .row > div')[0];
+    var heading = blockData[1].textContent;
+    var para = blockData[2].textContent;
+    var hreflink = blockData[3].textContent;
  
     console.log(data);
   commonAnchor.setAttribute('href',hreflink);
