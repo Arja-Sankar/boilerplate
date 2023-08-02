@@ -192,7 +192,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
 
    commonParagraphOneClass = 'size-md-20';    
    commonInsightTwoParagraph.setAttribute('class',commonParagraphOneClass);
-   commonInsightTwoParagraph.classList.add('fontweight400', 'black-color', 'line-height-26', 'pt40');
+   commonInsightTwoParagraph.classList.add('fontweight400', 'white-color', 'line-height-26', 'pt40');
    commonInsightTwoParagraph.innerHTML = InsightTwopara;
    commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoParagraph);
 
@@ -242,6 +242,49 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    commonSubParagraphClass = 'more';
    commonInsightTwoSubParagraph.setAttribute('class',commonSubParagraphClass);
     commonInsightTwoSubParagraph.classList.add('black-color');
+   commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
+   commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoSubParagraph);
+ } else  if(i == 5){
+
+    var dataFour = document.querySelectorAll('#insights >.container > .row > div')[4];
+    var InsightTwoheading = document.querySelectorAll('.insights > div > div')[17].textContent;
+    var InsightTwohreflink = document.querySelectorAll('.insights > div > div')[18].textContent;
+    var InsightTwopara = document.querySelectorAll('.insights > div > div')[19].textContent;
+    var InsightsubPara = document.querySelectorAll('.insights > div > div')[20].textContent;
+
+  commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
+  commonInsightTwoAnchor.setAttribute('target','_blank');
+  commonInsightTwoAnchor.setAttribute('title',InsightTwopara);
+  dataFour.appendChild(commonInsightTwoAnchor);
+ 
+  commonClassOnee = 'col-eq-ht';
+  commonInsightTwoDiv.setAttribute('class',commonClassOnee);
+  commonInsightTwoDiv.classList.add('bg-article');
+  commonInsightTwoAnchor.appendChild(commonInsightTwoDiv);
+
+  commonClassTwoo = 'txt-section';
+  commonInsightTwoMainDiv.setAttribute('class',commonClassTwoo);
+  commonInsightTwoDiv.appendChild(commonInsightTwoMainDiv);
+
+  commonClassThreee = 'txt-blog';
+  commonInsightTwoMainThrdDiv.setAttribute('class',commonClassThreee);
+  commonInsightTwoMainDiv.appendChild(commonInsightTwoMainThrdDiv);
+    
+  commonHeaderOneClass = 'insight-title';
+  commonInsightTwoHeader.setAttribute('class',commonHeaderOneClass);
+  commonInsightTwoHeader.classList.add('white-color');
+  commonInsightTwoHeader.innerHTML = InsightTwoheading;
+  commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoHeader);
+
+   commonParagraphOneClass = 'size-md-20';    
+   commonInsightTwoParagraph.setAttribute('class',commonParagraphOneClass);
+   commonInsightTwoParagraph.classList.add('fontweight400', 'white-color', 'line-height-26', 'pt40');
+   commonInsightTwoParagraph.innerHTML = InsightTwopara;
+   commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoParagraph);
+
+   commonSubParagraphClass = 'more';
+   commonInsightTwoSubParagraph.setAttribute('class',commonSubParagraphClass);
+    commonInsightTwoSubParagraph.classList.add('white-color');
    commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
    commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoSubParagraph);
  } 
