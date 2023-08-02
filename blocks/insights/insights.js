@@ -9,7 +9,11 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     insightSectionElem.setAttribute('id','insights');
     insightSectionElem.setAttribute('class','pb75');
      mainInsightHeading.appendChild(insightSectionElem);
-   
+
+   //content Hiding from doc
+   var mainContent = document.querySelectorAll('.insights-wrapper > .insights > div');
+   mainContent.style.display = 'none';
+
     //creating article
     var insightArticleElem = document.createElement('article');
     //adding class to article
@@ -412,5 +416,6 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     endingAnchor.style.webkitAnimationDelay = '0.9s';
     endingAnchor.style.mozAnimationDelay = '0.9s';
     endingAnchor.style.animationDelay = '0.9s';
+    endingAnchor.innerHTML = insightContentTwo;
   insightArticleElem.appendChild(endingAnchor);
  
