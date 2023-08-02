@@ -89,16 +89,14 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
      let insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-3', 'col-sm-6', 'col-xs-12', 'p0');
- if(i == 2){
-var commonImgOneclass , 
-commonHeaderOneClass ,
- commonParagraphOneClass ,
- commonSubParagraphClass ,
- commonClassOnee , 
-commonClassTwoo ,
- commonClassThreee;
-    
-    var imgsrcOne = document.querySelectorAll('.insights > div')[1].querySelector('img').src;
+
+      var commonImgOneclass , 
+      commonHeaderOneClass ,
+      commonParagraphOneClass ,
+      commonSubParagraphClass ,
+      commonClassOnee , 
+      commonClassTwoo ,
+      commonClassThreee;
     var commonInsightTwoAnchor = document.createElement('a');
     var commonInsightTwoDiv = document.createElement('div');
     var commonInsightTwoMainDiv = document.createElement('div');
@@ -107,6 +105,11 @@ commonClassTwoo ,
     var commonInsightTwoHeader = document.createElement('h5');
     var commonInsightTwoParagraph = document.createElement('p');
     var commonInsightTwoSubParagraph = document.createElement('p');
+  
+ if(i == 2){
+
+    var imgsrcOne = document.querySelectorAll('.insights > div')[1].querySelector('img').src;
+
     var dataOne = document.querySelectorAll('#insights >.container > .row > div')[1];
     var InsightTwoheading = document.querySelectorAll('.insights > div > div')[4].textContent;
     var InsightTwopara = document.querySelectorAll('.insights > div > div')[6].textContent;
