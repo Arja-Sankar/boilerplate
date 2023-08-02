@@ -90,105 +90,61 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-3', 'col-sm-6', 'col-xs-12', 'p0');
   
-  //  if(i == 1){
-  //   let imgsrc = blockDataImg[i].querySelector('img').src;
-  //   let commonAnchor = document.createElement('a'); 
-  //   let commonDiv = document.createElement('div');
-  //   let commonMainDiv = document.createElement('div');
-  //   let commonMainSecDiv = document.createElement('div');
-  //   let commonImg = document.createElement('img');
-  //   let commonInsightHeader = document.createElement('h5');
-  //   let commonParagraph = document.createElement('p');
-  //   let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-  //   let heading = blockData[4].textContent;
-  //   let para = blockData[5].textContent;
-  //   let hreflink = blockData[6].textContent;
+   if(i == 2){
+     let blockDataImg = document.querySelectorAll('.insights > div');
+    let blockData = document.querySelectorAll('.insights > div > div');
+    let imgsrc = blockDataImg[i-1].querySelector('img').src;
+    let commonAnchor = document.createElement('a'); 
+    let commonDiv = document.createElement('div');
+    let commonMainDiv = document.createElement('div');
+    let commonMainSecDiv = document.createElement('div');
+    let commonImg = document.createElement('img');
+    let commonInsightHeader = document.createElement('h5');
+    let commonParagraph = document.createElement('p');
+    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
+    let heading = blockData[4].textContent;
+    let para = blockData[6].textContent;
+    let hreflink = blockData[9].textContent;
  
-  //   console.log(data);
-  // commonAnchor.setAttribute('href',hreflink);
-  // commonAnchor.setAttribute('target','_blank');
-  // commonAnchor.setAttribute('title',para);
-  // data.appendChild(commonAnchor);
+    console.log(data);
+  commonAnchor.setAttribute('href',hreflink);
+  commonAnchor.setAttribute('target','_blank');
+  commonAnchor.setAttribute('title',para);
+  data.appendChild(commonAnchor);
  
-  // commonClassOne = 'col-eq-ht';
-  // commonDiv.setAttribute('class',commonClassOne);
-  // commonAnchor.appendChild(commonDiv);
+  commonClassOne = 'col-eq-ht';
+  commonDiv.setAttribute('class',commonClassOne);
+  commonAnchor.appendChild(commonDiv);
 
-  // commonClassTwo = 'bg-color1';
-  // commonMainDiv.setAttribute('class',commonClassTwo);
-  // commonDiv.appendChild(commonMainDiv);
+  commonClassTwo = 'bg-color1';
+  commonMainDiv.setAttribute('class',commonClassTwo);
+  commonDiv.appendChild(commonMainDiv);
 
-  // commonImgclass = 'img-responsive';
-  // commonImg.setAttribute('class',commonImgclass);
-  // commonImg.setAttribute('src',imgsrc);
-  // commonImg.setAttribute('alt',para);
-  // commonMainDiv.appendChild(commonImg);
+  commonImgclass = 'img-responsive';
+  commonImg.setAttribute('class',commonImgclass);
+  commonImg.setAttribute('src',imgsrc);
+  commonImg.setAttribute('alt',para);
+  commonMainDiv.appendChild(commonImg);
 
-  // commonClassThree = 'txt-reseach';
-  // commonMainSecDiv.setAttribute('class',commonClassThree);
-  // commonMainDiv.appendChild(commonMainSecDiv);
+  commonClassThree = 'txt-reseach';
+  commonMainSecDiv.setAttribute('class',commonClassThree);
+  commonMainDiv.appendChild(commonMainSecDiv);
 
-  //  commonInsightHeader.setAttribute('class','insight-title');
-  // commonInsightHeader.setAttribute('class','pb0');
-  // commonInsightHeader.innerHTML = heading;
-  // commonMainSecDiv.appendChild(commonInsightHeader);
+   commonInsightHeader.setAttribute('class','insight-title');
+  commonInsightHeader.setAttribute('class','pb0');
+  commonInsightHeader.innerHTML = heading;
+  commonMainSecDiv.appendChild(commonInsightHeader);
 
-  //  commonParagraphClass = 'insight-text';
-  //  commonParagraph.setAttribute('class',commonParagraphClass);
-  //  commonParagraph.innerHTML = para;
-  //  commonMainSecDiv.appendChild(commonParagraph);
+   commonParagraphClass = 'insight-text';
+   commonParagraph.setAttribute('class',commonParagraphClass);
+   commonParagraph.innerHTML = para;
+   commonMainSecDiv.appendChild(commonParagraph);
    
-  // }
-  //  if(i == 2){
-  //   let imgsrc = blockDataImg[i].querySelector('img').src;
-  //   let commonAnchor = document.createElement('a'); 
-  //   let commonDiv = document.createElement('div');
-  //   let commonMainDiv = document.createElement('div');
-  //   let commonMainSecDiv = document.createElement('div');
-  //   let commonImg = document.createElement('img');
-  //   let commonInsightHeader = document.createElement('h5');
-  //   let commonParagraph = document.createElement('p');
-  //   let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-  //   let heading = blockData[7].textContent;
-  //   let para = blockData[8].textContent;
-  //   let hreflink = blockData[9].textContent;
- 
-  //   console.log(data);
-  // commonAnchor.setAttribute('href',hreflink);
-  // commonAnchor.setAttribute('target','_blank');
-  // commonAnchor.setAttribute('title',para);
-  // data.appendChild(commonAnchor);
- 
-  // commonClassOne = 'col-eq-ht';
-  // commonDiv.setAttribute('class',commonClassOne);
-  // commonAnchor.appendChild(commonDiv);
-
-  // commonClassTwo = 'bg-color1';
-  // commonMainDiv.setAttribute('class',commonClassTwo);
-  // commonDiv.appendChild(commonMainDiv);
-
-  // commonImgclass = 'img-responsive';
-  // commonImg.setAttribute('class',commonImgclass);
-  // commonImg.setAttribute('src',imgsrc);
-  // commonImg.setAttribute('alt',para);
-  // commonMainDiv.appendChild(commonImg);
-
-  // commonClassThree = 'txt-reseach';
-  // commonMainSecDiv.setAttribute('class',commonClassThree);
-  // commonMainDiv.appendChild(commonMainSecDiv);
-
-  //  commonInsightHeader.setAttribute('class','insight-title');
-  // commonInsightHeader.setAttribute('class','pb0');
-  // commonInsightHeader.innerHTML = heading;
-  // commonMainSecDiv.appendChild(commonInsightHeader);
-
-  //  commonParagraphClass = 'insight-text';
-  //  commonParagraph.setAttribute('class',commonParagraphClass);
-  //  commonParagraph.innerHTML = para;
-  //  commonMainSecDiv.appendChild(commonParagraph);
-   
-  // }
+  }
   //  if(i == 3){
+  //    let blockDataImg = document.querySelectorAll('.insights > div');
+  //   let blockData = document.querySelectorAll('.insights > div > div');
+  //   let imgsrc = blockDataImg[0].querySelector('img').src;
   //   let imgsrc = blockDataImg[i].querySelector('img').src;
   //   let commonAnchor = document.createElement('a'); 
   //   let commonDiv = document.createElement('div');
@@ -238,6 +194,9 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    
   // }
   //  if(i == 4){
+  //    let blockDataImg = document.querySelectorAll('.insights > div');
+  //   let blockData = document.querySelectorAll('.insights > div > div');
+  //   let imgsrc = blockDataImg[0].querySelector('img').src;
   //   let imgsrc = blockDataImg[i].querySelector('img').src;
   //   let commonAnchor = document.createElement('a'); 
   //   let commonDiv = document.createElement('div');
@@ -287,6 +246,9 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    
   // }
   //  if(i == 5){
+  //    let blockDataImg = document.querySelectorAll('.insights > div');
+  //   let blockData = document.querySelectorAll('.insights > div > div');
+  //   let imgsrc = blockDataImg[0].querySelector('img').src;
   //   let imgsrc = blockDataImg[i].querySelector('img').src;
   //   let commonAnchor = document.createElement('a'); 
   //   let commonDiv = document.createElement('div');
@@ -336,6 +298,9 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    
   // }
   //  if(i == 6){
+  //    let blockDataImg = document.querySelectorAll('.insights > div');
+  //   let blockData = document.querySelectorAll('.insights > div > div');
+  //   let imgsrc = blockDataImg[0].querySelector('img').src;
   //   let imgsrc = blockDataImg[i].querySelector('img').src;
   //   let commonAnchor = document.createElement('a'); 
   //   let commonDiv = document.createElement('div');
@@ -385,6 +350,9 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    
   // }
   //  if(i == 7){
+  //    let blockDataImg = document.querySelectorAll('.insights > div');
+  //   let blockData = document.querySelectorAll('.insights > div > div');
+  //   let imgsrc = blockDataImg[0].querySelector('img').src;
   //   let imgsrc = blockDataImg[i].querySelector('img').src;
   //   let commonAnchor = document.createElement('a'); 
   //   let commonDiv = document.createElement('div');
