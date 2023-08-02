@@ -3,16 +3,17 @@ var mainInsightHeading = document.querySelector('.insights-wrapper>.insights.blo
  //adding classNames to main Div
 mainInsightHeading.setAttribute('class','insights');
 mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
-//creating section element
+
+  //content Hiding from doc
+   var mainContent = document.querySelectorAll('.insights-wrapper > .insights > div');
+   mainContent.style.display = none;
+
+   //creating section element
     var insightSectionElem = document.createElement('section');
     //adding Id to section
     insightSectionElem.setAttribute('id','insights');
     insightSectionElem.setAttribute('class','pb75');
      mainInsightHeading.appendChild(insightSectionElem);
-
-   //content Hiding from doc
-   var mainContent = document.querySelectorAll('.insights-wrapper > .insights > div');
-   mainContent.style.display = 'none';
 
     //creating article
     var insightArticleElem = document.createElement('article');
