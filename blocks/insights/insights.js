@@ -89,8 +89,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonSubParagra
      let insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-3', 'col-sm-6', 'col-xs-12', 'p0');
- }
- for(let j=2;j < document.querySelectorAll('.insights > div').length; j++){
+   for(let j=2;j < document.querySelectorAll('.insights > div').length; j++){
    if(j == 2){
     var imgsrcOne = blockDataImg[i-1].querySelector('img').src;
      var commonInsightTwoAnchor = document.createElement('a');
@@ -152,9 +151,9 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonSubParagra
    commonInsightTwoDiv.appendChild(commonInsightTwoSubParagraph);
    
   }
-
+    }  
+ }
  
-    }   
 
   //  if(i == 3){
   //    let blockDataImg = document.querySelectorAll('.insights > div');
