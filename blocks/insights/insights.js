@@ -5,8 +5,12 @@ mainInsightHeading.setAttribute('class','insights');
 mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
 
   //content Hiding from doc
-   var mainContent = document.querySelectorAll('.insights-wrapper > .insights > div');
-   mainContent.style.display = none;
+   var mainContentDoc = document.querySelectorAll('.insights-wrapper > .insights > div');
+  var index = 0, length = document.querySelectorAll('.insights-wrapper > .insights > div').length;
+    for ( ; index < length; index++) {
+     mainContentDoc[index].style.display = 'none';
+    }
+   
 
    //creating section element
     var insightSectionElem = document.createElement('section');
