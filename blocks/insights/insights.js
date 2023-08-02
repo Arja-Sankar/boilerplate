@@ -30,7 +30,7 @@ mainInsightHeading.classList.add('aem-GridColumn', 'aem-GridColumn--default--12'
     insightArticleElem.appendChild(insightContainerFirstDiv);
 
     
-var commonImgclass , commonHeaderClass , commonParagraphClass , commonSubParagraphClass , commonClassOne , commonClassTwo , commonClassThree;
+var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne , commonClassTwo , commonClassThree;
 
   var insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
@@ -89,19 +89,27 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonSubParagra
      let insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-3', 'col-sm-6', 'col-xs-12', 'p0');
-   for(let j=2;j < document.querySelectorAll('.insights > div').length; j++){
+  for(let j=2;j < document.querySelectorAll('.insights > div').length; j++){
    if(j == 2){
-    var imgsrcOne = blockDataImg[i-1].querySelector('img').src;
-     var commonInsightTwoAnchor = document.createElement('a');
+var commonImgOneclass , 
+commonHeaderOneClass ,
+ commonParagraphOneClass ,
+ commonSubParagraphClass ,
+ commonClassOnee , 
+commonClassTwoo ,
+ commonClassThreee;
+    
+    var imgsrcOne = document.querySelectorAll('.insights > div')[1].querySelector('img').src;
+    var commonInsightTwoAnchor = document.createElement('a');
     var commonInsightTwoDiv = document.createElement('div');
     var commonInsightTwoMainDiv = document.createElement('div');
     var commonInsightTwoMainSecDiv = document.createElement('div');
-     var commonInsightTwoMainThrdDiv = document.createElement('div');
+    var commonInsightTwoMainThrdDiv = document.createElement('div');
     var commonInsightTwoImg = document.createElement('img');
     var commonInsightTwoHeader = document.createElement('h5');
     var commonInsightTwoParagraph = document.createElement('p');
     var commonInsightTwoSubParagraph = document.createElement('p');
-    var dataOne = document.querySelectorAll('#insights >.container > .row > div')[i-1];
+    var dataOne = document.querySelectorAll('#insights >.container > .row > div')[1];
     var InsightTwoheading = blockData[4].textContent;
     var InsightTwopara = blockData[6].textContent;
     var InsightsubPara = blockData[8].textContent;
@@ -113,48 +121,48 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonSubParagra
   commonInsightTwoAnchor.setAttribute('title',InsightTwopara);
   dataOne.appendChild(commonInsightTwoAnchor);
  
-  commonClassOne = 'col-eq-ht';
-  commonInsightTwoDiv.setAttribute('class',commonClassOne);
-  commonClassOne.classList.add('bg-blog');
+  commonClassOnee = 'col-eq-ht';
+  commonInsightTwoDiv.setAttribute('class',commonClassOnee);
+  commonInsightTwoDiv.classList.add('bg-blog');
   commonInsightTwoAnchor.appendChild(commonInsightTwoDiv);
 
-  commonClassTwo = 'txt-section';
-  commonInsightTwoMainDiv.setAttribute('class',commonClassTwo);
+  commonClassTwoo = 'txt-section';
+  commonInsightTwoMainDiv.setAttribute('class',commonClassTwoo);
   commonInsightTwoDiv.appendChild(commonInsightTwoMainDiv);
 
-  commonClassThree = 'txt-blog';
-  commonInsightTwoMainThrdDiv.setAttribute('class',commonClassTwo);
+  commonClassThreee = 'txt-blog';
+  commonInsightTwoMainThrdDiv.setAttribute('class',commonClassThreee);
   commonInsightTwoDiv.appendChild(commonInsightTwoMainThrdDiv);
     
-  commonInsightTwoHeader.setAttribute('class','insight-title');
+  commonHeaderOneClass = 'insight-title';
+  commonInsightTwoHeader.setAttribute('class',commonHeaderOneClass);
   commonInsightTwoHeader.classList.add('color-onyx-m');
   commonInsightTwoHeader.innerHTML = InsightTwoheading;
   commonInsightTwoDiv.appendChild(commonInsightTwoHeader);
     
-  commonImgclass = 'img-responsive';
-  commonInsightTwoImg.setAttribute('class',commonImgclass);
+  commonImgOneclass = 'img-responsive';
+  commonInsightTwoImg.setAttribute('class',commonImgOneclass);
   commonInsightTwoImg.classList.add('center-block', 'pt20');
   commonInsightTwoImg.setAttribute('src',imgsrcOne);
   commonInsightTwoImg.setAttribute('alt',InsightTwopara);
   commonInsightTwoDiv.appendChild(commonInsightTwoImg);
 
-   commonParagraphClass = 'size-md-20';    
-   commonInsightTwoParagraph.setAttribute('class',commonParagraphClass);
+   commonParagraphOneClass = 'size-md-20';    
+   commonInsightTwoParagraph.setAttribute('class',commonParagraphOneClass);
    commonInsightTwoParagraph.classList.add('fontweight400', 'black-color', 'line-height-26', 'pt10');
    commonInsightTwoParagraph.innerHTML = InsightTwopara;
    commonInsightTwoDiv.appendChild(commonInsightTwoParagraph);
 
    commonSubParagraphClass = 'more';
-   commonInsightTwoSubParagraph.setAttribute('class',commonParagraphClass);
+   commonInsightTwoSubParagraph.setAttribute('class',commonSubParagraphClass);
     commonInsightTwoSubParagraph.classList.add('black-color', 'readmore-top');
    commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
    commonInsightTwoDiv.appendChild(commonInsightTwoSubParagraph);
-   
   }
     }  
  }
  
-
+ 
   //  if(i == 3){
   //    let blockDataImg = document.querySelectorAll('.insights > div');
   //   let blockData = document.querySelectorAll('.insights > div > div');
