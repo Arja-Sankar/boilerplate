@@ -91,20 +91,19 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    insightContentDiv.classList.add('col-md-3', 'col-sm-6', 'col-xs-12', 'p0');
   
    if(i == 2){
-     let blockDataImg = document.querySelectorAll('.insights > div');
-    let blockData = document.querySelectorAll('.insights > div > div');
-    let imgsrc = blockDataImg[i-1].querySelector('img').src;
-    let commonAnchor = document.createElement('a'); 
-    let commonDiv = document.createElement('div');
-    let commonMainDiv = document.createElement('div');
-    let commonMainSecDiv = document.createElement('div');
-    let commonImg = document.createElement('img');
-    let commonInsightHeader = document.createElement('h5');
-    let commonParagraph = document.createElement('p');
-    let data = document.querySelectorAll('#insights >.container > .row > div')[i];
-    let heading = blockData[4].textContent;
-    let para = blockData[6].textContent;
-    let hreflink = blockData[9].textContent;
+     var blockDataImg = document.querySelectorAll('.insights > div');
+    var blockData = document.querySelectorAll('.insights > div > div');
+    var imgsrc = blockDataImg[i-1].querySelector('img').src;
+    var commonDiv = document.createElement('div');
+    var commonMainDiv = document.createElement('div');
+    var commonMainSecDiv = document.createElement('div');
+    var commonImg = document.createElement('img');
+    var commonInsightHeader = document.createElement('h5');
+    var commonParagraph = document.createElement('p');
+    var data = document.querySelectorAll('#insights >.container > .row > div')[i];
+    var heading = blockData[4].textContent;
+    var para = blockData[6].textContent;
+    var hreflink = blockData[9].textContent;
  
     console.log(data);
   commonAnchor.setAttribute('href',hreflink);
