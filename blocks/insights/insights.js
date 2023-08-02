@@ -89,68 +89,73 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonSubParagra
      let insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-3', 'col-sm-6', 'col-xs-12', 'p0');
-  
-  //  if(i == 2){
-  //   var imgsrcOne = blockDataImg[i-1].querySelector('img').src;
-  //    var commonInsightTwoAnchor = document.createElement('a');
-  //   var commonInsightTwoDiv = document.createElement('div');
-  //   var commonInsightTwoMainDiv = document.createElement('div');
-  //   var commonInsightTwoMainSecDiv = document.createElement('div');
-  //    var commonInsightTwoMainThrdDiv = document.createElement('div');
-  //   var commonInsightTwoImg = document.createElement('img');
-  //   var commonInsightTwoHeader = document.createElement('h5');
-  //   var commonInsightTwoParagraph = document.createElement('p');
-  //   var commonInsightTwoSubParagraph = document.createElement('p');
-  //   var dataOne = document.querySelectorAll('#insights >.container > .row > div')[i-1];
-  //   var InsightTwoheading = blockData[4].textContent;
-  //   var InsightTwopara = blockData[6].textContent;
-  //   var InsightsubPara = blockData[8].textContent;
-  //   var InsightTwohreflink = blockData[9].textContent;
+ }
+ for(let j=2;j < document.querySelectorAll('.insights > div').length; j++){
+   if(j == 2){
+    var imgsrcOne = blockDataImg[i-1].querySelector('img').src;
+     var commonInsightTwoAnchor = document.createElement('a');
+    var commonInsightTwoDiv = document.createElement('div');
+    var commonInsightTwoMainDiv = document.createElement('div');
+    var commonInsightTwoMainSecDiv = document.createElement('div');
+     var commonInsightTwoMainThrdDiv = document.createElement('div');
+    var commonInsightTwoImg = document.createElement('img');
+    var commonInsightTwoHeader = document.createElement('h5');
+    var commonInsightTwoParagraph = document.createElement('p');
+    var commonInsightTwoSubParagraph = document.createElement('p');
+    var dataOne = document.querySelectorAll('#insights >.container > .row > div')[i-1];
+    var InsightTwoheading = blockData[4].textContent;
+    var InsightTwopara = blockData[6].textContent;
+    var InsightsubPara = blockData[8].textContent;
+    var InsightTwohreflink = blockData[9].textContent;
  
-  //   console.log(data);
-  // commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
-  // commonInsightTwoAnchor.setAttribute('target','_blank');
-  // commonInsightTwoAnchor.setAttribute('title',InsightTwopara);
-  // dataOne.appendChild(commonInsightTwoAnchor);
+    console.log(data);
+  commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
+  commonInsightTwoAnchor.setAttribute('target','_blank');
+  commonInsightTwoAnchor.setAttribute('title',InsightTwopara);
+  dataOne.appendChild(commonInsightTwoAnchor);
  
-  // commonClassOne = 'col-eq-ht';
-  // commonInsightTwoDiv.setAttribute('class',commonClassOne);
-  // commonClassOne.classList.add('bg-blog');
-  // commonInsightTwoAnchor.appendChild(commonInsightTwoDiv);
+  commonClassOne = 'col-eq-ht';
+  commonInsightTwoDiv.setAttribute('class',commonClassOne);
+  commonClassOne.classList.add('bg-blog');
+  commonInsightTwoAnchor.appendChild(commonInsightTwoDiv);
 
-  // commonClassTwo = 'txt-section';
-  // commonInsightTwoMainDiv.setAttribute('class',commonClassTwo);
-  // commonInsightTwoDiv.appendChild(commonInsightTwoMainDiv);
+  commonClassTwo = 'txt-section';
+  commonInsightTwoMainDiv.setAttribute('class',commonClassTwo);
+  commonInsightTwoDiv.appendChild(commonInsightTwoMainDiv);
 
-  // commonClassThree = 'txt-blog';
-  // commonInsightTwoMainThrdDiv.setAttribute('class',commonClassTwo);
-  // commonInsightTwoDiv.appendChild(commonInsightTwoMainThrdDiv);
+  commonClassThree = 'txt-blog';
+  commonInsightTwoMainThrdDiv.setAttribute('class',commonClassTwo);
+  commonInsightTwoDiv.appendChild(commonInsightTwoMainThrdDiv);
     
-  // commonInsightTwoHeader.setAttribute('class','insight-title');
-  // commonInsightTwoHeader.classList.add('color-onyx-m');
-  // commonInsightTwoHeader.innerHTML = InsightTwoheading;
-  // commonInsightTwoDiv.appendChild(commonInsightTwoHeader);
+  commonInsightTwoHeader.setAttribute('class','insight-title');
+  commonInsightTwoHeader.classList.add('color-onyx-m');
+  commonInsightTwoHeader.innerHTML = InsightTwoheading;
+  commonInsightTwoDiv.appendChild(commonInsightTwoHeader);
     
-  // commonImgclass = 'img-responsive';
-  // commonInsightTwoImg.setAttribute('class',commonImgclass);
-  // commonInsightTwoImg.classList.add('center-block', 'pt20');
-  // commonInsightTwoImg.setAttribute('src',imgsrcOne);
-  // commonInsightTwoImg.setAttribute('alt',InsightTwopara);
-  // commonInsightTwoDiv.appendChild(commonInsightTwoImg);
+  commonImgclass = 'img-responsive';
+  commonInsightTwoImg.setAttribute('class',commonImgclass);
+  commonInsightTwoImg.classList.add('center-block', 'pt20');
+  commonInsightTwoImg.setAttribute('src',imgsrcOne);
+  commonInsightTwoImg.setAttribute('alt',InsightTwopara);
+  commonInsightTwoDiv.appendChild(commonInsightTwoImg);
 
-  //  commonParagraphClass = 'size-md-20';    
-  //  commonInsightTwoParagraph.setAttribute('class',commonParagraphClass);
-  //  commonInsightTwoParagraph.classList.add('fontweight400', 'black-color', 'line-height-26', 'pt10');
-  //  commonInsightTwoParagraph.innerHTML = InsightTwopara;
-  //  commonInsightTwoDiv.appendChild(commonInsightTwoParagraph);
+   commonParagraphClass = 'size-md-20';    
+   commonInsightTwoParagraph.setAttribute('class',commonParagraphClass);
+   commonInsightTwoParagraph.classList.add('fontweight400', 'black-color', 'line-height-26', 'pt10');
+   commonInsightTwoParagraph.innerHTML = InsightTwopara;
+   commonInsightTwoDiv.appendChild(commonInsightTwoParagraph);
 
-  //  commonSubParagraphClass = 'more';
-  //  commonInsightTwoSubParagraph.setAttribute('class',commonParagraphClass);
-  //   commonInsightTwoSubParagraph.classList.add('black-color', 'readmore-top');
-  //  commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
-  //  commonInsightTwoDiv.appendChild(commonInsightTwoSubParagraph);
+   commonSubParagraphClass = 'more';
+   commonInsightTwoSubParagraph.setAttribute('class',commonParagraphClass);
+    commonInsightTwoSubParagraph.classList.add('black-color', 'readmore-top');
+   commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
+   commonInsightTwoDiv.appendChild(commonInsightTwoSubParagraph);
    
-  // }
+  }
+
+ 
+    }   
+
   //  if(i == 3){
   //    let blockDataImg = document.querySelectorAll('.insights > div');
   //   let blockData = document.querySelectorAll('.insights > div > div');
@@ -411,10 +416,6 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonSubParagra
   //  commonMainSecDiv.appendChild(commonParagraph);
    
   // }
- 
-    }   
-
-
 
 
 
