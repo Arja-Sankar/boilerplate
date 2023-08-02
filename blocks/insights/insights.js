@@ -89,8 +89,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
      let insightContentDiv = document.createElement('div');
     insightContainerFirstDiv.appendChild(insightContentDiv);
    insightContentDiv.classList.add('col-md-3', 'col-sm-6', 'col-xs-12', 'p0');
-  for(let j=2;j < document.querySelectorAll('.insights > div').length; j++){
-   if(j == 2){
+ if(i == 2){
 var commonImgOneclass , 
 commonHeaderOneClass ,
  commonParagraphOneClass ,
@@ -103,19 +102,18 @@ commonClassTwoo ,
     var commonInsightTwoAnchor = document.createElement('a');
     var commonInsightTwoDiv = document.createElement('div');
     var commonInsightTwoMainDiv = document.createElement('div');
-    var commonInsightTwoMainSecDiv = document.createElement('div');
     var commonInsightTwoMainThrdDiv = document.createElement('div');
     var commonInsightTwoImg = document.createElement('img');
     var commonInsightTwoHeader = document.createElement('h5');
     var commonInsightTwoParagraph = document.createElement('p');
     var commonInsightTwoSubParagraph = document.createElement('p');
     var dataOne = document.querySelectorAll('#insights >.container > .row > div')[1];
-    var InsightTwoheading = blockData[4].textContent;
-    var InsightTwopara = blockData[6].textContent;
-    var InsightsubPara = blockData[8].textContent;
-    var InsightTwohreflink = blockData[9].textContent;
+    var InsightTwoheading = document.querySelectorAll('.insights > div > div')[4].textContent;
+    var InsightTwopara = document.querySelectorAll('.insights > div > div')[6].textContent;
+    var InsightsubPara = document.querySelectorAll('.insights > div > div')[7].textContent;
+    var InsightTwohreflink = document.querySelectorAll('.insights > div > div')[8].textContent;
  
-    console.log(data);
+  console.log(data);
   commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
   commonInsightTwoAnchor.setAttribute('target','_blank');
   commonInsightTwoAnchor.setAttribute('title',InsightTwopara);
@@ -132,34 +130,33 @@ commonClassTwoo ,
 
   commonClassThreee = 'txt-blog';
   commonInsightTwoMainThrdDiv.setAttribute('class',commonClassThreee);
-  commonInsightTwoDiv.appendChild(commonInsightTwoMainThrdDiv);
+  commonInsightTwoMainDiv.appendChild(commonInsightTwoMainThrdDiv);
     
   commonHeaderOneClass = 'insight-title';
   commonInsightTwoHeader.setAttribute('class',commonHeaderOneClass);
   commonInsightTwoHeader.classList.add('color-onyx-m');
   commonInsightTwoHeader.innerHTML = InsightTwoheading;
-  commonInsightTwoDiv.appendChild(commonInsightTwoHeader);
+  commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoHeader);
     
   commonImgOneclass = 'img-responsive';
   commonInsightTwoImg.setAttribute('class',commonImgOneclass);
   commonInsightTwoImg.classList.add('center-block', 'pt20');
   commonInsightTwoImg.setAttribute('src',imgsrcOne);
   commonInsightTwoImg.setAttribute('alt',InsightTwopara);
-  commonInsightTwoDiv.appendChild(commonInsightTwoImg);
+  commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoImg);
 
    commonParagraphOneClass = 'size-md-20';    
    commonInsightTwoParagraph.setAttribute('class',commonParagraphOneClass);
    commonInsightTwoParagraph.classList.add('fontweight400', 'black-color', 'line-height-26', 'pt10');
    commonInsightTwoParagraph.innerHTML = InsightTwopara;
-   commonInsightTwoDiv.appendChild(commonInsightTwoParagraph);
+   commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoParagraph);
 
    commonSubParagraphClass = 'more';
    commonInsightTwoSubParagraph.setAttribute('class',commonSubParagraphClass);
     commonInsightTwoSubParagraph.classList.add('black-color', 'readmore-top');
    commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
-   commonInsightTwoDiv.appendChild(commonInsightTwoSubParagraph);
-  }
-    }  
+   commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoSubParagraph);
+  }  
  }
  
  
