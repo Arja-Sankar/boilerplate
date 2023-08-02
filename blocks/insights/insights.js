@@ -287,7 +287,72 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
     commonInsightTwoSubParagraph.classList.add('white-color');
    commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
    commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoSubParagraph);
- } 
+ } else  if(i == 6){
+
+    var imgsrcSix = document.querySelectorAll('.insights > div')[5].querySelector('img').src;
+
+    var dataFive = document.querySelectorAll('#insights >.container > .row > div')[5];
+    var InsightTwoheading = document.querySelectorAll('.insights > div > div')[22].textContent;
+    var InsightTwohreflink = document.querySelectorAll('.insights > div > div')[23].textContent;
+    var InsightTwopara = document.querySelectorAll('.insights > div > div')[24].textContent;
+    var InsightsubPara = document.querySelectorAll('.insights > div > div')[25].textContent;
+
+  commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
+  commonInsightTwoAnchor.setAttribute('target','_blank');
+  commonInsightTwoAnchor.setAttribute('title',InsightTwopara);
+  dataFive.appendChild(commonInsightTwoAnchor);
+ 
+  commonClassOnee = 'col-eq-ht';
+  commonInsightTwoDiv.setAttribute('class',commonClassOnee);
+  commonInsightTwoDiv.classList.add('bg-blog');
+  commonInsightTwoAnchor.appendChild(commonInsightTwoDiv);
+
+  commonClassTwoo = 'bg-whitepaper';
+  commonInsightTwoMainDiv.setAttribute('class',commonClassTwoo);
+  commonInsightTwoDiv.appendChild(commonInsightTwoMainDiv);
+
+  commonImgOneclass = 'img-responsive';
+  commonInsightTwoImg.setAttribute('class',commonImgOneclass);
+  commonInsightTwoImg.classList.add('img-whitepaper');
+  commonInsightTwoImg.setAttribute('src',imgsrcSix);
+  commonInsightTwoImg.setAttribute('alt',InsightTwopara);
+  commonInsightTwoMainDiv.appendChild(commonInsightTwoImg);
+  
+  commonClassThreee = 'txt-section';
+  commonInsightTwoMainThrdDiv.setAttribute('class',commonClassThreee);
+  commonInsightTwoMainDiv.appendChild(commonInsightTwoMainThrdDiv);
+    
+  commonHeaderOneClass = 'insight-title';
+  commonInsightTwoHeader.setAttribute('class',commonHeaderOneClass);
+  commonInsightTwoHeader.classList.add('white-color');
+  commonInsightTwoHeader.innerHTML = InsightTwoheading;
+  commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoHeader);
+    
+  var divOne , divTwo , divThree ;
+   divOne = document.createElement('div');
+   divTwo = document.createElement('div');
+   divThree = document.createElement('div');
+
+  divOne.setAttribute('class','txt-whitepaper');
+  commonInsightTwoMainThrdDiv.appendChild(divOne);
+
+   divTwo.setAttribute('class','corner-shape');
+   divOne.appendChild(divTwo);
+
+   divThree.setAttribute('class','corner-shape-text');
+   divTwo.appendChild(divThree);
+  
+   commonParagraphOneClass = 'whitepaper';    
+   commonInsightTwoParagraph.setAttribute('class',commonParagraphOneClass);
+   commonInsightTwoParagraph.innerHTML = InsightTwopara;
+   divThree.appendChild(commonInsightTwoParagraph);
+
+   commonSubParagraphClass = 'white-download';
+   commonInsightTwoSubParagraph.setAttribute('class',commonSubParagraphClass);
+   commonInsightTwoSubParagraph.classList.add('white-color');
+   commonInsightTwoSubParagraph.innerHTML = InsightsubPara;
+   divThree.appendChild(commonInsightTwoSubParagraph);
+  } 
   
  }
  
