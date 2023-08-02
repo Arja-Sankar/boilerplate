@@ -212,7 +212,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
   commonInsightTwoAnchor.setAttribute('href',InsightTwohreflink);
   commonInsightTwoAnchor.setAttribute('target','_blank');
   commonInsightTwoAnchor.setAttribute('title',InsightTwopara);
-  dataOne.appendChild(commonInsightTwoAnchor);
+  dataThree.appendChild(commonInsightTwoAnchor);
  
   commonClassOnee = 'col-eq-ht';
   commonInsightTwoDiv.setAttribute('class',commonClassOnee);
