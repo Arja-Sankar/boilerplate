@@ -39,13 +39,13 @@ export default async function decorate(block) {
     firstDiv.appendChild(secondDiv); 
 
     var thirdDiv = document.createElement('div');
-    firstDiv.setAttribute('class','freeflowhtml');
-    secondDiv.classList.add('aem-GridColumn' , 'aem-GridColumn--default--12');
-    secondDiv.appendChild(firstDiv);  
+    thirdDiv.setAttribute('class','freeflowhtml');
+    thirdDiv.classList.add('aem-GridColumn' , 'aem-GridColumn--default--12');
+    secondDiv.appendChild(thirdDiv);  
 
     var fourthDiv = document.createElement('footer');
     fourthDiv.setAttribute('id','footer');
-    secondDiv.appendChild(fourthDiv);
+    thirdDiv.appendChild(fourthDiv);
 
      var footerArticle = document.createElement('article');
      fourthDiv.appendChild(footerArticle);
@@ -58,26 +58,26 @@ export default async function decorate(block) {
     sixthDiv.setAttribute('class','row');
     fifthDiv.appendChild(sixthDiv);
 
-  //  var counter = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;
+   var counter = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;
 
-  //   for(let i = 0; i < counter;i++){
-  //       let footerContentDiv = document.createElement('div');
-  //   sixthDiv.appendChild(footerContentDiv);
-  //  footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');
+    for(let i = 0; i < counter;i++){
+        let footerContentDiv = document.createElement('div');
+    sixthDiv.appendChild(footerContentDiv);
+   footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');
 
-  // // if(i == 0){
+  // if(i == 0){
     
-  // // }else if(i == 1){
+  // }else if(i == 1){
     
-  // // }else if(i == 2){
+  // }else if(i == 2){
     
-  // // }else if(i == 3){
+  // }else if(i == 3){
     
-  // // }else if(i == 4){
+  // }else if(i == 4){
     
-  // // }
+  // }
       
-  //   }
+    }
   }
 }
 
