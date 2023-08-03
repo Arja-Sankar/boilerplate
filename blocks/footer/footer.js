@@ -22,14 +22,14 @@ export default async function decorate(block) {
    decorateIcons(footer);
    block.append(footer); 
   //hiding content
-   var footerContent = document.querySelector('.footer-wrapper > .footer.block > div');
-    footerContent.style.display = 'none';
-   console.log(footerContent);
-    var mainFooter = document.querySelectorAll('.footer-wrapper');
-    var firstDiv = document.createElement('div');
-    firstDiv.setAttribute('class','experiencefragment');
-    firstDiv.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
-    firstDiv.appendChild(mainFooter);
+   // var footerContent = document.querySelector('.footer-wrapper > .footer.block > div');
+   //  footerContent.style.display = 'none';
+   // console.log(footerContent);
+   //  var mainFooter = document.querySelectorAll('.footer-wrapper');
+   //  var firstDiv = document.createElement('div');
+   //  firstDiv.setAttribute('class','experiencefragment');
+   //  firstDiv.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
+   //  firstDiv.appendChild(mainFooter);
   }
 }
 
