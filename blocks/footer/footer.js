@@ -21,10 +21,16 @@ export default async function decorate(block) {
 
    decorateIcons(footer);
    block.append(footer); 
-  
-   var footerContent = document.querySelector('.footer-wrapper > .footer.block > div > div');
+  //hiding content
+    var mainFooter = document.querySelector('.footer-wrapper');
+   var footerContent = document.querySelector('.footer-wrapper > .footer.block > div');
     footerContent.style.display = 'none';
    console.log(footerContent);
+    
+    var firstDiv = document.createElement('div');
+    firstDiv.setAttribute('class','experiencefragment');
+    firstDiv.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
+   firstDiv.appendChild(mainFooter);
   }
 }
 
