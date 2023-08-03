@@ -77,7 +77,7 @@ export default async function decorate(block) {
             footerContentHeader.appendChild(footerUl);
             footerUl.classList.add('list-unstyled', 'footer-txt');      
       var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0].innerHTML;
-      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[1]
+      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[0]
       footerUlTwo.appendChild(liContentFooterTwo);
    }
   //  else if(i == 1){
