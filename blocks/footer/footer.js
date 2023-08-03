@@ -76,9 +76,9 @@ export default async function decorate(block) {
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
             footerContentHeader.appendChild(footerUl);
             footerUl.classList.add('list-unstyled', 'footer-txt');      
-      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0].innerHTML;
+      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
       var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[0]
-      footerUlTwo.appendChild(liContentFooterTwo);
+      footerUlTwo.append(liContentFooterTwo);
    }
   //  else if(i == 1){
     
