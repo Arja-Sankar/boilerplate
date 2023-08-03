@@ -61,13 +61,13 @@ export default async function decorate(block) {
    var counter = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;
 
     for(let i = 0; i < counter;i++){
-        let footerContentDiv = document.createElement('div');
+        var footerContentDiv = document.createElement('div');
             sixthDiv.appendChild(footerContentDiv);
             footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');
-        let footerContentHeader = document.createElement('h3');
+        var footerContentHeader = document.createElement('h3');
             footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
-        let footerUl = document.createElement('ul');
+        var footerUl = document.createElement('ul');
             footerContentHeader.appendChild(footerUl);
             footerUl.classList.add('list-unstyled', 'footer-txt');
         
@@ -79,13 +79,13 @@ export default async function decorate(block) {
     if(i == 2){
       // footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
-      var liContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1].innerHTML;
-      footerUl.appendChild(liContent);
+      var liContentFooter = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1].innerHTML;
+      footerUl.appendChild(liContentFooter);
   }else if(i == 3){
       // footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
-      var liContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[2].innerHTML;
-      footerUl.appendChild(liContent);
+      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[2].innerHTML;
+      footerUl.appendChild(liContentFooterTwo);
   }
   // else if(i == 4){
     
