@@ -113,7 +113,7 @@ export default async function decorate(block) {
         footerContentHeader.innerHTML = footerContHead;
         footerContentHeader.appendChild(footerUl);
        footerUl.classList.add('list-unstyled', 'footer-txt'); 
-      var liContentFooterFive = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1];
+      var liContentFooterFive = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
       var footerUlFive = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i];
       footerUlFive.append(liContentFooterFive);
   }
