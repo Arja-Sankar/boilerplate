@@ -77,13 +77,13 @@ export default async function decorate(block) {
     
  // } 
     if(i == 2){
-      footerContentDiv.setAttribute('class','col-lg-3');
-      footerContentDiv.classList.add('col-md-3','col-sm-4', 'col-xs-12');
+      // footerContentDiv.setAttribute('class','col-lg-3');
+      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var liContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1].innerHTML;
       footerUl.appendChild(liContent);
   }else if(i == 3){
-      footerContentDiv.setAttribute('class','col-lg-3');
-      footerContentDiv.classList.add('col-md-3','col-sm-4', 'col-xs-12');
+      // footerContentDiv.setAttribute('class','col-lg-3');
+      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var liContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[2].innerHTML;
       footerUl.appendChild(liContent);
   }
