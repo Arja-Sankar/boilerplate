@@ -64,12 +64,12 @@ export default async function decorate(block) {
         let footerContentDiv = document.createElement('div');
             sixthDiv.appendChild(footerContentDiv);
             footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');
-        // let footerContentHeader = document.createElement('h3');
-        //     footerContentDiv.appendChild(footerContentHeader);
-        //     footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
-        // let footerUl = document.createElement('ul');
-        //     footerContentHeader.appendChild(footerUl);
-        //     footerUl.classList.add('list-unstyled', 'footer-txt');
+        let footerContentHeader = document.createElement('h3');
+            footerContentDiv.appendChild(footerContentHeader);
+            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
+        let footerUl = document.createElement('ul');
+            footerContentHeader.appendChild(footerUl);
+            footerUl.classList.add('list-unstyled', 'footer-txt');
         
   // if(i == 0){
     // document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0].innerHTML
