@@ -22,9 +22,11 @@ export default async function decorate(block) {
    decorateIcons(footer);
    block.append(footer); 
   //hiding content
-   var footerContent = document.querySelector('.footer-wrapper > .footer.block > div');
-    footerContent.style.display = 'none';
-   console.log(footerContent);
+    
+   // var footerContent = document.querySelector('.footer-wrapper > .footer.block > div');
+   //  footerContent.style.display = 'none';
+   // console.log(footerContent);
+    
     var mainFooter = document.querySelector('.footer-wrapper > .footer.block');
     mainFooter.setAttribute('class','experiencefragment');
     mainFooter.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
