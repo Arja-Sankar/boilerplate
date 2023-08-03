@@ -26,10 +26,12 @@ export default async function decorate(block) {
     footerContent.style.display = 'none';
    console.log(footerContent);
     var mainFooter = document.querySelector('.footer-wrapper > .footer.block');
-   // var firstDiv = document.createElement('div');
     mainFooter.setAttribute('class','experiencefragment');
     mainFooter.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
-    // firstDiv.appendChild(mainFooter);
+
+    var firstDiv = document.createElement('div');
+    firstDiv.setAttribute('class','xf-content-height');
+    mainFooter.appendChild(firstDiv);
   }
 }
 
