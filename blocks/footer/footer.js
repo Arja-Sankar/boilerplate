@@ -80,12 +80,14 @@ export default async function decorate(block) {
       // footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var liContentFooter = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1].innerHTML;
-      footerUl.appendChild(liContentFooter);
+      var footerUlOne = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > ul')[0];
+      footerUlOne.appendChild(liContentFooter);
   }else if(i == 3){
       // footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[2].innerHTML;
-      footerUl.appendChild(liContentFooterTwo);
+      var footerUlTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > ul')[0];
+      footerUlTwo.appendChild(liContentFooterTwo);
   }
   // else if(i == 4){
     
