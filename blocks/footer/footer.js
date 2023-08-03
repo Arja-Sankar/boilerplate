@@ -21,7 +21,8 @@ export default async function decorate(block) {
 
    decorateIcons(footer);
    block.append(footer); 
-    
    
   }
 }
+var footerContent = document.querySelector('.footer-wrapper > .footer.block > div > div');
+console.log(footerContent);
