@@ -62,39 +62,43 @@ export default async function decorate(block) {
 
     for(let i = 0; i < counter;i++){
         var footerContentDiv = document.createElement('div');
-            sixthDiv.appendChild(footerContentDiv);
-            footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');
+           sixthDiv.appendChild(footerContentDiv);
+            footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');  
+    
         var footerContentHeader = document.createElement('h3');
+        var footerUl = document.createElement('ul');
+          
+      
+    // document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > ul')[0];
+  if(i == 0){
+    // document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0].innerHTML
             footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
-        var footerUl = document.createElement('ul');
             footerContentHeader.appendChild(footerUl);
-            footerUl.classList.add('list-unstyled', 'footer-txt');
-      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i].innerHTML;
-      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i]
+            footerUl.classList.add('list-unstyled', 'footer-txt');      
+      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0].innerHTML;
+      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[1]
       footerUlTwo.appendChild(liContentFooterTwo);
-    // document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > ul')[0];
-  // if(i == 0){
-    // document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0].innerHTML
-  // }else if(i == 1){
+   }
+  //  else if(i == 1){
     
  // } 
-  //   if(i == 2){
-  //     footerContentDiv.setAttribute('class','col-lg-3');
-  //     footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
-  //     var liContentFooter = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1].innerHTML;
-  //     var footerUlOne = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[0]
-  //     footerUlOne.appendChild(liContentFooter);
-  // }else if(i == 3){
-  //     footerContentDiv.setAttribute('class','col-lg-3');
-  //    footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
-  //     var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[2].innerHTML;
-  //     var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[1]
-  //     footerUlTwo.appendChild(liContentFooterTwo);
-  // }
-  // else if(i == 4){
+ //    if(i == 2){
+ //      footerContentDiv.setAttribute('class','col-lg-3');
+ //      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
+ //      var liContentFooter = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1].innerHTML;
+ //      var footerUlOne = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[0]
+ //      footerUlOne.appendChild(liContentFooter);
+ //  }else if(i == 3){
+ //      footerContentDiv.setAttribute('class','col-lg-3');
+ //     footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
+ //      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[2].innerHTML;
+ //      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[1]
+ //      footerUlTwo.appendChild(liContentFooterTwo);
+ //  }
+ //  else if(i == 4){
     
-  // }
+ //  }
       
     }
   }
