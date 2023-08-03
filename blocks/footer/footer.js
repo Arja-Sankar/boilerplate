@@ -29,7 +29,7 @@ export default async function decorate(block) {
    // var firstDiv = document.createElement('div');
     mainFooter.setAttribute('class','experiencefragment');
     mainFooter.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
-    firstDiv.appendChild(mainFooter);
+    // firstDiv.appendChild(mainFooter);
   }
 }
 
