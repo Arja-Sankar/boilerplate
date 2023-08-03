@@ -25,7 +25,7 @@ export default async function decorate(block) {
    var footerContent = document.querySelector('.footer-wrapper > .footer.block > div');
     footerContent.style.display = 'none';
    console.log(footerContent);
-    var mainFooter = document.querySelectorAll('.footer-wrapper > .footer.block');
+    var mainFooter = document.querySelector('.footer-wrapper > .footer.block');
    // var firstDiv = document.createElement('div');
     mainFooter.setAttribute('class','experiencefragment');
     mainFooter.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
