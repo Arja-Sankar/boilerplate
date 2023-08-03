@@ -76,29 +76,41 @@ export default async function decorate(block) {
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
             footerContentHeader.appendChild(footerUl);
             footerUl.classList.add('list-unstyled', 'footer-txt');      
-      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
-      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[0]
+      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i]
       footerUlTwo.append(liContentFooterTwo);
    }
-  //  else if(i == 1){
-    
- // } 
- //    if(i == 2){
- //      footerContentDiv.setAttribute('class','col-lg-3');
- //      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
- //      var liContentFooter = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1].innerHTML;
- //      var footerUlOne = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[0]
- //      footerUlOne.appendChild(liContentFooter);
- //  }else if(i == 3){
- //      footerContentDiv.setAttribute('class','col-lg-3');
- //     footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
- //      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[2].innerHTML;
- //      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[1]
- //      footerUlTwo.appendChild(liContentFooterTwo);
- //  }
- //  else if(i == 4){
-    
- //  }
+   else if(i == 1){
+        footerContentDiv.appendChild(footerContentHeader);
+            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
+            footerContentHeader.appendChild(footerUl);
+            footerUl.classList.add('list-unstyled', 'footer-txt');      
+      var liContentFooterThree = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      var footerUlThree = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i]
+      footerUlThree.append(liContentFooterThree);
+ } 
+    if(i == 2){
+      footerContentDiv.setAttribute('class','col-lg-3');
+      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
+      var liContentFooterFour = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      var footerUlFour = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i];
+      footerUlFour.append(liContentFooterFour);
+  }else if(i == 3){
+      footerContentDiv.setAttribute('class','col-lg-3');
+     footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
+     var liContentFooterFive = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      var footerUlFive = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i];
+      footerUlFive.append(liContentFooterFive);
+  }
+  else if(i == 4){
+            footerContentDiv.appendChild(footerContentHeader);
+            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
+            footerContentHeader.appendChild(footerUl);
+            footerUl.classList.add('list-unstyled', 'footer-txt');      
+      var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i]
+      footerUlSix.append(liContentFooterSix);
+  }
       
     }
   }
