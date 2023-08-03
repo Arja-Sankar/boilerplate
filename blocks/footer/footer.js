@@ -76,17 +76,17 @@ export default async function decorate(block) {
   // }else if(i == 1){
     
  // } 
-  //   if(i == 2){
-  //     footerContentDiv.setAttribute('class','col-lg-3');
-  //     footerContentDiv.classList.add('col-md-3','col-sm-4', 'col-xs-12');
-  //     var liContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i].innerHTML;
-  //     footerUl.appendChild(liContent);
-  // }else if(i == 3){
-  //     footerContentDiv.setAttribute('class','col-lg-3');
-  //     footerContentDiv.classList.add('col-md-3','col-sm-4', 'col-xs-12');
-  //     var liContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i].innerHTML;
-  //     footerUl.appendChild(liContent);
-  // }
+    if(i == 2){
+      footerContentDiv.setAttribute('class','col-lg-3');
+      footerContentDiv.classList.add('col-md-3','col-sm-4', 'col-xs-12');
+      var liContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1].innerHTML;
+      footerUl.appendChild(liContent);
+  }else if(i == 3){
+      footerContentDiv.setAttribute('class','col-lg-3');
+      footerContentDiv.classList.add('col-md-3','col-sm-4', 'col-xs-12');
+      var liContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[2].innerHTML;
+      footerUl.appendChild(liContent);
+  }
   // else if(i == 4){
     
   // }
