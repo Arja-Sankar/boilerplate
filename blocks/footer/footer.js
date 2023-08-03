@@ -32,6 +32,52 @@ export default async function decorate(block) {
     var firstDiv = document.createElement('div');
     firstDiv.setAttribute('class','xf-content-height');
     mainFooter.appendChild(firstDiv);
+
+    var secondDiv = document.createElement('div');
+    secondDiv.setAttribute('class','aem-Grid');
+   secondDiv.classList.add('aem-Grid--12' , 'aem-Grid--default--12');
+    firstDiv.appendChild(secondDiv); 
+
+    var thirdDiv = document.createElement('div');
+    firstDiv.setAttribute('class','freeflowhtml');
+    secondDiv.classList.add('aem-GridColumn' , 'aem-GridColumn--default--12');
+    secondDiv.appendChild(firstDiv);  
+
+    var fourthDiv = document.createElement('footer');
+    fourthDiv.setAttribute('id','footer');
+    secondDiv.appendChild(fourthDiv);
+
+     var footerArticle = document.createElement('article');
+     fourthDiv.appendChild(footerArticle);
+
+     var fifthDiv = document.createElement('div');
+    fifthDiv.classList.add('container', 'pt50', 'pb50');
+    footerArticle.appendChild(fifthDiv);
+
+    var sixthDiv = document.createElement('div');
+    sixthDiv.setAttribute('class','row');
+    fifthDiv.appendChild(sixthDiv);
+
+   var counter = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;
+
+    for(let i = 0; i < counter;i++){
+        let footerContentDiv = document.createElement('div');
+    sixthDiv.appendChild(footerContentDiv);
+   footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');
+
+  // if(i == 0){
+    
+  // }else if(i == 1){
+    
+  // }else if(i == 2){
+    
+  // }else if(i == 3){
+    
+  // }else if(i == 4){
+    
+  // }
+      
+    }
   }
 }
 
