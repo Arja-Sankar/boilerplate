@@ -94,6 +94,7 @@ export default async function decorate(block) {
  } 
     if(i == 2){
       footerContentDiv.appendChild(footerContentHeader);
+       footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
@@ -106,13 +107,14 @@ export default async function decorate(block) {
   }
     else if(i == 3){
       footerContentDiv.appendChild(footerContentHeader);
+       footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       footerContentDiv.setAttribute('class','col-lg-3');
      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
         footerContentHeader.innerHTML = footerContHead;
         footerContentHeader.appendChild(footerUl);
        footerUl.classList.add('list-unstyled', 'footer-txt'); 
-      var liContentFooterFive = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      var liContentFooterFive = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
       var footerUlFive = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i];
       footerUlFive.append(liContentFooterFive);
   }
@@ -123,7 +125,7 @@ export default async function decorate(block) {
             footerContentHeader.innerHTML = footerContHead;
             footerContentHeader.appendChild(footerUl);
             footerUl.classList.add('list-inline', 'footer-txt');      
-      var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1];
       var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i]
       footerUlSix.append(liContentFooterSix);
   }
