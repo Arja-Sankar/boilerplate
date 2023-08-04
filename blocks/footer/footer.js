@@ -123,9 +123,18 @@ export default async function decorate(block) {
             footerContentHeader.innerHTML = footerContHead;
             footerUl.classList.add('list-inline', 'footer-txt');
             footerContentHeader.appendChild(footerUl);
+            var len = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > p').length;
+             for(let j=0 ; j < len ; j++){
+               var ftrli = document.createElement('li');
+               footerUl.appendChild(ftrli);
+               var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i];
+               var ftrContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > p')[j].innerText
+               footerUlSix.append(ftrContent);
+             }
       // var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1];
       // var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head')[i]
       // footerUlSix.append(liContentFooterSix);
+                  //document.querySelectorAll('.ftr-head > ul')[4].append(document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > p')[1].innerText)
   }
        } 
 
