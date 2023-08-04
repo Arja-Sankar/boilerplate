@@ -83,8 +83,8 @@ export default async function decorate(block) {
    }
    else if(i == 1){footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
-     var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
-        footerContentHeader.innerHTML = footerContHead;
+     var footerContHeadOne = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
+        footerContentHeader.innerHTML = footerContHeadOne;
                     var footerUlThree = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');   
       var liContentFooterThree = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
        
