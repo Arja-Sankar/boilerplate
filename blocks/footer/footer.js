@@ -75,22 +75,21 @@ export default async function decorate(block) {
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
             footerContentHeader.innerHTML = footerContHead;    
       var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
-      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head')[i];
-            footerContentHeader.appendChild(footerUlTwo);
-            footerUlTwo.classList.add('list-unstyled', 'footer-txt');  
-      footerUlTwo.append(liContentFooterTwo);
+      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+      footerUlTwo[i].classList.add('list-unstyled', 'footer-txt'); 
+      footerContentHeader.appendChild(footerUlTwo[i]);
+      footerUlTwo[i].append(liContentFooterTwo);
    }
    else if(i == 1){
         footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
      var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
-    
+        footerContentHeader.innerHTML = footerContHead;
       var liContentFooterThree = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
-      var footerUlThree = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head')[i];
-               footerContentHeader.innerHTML = footerContHead;
-            footerContentHeader.appendChild(footerUlThree);
-            footerUlThree.classList.add('list-unstyled', 'footer-txt');    
-      footerUlThree.append(liContentFooterThree);
+      var footerUlThree = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');     
+       footerUlThree[i].classList.add('list-unstyled', 'footer-txt');   
+       footerContentHeader.appendChild(footerUlThree[i]);
+       footerUlThree[i].append(liContentFooterThree);
  } 
     if(i == 2){
       footerContentDiv.appendChild(footerContentHeader);
@@ -98,13 +97,12 @@ export default async function decorate(block) {
       footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
-        
+        footerContentHeader.innerHTML = footerContHead;
       var liContentFooterFour = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
-      var footerUlFour = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head')[i];
-      footerContentHeader.innerHTML = footerContHead;
-      footerContentHeader.appendChild(footerUlFour);
-      footerUlFour.classList.add('list-unstyled', 'footer-txt');
-      footerUlFour.append(liContentFooterFour);
+      var footerUlFour = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+      footerUlFour[i].classList.add('list-unstyled', 'footer-txt');
+      footerContentHeader.appendChild(footerUlFour[i]);
+      footerUlFour[i].append(liContentFooterFour);
   }
     else if(i == 3){
       footerContentDiv.appendChild(footerContentHeader);
@@ -112,13 +110,12 @@ export default async function decorate(block) {
       footerContentDiv.setAttribute('class','col-lg-3');
      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
-        
+        footerContentHeader.innerHTML = footerContHead;
       var liContentFooterFive = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
-      var footerUlFive = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head')[i];
-      footerContentHeader.innerHTML = footerContHead;
-        footerContentHeader.appendChild(footerUlFive);
-       footerUlFive.classList.add('list-unstyled', 'footer-txt'); 
-      footerUlFive.append(liContentFooterFive);
+      var footerUlFive = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+       footerUlFive[i].classList.add('list-unstyled', 'footer-txt'); 
+      footerContentHeader.appendChild(footerUlFive[i]);
+      footerUlFive[i].append(liContentFooterFive);
   }
   else if(i == 4){
             footerContentDiv.appendChild(footerContentHeader);
