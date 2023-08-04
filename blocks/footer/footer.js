@@ -136,7 +136,7 @@ export default async function decorate(block) {
 
     var ftrcopyrightDiv = document.createElement('div');
     ftrcopyrightDiv.setAttribute('container');
-    ftrcopyright.appendChild(ftrcopyrightDiv);
+    ftrcopyrightOne.appendChild(ftrcopyrightDiv);
 
     var ftrcopyrightRowDiv = document.createElement('div');
     ftrcopyrightRowDiv.setAttribute('row');
