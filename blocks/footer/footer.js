@@ -55,10 +55,6 @@ export default async function decorate(block) {
     fifthDiv.classList.add('container', 'pt50', 'pb50');
     footerArticle.appendChild(fifthDiv);
 
-    var ftrcopyrightOne = document.createElement('div');
-    ftrcopyrightOne.classList.add('container-fluid', 'ptb15 bg-white');
-    footerArticle.appendChild(ftrcopyrightOne);  
-    
     var sixthDiv = document.createElement('div');
     sixthDiv.setAttribute('class','row');
     fifthDiv.appendChild(sixthDiv);
@@ -134,25 +130,27 @@ export default async function decorate(block) {
        } 
   
      // copyright starts : 
-    
+    var ftrcopyrightOne = document.createElement('div');
+    ftrcopyrightOne.classList.add('container-fluid', 'ptb15', 'bg-white');
+    footerArticle.appendChild(ftrcopyrightOne);  
 
-    // var ftrcopyrightDiv = document.createElement('div');
-    // ftrcopyrightDiv.setAttribute('container');
-    // ftrcopyright.appendChild(ftrcopyrightDiv);
+    var ftrcopyrightDiv = document.createElement('div');
+    ftrcopyrightDiv.setAttribute('container');
+    ftrcopyright.appendChild(ftrcopyrightDiv);
 
-    // var ftrcopyrightRowDiv = document.createElement('div');
-    // ftrcopyrightRowDiv.setAttribute('row');
-    // ftrcopyrightDiv.appendChild(ftrcopyrightRowDiv);
+    var ftrcopyrightRowDiv = document.createElement('div');
+    ftrcopyrightRowDiv.setAttribute('row');
+    ftrcopyrightDiv.appendChild(ftrcopyrightRowDiv);
 
-    // var ftrcopyrightRowFirstDiv = document.createElement('div');
-    // ftrcopyrightRowFirstDiv.classList.add('col-lg-7', 'col-md-6', 'col-sm-6', 'col-xs-12');
-    // ftrcopyrightRowDiv.appendChild(ftrcopyrightRowFirstDiv);
+    var ftrcopyrightRowFirstDiv = document.createElement('div');
+    ftrcopyrightRowFirstDiv.classList.add('col-lg-7', 'col-md-6', 'col-sm-6', 'col-xs-12');
+    ftrcopyrightRowDiv.appendChild(ftrcopyrightRowFirstDiv);
 
-    // var ftrcopyrightRowPara = document.createElement('p');
-    // ftrcopyrightRowPara.setAttribute('mb0');
-    // // var ftrCpyrightRowParaContent =  ;
-    // // ftrcopyrightRowPara.innerHTML =  ;
-    // ftrcopyrightRowFirstDiv.appendChild(ftrcopyrightRowPara);
+    var ftrcopyrightRowPara = document.createElement('p');
+    ftrcopyrightRowPara.setAttribute('mb0');
+    // var ftrCpyrightRowParaContent =  ;
+    // ftrcopyrightRowPara.innerHTML =  ;
+    ftrcopyrightRowFirstDiv.appendChild(ftrcopyrightRowPara);
     // //copyright ends :
   }
 }
