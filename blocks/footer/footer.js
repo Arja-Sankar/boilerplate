@@ -135,11 +135,11 @@ export default async function decorate(block) {
     footerArticle.appendChild(ftrcopyrightOne);  
 
     var ftrcopyrightDiv = document.createElement('div');
-    ftrcopyrightDiv.setAttribute('container');
+    ftrcopyrightDiv.setAttribute('class','container');
     ftrcopyrightOne.appendChild(ftrcopyrightDiv);
 
     var ftrcopyrightRowDiv = document.createElement('div');
-    ftrcopyrightRowDiv.setAttribute('row');
+    ftrcopyrightRowDiv.setAttribute('class','row');
     ftrcopyrightDiv.appendChild(ftrcopyrightRowDiv);
 
     var ftrcopyrightRowFirstDiv = document.createElement('div');
@@ -147,7 +147,7 @@ export default async function decorate(block) {
     ftrcopyrightRowDiv.appendChild(ftrcopyrightRowFirstDiv);
 
     var ftrcopyrightRowPara = document.createElement('p');
-    ftrcopyrightRowPara.setAttribute('mb0');
+    ftrcopyrightRowPara.setAttribute('class','mb0');
     // var ftrCpyrightRowParaContent =  ;
     // ftrcopyrightRowPara.innerHTML =  ;
     ftrcopyrightRowFirstDiv.appendChild(ftrcopyrightRowPara);
