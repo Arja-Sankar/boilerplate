@@ -68,8 +68,9 @@ export default async function decorate(block) {
 
         var footerContentHeader = document.createElement('h3');
         var footerUl = document.createElement('ul');
-           footerContentDiv.appendChild(footerContentHeader);
+           
   if(i == 0){
+    footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
             footerContentHeader.innerHTML = footerContHead;    
@@ -80,7 +81,7 @@ export default async function decorate(block) {
       footerContentHeader.appendChild(footerUlTwo[i]);
       
    }
-   else if(i == 1){
+   else if(i == 1){footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
      var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
         footerContentHeader.innerHTML = footerContHead;
@@ -91,7 +92,7 @@ export default async function decorate(block) {
        footerContentHeader.appendChild(footerUlThree[i]);
        
  } 
-    if(i == 2){
+    if(i == 2){footerContentDiv.appendChild(footerContentHeader);
        footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
@@ -104,7 +105,7 @@ export default async function decorate(block) {
       footerContentHeader.appendChild(footerUlFour[i]);
      
   }
-    else if(i == 3){
+    else if(i == 3){footerContentDiv.appendChild(footerContentHeader);
        footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       footerContentDiv.setAttribute('class','col-lg-3');
      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
@@ -117,7 +118,7 @@ export default async function decorate(block) {
       footerContentHeader.appendChild(footerUlFive[i]);
       
   }
-  else if(i == 4){
+  else if(i == 4){footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
     var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
             footerContentHeader.innerHTML = footerContHead;
