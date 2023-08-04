@@ -79,7 +79,7 @@ export default async function decorate(block) {
      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
       liContentFooterTwo[i].classList.add('list-unstyled', 'footer-txt'); 
       footerUlTwo[i].append(liContentFooterTwo);
-      footerContentHeader.appendChild(footerUlTwo[i]);
+      //footerContentHeader.appendChild(footerUlTwo[i]);
       
    }
  //   else if(i == 1){
