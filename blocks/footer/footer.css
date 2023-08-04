@@ -1,1 +1,7 @@
-
+ol , ul {
+      margin-left: -20px;
+      list-style-type: none;
+    }
+a {
+  text-decoration: none !important;
+}
