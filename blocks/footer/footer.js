@@ -58,10 +58,34 @@ export default async function decorate(block) {
     var sixthDiv = document.createElement('div');
     sixthDiv.setAttribute('class','row');
     fifthDiv.appendChild(sixthDiv);
+    
+  // copyright starts : 
+    var ftrcopyright = document.createElement('div');
+    ftrcopyright.classList.add('container-fluid', 'ptb15 bg-white');
+    footerArticle.appendChild(ftrcopyright);  
 
+    var ftrcopyrightDiv = document.createElement('div');
+    ftrcopyrightDiv.setAttribute('container');
+    ftrcopyright.appendChild(ftrcopyrightDiv);
+
+    var ftrcopyrightRowDiv = document.createElement('div');
+    ftrcopyrightRowDiv.setAttribute('row');
+    ftrcopyrightDiv.appendChild(ftrcopyrightRowDiv);
+
+    var ftrcopyrightRowFirstDiv = document.createElement('div');
+    ftrcopyrightRowFirstDiv.classList.add('col-lg-7', 'col-md-6', 'col-sm-6', 'col-xs-12');
+    ftrcopyrightRowDiv.appendChild(ftrcopyrightRowFirstDiv);
+
+    var ftrcopyrightRowPara = document.createElement('p');
+    ftrcopyrightRowPara.setAttribute('mb0');
+    // var ftrCpyrightRowParaContent =  ;
+    // ftrcopyrightRowPara.innerHTML =  ;
+    ftrcopyrightRowFirstDiv.appendChild(ftrcopyrightRowPara);
+    //copyright ends :
+    
    var counter = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;
 
-    for(let i = 0; i < document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;i++){
+    for(let i = 0; i < counter ;i++){
         var footerContentDiv = document.createElement('div');
         sixthDiv.appendChild(footerContentDiv);
         footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');  
@@ -128,28 +152,7 @@ export default async function decorate(block) {
       
                  }
        } 
-    // copyright starts : 
-    var ftrcopyright = document.createElement('div');
-    ftrcopyright.classList.add('container-fluid', 'ptb15 bg-white');
-    footerArticle.appendChild(ftrcopyright);  
-
-    var ftrcopyrightDiv = document.createElement('div');
-    ftrcopyrightDiv.setAttribute('container');
-    ftrcopyright.appendChild(ftrcopyrightDiv);
-
-    var ftrcopyrightRowDiv = document.createElement('div');
-    ftrcopyrightRowDiv.setAttribute('row');
-    ftrcopyrightDiv.appendChild(ftrcopyrightRowDiv);
-
-    var ftrcopyrightRowFirstDiv = document.createElement('div');
-    ftrcopyrightRowFirstDiv.classList.add('col-lg-7', 'col-md-6', 'col-sm-6', 'col-xs-12');
-    ftrcopyrightRowDiv.appendChild(ftrcopyrightRowFirstDiv);
-
-    var ftrcopyrightRowPara = document.createElement('p');
-    ftrcopyrightRowPara.setAttribute('mb0');
-    // var ftrCpyrightRowParaContent =  ;
-    // ftrcopyrightRowPara.innerHTML =  ;
-    ftrcopyrightRowFirstDiv.appendChild(ftrcopyrightRowPara);
+  
     
   }
 }
