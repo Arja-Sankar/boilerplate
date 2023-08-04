@@ -121,21 +121,12 @@ export default async function decorate(block) {
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
     var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
             footerContentHeader.innerHTML = footerContHead;
-            footerUl.classList.add('list-inline', 'footer-txt');
-            footerContentHeader.appendChild(footerUl);
-            var len = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > p').length;
-             for(let j=0 ; j < len ; j++){
-               var ftrli = document.createElement('li');
-               footerUl.appendChild(ftrli);
-               var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i];
-               var ftrContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > p')[j].innerText
-               footerUlSix.append(ftrContent);
-             }
-      // var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1];
-      // var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head')[i]
-      // footerUlSix.append(liContentFooterSix);
-                  //document.querySelectorAll('.ftr-head > ul')[4].append(document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > p')[1].innerText)
-  }
+           var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
+      var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+       liContentFooterSix.classList.add('list-inline', 'footer-txt'); 
+      footerUlSix[i].append(liContentFooterFive);
+      
+                 }
        } 
 
   }
