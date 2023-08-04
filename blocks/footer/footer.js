@@ -24,7 +24,7 @@ export default async function decorate(block) {
   //hiding content
    var footerContent = document.querySelector('.footer-wrapper > .footer.block > div');
     footerContent.style.display = 'none';
-   console.log(footerContent);
+   //console.log(footerContent);
     
     var mainFooter = document.querySelector('.footer-wrapper > .footer.block');
     mainFooter.setAttribute('class','experiencefragment');
@@ -91,7 +91,7 @@ export default async function decorate(block) {
        footerUlThree[i].append(liContentFooterThree);
        // footerContentHeader.appendChild(footerUlThree[i]);
  } 
-    if(i == 2){footerContentDiv.appendChild(footerContentHeader);
+    else if(i == 2){footerContentDiv.appendChild(footerContentHeader);
        footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
@@ -128,7 +128,29 @@ export default async function decorate(block) {
       
                  }
        } 
+    // copyright starts : 
+    var ftrcopyright = document.createElement('div');
+    ftrcopyright.classList.add('container-fluid', 'ptb15 bg-white');
+    footerArticle.appendChild(ftrcopyright);  
 
+    var ftrcopyrightDiv = document.createElement('div');
+    ftrcopyrightDiv.setAttribute('container');
+    ftrcopyright.appendChild(ftrcopyrightDiv);
+
+    var ftrcopyrightRowDiv = document.createElement('div');
+    ftrcopyrightRowDiv.setAttribute('row');
+    ftrcopyrightDiv.appendChild(ftrcopyrightRowDiv);
+
+    var ftrcopyrightRowFirstDiv = document.createElement('div');
+    ftrcopyrightRowFirstDiv.classList.add('col-lg-7', 'col-md-6', 'col-sm-6', 'col-xs-12');
+    ftrcopyrightRowDiv.appendChild(ftrcopyrightRowFirstDiv);
+
+    var ftrcopyrightRowPara = document.createElement('p');
+    ftrcopyrightRowPara.setAttribute('mb0');
+    // var ftrCpyrightRowParaContent =  ;
+    // ftrcopyrightRowPara.innerHTML =  ;
+    ftrcopyrightRowFirstDiv.appendChild(ftrcopyrightRowPara);
+    
   }
 }
 
