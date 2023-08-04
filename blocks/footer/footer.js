@@ -148,8 +148,8 @@ export default async function decorate(block) {
 
     var ftrcopyrightRowPara = document.createElement('p');
     ftrcopyrightRowPara.setAttribute('class','mb0');
-    // var ftrCpyrightRowParaContent =  ;
-    // ftrcopyrightRowPara.innerHTML =  ;
+    var ftrCpyrightRowParaContent =  document.querySelector('.footer-wrapper > .experiencefragment  > div > div > div > div > div').innerText;
+    ftrcopyrightRowPara.innerHTML =  ftrCpyrightRowParaContent;
     ftrcopyrightRowFirstDiv.appendChild(ftrcopyrightRowPara);
     // //copyright ends :
   }
