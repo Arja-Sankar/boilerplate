@@ -55,6 +55,10 @@ export default async function decorate(block) {
     fifthDiv.classList.add('container', 'pt50', 'pb50');
     footerArticle.appendChild(fifthDiv);
 
+    var ftrcopyrightOne = document.createElement('div');
+    ftrcopyrightOne.classList.add('container-fluid', 'ptb15 bg-white');
+    footerArticle.appendChild(ftrcopyrightOne);  
+    
     var sixthDiv = document.createElement('div');
     sixthDiv.setAttribute('class','row');
     fifthDiv.appendChild(sixthDiv);
@@ -130,9 +134,7 @@ export default async function decorate(block) {
        } 
   
      // copyright starts : 
-    var ftrcopyrightOne = document.createElement('div');
-    ftrcopyrightOne.classList.add('container-fluid', 'ptb15 bg-white');
-    footerArticle.appendChild(ftrcopyrightOne);  
+    
 
     // var ftrcopyrightDiv = document.createElement('div');
     // ftrcopyrightDiv.setAttribute('container');
