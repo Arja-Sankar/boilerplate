@@ -73,7 +73,6 @@ export default async function decorate(block) {
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
             footerContentHeader.innerHTML = footerContHead;    
-     
      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
       liContentFooterTwo.classList.add('list-unstyled', 'footer-txt'); 
@@ -81,54 +80,53 @@ export default async function decorate(block) {
       footerContentHeader.appendChild(footerUlTwo[i]);
       
    }
- //   else if(i == 1){
- //        footerContentDiv.appendChild(footerContentHeader);
- //            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
- //     var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
- //        footerContentHeader.innerHTML = footerContHead;
- //      var liContentFooterThree = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
- //      var footerUlThree = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');     
- //       liContentFooterThree[i].classList.add('list-unstyled', 'footer-txt');   
- //       footerContentHeader.appendChild(footerUlThree[i]);
- //       footerUlThree[i].append(liContentFooterThree);
- // } 
- //    if(i == 2){
- //      footerContentDiv.appendChild(footerContentHeader);
- //       footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
- //      footerContentDiv.setAttribute('class','col-lg-3');
- //      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
- //      var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
- //        footerContentHeader.innerHTML = footerContHead;
- //      var liContentFooterFour = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
- //      var footerUlFour = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
- //      liContentFooterFour[i].classList.add('list-unstyled', 'footer-txt');
- //      footerContentHeader.appendChild(footerUlFour[i]);
- //      footerUlFour[i].append(liContentFooterFour);
- //  }
- //    else if(i == 3){
- //      footerContentDiv.appendChild(footerContentHeader);
- //       footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
- //      footerContentDiv.setAttribute('class','col-lg-3');
- //     footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
- //      var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
- //        footerContentHeader.innerHTML = footerContHead;
- //      var liContentFooterFive = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
- //      var footerUlFive = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
- //       liContentFooterFive[i].classList.add('list-unstyled', 'footer-txt'); 
- //      footerContentHeader.appendChild(footerUlFive[i]);
- //      footerUlFive[i].append(liContentFooterFive);
- //  }
- //  else if(i == 4){
- //            footerContentDiv.appendChild(footerContentHeader);
- //            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
- //    var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
- //            footerContentHeader.innerHTML = footerContHead;
- //            footerUl.classList.add('list-inline', 'footer-txt');
- //            footerContentHeader.appendChild(footerUl);
- //      // var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1];
- //      // var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head')[i]
- //      // footerUlSix.append(liContentFooterSix);
- //  }
+   else if(i == 1){
+            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
+     var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
+        footerContentHeader.innerHTML = footerContHead;
+      var liContentFooterThree = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      var footerUlThree = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');     
+       liContentFooterThree.classList.add('list-unstyled', 'footer-txt');   
+       footerUlThree[i].append(liContentFooterThree);
+       footerContentHeader.appendChild(footerUlThree[i]);
+       
+ } 
+    if(i == 2){
+       footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
+      footerContentDiv.setAttribute('class','col-lg-3');
+      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
+      var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
+        footerContentHeader.innerHTML = footerContHead;
+      var liContentFooterFour = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
+      var footerUlFour = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+      liContentFooterFour.classList.add('list-unstyled', 'footer-txt');
+      footerUlFour[i].append(liContentFooterFour);
+      footerContentHeader.appendChild(footerUlFour[i]);
+     
+  }
+    else if(i == 3){
+       footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
+      footerContentDiv.setAttribute('class','col-lg-3');
+     footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
+      var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
+        footerContentHeader.innerHTML = footerContHead;
+      var liContentFooterFive = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
+      var footerUlFive = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+       liContentFooterFive.classList.add('list-unstyled', 'footer-txt'); 
+      footerUlFive[i].append(liContentFooterFive);
+      footerContentHeader.appendChild(footerUlFive[i]);
+      
+  }
+  else if(i == 4){
+            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
+    var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
+            footerContentHeader.innerHTML = footerContHead;
+            footerUl.classList.add('list-inline', 'footer-txt');
+            footerContentHeader.appendChild(footerUl);
+      // var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1];
+      // var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head')[i]
+      // footerUlSix.append(liContentFooterSix);
+  }
       
     }
   }
