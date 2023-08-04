@@ -61,16 +61,14 @@ export default async function decorate(block) {
 
    var counter = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;
 
-    for(let i = 0; i < counter;i++){
+    for(let i = 0; i < document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;i++){
         var footerContentDiv = document.createElement('div');
         sixthDiv.appendChild(footerContentDiv);
         footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');  
-
         var footerContentHeader = document.createElement('h3');
-        var footerUl = document.createElement('ul');
-          footerContentDiv.appendChild(footerContentHeader); 
+        // var footerUl = document.createElement('ul');
+           
   if(i == 0){
-    
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
             footerContentHeader.innerHTML = footerContHead;    
@@ -78,9 +76,10 @@ export default async function decorate(block) {
      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
       liContentFooterTwo.classList.add('list-unstyled', 'footer-txt'); 
       footerUlTwo[i].append(liContentFooterTwo);
-      footerContentHeader.appendChild(footerUlTwo[i]);
-      
+      footerContentHeader.appendChild(footerUlTwo[i]); 
    }
+      footerContentDiv.appendChild(footerContentHeader);
+        }  
  //   else if(i == 1){footerContentDiv.appendChild(footerContentHeader);
  //            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
  //     var footerContHeadOne = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
@@ -129,7 +128,7 @@ export default async function decorate(block) {
   //     // footerUlSix.append(liContentFooterSix);
   // }
       
-    }
+
   }
 }
 
