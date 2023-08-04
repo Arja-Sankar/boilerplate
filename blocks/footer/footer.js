@@ -68,20 +68,20 @@ export default async function decorate(block) {
 
         var footerContentHeader = document.createElement('h3');
         var footerUl = document.createElement('ul');
-          
-  if(i == 0){
-            footerContentDiv.appendChild(footerContentHeader);
-            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
-      var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
-            footerContentHeader.innerHTML = footerContHead;    
+           footerContentDiv.appendChild(footerContentHeader);
+  // if(i == 0){
+  //           footerContentDiv.appendChild(footerContentHeader);
+  //           footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
+  //     var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
+  //           footerContentHeader.innerHTML = footerContHead;    
      
-      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
-     var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
-      liContentFooterTwo[i].classList.add('list-unstyled', 'footer-txt'); 
-      footerUlTwo[i].append(liContentFooterTwo);
-      //footerContentHeader.appendChild(footerUlTwo[i]);
+  //     var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+  //    var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+  //     liContentFooterTwo[i].classList.add('list-unstyled', 'footer-txt'); 
+  //     footerUlTwo[i].append(liContentFooterTwo);
+  //     //footerContentHeader.appendChild(footerUlTwo[i]);
       
-   }
+  //  }
  //   else if(i == 1){
  //        footerContentDiv.appendChild(footerContentHeader);
  //            footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
