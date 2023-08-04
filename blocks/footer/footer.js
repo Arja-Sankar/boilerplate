@@ -68,9 +68,9 @@ export default async function decorate(block) {
 
         var footerContentHeader = document.createElement('h3');
         var footerUl = document.createElement('ul');
-           
+          footerContentDiv.appendChild(footerContentHeader); 
   if(i == 0){
-    footerContentDiv.appendChild(footerContentHeader);
+    
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
             footerContentHeader.innerHTML = footerContHead;    
