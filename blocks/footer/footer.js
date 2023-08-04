@@ -124,7 +124,7 @@ export default async function decorate(block) {
            var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
       var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
        liContentFooterSix.classList.add('list-inline', 'footer-txt'); 
-      footerUlSix[i].append(liContentFooterFive);
+      footerUlSix[i].append(liContentFooterSix);
       
                  }
        } 
