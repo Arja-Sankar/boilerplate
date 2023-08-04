@@ -74,11 +74,11 @@ export default async function decorate(block) {
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
             footerContentHeader.innerHTML = footerContHead;    
      
-     //  var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
-     // var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
-     //  liContentFooterTwo[i].classList.add('list-unstyled', 'footer-txt'); 
-     //  footerUlTwo[i].append(liContentFooterTwo);
-      //footerContentHeader.appendChild(footerUlTwo[i]);
+     var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+     var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      liContentFooterTwo.classList.add('list-unstyled', 'footer-txt'); 
+      footerUlTwo[i].append(liContentFooterTwo);
+      footerContentHeader.appendChild(footerUlTwo[i]);
       
    }
  //   else if(i == 1){
