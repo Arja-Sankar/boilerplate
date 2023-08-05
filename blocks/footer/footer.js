@@ -170,11 +170,19 @@ export default async function decorate(block) {
 
     var ftrcopyrightAnchor = document.createElement('a');
     ftrcopyrightAnchor.setAttribute('aria-label','Select Country');
-    var footerAnchorLinkContent = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > div > div > div')[1].innerText;
+    var footerAnchorLinkContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > div > div > div')[1].innerText;
     ftrcopyrightAnchor.setAttribute('href',footerAnchorLinkContent);
-    var footerAnchorContent = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > div > div > div')[2].innerText;
+    var footerAnchorContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > div > div > div')[2].innerText;
     ftrcopyrightAnchor.innerHTML = footerAnchorContent + `<span class="down-arrow"></span>`;
     ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightAnchor);
+
+    var ftrcopyrightRowSixDiv = document.createElement('div');
+    ftrcopyrightRowSixDiv.setAttribute('class','option-country');
+    ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
+
+    var ftrcopyrightUlContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
+    ftrcopyrightUlContent.classList.add('list-unstyled', 'country-align'); 
+    ftrcopyrightRowSixDiv.append(ftrcopyrightUlContent);
     
     // //copyright ends :
   }
