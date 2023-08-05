@@ -87,12 +87,19 @@
     //A variable that creates video tag to append in second div inside row Div 
     var InsideRowSecondDivVideo = document.createElement('iframe');
     // Local file to append in second div inside row Div 
-
-    InsideRowSecondDivVideo.setAttribute('class','vidyard_iframe');
+opacity: 1; background-color: transparent; position: absolute; top: 0px; left: 0px;
+    InsideRowSecondDivVideo.setAttribute('class','vidyard-iframe-RjFVtvoiRvUJSA1EGC2Cmf');
     InsideRowSecondDivVideo.setAttribute('title','Infosys Digital Experience');
+    InsideRowSecondDivVideo.setAttribute('allow','autoplay; fullscreen; picture-in-picture; camera; microphone; display-capture');
+    InsideRowSecondDivVideo.setAttribute('referrerpolicy','no-referrer-when-downgrade');
     InsideRowSecondDivVideo.setAttribute('src',videoUrl);
     InsideRowSecondDivVideo.style.width = '100%';
     InsideRowSecondDivVideo.style.height ='100%';
+    InsideRowSecondDivVideo.style.opacity = '1';
+    InsideRowSecondDivVideo.style.backgroundColor  = 'transparent';
+    InsideRowSecondDivVideo.style.position = 'absolute';
+    InsideRowSecondDivVideo.style.top = '0px';
+    InsideRowSecondDivVideo.style.left = '0px';
     InsideRowSecondDivVideo.setAttribute('scrolling','no');
     InsideRowSecondDivVideo.setAttribute('frameborder','0');
     InsideRowSecondDivVideo.setAttribute('allowtransparency','true');
