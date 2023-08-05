@@ -91,8 +91,8 @@
     InsideRowSecondDivVideo.setAttribute('class','vidyard_iframe');
     InsideRowSecondDivVideo.setAttribute('title','Infosys Digital Experience');
     InsideRowSecondDivVideo.setAttribute('src',videoUrl);
-    InsideRowSecondDivVideo.style.width = '640';
-    InsideRowSecondDivVideo.style.height ='360';
+    InsideRowSecondDivVideo.style.width = '100%';
+    InsideRowSecondDivVideo.style.height ='100%';
     InsideRowSecondDivVideo.setAttribute('scrolling','no');
     InsideRowSecondDivVideo.setAttribute('frameborder','0');
     InsideRowSecondDivVideo.setAttribute('allowtransparency','true');
