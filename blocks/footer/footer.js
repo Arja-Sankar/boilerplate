@@ -166,7 +166,7 @@ export default async function decorate(block) {
 
     var ftrcopyrightRowFifthDiv = document.createElement('div');
     ftrcopyrightRowFifthDiv.setAttribute('class','select-country');
-    ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowDiv);
+    ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowFifthDiv);
 
     var ftrcopyrightAnchor = document.createElement('a');
     ftrcopyrightAnchor.setAttribute('aria-label','Select Country');
