@@ -1,4 +1,3 @@
-
     //Getting main Div container
     var mainDiv = document.querySelector('.dx-text-media');
     
@@ -67,7 +66,6 @@
      var InsideRowPara = document.createElement('p');
     //adding class to para inside row Div
     InsideRowPara.setAttribute('class','para-ovr');
-  
    InsideRowPara.innerHTML = paraContent;
   InsideRowFirstDiv.appendChild(InsideRowPara);
 
@@ -104,8 +102,8 @@
     InsideRowSecondDivVideo.setAttribute('frameborder','0');
     InsideRowSecondDivVideo.setAttribute('allowtransparency','true');
     InsideRowSecondDivVideo.setAttribute('allowfullscreen','');
-   
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
+
     //creating anchor tag after row Div
     var outsideRowanchor = document.createElement('a');
     //adding attribute to anchor tag after row Div 
