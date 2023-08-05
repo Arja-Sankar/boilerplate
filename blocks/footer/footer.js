@@ -174,7 +174,7 @@ export default async function decorate(block) {
     ftrcopyrightAnchor.setAttribute('href',footerAnchorLinkContent);
     var footerAnchorContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > div > div > div')[2].innerText;
     ftrcopyrightAnchor.innerHTML = footerAnchorContent + `<span class="down-arrow"></span>`;
-    ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightAnchor);
+    ftrcopyrightRowFifthDiv.appendChild(ftrcopyrightAnchor);
 
     var ftrcopyrightRowSixDiv = document.createElement('div');
     ftrcopyrightRowSixDiv.setAttribute('class','option-country');
