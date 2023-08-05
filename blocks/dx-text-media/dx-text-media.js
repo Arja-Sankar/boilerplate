@@ -87,7 +87,7 @@
     //A variable that creates video tag to append in second div inside row Div 
     var InsideRowSecondDivVideo = document.createElement('iframe');
     // Local file to append in second div inside row Div 
-opacity: 1; background-color: transparent; position: absolute; top: 0px; left: 0px;
+
     InsideRowSecondDivVideo.setAttribute('class','vidyard-iframe-RjFVtvoiRvUJSA1EGC2Cmf');
     InsideRowSecondDivVideo.setAttribute('title','Infosys Digital Experience');
     InsideRowSecondDivVideo.setAttribute('allow','autoplay; fullscreen; picture-in-picture; camera; microphone; display-capture');
