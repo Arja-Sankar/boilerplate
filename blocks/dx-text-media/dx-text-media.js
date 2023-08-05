@@ -96,7 +96,7 @@
     InsideRowSecondDivVideo.setAttribute('scrolling','no');
     InsideRowSecondDivVideo.setAttribute('frameborder','0');
     InsideRowSecondDivVideo.setAttribute('allowtransparency','true');
-    InsideRowSecondDivVideo.setAttribute('','allowfullscreen');
+    InsideRowSecondDivVideo.setAttribute('allowfullscreen','');
    
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
     //creating anchor tag after row Div
