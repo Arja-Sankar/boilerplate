@@ -97,7 +97,7 @@
     InsideRowSecondDivVideo.style.height ='100%';
     InsideRowSecondDivVideo.style.opacity = '1';
     InsideRowSecondDivVideo.style.backgroundColor  = 'transparent';
-    InsideRowSecondDivVideo.style.position = 'absolute';
+    InsideRowSecondDivVideo.style.position = 'relative';
     InsideRowSecondDivVideo.style.top = '0px';
     InsideRowSecondDivVideo.style.left = '0px';
     InsideRowSecondDivVideo.setAttribute('scrolling','no');
