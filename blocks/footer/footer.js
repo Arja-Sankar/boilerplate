@@ -173,8 +173,7 @@ export default async function decorate(block) {
     var footerAnchorLinkContent = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > div > div > div')[1].innerText;
     ftrcopyrightAnchor.setAttribute('href',footerAnchorLinkContent);
     var footerAnchorContent = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > div > div > div')[2].innerText;
-    ftrcopyrightAnchor.innerHTML = footerAnchorContent;
-    ftrcopyrightAnchor.innerHTML = `<span class="down-arrow"></span>`;
+    ftrcopyrightAnchor.innerHTML = footerAnchorContent + `<span class="down-arrow"></span>`;
     ftrcopyrightRowDiv.appendChild(ftrcopyrightAnchor);
     
     // //copyright ends :
