@@ -178,7 +178,7 @@ export default async function decorate(block) {
 
     var ftrcopyrightRowSixDiv = document.createElement('div');
     ftrcopyrightRowSixDiv.setAttribute('class','option-country');
-    ftrcopyrightRowSixDiv.classList.add('class', 'open-country'); 
+    //ftrcopyrightRowSixDiv.classList.add('open-country'); 
     ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
 
  //   var ftrcopyrightUlContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
