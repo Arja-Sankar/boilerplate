@@ -89,8 +89,8 @@
     // Local file to append in second div inside row Div 
 
     InsideRowSecondDivVideo.setAttribute('class','vidyard_iframe');
-    InsideRowSecondDivVideo.setAttribute('title','Infosys-Digital-Experience');
-    // InsideRowSecondDivVideo.setAttribute('src',videoUrl);
+    InsideRowSecondDivVideo.setAttribute('title','Infosys Digital Experience');
+    InsideRowSecondDivVideo.setAttribute('src',videoUrl);
     // InsideRowSecondDivVideo.setAttribute('width','640');
     // InsideRowSecondDivVideo.setAttribute('height','360');
     // InsideRowSecondDivVideo.setAttribute('scrolling','no');
