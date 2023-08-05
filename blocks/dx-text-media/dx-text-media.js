@@ -88,14 +88,14 @@
     var InsideRowSecondDivVideo = document.createElement('iframe');
     // Local file to append in second div inside row Div 
 
-    InsideRowSecondDivVideo.setAttribute('class','vidyard_iframe');
-    InsideRowSecondDivVideo.setAttribute('title','Infosys-Digital-Experience');
-    InsideRowSecondDivVideo.setAttribute('src',videoUrl);
-    InsideRowSecondDivVideo.setAttribute('width','640');
-    InsideRowSecondDivVideo.setAttribute('height','360');
-    InsideRowSecondDivVideo.setAttribute('scrolling','no');
-    InsideRowSecondDivVideo.setAttribute('frameborder','0');
-    InsideRowSecondDivVideo.setAttribute('allowtransparency','true');
+    // InsideRowSecondDivVideo.setAttribute('class','vidyard_iframe');
+    // InsideRowSecondDivVideo.setAttribute('title','Infosys-Digital-Experience');
+    // InsideRowSecondDivVideo.setAttribute('src',videoUrl);
+    // InsideRowSecondDivVideo.setAttribute('width','640');
+    // InsideRowSecondDivVideo.setAttribute('height','360');
+    // InsideRowSecondDivVideo.setAttribute('scrolling','no');
+    // InsideRowSecondDivVideo.setAttribute('frameborder','0');
+    // InsideRowSecondDivVideo.setAttribute('allowtransparency','true');
     // InsideRowSecondDivVideo.setAttribute('','allowfullscreen');
    
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
