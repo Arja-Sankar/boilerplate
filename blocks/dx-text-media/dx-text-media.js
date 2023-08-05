@@ -90,7 +90,7 @@
 
     InsideRowSecondDivVideo.setAttribute('class','vidyard_iframe');
     InsideRowSecondDivVideo.setAttribute('title','Infosys Digital Experience');
-    InsideRowSecondDivVideo.src = videoUrl;
+    InsideRowSecondDivVideo.setAttribute('src',videoUrl);
     InsideRowSecondDivVideo.setAttribute('width','640');
     InsideRowSecondDivVideo.setAttribute('height','360');
     InsideRowSecondDivVideo.setAttribute('scrolling','no');
