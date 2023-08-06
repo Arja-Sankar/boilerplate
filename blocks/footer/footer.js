@@ -183,6 +183,7 @@ export default async function decorate(block) {
      function onclck(){
        var ftrcopyrightRowSixDivClass = document.getElementsByClassName("option-country");
       ftrcopyrightRowSixDivClass.classList.add('open-country'); 
+         ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
     }
     ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
 
