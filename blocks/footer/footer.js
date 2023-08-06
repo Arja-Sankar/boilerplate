@@ -185,7 +185,7 @@ export default async function decorate(block) {
       ftrcopyrightRowSixDivClass.classList.add('open-country'); 
          ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
     }
-    ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
+    //ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
 
  //   var ftrcopyrightUlContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
     var ftrcopyrightUlContent = document.createElement('ul');
