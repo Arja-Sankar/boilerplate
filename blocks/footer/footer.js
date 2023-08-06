@@ -180,12 +180,7 @@ export default async function decorate(block) {
     ftrcopyrightRowSixDiv.setAttribute('class','option-country');
     ftrcopyrightRowSixDiv.setAttribute('onclick','onclck()');
     //ftrcopyrightRowSixDiv.classList.add('open-country'); 
-     function onclck(){
-       var ftrcopyrightRowSixDivClass = document.getElementsByClassName("option-country");
-      ftrcopyrightRowSixDivClass.classList.add('open-country'); 
-         ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
-    }
-    //ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
+    ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
 
  //   var ftrcopyrightUlContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
     var ftrcopyrightUlContent = document.createElement('ul');
