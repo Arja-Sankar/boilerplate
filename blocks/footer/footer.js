@@ -181,7 +181,8 @@ export default async function decorate(block) {
     ftrcopyrightRowSixDiv.setAttribute('onclick','onclck()');
     //ftrcopyrightRowSixDiv.classList.add('open-country'); 
      function onclck(){
-      ftrcopyrightRowSixDiv.classList.add('open-country'); 
+       var ftrcopyrightRowSixDivClass = document.getElementsByClassName("option-country");
+      ftrcopyrightRowSixDivClass.classList.add('open-country'); 
     }
     ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
 
