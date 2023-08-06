@@ -178,6 +178,7 @@ export default async function decorate(block) {
 
     var ftrcopyrightRowSixDiv = document.createElement('div');
     ftrcopyrightRowSixDiv.setAttribute('class','option-country');
+    ftrcopyrightRowSixDiv.setAttribute('onclick','onclck()');
     //ftrcopyrightRowSixDiv.classList.add('open-country'); 
     ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
 
@@ -185,6 +186,11 @@ export default async function decorate(block) {
     var ftrcopyrightUlContent = document.createElement('ul');
     ftrcopyrightUlContent.classList.add('list-unstyled', 'country-align'); 
     ftrcopyrightRowSixDiv.append(ftrcopyrightUlContent);
+    function onclck(){
+      ftrcopyrightRowSixDiv.classList.add('open-country'); 
+    }
+    
+    
     ftrcopyrightUlContent.innerHTML = `
                                         <li><a aria-label="Go to Australia Page" href="/australia.html">Australia</a></li>
                                         <li><a aria-label="Go to Austria Page" href="/at-en/">Austria</a></li>
