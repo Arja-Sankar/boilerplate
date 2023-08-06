@@ -175,13 +175,14 @@ export default async function decorate(block) {
     var footerAnchorContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > div > div > div')[2].innerText;
     ftrcopyrightAnchor.innerHTML = footerAnchorContent + `<span class="down-arrow"></span>`;
     ftrcopyrightRowFifthDiv.appendChild(ftrcopyrightAnchor);
-  function onclck(){
-      ftrcopyrightRowSixDiv.classList.add('open-country'); 
-    }
+ 
     var ftrcopyrightRowSixDiv = document.createElement('div');
     ftrcopyrightRowSixDiv.setAttribute('class','option-country');
     ftrcopyrightRowSixDiv.setAttribute('onclick','onclck()');
     //ftrcopyrightRowSixDiv.classList.add('open-country'); 
+     function onclck(){
+      ftrcopyrightRowSixDiv.classList.add('open-country'); 
+    }
     ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
 
  //   var ftrcopyrightUlContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
