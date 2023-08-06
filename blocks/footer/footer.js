@@ -175,7 +175,9 @@ export default async function decorate(block) {
     var footerAnchorContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > div > div > div')[2].innerText;
     ftrcopyrightAnchor.innerHTML = footerAnchorContent + `<span class="down-arrow"></span>`;
     ftrcopyrightRowFifthDiv.appendChild(ftrcopyrightAnchor);
-
+  function onclck(){
+      ftrcopyrightRowSixDiv.classList.add('open-country'); 
+    }
     var ftrcopyrightRowSixDiv = document.createElement('div');
     ftrcopyrightRowSixDiv.setAttribute('class','option-country');
     ftrcopyrightRowSixDiv.setAttribute('onclick','onclck()');
@@ -186,11 +188,6 @@ export default async function decorate(block) {
     var ftrcopyrightUlContent = document.createElement('ul');
     ftrcopyrightUlContent.classList.add('list-unstyled', 'country-align'); 
     ftrcopyrightRowSixDiv.append(ftrcopyrightUlContent);
-    function onclck(){
-      ftrcopyrightRowSixDiv.classList.add('open-country'); 
-    }
-    
-    
     ftrcopyrightUlContent.innerHTML = `
                                         <li><a aria-label="Go to Australia Page" href="/australia.html">Australia</a></li>
                                         <li><a aria-label="Go to Austria Page" href="/at-en/">Austria</a></li>
