@@ -15,9 +15,9 @@
      mainDivDX.appendChild(mainTextBodyElem);
     // Getting content from DOC    
     var ulDXContent = document.querySelector('.dx-digital-experience-wrapper > .freeflowhtml > div > div > ul');
-    var mainDXClassHeading =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[0].textContent;
-    var poneDXClassPara =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[1].textContent;
-    var ptwoDXClassPara =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[2].textContent;
+    var mainDXClassHeading =  document.querySelectorAll('.dx-digital-experience-wrapper > .freeflowhtml > div > div')[0].textContent;
+    var poneDXClassPara =  document.querySelectorAll('.dx-digital-experience-wrapper > .freeflowhtml > div > div')[1].textContent;
+    var ptwoDXClassPara =  document.querySelectorAll('.dx-digital-experience-wrapper > .freeflowhtml > div > div')[2].textContent;
     //creating article
     var articleDXElem = document.createElement('article');
     //adding class to article
