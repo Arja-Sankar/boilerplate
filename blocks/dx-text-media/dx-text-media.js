@@ -46,7 +46,7 @@
     InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
 
     //Getting div container presented from plain.html For Hiding
-    var InsideMainDiv = document.querySelector('.freeflowhtml > div');
+    var InsideMainDiv = document.querySelector('.dx-text-media-wrapper > .freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
      var paraContent = document.querySelectorAll('.dx-text-media-wrapper > .freeflowhtml > div > div')[1].textContent;
