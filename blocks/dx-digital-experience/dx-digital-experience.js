@@ -6,10 +6,10 @@
 
      mainDivDX.setAttribute('class','freeflowhtml');
     // Getting content from DOC
-    var mainDXClassHeading =  document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
-    var poneDXClassPara =  document.querySelectorAll('.freeflowhtml > div > div')[1].textContent;
-    var ptwoDXClassPara =  document.querySelectorAll('.freeflowhtml > div > div')[2].textContent;
-    var ulDXContent = document.querySelector('.freeflowhtml > div > div > ul');
+    var mainDXClassHeading =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[0].textContent;
+    var poneDXClassPara =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[1].textContent;
+    var ptwoDXClassPara =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[2].textContent;
+    var ulDXContent = document.querySelector('dx-digital-experience-wrapper > .freeflowhtml > div > div > ul');
       //adding classNames to main Div
       mainDivDX.classList.add('aem-GridColumn','aem-GridColumn--default--12');
    
