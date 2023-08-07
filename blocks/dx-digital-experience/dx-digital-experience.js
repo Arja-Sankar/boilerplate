@@ -1,7 +1,10 @@
   //Getting main Div container
     var mainDivDX = document.querySelector('.dx-digital-experience-wrapper > .dx-digital-experience.block');
-    
-     mainDiv.setAttribute('class','freeflowhtml');
+      //hiding content
+   var mainDXContent = document.querySelector('.dx-digital-experience-wrapper > .dx-digital-experience.block > div');
+    mainDXContent.style.display = 'none';
+
+     mainDivDX.setAttribute('class','freeflowhtml');
     // Getting content from DOC
     var mainDXClassHeading =  document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
     var poneDXClassPara =  document.querySelectorAll('.freeflowhtml > div > div')[1].textContent;
