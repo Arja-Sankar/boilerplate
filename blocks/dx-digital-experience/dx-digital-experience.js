@@ -4,12 +4,7 @@
    var mainDXContent = document.querySelector('.dx-digital-experience-wrapper > .dx-digital-experience.block > div');
     mainDXContent.style.display = 'none';
 
-     mainDivDX.setAttribute('class','freeflowhtml');
-    // Getting content from DOC
-    var mainDXClassHeading =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[0].textContent;
-    var poneDXClassPara =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[1].textContent;
-    var ptwoDXClassPara =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[2].textContent;
-    var ulDXContent = document.querySelector('dx-digital-experience-wrapper > .freeflowhtml > div > div > ul');
+       mainDivDX.setAttribute('class','freeflowhtml');
       //adding classNames to main Div
       mainDivDX.classList.add('aem-GridColumn','aem-GridColumn--default--12');
    
@@ -18,7 +13,11 @@
     //adding Id to section
     mainTextBodyElem.setAttribute('id','main-text-body');
      mainDivDX.appendChild(mainTextBodyElem);
-   
+    // Getting content from DOC    
+    var ulDXContent = document.querySelector('.dx-digital-experience-wrapper > .freeflowhtml > div > div > ul');
+    var mainDXClassHeading =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[0].textContent;
+    var poneDXClassPara =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[1].textContent;
+    var ptwoDXClassPara =  document.querySelectorAll('dx-digital-experience-wrapper > .freeflowhtml > div > div')[2].textContent;
     //creating article
     var articleDXElem = document.createElement('article');
     //adding class to article
