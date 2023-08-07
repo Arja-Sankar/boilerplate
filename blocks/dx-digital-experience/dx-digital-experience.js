@@ -1,5 +1,5 @@
   //Getting main Div container
-    var mainDivDX = document.querySelector('.dx-digital-experience');
+    var mainDivDX = document.querySelector('.dx-digital-experience-wrapper > .dx-digital-experience.block');
     
      mainDiv.setAttribute('class','freeflowhtml');
     // Getting content from DOC
@@ -8,13 +8,13 @@
     var ptwoDXClassPara =  document.querySelectorAll('.freeflowhtml > div > div')[2].textContent;
     var ulDXContent = document.querySelector('.freeflowhtml > div > div > ul');
       //adding classNames to main Div
-      mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
+      mainDivDX.classList.add('aem-GridColumn','aem-GridColumn--default--12');
    
     //creating div element
     var mainTextBodyElem = document.createElement('div');
     //adding Id to section
     mainTextBodyElem.setAttribute('id','main-text-body');
-     mainDiv.appendChild(mainTextBodyElem);
+     mainDivDX.appendChild(mainTextBodyElem);
    
     //creating article
     var articleDXElem = document.createElement('article');
