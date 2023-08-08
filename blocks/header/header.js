@@ -52,38 +52,38 @@ function toggleAllNavSections(sections, expanded = false) {
  * @param {Element} navSections The nav sections within the container element
  * @param {*} forceExpanded Optional param to force nav expand behavior when not null
  */
-function toggleMenu(nav, navSections, forceExpanded = null) {
-  const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
-  const button = nav.querySelector('.nav-hamburger button');
-  document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
-  nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-  toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
-  button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
-  // enable nav dropdown keyboard accessibility
-  const navDrops = navSections.querySelectorAll('.nav-drop');
-  if (isDesktop.matches) {
-    navDrops.forEach((drop) => {
-      if (!drop.hasAttribute('tabindex')) {
-        drop.setAttribute('role', 'button');
-        drop.setAttribute('tabindex', 0);
-        drop.addEventListener('focus', focusNavSection);
-      }
-    });
-  } else {
-    navDrops.forEach((drop) => {
-      drop.removeAttribute('role');
-      drop.removeAttribute('tabindex');
-      drop.removeEventListener('focus', focusNavSection);
-    });
-  }
-  // enable menu collapse on escape keypress
-  if (!expanded || isDesktop.matches) {
-    // collapse menu on escape press
-    window.addEventListener('keydown', closeOnEscape);
-  } else {
-    window.removeEventListener('keydown', closeOnEscape);
-  }
-}
+// function toggleMenu(nav, navSections, forceExpanded = null) {
+//   const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
+//   const button = nav.querySelector('.nav-hamburger button');
+//   document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
+//   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+//   toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
+//   button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
+//   // enable nav dropdown keyboard accessibility
+//   const navDrops = navSections.querySelectorAll('.nav-drop');
+//   if (isDesktop.matches) {
+//     navDrops.forEach((drop) => {
+//       if (!drop.hasAttribute('tabindex')) {
+//         drop.setAttribute('role', 'button');
+//         drop.setAttribute('tabindex', 0);
+//         drop.addEventListener('focus', focusNavSection);
+//       }
+//     });
+//   } else {
+//     navDrops.forEach((drop) => {
+//       drop.removeAttribute('role');
+//       drop.removeAttribute('tabindex');
+//       drop.removeEventListener('focus', focusNavSection);
+//     });
+//   }
+//   // enable menu collapse on escape keypress
+//   if (!expanded || isDesktop.matches) {
+//     // collapse menu on escape press
+//     window.addEventListener('keydown', closeOnEscape);
+//   } else {
+//     window.removeEventListener('keydown', closeOnEscape);
+//   }
+// }
 
 /**
  * decorates the header, mainly the nav
@@ -123,18 +123,18 @@ export default async function decorate(block) {
       });
     }
 
-    // hamburger for mobile
-    const hamburger = document.createElement('div');
-    hamburger.classList.add('nav-hamburger');
-    hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
-        <span class="nav-hamburger-icon"></span>
-      </button>`;
-    hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-    nav.prepend(hamburger);
-    nav.setAttribute('aria-expanded', 'false');
-    // prevent mobile nav behavior on window resize
-    toggleMenu(nav, navSections, isDesktop.matches);
-    isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
+    // // hamburger for mobile
+    // const hamburger = document.createElement('div');
+    // hamburger.classList.add('nav-hamburger');
+    // hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
+    //     <span class="nav-hamburger-icon"></span>
+    //   </button>`;
+    // hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
+    // nav.prepend(hamburger);
+    // nav.setAttribute('aria-expanded', 'false');
+    // // prevent mobile nav behavior on window resize
+    // toggleMenu(nav, navSections, isDesktop.matches);
+    // isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
     decorateIcons(nav);
     const navWrapper = document.createElement('div');
