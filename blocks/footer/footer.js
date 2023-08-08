@@ -253,7 +253,7 @@ export default async function decorate(block) {
                                         <li><a aria-label="Go to Americas Page" href="/americas.html">United States</a></li>
                                   `;
    
-    $(document).ready(function () {
+ //   $(document).ready(function () {
 
 // /* ------------- Country Selection Part ---------------*/
 // 	$(document).on("click", ".select-country, .option-country > ul > li", function () {
