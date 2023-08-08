@@ -1,5 +1,5 @@
-/* header and nav layout */
-header .nav-wrapper {
+ /* header and nav layout */
+/*header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   z-index: 2;
@@ -57,7 +57,7 @@ header nav a:any-link {
   color: currentcolor;
 }
 
-/* hamburger */
+/* hamburger 
 header nav .nav-hamburger {
   grid-area: hamburger;
   height: 22px;
@@ -152,7 +152,7 @@ header nav .nav-brand img {
   height: auto;
 }
 
-/* sections */
+/* sections 
 header nav .nav-sections {
   grid-area: sections;
   flex: 1 1 auto;
@@ -269,7 +269,8 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
-/* tools */
+/* tools 
 header nav .nav-tools {
   grid-area: tools;
 }
+ */
