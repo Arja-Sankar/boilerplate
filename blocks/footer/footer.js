@@ -181,21 +181,7 @@ export default async function decorate(block) {
    // ftrcopyrightRowSixDiv.setAttribute('onclick','onclck()');
    // ftrcopyrightRowSixDiv.classList.add('open-country'); 
     ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
-// /* ------------- Country Selection Part ---------------*/
-	document.on("click", ".select-country, .option-country > ul > li", function () {
-		document.getElementByClassName("option-country").classList.toggle("open-country");
-		if (document.getElementByClassName("option-country").classList.contains("open-country")) {
-			document.getElementByClassName("down-arrow").classList.add("up-arrow").classList.remove("down-arrow");
-		} else {
-			document.getElementByClassName("up-arrow").classList.add("down-arrow").classList.remove("up-arrow");
-		}
-	});
-	document.on('click', 'body', function (e) {
-		if (!$(e.target).is('.select-country > a')) {
-			$('.option-country.open-country').classList.remove("open-country");
-			document.getElementByClassName("up-arrow").classList.add("down-arrow").classList.remove("up-arrow");
-		}
-	});
+
  //   var ftrcopyrightUlContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
     var ftrcopyrightUlContent = document.createElement('ul');
     ftrcopyrightUlContent.classList.add('list-unstyled', 'country-align'); 
@@ -255,23 +241,26 @@ export default async function decorate(block) {
    
  //   $(document).ready(function () {
 
-// /* ------------- Country Selection Part ---------------*/
-// 	$(document).on("click", ".select-country, .option-country > ul > li", function () {
-// 		$(".option-country").toggleClass("open-country");
-// 		if ($(".option-country").hasClass("open-country")) {
-// 			$(".down-arrow").addClass("up-arrow").removeClass("down-arrow");
-// 		} else {
-// 			$(".up-arrow").addClass("down-arrow").removeClass("up-arrow");
-// 		}
-// 	});
-// 	$(document).on('click', 'body', function (e) {
-// 		if (!$(e.target).is('.select-country > a')) {
-// 			$('.option-country.open-country').removeClass('open-country');
-// 			$(".up-arrow").addClass("down-arrow").removeClass("up-arrow");
-// 		}
-// 	});
-// 	});
-    
+
+	// });
+    // /* ------------- Country Selection Part ---------------*/
+	(function() {
+    /* ------------- Country Selection Part ---------------*/
+	$(document).on("click", ".select-country, .option-country > ul > li", function () {
+		$(".option-country").toggleClass("open-country");
+		if ($(".option-country").hasClass("open-country")) {
+			$(".down-arrow").addClass("up-arrow").removeClass("down-arrow");
+		} else {
+			$(".up-arrow").addClass("down-arrow").removeClass("up-arrow");
+		}
+	});
+	$(document).on('click', 'body', function (e) {
+		if (!$(e.target).is('.select-country > a')) {
+			$('.option-country.open-country').removeClass('open-country');
+			$(".up-arrow").addClass("down-arrow").removeClass("up-arrow");
+		}
+	});
+})();
     // //copyright ends :
   }
 }
