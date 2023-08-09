@@ -141,5 +141,44 @@ export default async function decorate(block) {
     navWrapper.className = 'nav-wrapper';
     navWrapper.append(nav);
     block.append(navWrapper);
+
+    var mainDXNavContent = document.querySelector('.nav-wrapper > #nav > div');
+    mainDXNavContent.style.display = 'none';
+    
+    var getMainNav = document.querySelector('.nav-wrapper > #nav');
+    getMainNav.classList.add('navbar', 'navbar-default', 'navbar-fixed-top', 'scrollbg-show');
+    getMainNav.setAttribute('role','navigation');
+
+    var navFirstDxDiv = document.createElement('div');
+    navFirstDxDiv.classList.add('container', 'mt45');
+    getMainNav.appendChild(navFirstDxDiv);
+
+    var navSecondDxDiv = document.createElement('div');
+    navFirstDxDiv.classList.add('navbar-header', 'page-scroll');
+    navFirstDxDiv.appendChild(navSecondDxDiv);
+
+    var navThirdDXAnchor = document.createElement('a');
+    var anchorTitleContentDX = document.querySelectorAll('.nav-wrapper > #nav > div > .nav-logo-list > div > div')[1].innerText;
+    var anchorlinkDX = document.querySelectorAll('.nav-wrapper > #nav > div > .nav-logo-list > div > div')[2].innerText;
+    navThirdDXAnchor.setAttribute('class','navbar-brand');
+    navThirdDXAnchor.setAttribute('href',anchorlinkDX);
+    navThirdDXAnchor.setAttribute('title',anchorTitleContentDX);
+    navThirdDXAnchor.setAttribute('aria-label',anchorTitleContentDX);
+    navSecondDxDiv.appendChild(navThirdDXAnchor);
+    
+    var logoPictureSrc = document.querySelector('.nav-wrapper > #nav > div > .nav-logo-list > div > div > picture > img');
+    navThirdDXAnchor.appendChild(logoPictureSrc);
+
+    var navSecondContainerDiv = document.createElement('div');
+    navSecondContainerDiv.classList.add('header-menu', 'hidden-tab');
+    navSecondContainerDiv.style.display = 'block';
+    navFirstDxDiv.appendChild(navSecondContainerDiv);
+
+    var getnavUlDXContent = document.querySelector('.nav-wrapper > #nav > div > .nav-logo-list > div > div > ul');
+    navSecondContainerDiv.appendChild(getnavUlDXContent);
+
+
+    
+    
   }
 }
