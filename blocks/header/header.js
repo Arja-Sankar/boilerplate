@@ -154,7 +154,7 @@ export default async function decorate(block) {
     getMainNav.appendChild(navFirstDxDiv);
 
     var navSecondDxDiv = document.createElement('div');
-    navFirstDxDiv.classList.add('navbar-header', 'page-scroll');
+    navSecondDxDiv.classList.add('navbar-header', 'page-scroll');
     navFirstDxDiv.appendChild(navSecondDxDiv);
 
     var navThirdDXAnchor = document.createElement('a');
