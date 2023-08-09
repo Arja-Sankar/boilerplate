@@ -178,8 +178,9 @@ export default async function decorate(block) {
     getnavUlDXContent.classList.add('nav', 'navbar-nav', 'navbar-right', 'pos-right');
     navSecondContainerDiv.appendChild(getnavUlDXContent);
 
-
-    
+    var searchDX = document.createElement('div');
+    searchDX.setAttribute('role','search');
+    navFirstDxDiv.appendChild(searchDX);
     
   }
 }
