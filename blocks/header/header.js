@@ -175,6 +175,7 @@ export default async function decorate(block) {
     navFirstDxDiv.appendChild(navSecondContainerDiv);
 
     var getnavUlDXContent = document.querySelector('.nav-wrapper > #nav > div > .nav-logo-list > div > div > ul');
+    getnavUlDXContent.classList.add('nav', 'navbar-nav', 'navbar-right', 'pos-right');
     navSecondContainerDiv.appendChild(getnavUlDXContent);
 
 
