@@ -182,7 +182,7 @@ export default async function decorate(block) {
     searchDX.setAttribute('role','search');
     navFirstDxDiv.appendChild(searchDX);
     
-    var searchNavImg = document.querySelector('.nav-wrapper > #nav > div > p > span > svg');
-    searchDX.appendChild(searchNavImg);
+    var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
+    searchDX.appendChild(searchNavDXImg);
   }
 }
