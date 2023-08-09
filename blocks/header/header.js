@@ -181,8 +181,61 @@ export default async function decorate(block) {
     var searchDX = document.createElement('div');
     searchDX.setAttribute('role','search');
     navFirstDxDiv.appendChild(searchDX);
-    
-    var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
-    searchDX.appendChild(searchNavDXImg);
+    searchDX.innerHTML = `
+     <div class="search__color">
+	<svg class="hidden1">
+		<defs>
+			<symbol id="icon-search" viewBox="0 0 24 24">
+				<title>search</title>
+				<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+			</symbol>
+			<symbol id="icon-cross" viewBox="0 0 24 24">
+				<title>cross</title>
+				<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+			</symbol>
+		</defs>
+	</svg>
+	<div class="main-wrap">
+	<div class="search-wrap search-icon" style="top: 47px;">
+		<button id="btn-search" class="btn1 btn--search" aria-label="Click to search" style="color: rgb(255, 255, 255);">
+			<svg class="icon icon--search">
+					<use xlink:href="#icon-search"></use>
+			</svg>
+		</button>
+	</div>
+	</div>
+	<div class="search" aria-label="Site Search" style="width: auto;">
+		<div class="search__inner search__inner--up">
+			<!--action needs to be attached-->
+			<form class="search__form" action="/search.html" method="get">
+				<input id="k" class="search__input" name="k" type="search" placeholder="What are you looking for?" autocomplete="off" spellcheck="false" title="Search" aria-label="search text" tabindex="-1">
+                               <label for="k" class="none">Search</label>
+				<span class="search__info">Hit enter to search or ESC to close</span>
+				<!-- <sly data-sly-test="false"><input id="search-categories" type="hidden" name="c" value="" /></sly> -->
+
+			</form>
+		</div>
+                 <button id="btn-search-close" class="btn1 btn--search-close" aria-label="Close search form" style="color: rgb(255, 255, 255);" tabindex="-1">
+			<svg class="icon icon--cross">
+				<use xlink:href="#icon-cross"></use>
+			</svg>
+		</button>
+		<div class="search__inner search__inner--down">
+			<!-- search related content-->
+			<div class="search__related"></div>
+		</div>
+	</div>
+	<img src="/content/dam/infosys-web/en/global-resource/images/calendar.png" alt="" class="calendar-img">
+<div class="calendar-full-wrapper">
+	<div class="calendar-triangle"></div>
+	<div class="calendar-box"><button class="calendar-close visible-xs">×</button><div class="calendar-wrap calendar-box1"><div class="calendar-heading"><span>News</span></div><div class="calendar-para"><ul><li><span>Press Release</span><a href="/newsroom/press-releases/2023/leader-5g-engineering-services-assessment2023.html" title="Infosys Positioned as a Leader for the Second Consecutive Year in the Everest Group 5G Engineering Services PEAK Matrix® Assessment 2023" class="calendar-link">Infosys Positioned as a Leader for the Second Consecutive Year in the Everest Group 5G Engineering Services PEAK Matrix® Assessment 2023</a></li></ul><div class="moreText"><ul><li><span>Press Release</span><a href="/investors/reports-filings/quarterly-results/2023-2024/q1.html" title="Financial Information for the First Quarter ended June 30, 2023" class="calendar-link">Financial Information for the First Quarter ended June 30, 2023</a></li><li><span>Press Release</span><a href="/newsroom/press-releases/2023/transforms-banks-customer-employee-experience.html" title="Infosys Transforms Bendigo and Adelaide Bank?s Customer and Employee Experience" class="calendar-link">Infosys Transforms Bendigo and Adelaide Bank?s Customer and Employee Experience</a></li><li><span>Press Release</span><a href="/content/dam/infosys-web/en/newsroom/press-releases/documents/2023/q1-july20-2023.pdf" title="Infosys to Announce First Quarter Results on July 20, 2023" class="calendar-link">Infosys to Announce First Quarter Results on July 20, 2023</a></li><li><span>Press Release</span><a href="/newsroom/press-releases/2023/public-services-expands-canada.html" title="Infosys Public Services Expands in Canada" class="calendar-link">Infosys Public Services Expands in Canada</a></li></ul></div><button class="textButton">Show More <i class="fa fa-plus" aria-hidden="true"></i></button></div></div><div class="calendar-wrap calendar-box2"><div class="calendar-heading"><span>Events</span></div><div class="calendar-para"><ul><li><span>undefined</span><a href="/newsroom/events/2023/business-desk-leadership-forum.html" title="Infosys and BusinessDesk - Leadership Forum" class="calendar-link">Infosys and BusinessDesk - Leadership Forum</a></li></ul><div class="moreText"><ul><li><span>undefined</span><a href="/newsroom/events/2023/startup-day-sap.html" title="Infosys Startup Day ? SAP " class="calendar-link">Infosys Startup Day ? SAP </a></li><li><span>undefined</span><a href="/newsroom/events/2023/ai-first-quality-engineering.html" title="AI-First in Quality Engineering" class="calendar-link">AI-First in Quality Engineering</a></li><li><span>Event</span><a href="/newsroom/events/2023/google-cloud-next-2023.html" title="Infosys Cobalt at Google Cloud Next 2023" class="calendar-link">Infosys Cobalt at Google Cloud Next 2023</a></li><li><span>undefined</span><a href="/newsroom/events/2023/spe-offshore-europe-2023.html" title="Infosys is one of the main partners for the Energy Transition zone at SPE Offshore Europe 2023" class="calendar-link">Infosys is one of the main partners for the Energy Transition zone at SPE Offshore Europe 2023</a></li></ul></div><button class="textButton">Show More <i class="fa fa-plus" aria-hidden="true"></i></button></div></div><div class="calendar-wrap calendar-box3"><div class="calendar-heading"><span>Infosys Stories</span></div><div class="calendar-para"><ul><li><span>undefined</span><a href="/infosys-stories/living-our-purpose/new-age-cyber-heroes.html" title="The rise of the new-age cyber-heroes" class="calendar-link">The rise of the new-age cyber-heroes</a></li></ul><div class="moreText"><ul><li><span>Article</span><a href="/infosys-stories/living-our-purpose/cybersecurity-gamification-way.html" title="Building fun into cybersecurity? Gamification is the way" class="calendar-link">Building fun into cybersecurity? Gamification is the way</a></li><li><span>Article</span><a href="/infosys-stories/nurturing-our-people/abdul-story.html" title="What you seek is seeking you" class="calendar-link">What you seek is seeking you</a></li><li><span>Article</span><a href="/infosys-stories/nurturing-our-people/mission-maatram.html" title="Mission Maatram: Alleviating poverty through education" class="calendar-link">Mission Maatram: Alleviating poverty through education</a></li><li><span>Article</span><a href="/infosys-stories/nurturing-our-people/mark-webber.html" title="Mark Webber | Infosys Stories" class="calendar-link">Mark Webber | Infosys Stories</a></li></ul></div><button class="textButton">Show More <i class="fa fa-plus" aria-hidden="true"></i></button></div></div></div>
+</div>
+	
+		
+	
+</div>
+     `
+    // var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
+    // searchDX.appendChild(searchNavDXImg);
   }
 }
