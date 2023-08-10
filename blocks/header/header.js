@@ -319,11 +319,11 @@ export default async function decorate(block) {
 	  insideDXOLLIAnchor.classList.add('dropdown-toggle', 'disabled');
 	  insideDXOLLIAnchor.setAttribute('data-toggle', 'dropdown');
 	  insideDXOLLIAnchor.setAttribute('aria-expanded', 'false');
-	  insideDXOLLIDIV.appendChild(insideDXOLLIAnchor);
+	  insideDXOLDIV.appendChild(insideDXOLLIAnchor);
 	   insideDXOLLIAnchor.innerHTML = docContentDX;
 	  
 		insideDXOLLIAnchor.innerHTML = `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
-	  insideDXOLLIDIV.innerHTML = `
+	  insideDXOLDIV.innerHTML = `
    						<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
 								 
 
