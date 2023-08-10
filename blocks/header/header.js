@@ -229,5 +229,11 @@ export default async function decorate(block) {
      `
     // var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
     // searchDX.appendChild(searchNavDXImg);
+
+	
+	  var breadcrumbDX = document.createElement('div');
+	  breadcrumbDX.classList.add('responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
+	  var insideBreadcrumbDX = document.querySelector('.dx-breadcrumb-wrapper > .dx-breadcrumb.block');
+	  insideBreadcrumbDX.appendChild(insideBreadcrumbDX);
   }
 }
