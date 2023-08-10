@@ -550,8 +550,8 @@ export default async function decorate(block) {
    					`;
 
 
- insideDXOLLIDIV.appendChild(insideDXOLLIAnchorONe+abc);
-
+ insideDXOLLIDIV.innerHTML = insideDXOLLIAnchorONe + abc;
+ 
 
 
 
