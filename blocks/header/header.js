@@ -230,10 +230,338 @@ export default async function decorate(block) {
     // var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
     // searchDX.appendChild(searchNavDXImg);
 
-	
+	// Bread-Crumb Code Starts 
 	  var breadcrumbDX = document.createElement('div');
 	  breadcrumbDX.classList.add('responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
 	  var insideBreadcrumbDX = document.querySelector('.dx-breadcrumb-wrapper > .dx-breadcrumb.block');
 	  insideBreadcrumbDX.appendChild(breadcrumbDX);
+
+	  var insideBreadcrumbDXFirstDiv = document.createElement('div');
+	  insideBreadcrumbDXFirstDiv.classList.add('aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
+	  breadcrumbDX.appendChild(insideBreadcrumbDXFirstDiv);
+
+	  var insideBreadcrumbDXSecondDiv = document.createElement('div');
+	  insideBreadcrumbDXSecondDiv.classList.add('breadcrumb', 'aem-GridColumn', 'aem-GridColumn--default--12');
+	  insideBreadcrumbDXFirstDiv.appendChild(insideBreadcrumbDXSecondDiv);
+		// <!-- Breadcrumb Start -->
+	  var insideBreadcrumbDXThirdDiv = document.createElement('div');
+	  insideBreadcrumbDXThirdDiv.style.backgroundColor = '#0000';
+	  insideBreadcrumbDXSecondDiv.appendChild(insideBreadcrumbDXThirdDiv);
+	  insideBreadcrumbDXThirdDiv.innerHTML = `
+   			<script type="application/ld+json">
+			   {
+			  "@context": "https://schema.org",
+			  "@type": "BreadcrumbList",
+			  "itemListElement": [
+			    {
+			      "@type": "ListItem",
+			      "position": 1,
+			      "item": {
+			        "@id": "https://www.infosys.com/services.html",
+			        "name": "Services"
+			      }
+			    },
+			    {
+			      "@type": "ListItem",
+			      "position": 2,
+			      "item": {
+			        "@id": "https://www.infosys.com/services/digital-experience.html",
+			        "name": "Digital Experience"
+			      }
+			    }
+			  ]
+			} 
+			   </script>
+   		`;
+
+	  var insideDXSectionNav = document.createElement('section');
+	  insideDXSectionNav.setAttribute('class','breadcrumb-menu');
+	  insideBreadcrumbDXThirdDiv.appendChild(insideDXSectionNav);
+
+	  var insideDXArticleNav = document.createElement('article');
+	  insideDXArticleNav.setAttribute('class','container');
+	  insideDXSectionNav.appendChild(insideDXArticleNav);
+
+	  var insideDXInsideArticleDIV = document.createElement('div');
+	  insideDXInsideArticleDIV.setAttribute('class','row');
+	  insideDXArticleNav.appendChild(insideDXInsideArticleDIV);
+
+	  var insideDXInsideArticleSecndDIV = document.createElement('div');
+	  insideDXInsideArticleSecndDIV.classList.add('col-md-12', 'col-sm-12', 'col-xs-12');
+	  insideDXInsideArticleDIV.appendChild(insideDXInsideArticleSecndDIV);
+
+	  var insideDXInsideArticleThirdDIV = document.createElement('div');
+	  insideDXInsideArticleThirdDIV.setAttribute('class','listmenu');
+	  insideDXInsideArticleThirdDIV.style.zIndex = '9';
+	  insideDXInsideArticleSecndDIV.appendChild(insideDXInsideArticleThirdDIV);
+	  
+	   var insideDXInsideArticlefourthDIV = document.createElement('div');
+	  insideDXInsideArticlefourthDIV.setAttribute('class','hero-list');
+	  insideDXInsideArticleThirdDIV.appendChild(insideDXInsideArticlefourthDIV);
+
+	  var insideDXInsideNavMain = document.createElement('nav');
+	  insideDXInsideNavMain.setAttribute('aria-label','Breadcrumb');
+	  insideDXInsideArticlefourthDIV.appendChild(insideDXInsideNavMain);
+
+	  var insideDXOLDIV = document.createElement('ol');
+	  insideDXOLDIV.classList.add('breadcrumb', 'rmv-breadcrum', 'navbar-left', 'hidden-tab');
+	  insideDXInsideNavMain.appendChild(insideDXOLDIV);
+
+	var docContentDX = document.querySelectorAll('.nav-wrapper > #nav > div > .nav-logo-list > div > div')[4];
+	var docContentNextDx = document.querySelectorAll('.nav-wrapper > #nav > div > .nav-logo-list > div > div')[5];
+
+	var insideDXOLLIDIV = document.createElement('li');
+	  insideDXOLLIDIV.classList.add('dropdown', 'mega-dropdown', 'open');
+	  insideDXOLDIV.appendChild(insideDXOLLIDIV);
+
+	  var insideDXOLLIAnchor = document.createElement('a');
+	  insideDXOLLIAnchor.setAttribute('href', 'javascript:void(0);');
+	  insideDXOLLIAnchor.classList.add('dropdown-toggle', 'disabled');
+	  insideDXOLLIAnchor.setAttribute('data-toggle', 'dropdown');
+	  insideDXOLLIAnchor.setAttribute('aria-expanded', 'false');
+	  insideDXOLLIAnchor.innerHTML = docContentDX;
+	  insideDXOLLIDIV.appendChild(insideDXOLLIAnchor);
+	  
+		insideDXOLLIAnchor.innerHTML = `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
+	  insideDXOLLIDIV.innerHTML = `
+   						<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
+								 
+
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+									<ul>
+                                   <li class="dropdown-header">
+
+                                   
+
+                                                                            
+                                       <span>
+                                      
+                                       </span>
+
+                                       
+
+                                    </li>
+                                   
+									<!-- divider class removed due to issue in aboutus page-->
+                                    
+                                       <li>
+                                          <a title="Enterprise Agile DevOps" href="/services/agile-devops.html">Enterprise Agile DevOps
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Applied AI" href="/services/applied-ai.html">Applied AI
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="API Economy &amp; Microservices" href="/services/api-economy.html">API Economy &amp; Microservices
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Application Development and Maintenance " href="/services/application-development-maintenance.html">Application Development and Maintenance 
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Application Modernization" href="/services/application-modernization.html">Application Modernization
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Blockchain" href="/services/blockchain.html">Blockchain
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Cloud - Infosys Cobalt" href="/services/cloud-cobalt.html">Cloud - Infosys Cobalt
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Consulting Services" href="/services/consulting.html">Consulting Services
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Cyber Security" href="/services/cyber-security.html">Cyber Security
+                                          </a>
+                                       </li>
+                                    
+									</ul>
+                                  </li>
+								 
+
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+									<ul>
+                                   <li class="dropdown-header">
+
+                                   
+
+                                                                            
+                                       <span>
+                                      
+                                       </span>
+
+                                       
+
+                                    </li>
+                                   
+									<!-- divider class removed due to issue in aboutus page-->
+                                    
+                                       <li>
+                                          <a title="Data Analytics" href="/services/data-analytics.html">Data Analytics
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Digital Commerce" href="/services/digital-commerce.html">Digital Commerce
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Digital Interactions" href="/services/digital-interaction.html">Digital Interactions
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Digital Marketing" href="/services/digital-marketing.html">Digital Marketing
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Digital Experience" href="/services/digital-experience.html">Digital Experience
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Digital Process Automation" href="/services/digital-process-automation.html">Digital Process Automation
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Digital Supply Chain" href="/services/digital-supply-chain.html">Digital Supply Chain
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Digital Workplace Services" href="/services/digital-workplace-services.html">Digital Workplace Services
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Infosys Metaverse Foundry" href="/services/metaverse.html">Infosys Metaverse Foundry
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Infosys Generative AI Labs" href="/services/generative-ai.html">Infosys Generative AI Labs
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Infosys Topaz" href="/services/data-ai-topaz.html">Infosys Topaz
+                                          </a>
+                                       </li>
+                                    
+									</ul>
+                                  </li>
+								 
+
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+									<ul>
+                                   <li class="dropdown-header">
+
+                                   
+
+                                                                            
+                                       <span>
+                                      
+                                       </span>
+
+                                       
+
+                                    </li>
+                                   
+									<!-- divider class removed due to issue in aboutus page-->
+                                    
+                                       <li>
+                                          <a title="Energy Transition" href="/services/energy-transition.html">Energy Transition
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Engineering Services" href="/services/engineering-services.html">Engineering Services
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Incubating Emerging Offerings" href="/services/incubating-emerging-technologies.html">Incubating Emerging Offerings
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Testing" href="/services/validation-solutions.html">Testing
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Microsoft Business Application Services" href="/services/microsoft-dynamics.html">Microsoft Business Application Services
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Microsoft Cloud Business" href="/services/microsoft-cloud-business.html">Microsoft Cloud Business
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Oracle" href="/services/oracle.html">Oracle
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Salesforce" href="/services/salesforce.html">Salesforce
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="SAP" href="/services/sap.html">SAP
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Service Experience Transformation" href="/services/experience-transformation.html">Service Experience Transformation
+                                          </a>
+                                       </li>
+                                    
+                                       <li>
+                                          <a title="Workplace Transformation" href="/services/microsoft-cloud-business/offerings/digital-workplace-services.html">Workplace Transformation
+                                          </a>
+                                       </li>
+                                    
+									</ul>
+                                  </li>
+								 
+								 </ul>
+   					`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
   }
 }
