@@ -314,13 +314,13 @@ export default async function decorate(block) {
 	  insideDXOLLIDIV.classList.add('dropdown', 'mega-dropdown', 'open');
 	  insideDXOLDIV.appendChild(insideDXOLLIDIV);
 
-	  var insideDXOLLIAnchor = document.createElement('a');
-	  insideDXOLLIAnchor.setAttribute('href', 'javascript:void(0);');
-	  insideDXOLLIAnchor.classList.add('dropdown-toggle', 'disabled');
-	  insideDXOLLIAnchor.setAttribute('data-toggle', 'dropdown');
-	  insideDXOLLIAnchor.setAttribute('aria-expanded', 'false');
-	  insideDXOLLIDIV.appendChild(insideDXOLLIAnchor);
-	  insideDXOLLIAnchor.innerHTML = docContentDX;
+	  var insideDXOLLIAnchorONe = document.createElement('a');
+	  // insideDXOLLIAnchorONe.setAttribute('href', 'javascript:void(0);');
+	  insideDXOLLIAnchorONe.classList.add('dropdown-toggle', 'disabled');
+	  insideDXOLLIAnchorONe.setAttribute('data-toggle', 'dropdown');
+	  insideDXOLLIAnchorONe.setAttribute('aria-expanded', 'false');
+	  insideDXOLLIDIV.appendChild(insideDXOLLIAnchorONe);
+	  insideDXOLLIAnchorONe.innerHTML = docContentDX + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	  insideDXOLLIDIV.innerHTML = `
    						<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
 								 
