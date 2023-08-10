@@ -319,8 +319,8 @@ export default async function decorate(block) {
 	  insideDXOLLIAnchor.classList.add('dropdown-toggle', 'disabled');
 	  insideDXOLLIAnchor.setAttribute('data-toggle', 'dropdown');
 	  insideDXOLLIAnchor.setAttribute('aria-expanded', 'false');
-	  insideDXOLLIAnchor.innerHTML = docContentDX;
 	  insideDXOLLIDIV.appendChild(insideDXOLLIAnchor);
+	   insideDXOLLIAnchor.innerHTML = docContentDX;
 	  
 		insideDXOLLIAnchor.innerHTML = `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	  insideDXOLLIDIV.innerHTML = `
