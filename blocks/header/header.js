@@ -315,13 +315,14 @@ export default async function decorate(block) {
 	  insideDXOLDIV.appendChild(insideDXOLLIDIV);
 
 	  var insideDXOLLIAnchorONe = document.createElement('a');
-	  // insideDXOLLIAnchorONe.setAttribute('href', 'javascript:void(0);');
+	  insideDXOLLIAnchorONe.setAttribute('href', 'javascript:void(0);');
 	  insideDXOLLIAnchorONe.classList.add('dropdown-toggle', 'disabled');
 	  insideDXOLLIAnchorONe.setAttribute('data-toggle', 'dropdown');
 	  insideDXOLLIAnchorONe.setAttribute('aria-expanded', 'false');
 	  insideDXOLLIDIV.appendChild(insideDXOLLIAnchorONe);
-	  insideDXOLLIAnchorONe.innerHTML = `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
-	  insideDXOLLIDIV.innerHTML = docContentDX + `
+	  insideDXOLLIAnchorONe.innerHTML = docContentDX + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
+	 
+		  var abc =  `
    						<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
 								 
 
@@ -549,7 +550,7 @@ export default async function decorate(block) {
    					`;
 
 
-
+ insideDXOLLIDIV.appendChild(abc);
 
 
 
