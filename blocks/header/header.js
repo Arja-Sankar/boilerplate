@@ -322,7 +322,7 @@ export default async function decorate(block) {
 	  insideDXOLLIDIV.appendChild(insideDXOLLIAnchorONe);
 	  insideDXOLLIAnchorONe.innerHTML = docContentDX + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	 
-		  var abc =  `
+		  var abc = insideDXOLLIAnchorONe +  `
    						<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
 								 
 
