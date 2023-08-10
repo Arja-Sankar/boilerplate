@@ -319,7 +319,7 @@ export default async function decorate(block) {
 	  insideDXOLLIAnchorONe.classList.add('dropdown-toggle', 'disabled');
 	  insideDXOLLIAnchorONe.setAttribute('data-toggle', 'dropdown');
 	  insideDXOLLIAnchorONe.setAttribute('aria-expanded', 'false');
-	  
+	  insideDXOLLIDIV.appendChild(insideDXOLLIAnchorONe);
 	  insideDXOLLIAnchorONe.innerHTML = docContentDX + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	   insideDXOLLIDIV.innerHTML = `
    						<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
@@ -548,7 +548,7 @@ export default async function decorate(block) {
 								 </ul>
    					`;
 
-insideDXOLLIDIV.appendChild(insideDXOLLIAnchorONe);
+
 	  
   }
 }
