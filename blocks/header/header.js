@@ -226,7 +226,12 @@ export default async function decorate(block) {
 		</div>
 	</div>
 
-     `
+     `;
+	  //progressbar Div creation
+	  // var navProgressBarDX = document.createElement('div');
+	  // navProgressBarDX.setAttribute('class','progressbar');
+	  // navProgressBarDX.setAttribute('aria-label','Page progress bar');
+	  
     // var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
     // searchDX.appendChild(searchNavDXImg);
 
