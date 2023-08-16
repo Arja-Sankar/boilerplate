@@ -244,23 +244,23 @@ export default async function decorate(block) {
 
 	// });
     // /* ------------- Country Selection Part ---------------*/
-	(function() {
-    /* ------------- Country Selection Part ---------------*/
-	$(document).on("click", ".select-country, .option-country > ul > li", function () {
-		$(".option-country").toggleClass("open-country");
-		if ($(".option-country").hasClass("open-country")) {
-			$(".down-arrow").addClass("up-arrow").removeClass("down-arrow");
-		} else {
-			$(".up-arrow").addClass("down-arrow").removeClass("up-arrow");
-		}
-	});
-	$(document).on('click', 'body', function (e) {
-		if (!$(e.target).is('.select-country > a')) {
-			$('.option-country.open-country').removeClass('open-country');
-			$(".up-arrow").addClass("down-arrow").removeClass("up-arrow");
-		}
-	});
-})();
+// 	(function() {
+//     /* ------------- Country Selection Part ---------------*/
+// 	$(document).on("click", ".select-country, .option-country > ul > li", function () {
+// 		$(".option-country").toggleClass("open-country");
+// 		if ($(".option-country").hasClass("open-country")) {
+// 			$(".down-arrow").addClass("up-arrow").removeClass("down-arrow");
+// 		} else {
+// 			$(".up-arrow").addClass("down-arrow").removeClass("up-arrow");
+// 		}
+// 	});
+// 	$(document).on('click', 'body', function (e) {
+// 		if (!$(e.target).is('.select-country > a')) {
+// 			$('.option-country.open-country').removeClass('open-country');
+// 			$(".up-arrow").addClass("down-arrow").removeClass("up-arrow");
+// 		}
+// 	});
+// })();
     // //copyright ends :
   }
 }
