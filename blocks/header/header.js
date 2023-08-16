@@ -246,7 +246,7 @@ export default async function decorate(block) {
 	// Bread-Crumb Code Starts 
 	  var breadcrumbDX = document.createElement('div');
 	  breadcrumbDX.classList.add('responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
-	  var insideBreadcrumbDX = document.querySelector('.dx-breadcrumb-wrapper > .dx-breadcrumb.block');
+	  var insideBreadcrumbDX = document.querySelector('.header-wrapper');
 	  insideBreadcrumbDX.appendChild(breadcrumbDX);
 
 	  var insideBreadcrumbDXFirstDiv = document.createElement('div');
