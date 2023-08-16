@@ -369,7 +369,7 @@ export default async function decorate(block) {
 	  insideDXOLLIAnchorTwo.setAttribute('aria-expanded', 'false');
 	
 	  insideDXOLLIAnchorTwo.innerHTML = docContentNextDx + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
-	   insideDXOLLIAnchorTwo.innerHTML = `
+	   insideDXOLLISecondDIV.innerHTML = `
 					<ul class="dropdown-menu mega-dropdown-menu row">
                                           <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                              <ul>
