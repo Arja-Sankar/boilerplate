@@ -228,9 +228,11 @@ export default async function decorate(block) {
 
      `;
 	  //progressbar Div creation
-	  // var navProgressBarDX = document.createElement('div');
-	  // navProgressBarDX.setAttribute('class','progressbar');
-	  // navProgressBarDX.setAttribute('aria-label','Page progress bar');
+	  var navProgressBarDX = document.createElement('div');
+	  navProgressBarDX.setAttribute('class','progressbar');
+	  navProgressBarDX.setAttribute('aria-label','Page');
+	  navProgressBarDX.setAttribute('aria-label','progress');
+	  navProgressBarDX.setAttribute('aria-label','bar');
 	  
     // var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
     // searchDX.appendChild(searchNavDXImg);
