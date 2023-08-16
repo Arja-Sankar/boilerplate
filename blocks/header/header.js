@@ -227,13 +227,19 @@ export default async function decorate(block) {
 	</div>
 
      `;
+
+	  
 	  //progressbar Div creation
 	  var navProgressBarDX = document.createElement('div');
 	  navProgressBarDX.setAttribute('class','progressbar');
 	  navProgressBarDX.setAttribute('aria-label','Page' + ' progress' + ' bar');
-	  // navProgressBarDX.setAttribute('aria-label','progress');
-	  // navProgressBarDX.setAttribute('aria-label','bar');
 	  getMainNav.appendChild(navProgressBarDX);
+	// creating div inside progressbar 
+	  var navProgressBarDXDiv = document.createElement('div');
+	  navProgressBarDXDiv.setAttribute('class','width');
+	  navProgressBarDX.appendChild(navProgressBarDXDiv);
+
+	  
     // var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
     // searchDX.appendChild(searchNavDXImg);
 
