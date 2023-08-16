@@ -233,7 +233,7 @@ export default async function decorate(block) {
 	  navProgressBarDX.setAttribute('aria-label','Page');
 	  navProgressBarDX.setAttribute('aria-label','progress');
 	  navProgressBarDX.setAttribute('aria-label','bar');
-	  
+	  getMainNav.appendChild(navProgressBarDX);
     // var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
     // searchDX.appendChild(searchNavDXImg);
 
