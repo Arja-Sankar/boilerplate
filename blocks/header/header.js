@@ -383,5 +383,6 @@ export default async function decorate(block) {
 					    </li>
 	 				</ul>
       					`;
+	  insideDXOLLISecondDIV.appendChild(insideDXOLLIAnchorTwo);
   }
 }
