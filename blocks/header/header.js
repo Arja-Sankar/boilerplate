@@ -324,7 +324,7 @@ export default async function decorate(block) {
 	var docContentNextDx = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[1].innerText;
 
 	var insideDXOLLIDIV = document.createElement('li');
-	  insideDXOLLIDIV.classList.add('dropdown', 'mega-dropdown', 'open');
+	  insideDXOLLIDIV.classList.add('dropdown', 'mega-dropdown');
 	  insideDXOLDIV.appendChild(insideDXOLLIDIV);
 
 	  var insideDXOLLIAnchorONe = document.createElement('a');
@@ -357,7 +357,31 @@ export default async function decorate(block) {
    					`;
 	  
  	 	insideDXOLLIDIV.appendChild(insideDXOLLIAnchorONe);
-
 	  
+	  var insideDXOLLISecondDIV = document.createElement('li');
+	  insideDXOLLISecondDIV.classList.add('dropdown', 'mega-dropdown');
+	  insideDXOLDIV.appendChild(insideDXOLLISecondDIV);
+
+	  var insideDXOLLIAnchorTwo = document.createElement('a');
+	  insideDXOLLIAnchorTwo.setAttribute('href', 'javascript:void(0);');
+	  insideDXOLLIAnchorTwo.classList.add('dropdown-toggle', 'disabled');
+	  insideDXOLLIAnchorTwo.setAttribute('data-toggle', 'dropdown');
+	  insideDXOLLIAnchorTwo.setAttribute('aria-expanded', 'false');
+	
+	  insideDXOLLIAnchorTwo.innerHTML = docContentNextDx + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
+	   insideDXOLLIAnchorTwo.innerHTML = `
+					<ul class="dropdown-menu mega-dropdown-menu row">
+                                          <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                             <ul>
+                                                  <li>
+                                                      <a title="Digital Experience Home" href="/services/digital-experience.html">Digital Experience Home</a>
+                                                   </li>
+                                                   <li>
+                                                      <a title="Overview" href="/services/digital-experience/overview.html">Overview</a>
+                                                   </li>
+	  					</ul>
+					    </li>
+	 				</ul>
+      					`;
   }
 }
