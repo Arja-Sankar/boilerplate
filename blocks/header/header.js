@@ -335,230 +335,25 @@ export default async function decorate(block) {
 	
 	  insideDXOLLIAnchorONe.innerHTML = docContentDX + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	   insideDXOLLIDIV.innerHTML = `
-   						<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
-								 
-
+   				<ul class="dropdown-menu mega-dropdown-menu row" >
                                     <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-									<ul>
-                                   <li class="dropdown-header">
-
-                                   
-
-                                                                            
-                                       <span>
-                                      
-                                       </span>
-
-                                       
-
-                                    </li>
-                                   
-									<!-- divider class removed due to issue in aboutus page-->
-                                    
-                                       <li>
-                                          <a title="Enterprise Agile DevOps" href="/services/agile-devops.html">Enterprise Agile DevOps
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Applied AI" href="/services/applied-ai.html">Applied AI
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="API Economy &amp; Microservices" href="/services/api-economy.html">API Economy &amp; Microservices
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Application Development and Maintenance " href="/services/application-development-maintenance.html">Application Development and Maintenance 
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Application Modernization" href="/services/application-modernization.html">Application Modernization
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Blockchain" href="/services/blockchain.html">Blockchain
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Cloud - Infosys Cobalt" href="/services/cloud-cobalt.html">Cloud - Infosys Cobalt
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Consulting Services" href="/services/consulting.html">Consulting Services
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Cyber Security" href="/services/cyber-security.html">Cyber Security
-                                          </a>
-                                       </li>
-                                    
-									</ul>
-                                  </li>
-								 
-
-                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-									<ul>
-                                   <li class="dropdown-header">
-
-                                   
-
-                                                                            
-                                       <span>
-                                      
-                                       </span>
-
-                                       
-
-                                    </li>
-                                   
-									<!-- divider class removed due to issue in aboutus page-->
-                                    
-                                       <li>
-                                          <a title="Data Analytics" href="/services/data-analytics.html">Data Analytics
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Commerce" href="/services/digital-commerce.html">Digital Commerce
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Interactions" href="/services/digital-interaction.html">Digital Interactions
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Marketing" href="/services/digital-marketing.html">Digital Marketing
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Experience" href="/services/digital-experience.html">Digital Experience
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Process Automation" href="/services/digital-process-automation.html">Digital Process Automation
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Supply Chain" href="/services/digital-supply-chain.html">Digital Supply Chain
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Workplace Services" href="/services/digital-workplace-services.html">Digital Workplace Services
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Infosys Metaverse Foundry" href="/services/metaverse.html">Infosys Metaverse Foundry
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Infosys Generative AI Labs" href="/services/generative-ai.html">Infosys Generative AI Labs
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Infosys Topaz" href="/services/data-ai-topaz.html">Infosys Topaz
-                                          </a>
-                                       </li>
-                                    
-									</ul>
-                                  </li>
-								 
-
-                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-									<ul>
-                                   <li class="dropdown-header">
-
-                                   
-
-                                                                            
-                                       <span>
-                                      
-                                       </span>
-
-                                       
-
-                                    </li>
-                                   
-									<!-- divider class removed due to issue in aboutus page-->
-                                    
-                                       <li>
-                                          <a title="Energy Transition" href="/services/energy-transition.html">Energy Transition
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Engineering Services" href="/services/engineering-services.html">Engineering Services
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Incubating Emerging Offerings" href="/services/incubating-emerging-technologies.html">Incubating Emerging Offerings
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Testing" href="/services/validation-solutions.html">Testing
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Microsoft Business Application Services" href="/services/microsoft-dynamics.html">Microsoft Business Application Services
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Microsoft Cloud Business" href="/services/microsoft-cloud-business.html">Microsoft Cloud Business
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Oracle" href="/services/oracle.html">Oracle
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Salesforce" href="/services/salesforce.html">Salesforce
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="SAP" href="/services/sap.html">SAP
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Service Experience Transformation" href="/services/experience-transformation.html">Service Experience Transformation
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Workplace Transformation" href="/services/microsoft-cloud-business/offerings/digital-workplace-services.html">Workplace Transformation
-                                          </a>
-                                       </li>
-                                    
-									</ul>
-                                  </li>
-								 
-								 </ul>
+				    	<ul>
+	                                   <li class="dropdown-header">            
+	                                       <span>
+					       </span>
+	                                    </li>
+                                 <!-- divider class removed due to issue in aboutus page-->
+	                                       <li>
+	                                          <a title="Enterprise Agile DevOps" href="/services/agile-devops.html">Enterprise Agile DevOps
+	                                          </a>
+	                                       </li>
+	                                       <li>
+	                                          <a title="Applied AI" href="/services/applied-ai.html">Applied AI
+	                                          </a>
+	                                       </li>
+					</ul>
+ 				   </li>
+			     </ul>
    					`;
 	  
  	 	insideDXOLLIDIV.appendChild(insideDXOLLIAnchorONe);
