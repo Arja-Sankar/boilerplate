@@ -320,8 +320,8 @@ export default async function decorate(block) {
 	  insideDXOLDIV.classList.add('breadcrumb', 'rmv-breadcrum', 'navbar-left', 'hidden-tab');
 	  insideDXInsideNavMain.appendChild(insideDXOLDIV);
 
-	var docContentDX = document.querySelectorAll('.nav-wrapper > #nav > div > .nav-logo-list > div > div')[4].innerText;
-	var docContentNextDx = document.querySelectorAll('.nav-wrapper > #nav > div > .nav-logo-list > div > div')[5].innerText;
+	var docContentDX = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[0].innerText;
+	var docContentNextDx = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[1].innerText;
 
 	var insideDXOLLIDIV = document.createElement('li');
 	  insideDXOLLIDIV.classList.add('dropdown', 'mega-dropdown', 'open');
