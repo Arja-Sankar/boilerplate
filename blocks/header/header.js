@@ -335,7 +335,7 @@ export default async function decorate(block) {
 	
 	  insideDXOLLIAnchorONe.innerHTML = docContentDX + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	   insideDXOLLIDIV.innerHTML = `
-   				<ul class="dropdown-menu mega-dropdown-menu row" >
+   				<ul class="dropdown-menu mega-dropdown-menu row" style="display: block;">
                                     <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				    	<ul>
 	                                   <li class="dropdown-header">            
@@ -370,7 +370,7 @@ export default async function decorate(block) {
 	
 	  insideDXOLLIAnchorTwo.innerHTML = docContentNextDx + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	   insideDXOLLISecondDIV.innerHTML = `
-					<ul class="dropdown-menu mega-dropdown-menu row">
+					<ul class="dropdown-menu mega-dropdown-menu row" style="display: block;">
                                           <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                              <ul>
                                                   <li>
