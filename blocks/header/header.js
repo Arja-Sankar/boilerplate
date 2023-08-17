@@ -393,8 +393,7 @@ export default async function decorate(block) {
 	  
 	  var insideDXOLLISecondDIV = document.createElement('li');
 	  insideDXOLLISecondDIV.classList.add('trigger-share');
-	  insideDXOLSecondDIV.appendChild(insideDXOLLISecondDIV);
-
+	  
 	  var insideDXOLLIAnchorSecond = document.createElement('a');
 	  insideDXOLLIAnchorSecond.setAttribute('href', 'javascript:void(0);');
 	  insideDXOLLIAnchorSecond.classList.add('aria-label', 'Share');
@@ -444,7 +443,7 @@ export default async function decorate(block) {
 		
 			</ul>
 		 		  `;
-	  
+	  insideDXOLSecondDIV.appendChild(insideDXOLLISecondDIV);
 	  
   }
 }
