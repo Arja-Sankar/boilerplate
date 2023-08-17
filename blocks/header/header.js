@@ -393,6 +393,7 @@ export default async function decorate(block) {
 	  
 	  var insideDXOLLISecondDIV = document.createElement('li');
 	  insideDXOLLISecondDIV.classList.add('trigger-share');
+	  insideDXOLSecondDIV.appendChild(insideDXOLLISecondDIV);
 	  
 	  var insideDXOLLIAnchorSecond = document.createElement('a');
 	  insideDXOLLIAnchorSecond.setAttribute('href', 'javascript:void(0);');
@@ -407,9 +408,12 @@ export default async function decorate(block) {
 	  insideDXImgElem.setAttribute('alt','Share');
 	  insideDXImgElem.setAttribute('class','share-icon');
 	  insideDXOLLIAnchorSecond.appendChild(insideDXImgElem);
-	 
-	  var sampleULapp =  `
-		   	<ul class="social-share hidden-list list-inline" style="opacity: 1;">
+	  
+	   var insideDXULLIDIVOne = document.createElement('ul');
+	  insideDXULLIDIVOne.classList.add('social-share', 'hidden-list', 'list-inline');
+	  insideDXULLIDIVOne.style.opacity = '1';
+	  insideDXOLLISecondDIV.appendChild(insideDXULLIDIVOne);
+	  insideDXULLIDIVOne.innerHTML =  `
 				<li>
 					<a href="javascript:void(0)" onclick="twitterShare(window.location.href, encodeURIComponent(document.title));" class="share" aria-label="ShareByTwitter"> 
 						<i class="fa fa-twitter" aria-hidden="true"></i>
@@ -443,7 +447,5 @@ export default async function decorate(block) {
 		
 			</ul>
 		 		  `; 
-	  insideDXOLSecondDIV.appendChild(insideDXOLLISecondDIV);
-	   insideDXOLSecondDIV.appendChild(sampleULapp);
   }
 }
