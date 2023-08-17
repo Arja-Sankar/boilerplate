@@ -310,6 +310,7 @@ export default async function decorate(block) {
 	  
 	   var insideDXInsideArticlefourthDIV = document.createElement('div');
 	  insideDXInsideArticlefourthDIV.setAttribute('class','hero-list');
+	  insideDXInsideArticlefourthDIV.classList.add('hero-list1');
 	  insideDXInsideArticleThirdDIV.appendChild(insideDXInsideArticlefourthDIV);
 
 	  var insideDXInsideNavMain = document.createElement('nav');
@@ -370,7 +371,7 @@ export default async function decorate(block) {
 	
 	  insideDXOLLIAnchorTwo.innerHTML = docContentNextDx + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	   insideDXOLLISecondDIV.innerHTML = `
-					<ul class="dropdown-menu mega-dropdown-menu row" style="display: block;">
+					<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
                                           <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                              <ul>
                                                   <li>
