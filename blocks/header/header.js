@@ -444,7 +444,7 @@ export default async function decorate(block) {
 			</ul>
 		 		  `;
 	  insideDXOLSecondDIV.appendChild(insideDXOLLISecondDIV);
-	  insideDXOLSecondDIV.append(sampleULappend);
+	  insideDXOLSecondDIV.appendChild(sampleULappend);
 	  
   }
 }
