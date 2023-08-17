@@ -402,7 +402,7 @@ export default async function decorate(block) {
 	  insideDXOLLISecondDIV.appendChild(insideDXOLLIAnchorSecond);
 
 	  var insideDXImgElemSrcOne = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[4].innerText;
-	  var insideDXImgElemSrcTwo = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[5].innerText;
+
 	  var insideDXImgElem = document.createElement('img');
 	  insideDXImgElem.setAttribute('src',insideDXImgElemSrcOne);
 	  insideDXImgElem.setAttribute('alt','Share');
@@ -447,5 +447,39 @@ export default async function decorate(block) {
 		
 			</ul>
 		 		  `; 
+
+	  		
+	  var insideDXOLLIThirdDIV = document.createElement('li');
+	  insideDXOLLIThirdDIV.classList.add('hidden-tab');
+	  insideDXOLLIThirdDIV.setAttribute('id','like-what-you-see');
+	  insideDXOLSecondDIV.appendChild(insideDXOLLIThirdDIV);
+	  
+	  var dxBreadcrumbContentDIVThirdone = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[2].innerText;
+	  var dxBreadcrumbContentDIVThirdTwo = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[3].innerText;
+	  
+	  var insideDXOLLIThirdspan = document.createElement('span');
+	  insideDXOLLIThirdspan.classList.add('block', 'career-block');
+	  insideDXOLLIThirdDIV.appendChild(insideDXOLLIThirdspan);
+	  insideDXOLLIThirdspan.innerHTML = dxBreadcrumbContentDIVThirdone;
+	  
+	  var insideDXOLLIAnchorThird = document.createElement('a');
+	  insideDXOLLIAnchorThird.setAttribute('href', '#rfs');
+	  insideDXOLLIAnchorThird.classList.add('small', 'scrollto-target');
+	  insideDXOLLIAnchorThird.setAttribute('aria-label', 'Let'+ ' us' + ' talk');
+	  insideDXOLLIThirdDIV.appendChild(insideDXOLLIAnchorThird);
+	  insideDXOLLIAnchorThird.appendChild(dxBreadcrumbContentDIVThirdTwo);	
+	  
+	  var insideDXImgElemSrcTwo = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[5].innerText;
+	  
+	  var insideDXImgElemTwo = document.createElement('img');
+	  insideDXImgElemTwo.setAttribute('src',insideDXImgElemSrcTwo);
+	  insideDXImgElemTwo.setAttribute('alt','');
+	  insideDXImgElemTwo.setAttribute('class','arrow-right-header');
+	  insideDXOLLIAnchorThird.appendChild(insideDXImgElemTwo);
+
+	  var insideDXParaa = document.createElement('p');
+	  insideDXParaa.classList.add('hidden-list', 'strip-head', 'hidden-tab', 'visible-list');
+	  insideDXInsideArticlefourthDIV.appendChild(insideDXParaa);
+
   }
 }
