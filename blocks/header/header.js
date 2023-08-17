@@ -482,5 +482,8 @@ export default async function decorate(block) {
 	  insideDXParaa.classList.add('hidden-list', 'strip-head', 'hidden-tab', 'visible-list');
 	  insideDXInsideArticlefourthDIV.appendChild(insideDXParaa);
 
+
+
+	  document.querySelector('.header-wrapper').append(document.querySelector('#nav'));
   }
 }
