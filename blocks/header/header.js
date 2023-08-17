@@ -485,5 +485,6 @@ export default async function decorate(block) {
 
 
 	  document.querySelector('.header-wrapper').append(document.querySelector('#nav'));
+	  document.querySelector('.header.block').style.display = 'none';
   }
 }
