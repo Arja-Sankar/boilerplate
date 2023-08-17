@@ -407,8 +407,8 @@ export default async function decorate(block) {
 	  insideDXImgElem.setAttribute('alt','Share');
 	  insideDXImgElem.setAttribute('class','share-icon');
 	  insideDXOLLIAnchorSecond.appendChild(insideDXImgElem);
-
-	  insideDXOLSecondDIV.innerHTML =  `
+		
+	  var sampleULappend =   `
 		   	<ul class="social-share hidden-list list-inline" style="opacity: 1;">
 				<li>
 					<a href="javascript:void(0)" onclick="twitterShare(window.location.href, encodeURIComponent(document.title));" class="share" aria-label="ShareByTwitter"> 
@@ -444,6 +444,7 @@ export default async function decorate(block) {
 			</ul>
 		 		  `;
 	  insideDXOLSecondDIV.appendChild(insideDXOLLISecondDIV);
+	  insideDXOLSecondDIV.append(sampleULappend);
 	  
   }
 }
