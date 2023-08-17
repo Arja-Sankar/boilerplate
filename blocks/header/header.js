@@ -335,7 +335,7 @@ export default async function decorate(block) {
 	
 	  insideDXOLLIAnchorONe.innerHTML = docContentDX + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	   insideDXOLLIDIV.innerHTML = `
-   				<ul class="dropdown-menu mega-dropdown-menu row" style="display: block;">
+   				<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
                                     <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				    	<ul>
 	                                   <li class="dropdown-header">            
@@ -384,5 +384,67 @@ export default async function decorate(block) {
 	 				</ul>
       					`;
 	  insideDXOLLISecondDIV.appendChild(insideDXOLLIAnchorTwo);
+
+	  //second ol for breadcrumb nav
+	  var insideDXOLSecondDIV = document.createElement('ol');
+	  insideDXOLSecondDIV.classList.add('navbar-right', 'list-inline', 'hidden-list', 'sticky-icons', 'visible-list');
+	  insideDXInsideArticlefourthDIV.appendChild(insideDXOLSecondDIV);
+
+	  
+	  var insideDXOLLISecondDIV = document.createElement('li');
+	  insideDXOLLISecondDIV.classList.add('trigger-share');
+	  insideDXOLSecondDIV.appendChild(insideDXOLLISecondDIV);
+
+	  var insideDXOLLIAnchorSecond = document.createElement('a');
+	  insideDXOLLIAnchorSecond.setAttribute('href', 'javascript:void(0);');
+	  insideDXOLLIAnchorSecond.classList.add('aria-label', 'Share');
+	  insideDXOLLIAnchorSecond.setAttribute('aria-expanded', 'false');
+	  insideDXOLLISecondDIV.appendChild(insideDXOLLIAnchorSecond);
+
+	  var insideDXImgElemSrcOne = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[4].innerText;
+	  var insideDXImgElemSrcTwo = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[5].innerText;
+	  var insideDXImgElem = document.createElement('img');
+	  insideDXImgElem.setAttribute('src',insideDXImgElemSrcOne);
+	  insideDXImgElem.setAttribute('alt','Share');
+	  insideDXImgElem.setAttribute('class','share-icon');
+	  insideDXOLLIAnchorSecond.appendChild(insideDXImgElem);
+
+	  insideDXOLSecondDIV.innerHTML =  `
+		   	<ul class="social-share hidden-list list-inline" style="opacity: 1;">
+				<li>
+					<a href="javascript:void(0)" onclick="twitterShare(window.location.href, encodeURIComponent(document.title));" class="share" aria-label="ShareByTwitter"> 
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="var host=window.location.href;
+					var fbUrl = 'http://www.facebook.com/sharer/sharer.php?s=100&amp;u='.concat(host);
+					var width=500, height=500;
+					var left = (window.screen.width / 2) - ((width / 2) + 10);
+		    		var top = (window.screen.height / 2) - ((height / 2) + 50);
+					popUp = window.open(fbUrl,'popupwindow','scrollbars=no,width='+ width +',height='+ height +',top='+ top +', left='+ left +'');
+					popUp.focus();
+					return false" class="share" aria-label="ShareByFaceBook">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="var host=window.location.href; var title = document.title;
+						var liUrl = 'http://www.linkedin.com/shareArticle?mini=true&amp;url='.concat(host);
+						var width=500, height=500;
+		
+		                var left = (window.screen.width / 2) - ((width / 2) + 10);
+		    			var top = (window.screen.height / 2) - ((height / 2) + 50);
+						popUp = window.open(encodeURI(liUrl),'popupwindow','scrollbars=no,width='+ width +',height='+ height +',top='+ top +', left='+ left +'');
+						popUp.focus();
+						return false" class="share" aria-label="ShareByLinkedIn">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</li>
+		
+			</ul>
+		 		  `;
+	  
+	  
   }
 }
