@@ -467,7 +467,7 @@ export default async function decorate(block) {
 	  insideDXOLLIAnchorThird.classList.add('small', 'scrollto-target');
 	  insideDXOLLIAnchorThird.setAttribute('aria-label', 'Let'+ ' us' + ' talk');
 	  insideDXOLLIThirdDIV.appendChild(insideDXOLLIAnchorThird);
-	  insideDXOLLIAnchorThird.appendChild(dxBreadcrumbContentDIVThirdTwo);	
+	 // insideDXOLLIAnchorThird.appendChild(dxBreadcrumbContentDIVThirdTwo);	
 	  
 	  var insideDXImgElemSrcTwo = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[5].innerText;
 	  
