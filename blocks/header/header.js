@@ -492,7 +492,7 @@ export default async function decorate(block) {
 	  document.querySelector('.header-wrapper').append(insideDXHamburgerDIV);
 
 	  var insideDXHamburgerSecondDIV = document.createElement('div');
-	  insideDXHamburgerDIV.classList.add('container');
+	  insideDXHamburgerSecondDIV.classList.add('container');
 	  insideDXHamburgerDIV.appendChild(insideDXHamburgerSecondDIV);
   
   	 var insideDXHamburgermainNav = document.createElement('nav');
