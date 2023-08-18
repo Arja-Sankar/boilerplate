@@ -594,7 +594,7 @@ export default async function decorate(block) {
 	  insideDXHamburgerMenuFifthImg.classList.add('img-responsive', 'logo-inner');
 	  insideDXHamburgerMenuFifthImg.setAttribute('alt','Infosys');
 	  insideDXHamburgerMenuFifthImg.setAttribute('src',insideDXHamburgerMenuFifthImgsrc);
-	  insideDXHamburgerMenuFirstDIV.appendChild(insideDXHamburgerMenuFifthImg);   
+	  insideDXHamburgerMenuFourthAnchor.appendChild(insideDXHamburgerMenuFifthImg);   
 
 	  var DXHamburgerMenucontentOne = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[1].innerText;
 	  var DXHamburgerMenucontentTwo = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[2].innerText;
