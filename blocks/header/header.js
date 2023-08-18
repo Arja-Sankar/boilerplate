@@ -533,6 +533,7 @@ export default async function decorate(block) {
 
 	  var insideDXHamburgerMenuFirstDIV = document.createElement('div');
 	  insideDXHamburgerMenuFirstDIV.classList.add('menu');
+	  insideDXHamburgerMenuFirstDIV.style.display = 'none';
 	  insideDXHamburgermainNav.appendChild(insideDXHamburgerMenuFirstDIV);
 	  
 	  var insideDXHamburgerMenuSecondDIV = document.createElement('div');
