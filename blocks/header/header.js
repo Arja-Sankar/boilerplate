@@ -576,7 +576,7 @@ export default async function decorate(block) {
                         </div>
                     </div> -->
    			`;
-		<!-- Side Menu Title -->
+		// <!-- Side Menu Title -->
 			
  	  var insideDXHamburgerMenuThirdDIV = document.createElement('div');
 	  insideDXHamburgerMenuThirdDIV.classList.add('col-md-3', 'col-sm-12', 'col-xs-12', 'menuItems');
