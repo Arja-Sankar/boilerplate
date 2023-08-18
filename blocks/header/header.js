@@ -482,9 +482,54 @@ export default async function decorate(block) {
 	  insideDXParaa.classList.add('hidden-list', 'strip-head', 'hidden-tab', 'visible-list');
 	  insideDXInsideArticlefourthDIV.appendChild(insideDXParaa);
 
-
-
+	  //keep this next two lines at last due to appending entire nav into under header from div wrapper
 	  document.querySelector('.header-wrapper').append(document.querySelector('#nav'));
 	  document.querySelector('.header.block').style.display = 'none';
+
+	  // hamburger appending starts
+	  var insideDXHamburgerDIV = document.createElement('div');
+	  insideDXHamburgerDIV.classList.add('burger-search-wrapper', 'navbar-fixed-top');
+	  document.querySelector('.header-wrapper').append(insideDXHamburgerDIV);
+
+	  var insideDXHamburgerSecondDIV = document.createElement('div');
+	  insideDXHamburgerDIV.classList.add('container');
+	  insideDXHamburgerDIV.appendChild(insideDXHamburgerSecondDIV);
+  
+  	 var insideDXHamburgermainNav = document.createElement('nav');
+ 	 insideDXHamburgermainNav.setAttribute('class','hamburger-menu');
+  	 insideDXHamburgermainNav.setAttribute('role','main' +' nav');
+	 insideDXHamburgermainNav.setAttribute('aria-label','open' +' menu');
+	 insideDXHamburgerSecondDIV.appendChild(insideDXHamburgermainNav);
+
+	  var insideDXHamburgerThirdDIV = document.createElement('div');
+	  insideDXHamburgerThirdDIV.classList.add('menu-bg');
+	  insideDXHamburgerThirdDIV.style.marginTop = '35px';
+	  insideDXHamburgermainNav.appendChild(insideDXHamburgerThirdDIV);
+
+	  var insideDXHamburgerFourthDIV = document.createElement('div');
+	  insideDXHamburgerFourthDIV.classList.add('circle');
+	  insideDXHamburgermainNav.appendChild(insideDXHamburgerFourthDIV);
+
+	  var insideDXHamburgerFifthAnchor = document.createElement('a');
+	  insideDXHamburgerFifthAnchor.setAttribute('href','javascript:void(0);');
+	  insideDXHamburgerFifthAnchor.setAttribute('class','burger');
+	  insideDXHamburgerFifthAnchor.setAttribute('aria-label', 'open' +' menu');
+	  insideDXHamburgerFifthAnchor.setAttribute('aria-haspopup', 'false');
+	  insideDXHamburgerFifthAnchor.setAttribute('aria-expanded', 'false');
+	  insideDXHamburgerFifthAnchor.style.marginTop = '35px';
+	  insideDXHamburgermainNav.appendChild(insideDXHamburgerFifthAnchor);
+
+	  var insideDXHamburgerSixthDIV = document.createElement('div');
+	  insideDXHamburgerSixthDIV.classList.add('icon-bar1');
+	  insideDXHamburgerFifthAnchor.appendChild(insideDXHamburgerSixthDIV);
+
+	  var insideDXHamburgerSeventhDIV = document.createElement('div');
+	  insideDXHamburgerSeventhDIV.classList.add('icon-bar2');
+	  insideDXHamburgerFifthAnchor.appendChild(insideDXHamburgerSeventhDIV);
+
+	  var insideDXHamburgereigthDIV = document.createElement('div');
+	  insideDXHamburgereigthDIV.classList.add('icon-bar3');
+	  insideDXHamburgerFifthAnchor.appendChild(insideDXHamburgereigthDIV);
+	  
   }
 }
