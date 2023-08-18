@@ -619,6 +619,33 @@ export default async function decorate(block) {
 	  insideDXHamburgerMenuSixthAnchor.setAttribute('aria-expanded', 'false');
 	  insideDXHamburgerMenuFifthLI.appendChild(insideDXHamburgerMenuSixthAnchor);
 	  insideDXHamburgerMenuSixthAnchor.innerHTML = DXHamburgerMenucontentOne + `<span class="un-line hidden-sm hidden-xs hidden-tab"></span>`;
+			//--
+	  var insideDXHamburgerMenuSixthLI = document.createElement('li');
+	  insideDXHamburgerMenuSixthLI.setAttribute('title',DXHamburgerMenucontentTwo);
+	  insideDXHamburgerMenuForthUL.appendChild(insideDXHamburgerMenuSixthLI);
+
+	  var insideDXHamburgerMenuSeventhAnchor = document.createElement('a');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('href','javascript:void(0);');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('title',DXHamburgerMenucontentTwo);
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('class','industries');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('target','_self');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('aria-label', 'Hover'+' to' +' show' + ' submenu');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('aria-haspopup', 'false');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('aria-expanded', 'false');
+	  insideDXHamburgerMenuSixthLI.appendChild(insideDXHamburgerMenuSeventhAnchor);
+	  insideDXHamburgerMenuSeventhAnchor.innerHTML = DXHamburgerMenucontentTwo + `<span class="un-line hidden-sm hidden-xs hidden-tab"></span>`;
+		// ----	
+	  var insideDXHamburgerMenuSeventhLI = document.createElement('li');
+	  insideDXHamburgerMenuSeventhLI.setAttribute('title',DXHamburgerMenucontentThree);
+	  insideDXHamburgerMenuForthUL.appendChild(insideDXHamburgerMenuSeventhLI);
+
+	  var insideDXHamburgerMenueigthAnchor = document.createElement('a');
+	  insideDXHamburgerMenueigthAnchor.setAttribute('href','javascript:void(0);');
+	  insideDXHamburgerMenueigthAnchor.setAttribute('title',DXHamburgerMenucontentThree);
+	  insideDXHamburgerMenueigthAnchor.setAttribute('class','services');
+	  insideDXHamburgerMenueigthAnchor.setAttribute('target','_self');
+	  insideDXHamburgerMenuSeventhLI.appendChild(insideDXHamburgerMenueigthAnchor);
+	  insideDXHamburgerMenueigthAnchor.innerHTML = DXHamburgerMenucontentThree + `<span class="un-line hidden-sm hidden-xs hidden-tab"></span>`;
 
 	  
   }
