@@ -530,6 +530,95 @@ export default async function decorate(block) {
 	  var insideDXHamburgereigthDIV = document.createElement('div');
 	  insideDXHamburgereigthDIV.classList.add('icon-bar3');
 	  insideDXHamburgerFifthAnchor.appendChild(insideDXHamburgereigthDIV);
+
+	  var insideDXHamburgerMenuFirstDIV = document.createElement('div');
+	  insideDXHamburgerMenuFirstDIV.classList.add('menu');
+	  insideDXHamburgermainNav.appendChild(insideDXHamburgerMenuFirstDIV);
+	  
+	  var insideDXHamburgerMenuSecondDIV = document.createElement('div');
+	  insideDXHamburgerMenuSecondDIV.classList.add('fix-menu', 'hidden-sm', 'hidden-xs', 'col-md-9', 'col-sm-12', 'col-xs-12', 'p0');
+	  insideDXHamburgerMenuFirstDIV.appendChild(insideDXHamburgerMenuSecondDIV); 
+	  insideDXHamburgerMenuSecondDIV.innerHTML = `
+   			<!-- <div class="hidden">
+                        <div class="col-md-12 col-sm-12 col-xs-12 automate h-50vh">
+                            <div class="top_menu_img_wrapper"> <img
+                                    src="/content/dam/infosys-web/en/global-resource/18/banner/being-resilient-lead-menu.jpg"
+                                    class="being-resilient" alt="Being Resilient. That's Live Enterprise."> </div>
+                            <div class="row">
+                                <div class="top_menu_cont_wrapper">
+                                    <div class="col-md-6 col-sm-12 col-xs-12"> <a
+                                            href="/content/infosys-web/en/navigate-your-next/being-resilient.html"
+                                            title="Being Resilient. That's Live Enterprise.">
+                                            <h2 class="head-txt mt100">Being Resilient. That's Live Enterprise.</h2>
+                                        </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 automate bg-img-pos h-50vh"> <a
+                                href="/navigate-your-next/digital-capabilities.html" title="Digital Core Capabilities">
+                                <h2 class="head-txt">Digital Core Capabilities</h2>
+                            </a> </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 innovate bg-img-pos h-50vh"> <a
+                                href="/navigate-your-next/digital-operating-models.html"
+                                title="Digital Operating Models">
+                                <h2 class="head-txt">Digital Operating Models</h2>
+                            </a> </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 learn bg-img-pos h-50vh"> <a
+                                href="/navigate-your-next/talent-transformations.html"
+                                title="Empowering Talent Transformations">
+                                <h2 class="head-txt">Empowering Talent Transformations</h2>
+                            </a> </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 tales-transformation bg-img-pos h-50vh">
+                            <a href="/content/infosys-web/en/navigate-your-next/tales-of-transformation.html"
+                                title="Tales of Transformation">
+                                <h2 class="head-txt">Tales of Transformation</h2>
+                            </a>
+                        </div>
+                    </div> -->
+   			`;
+		<!-- Side Menu Title -->
+			
+ 	  var insideDXHamburgerMenuThirdDIV = document.createElement('div');
+	  insideDXHamburgerMenuThirdDIV.classList.add('col-md-3', 'col-sm-12', 'col-xs-12', 'menuItems');
+	  insideDXHamburgerMenuFirstDIV.appendChild(insideDXHamburgerMenuThirdDIV); 
+
+	  var insideDXHamburgerMenuFourthAnchor = document.createElement('a');
+	  insideDXHamburgerMenuFourthAnchor.setAttribute('href','/');
+	  insideDXHamburgerMenuFourthAnchor.setAttribute('title','Go' + ' to' +' Infosys' +' Home');
+	  insideDXHamburgerMenuFourthAnchor.setAttribute('aria-label','Go' + ' to' +' Infosys' +' Home');
+	  insideDXHamburgerMenuThirdDIV.appendChild(insideDXHamburgerMenuFourthAnchor);
+
+	  var insideDXHamburgerMenuFifthImgsrc = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[0].innerText;
+
+	  var insideDXHamburgerMenuFifthImg = document.createElement('img');
+	  insideDXHamburgerMenuFifthImg.classList.add('img-responsive', 'logo-inner');
+	  insideDXHamburgerMenuFifthImg.setAttribute('alt','Infosys');
+	  insideDXHamburgerMenuFifthImg.setAttribute('src',insideDXHamburgerMenuFifthImgsrc);
+	  insideDXHamburgerMenuFirstDIV.appendChild(insideDXHamburgerMenuFifthImg);   
+
+	  var DXHamburgerMenucontentOne = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[1].innerText;
+	  var DXHamburgerMenucontentTwo = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[2].innerText;
+	  var DXHamburgerMenucontentThree = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[3].innerText;
+
+ 	  var insideDXHamburgerMenuForthUL = document.createElement('ul');
+	  insideDXHamburgerMenuForthUL.classList.add('list-unstyled');
+	  insideDXHamburgerMenuThirdDIV.appendChild(insideDXHamburgerMenuForthUL);
+	  
+ 	  var insideDXHamburgerMenuFifthLI = document.createElement('li');
+	  insideDXHamburgerMenuFifthLI.setAttribute('title',DXHamburgerMenucontentOne);
+	  insideDXHamburgerMenuForthUL.appendChild(insideDXHamburgerMenuFifthLI);
+
+	  var insideDXHamburgerMenuSixthAnchor = document.createElement('a');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('href','javascript:void(0);');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('title',DXHamburgerMenucontentOne);
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('class','nyn');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('target','_self');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('aria-label', 'Hover'+' to' +' show' + ' submenu');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('aria-haspopup', 'false');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('aria-expanded', 'false');
+	  insideDXHamburgerMenuFifthLI.appendChild(insideDXHamburgerMenuSixthAnchor);
+	  insideDXHamburgerMenuSixthAnchor.innerHTML = DXHamburgerMenucontentOne + `<span class="un-line hidden-sm hidden-xs hidden-tab"></span>`;
+
 	  
   }
 }
