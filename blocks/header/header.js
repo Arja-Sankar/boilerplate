@@ -649,10 +649,6 @@ export default async function decorate(block) {
 	  insideDXHamburgerMenuSeventhLI.appendChild(insideDXHamburgerMenueigthAnchor);
 	  insideDXHamburgerMenueigthAnchor.innerHTML = DXHamburgerMenucontentThree + `<span class="un-line hidden-sm hidden-xs hidden-tab"></span>`;
 
-	  
-  }
-}
-	function(){
 	var subHeaderLength = $('.header-menu ul.navbar-nav ul.dropdown-menu').children().length;
 	
 	if(subHeaderLength > 0) {
@@ -690,4 +686,8 @@ export default async function decorate(block) {
 		}
 	}
 	
-	}();
+
+  }
+	
+}
+	
