@@ -652,7 +652,7 @@ export default async function decorate(block) {
 	  
   }
 }
-	/* -------------------- Dynamic Bind Sub-Header Start ----------------------- */
+	function(){
 	var subHeaderLength = $('.header-menu ul.navbar-nav ul.dropdown-menu').children().length;
 	
 	if(subHeaderLength > 0) {
@@ -689,4 +689,5 @@ export default async function decorate(block) {
 			$('.header-menu ul.navbar-nav ul.dropdown-menu').children()[i].innerHTML = bindSubHeader;			
 		}
 	}
-	/* -------------------- Dynamic Bind Sub-Header End ------------------------- */
+	
+	}();
