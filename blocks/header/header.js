@@ -335,8 +335,9 @@ export default async function decorate(block) {
 	  insideDXOLLIAnchorONe.setAttribute('aria-expanded', 'false');
 	
 	  insideDXOLLIAnchorONe.innerHTML = docContentDX + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
+	  // style="display: none;
 	   insideDXOLLIDIV.innerHTML = `
-   				<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
+   				<ul class="dropdown-menu mega-dropdown-menu row" ">
                                     <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				    	<ul>
 	                                   <li class="dropdown-header">            
@@ -370,8 +371,9 @@ export default async function decorate(block) {
 	  insideDXOLLIAnchorTwo.setAttribute('aria-expanded', 'false');
 	
 	  insideDXOLLIAnchorTwo.innerHTML = docContentNextDx + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
-	   insideDXOLLISecondDIV.innerHTML = `
-					<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
+	// style="display: none;
+	  insideDXOLLISecondDIV.innerHTML = `
+					<ul class="dropdown-menu mega-dropdown-menu row" ">
                                           <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                              <ul>
                                                   <li>
@@ -533,7 +535,7 @@ export default async function decorate(block) {
 
 	  var insideDXHamburgerMenuFirstDIV = document.createElement('div');
 	  insideDXHamburgerMenuFirstDIV.classList.add('menu');
-	  insideDXHamburgerMenuFirstDIV.style.display = 'none';
+	  // insideDXHamburgerMenuFirstDIV.style.display = 'none';
 	  insideDXHamburgermainNav.appendChild(insideDXHamburgerMenuFirstDIV);
 	  
 	  var insideDXHamburgerMenuSecondDIV = document.createElement('div');
