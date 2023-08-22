@@ -649,44 +649,6 @@ export default async function decorate(block) {
 	  insideDXHamburgerMenuSeventhLI.appendChild(insideDXHamburgerMenueigthAnchor);
 	  insideDXHamburgerMenueigthAnchor.innerHTML = DXHamburgerMenucontentThree + `<span class="un-line hidden-sm hidden-xs hidden-tab"></span>`;
 
-	var subHeaderLength = $('.header-menu ul.navbar-nav ul.dropdown-menu').children().length;
-	
-	if(subHeaderLength > 0) {
-		for(var i=0; i<1; i++) {
-			var subHeaderTitle = $('.header-menu ul.navbar-nav ul.dropdown-menu').children()[i];
-			var subHeaderSubTitle = $(subHeaderTitle).children().children();
-			var subHeaderSubTitleCount = Math.ceil((($(subHeaderSubTitle).length) - 1) / 3);
-			var bindSubHeader = "";
-			
-			for(var j=0; j<$(subHeaderSubTitle).length; j++) {
-				if(j==0) {
-					bindSubHeader += "<ul class='col-md-4'><li class='dropdown-header'>" + $(subHeaderSubTitle)[j].textContent + "</li><li class='nav-divider'></li>";
-				} else {
-					bindSubHeader += "<ul class='col-md-4'><li class='dropdown-header'>&nbsp;</li><li class='nav-divider'></li>";
-				}
-				
-				for(var k=0; k<subHeaderSubTitleCount; k++) {
-					j++;
-					if((($(subHeaderSubTitle).length) - 1) >= j) {
-						bindSubHeader += "<li><a href='#' title='" + $(subHeaderSubTitle)[j].textContent + "'>" + $(subHeaderSubTitle)[j].textContent + "</a></li>";
-					} else {
-						break;
-					}
-				}
-				if((($(subHeaderSubTitle).length) - 1) >= j) {
-					j--;
-					bindSubHeader += "</ul>";
-				} else {
-					bindSubHeader += "</ul>";
-					break;
-				}
-			}
-			$('.header-menu ul.navbar-nav ul.dropdown-menu').children()[i].innerHTML = "";
-			$('.header-menu ul.navbar-nav ul.dropdown-menu').children()[i].innerHTML = bindSubHeader;			
-		}
-	}
-	
-
   }
 	
 }
