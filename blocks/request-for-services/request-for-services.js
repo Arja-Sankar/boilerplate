@@ -76,43 +76,33 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     <input type="hidden" value="408-333-8000" id="office_phone" name="office_phone">
     <input type="hidden" value="infysp" id="sptext" name="sptext">
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="firstname" name="firstname" title="First Name" value="" onblur="validateEmptys(this.form.firstname, 'name', 'alertYname');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
-      <span class="highlight"></span> <span class="bar"></span>
-      <label for="First Name">First Name<sup>*</sup></label>
-      <span id="alertYname"><small class="redColor">Please check the <span class="text-capitalize">First Name</span> you have entered</small></span> </div>
-    <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="lastname" name="lastname" title="Last Name" value="" onblur="validateEmptys(this.form.lastname, 'name', 'alertlname');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
-      <span class="highlight"></span> <span class="bar"></span>
-      <label for="Last Name">Last Name<sup>*</sup></label>
-      <span id="alertlname"><small class="redColor">Please check the <span class="text-capitalize">Last Name</span> you have entered</small></span> </div>
-    <div class="clearfix"></div>
+      <input type="text" id="firstname" name="firstname" title="First Name" value="" style="border-bottom: 4px solid rgb(241, 108, 81);">
+      <label for="First Name">First Name</label>
+       <div class="field-bg col-md-6 col-sm-6 col-xs-12">
+      <input type="text" id="lastname" name="lastname" title="Last Name" value=""  style="border-bottom: 4px solid rgb(241, 108, 81);">
+      <label for="Last Name">Last Name</label>
+       <div class="clearfix"></div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
       <input type="text" id="email" title="Email" name="email" value="" onblur="checkemail(this.form.email, 'alertEmail');this.setAttribute('value', this.value);">
       <span class="highlight"></span> <span class="bar"></span>
       <label for="Email Address">Email<sup>*</sup></label>
       <span id="alertEmail"></span> </div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="company" name="company" title="Company" value="" onblur="validateEmptys_length(this.form.company, 'alertcompany',1);this.setAttribute('value', this.value);" placeholder="To select, begin typing." style="border-bottom: 4px solid rgb(241, 108, 81);">
+      <input type="text" id="company" name="company" title="Company" value="" placeholder="To select, begin typing." style="border-bottom: 4px solid rgb(241, 108, 81);">
       <span class="highlight"></span>
-      <label for="company">Company<sup>*</sup></label>
-      <span class="bar"></span> <span id="alertcompany"><small class="redColor">Please check the <span class="text-capitalize">Company</span> you have entered</small></span> </div>
+      <label for="company">Company</label>
     <div class="clearfix"></div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="title" title="Job Title" name="title" value="" onblur="validateEmptys(this.form.title, 'name', 'alerttitle');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
-      <span class="highlight"></span> <span class="bar"></span>
-      <label for="Job Title">Job Title<sup>*</sup></label>
-      <span id="alerttitle"><small class="redColor">Please check the <span class="text-capitalize">Job Title</span> you have entered</small></span> </div>
-    <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="phone" name="phone" value="" title="Phone" onblur="phone_special();this.setAttribute('value', this.value);">
-      <span class="highlight"></span> <span class="bar"></span>
+      <input type="text" id="title" title="Job Title" name="title" value="" style="border-bottom: 4px solid rgb(241, 108, 81);">
+      <label for="Job Title">Job Title</label>
+      <div class="field-bg col-md-6 col-sm-6 col-xs-12">
+      <input type="text" id="phone" name="phone" value="" title="Phone">
       <label for="phone">Phone</label>
-      <span id="alertphone"></span> </div>
     <div class="clearfix"></div>
     <div class="field-bg col-md-12 col-sm-12 col-xs-12">
-      <textarea id="Message" name="Message" onblur="message_special();this.setAttribute('value', this.value);"></textarea>
-      <span class="highlight"></span> <span class="bar"></span>
-      <label for="Message">Message</label>
-      <span id="alertMessage"></span> </div>
+      <textarea id="Message" name="Message"></textarea>
+  <label for="Message">Message</label>
+      </div>
     <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
       <p class="text-left fs-md-16">
         <label class="form-switch">
@@ -153,219 +143,4 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     serviceContainerSecondDiv.appendChild(newElem);
     //append everything ends here
  
-    // FORM VALIDATION SCRIPT starts here
-    function chkSplChar(ctrlname){
-        var iChars = "<>?;";
-      
-        for (var i = 0; i < ctrlname.length; i++)
-         {
-          if (iChars.indexOf(ctrlname.charAt(i)) != -1) {
-          return false;
-          }
-        }
-        return true;
-      }
-    function chkSplCharphone(ctrlname){
-        var iChars = "!@$%^&*=[]\\\';,/{}|\":<>?";
-      
-        for (var i = 0; i < ctrlname.length; i++)
-         {
-          if (iChars.indexOf(ctrlname.charAt(i)) != -1) {
-          return false;
-          }
-        }
-        return true;
-      }	
-    function phone_special() {
-              if (document.getElementById('phone').value != "") {
-           if (chkSplCharphone(document.getElementById('phone').value) == false) {
-                  return $("#alertphone").addClass("redColor").text( "Special characters are not allowed."); 			
-              } else {			
-              $("#alertphone").text(""); 			
-              }
-          } else {			
-              $("#alertphone").text(""); 			
-              }
-              
-          }   
-    function message_special() {
-          if (document.getElementById('Message').value != "") {
-          if (chkSplChar(document.getElementById('Message').value) == false) {
-                  return $("#alertMessage").addClass("redColor").text( "Special characters are not allowed."); 			
-              } else {
-                  $("#alertMessage").text("");			
-              }
-          } else {
-                  $("#alertMessage").text("");			
-              }
-              
-          }
-    function valid_registration(theForm) {
-          var empty = "";
-          var reason = "";
-          reason += validateEmptys(theForm.firstname, 'name', 'alertYname');
-          reason += validateEmptys(theForm.lastname, 'name', 'alertlname',1);
-          reason += checkemail(theForm.email, 'alertEmail');
-          reason += validateEmptys_length(theForm.company, 'alertcompany', 1);
-          reason += validateEmptys(theForm.title, 'name', 'alerttitle',1);
-          
-           //var pattsp = "!@#$%^&*()+=-[]\\\;,/{}|\":<>?";
-          if (document.getElementById('Message').value != "") {
-          if (chkSplChar(document.getElementById('Message').value) == false) {
-                  reason += $("#alertMessage").addClass("redColor").text( "Special characters are not allowed."); 			
-              } else {
-                  $("#alertMessage").text("");			
-              }
-          }else {
-                  $("#alertMessage").text("");			
-              }
-          
-          if (document.getElementById('phone').value != "") {
-           if (chkSplCharphone(document.getElementById('phone').value) == false) {
-                  reason += $("#alertphone").addClass("redColor").text( "Special characters are not allowed."); 			
-              } else {			
-              $("#alertphone").text(""); 			
-              }
-          } else {			
-              $("#alertphone").text(""); 			
-              }
-          if (document.getElementById('company').value != "") {
-         if (chkSplChar(document.getElementById('company').value) == false) {
-                  reason += $("#alertcompany").addClass("redColor").text( "Special characters are not allowed."); 			
-              } else {			
-                  $("#alertcompany").text(""); 
-              }
-          } 	
-          if (reason != "") {
-              return false;
-          } else {
-                  var fname =  document.getElementById('firstname').value;
-                  var lname =  document.getElementById('lastname').value;
-                  var email =  document.getElementById('email').value;
-                  var company =  document.getElementById('company').value;
-                  var title =  document.getElementById('title').value;
-                  var phone =  document.getElementById('phone').value;
-                  var Message = document.getElementById('Message').value;
-                  var optincomm =  document.getElementById('opt-in-comm').value;
-                  var country = document.getElementById('country').value;
-                  var demandbase_sid =  document.getElementById('demandbase_sid').value;
-                  var industry =  document.getElementById('industry').value;
-                  var sub_industry =  document.getElementById('sub_industry').value;
-                  var company_name =  document.getElementById('company_name').value;
-                  var revenue_range =  document.getElementById('revenue_range').value;
-                  var city =  document.getElementById('city').value;
-                  var state =  document.getElementById('state').value;
-                  var zip =  document.getElementById('zip').value;
-                  var fortune_1000 =  document.getElementById('fortune_1000').value;
-                  var forbes_2000 =  document.getElementById('forbes_2000').value;
-                  var watch_list_account_type =  document.getElementById('watch_list_account_type').value;
-                  var watch_list_account_status =  document.getElementById('watch_list_account_status').value;
-                  var db_country_name_ip =  document.getElementById('db_country_name_ip').value;
-                  var office_phone =  document.getElementById('office_phone').value;			
-                  var Source =  document.getElementById('Source').value;
-                  var referral_source = document.getElementById('referral_source').value;			
-                  var sptext =  document.getElementById('sptext').value;
- 
-              var dataString = 'https://s672742760.t.eloqua.com/e/f2?elqFormName=request-for-services&elqSiteID=672742760&email=' + email + '&firstname=' + fname + '&lastname=' + lname + '&company=' + company + '&title=' + title + '&phone='+ phone + '&Message='+ Message + '&sptext=' + sptext + '&country='+country+'&demandbase_sid='+ demandbase_sid +'&industry='+ industry +
-      '&sub_industry='+ sub_industry+'&company_name='+company_name +'&revenue_range='+revenue_range +'&city='+ city +'&state='+ state +'&zip='+ zip +'&fortune_1000='+fortune_1000 +'&forbes_2000='+ forbes_2000 +'&watch_list_account_type='+ watch_list_account_type +'&watch_list_account_status=' +watch_list_account_status +'&db_country_name_ip='+ db_country_name_ip +'&office_phone='+ office_phone +'&Source='+Source +'&referral_source='+referral_source+'&opt-in-comm='+optincomm+'';
-              
-              document.getElementById("blind").innerHTML = '<img src="'+ dataString +'" id="submit" style="width:1px; height:1px;" />';
-
-          document.getElementById("infy-rfs").style.display = "none"; 
-          document.getElementById("thankyou").style.display = "block";	
-              window.parent.rfsscrollonthankyou();
-      _satellite.track("form_submit");
-                  return false;
-          }  
-      }	    
-      digitalData.page.formName = document.title;
-      digitalData.page.formStart = '1';	
-      $(document).ready(function(){	
-          var source1 = parent.window.location.search.substring(1);//getQueryVariableFromParent('cmpid');
-          document.getElementById('referral_source').value = source1;
-      });	
-    function validateUrl() {
-          var error = "";
-          var x = window.location.href;
-          if (x.indexOf('experienceinfosys.com') != -1) {
-              error = "";
-          } else {       
-              error = "cancel";
-          }
-          return error;
-      }
-    function validateEmptys_length(fld, alertID, lenght) {
-          var error = "";
-          var xer = document.getElementById(alertID);
-          if (fld.value.length < lenght) {
-              fld.style.borderBottom = borderFix;
-               xer.innerHTML = '<small class="redColor">Please check the <span class="text-capitalize">'+ fld.title +'</span> you have entered</small>';
-              
-              error = "cancel";
-          } else {
-              fld.removeAttribute('style');
-              xer.innerHTML = '';
-      
-              error = "";
-          }
-          return error;
-      }  
-    function validateEmptys(fld, name, alertID) {
-          var error = "";
-          var special;
-          var xer = document.getElementById(alertID);
-          var string = '<small class="redColor">Please check the <span class="text-capitalize">'+ fld.title +'</span> you have entered</small>';
-          var TCode = fld.value;
-          if (name == 'name') {
-              special = /[^a-zA-Z\ \.]/;
-          } else {
-              special = /[^a-zA-Z\ ]/;
-          }
-          if (fld.value.length == 0) {
-              xer.innerHTML = '<small class="redColor">Please check the <span class="text-capitalize">'+ fld.title +'</span> you have entered</small>';
-              fld.style.borderBottom = borderFix;
-              error = "cancel";
-          } else if (special.test(TCode)) {
-              xer.innerHTML = string;
-              fld.style.borderBottom = borderFix;
-              error = "cancel";
-          } else {
-              xer.innerHTML = '';
-              fld.removeAttribute('style');
-              error = "";
-          }
-          return error;
-      }    
-    function checkemail(fld, alertID) {
-          var error = "";
-          var str = fld.value;
-          var xer = document.getElementById(alertID);
-          var string = '<small class="redColor">Please enter a valid Email ID e.g.: abc@abc.com</small>';
-          var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
-          if (fld.value.length == 0) {
-              xer.innerHTML = '<small class="redColor">Please enter a valid Email ID e.g.: abc@abc.com</small>';
-              fld.style.borderBottom = borderFix;
-              error = "cancel";
-          } else if (filter.test(str)) {
-              xer.innerHTML = "";
-              fld.removeAttribute('style');
-              error = "";
-          } else {
-      
-              xer.innerHTML = string;
-              error = "cancel";
-              fld.style.borderBottom = borderFix;
-          }
-          return error;
-      } 
-    function get_length(stringIHave) {
-          keywordsArr = stringIHave.split(' '),
-              xvalue = keywordsArr.length - 1;
-      
-          var spaceCount = parseInt(stringIHave.length - xvalue);
-          return spaceCount;
-      }
-    function getFocus() {
-          document.getElementById('name').focus();
-      }
-    // FORM VALIDATION SCRIPT ends here
+    
