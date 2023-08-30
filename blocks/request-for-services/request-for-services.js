@@ -78,13 +78,13 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
       <input type="text" id="firstname" name="firstname" title="First Name" value="" onblur="validateEmptys(this.form.firstname, 'name', 'alertYname');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
       <span class="highlight"></span> <span class="bar"></span>
-      <label for="First Name">First Name<sup>*</sup></label>
-      <span id="alertYname"><small class="redColor">Please check the <span class="text-capitalize">First Name</span> you have entered</small></span> </div>
+      <label for="First Name">First Name</label>
+      <span id="alertYname"></span> </div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
       <input type="text" id="lastname" name="lastname" title="Last Name" value="" onblur="validateEmptys(this.form.lastname, 'name', 'alertlname');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
       <span class="highlight"></span> <span class="bar"></span>
-      <label for="Last Name">Last Name<sup>*</sup></label>
-      <span id="alertlname"><small class="redColor">Please check the <span class="text-capitalize">Last Name</span> you have entered</small></span> </div>
+      <label for="Last Name">Last Name</label>
+      <span id="alertlname"></span> </div>
     <div class="clearfix"></div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
       <input type="text" id="email" title="Email" name="email" value="" onblur="checkemail(this.form.email, 'alertEmail');this.setAttribute('value', this.value);">
