@@ -76,15 +76,15 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     <input type="hidden" value="408-333-8000" id="office_phone" name="office_phone">
     <input type="hidden" value="infysp" id="sptext" name="sptext">
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="firstname" name="firstname" title="First Name" value="" onblur="validateEmptys(this.form.firstname, 'name', 'alertYname');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
+      <input type="text" id="firstname" name="firstname" title="First Name" value="" onblur="validateEmptys(this.form.firstname, 'name', 'alertYname');this.setAttribute('value', this.value);"">
       <span class="bar"></span>
       <label for="First Name">First Name</label>
        </div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="lastname" name="lastname" title="Last Name" value="" onblur="validateEmptys(this.form.lastname, 'name', 'alertlname');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
-      <span class="highlight"></span> <span class="bar"></span>
+      <input type="text" id="lastname" name="lastname" title="Last Name" value="" onblur="validateEmptys(this.form.lastname, 'name', 'alertlname');this.setAttribute('value', this.value);"">
+      <span class="bar"></span>
       <label for="Last Name">Last Name</label>
-      <span id="alertlname"></span> </div>
+       </div>
     <div class="clearfix"></div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
       <input type="text" id="email" title="Email" name="email" value="" onblur="checkemail(this.form.email, 'alertEmail');this.setAttribute('value', this.value);">
@@ -92,27 +92,27 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
       <label for="Email Address">Email<sup>*</sup></label>
       <span id="alertEmail"></span> </div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="company" name="company" title="Company" value="" onblur="validateEmptys_length(this.form.company, 'alertcompany',1);this.setAttribute('value', this.value);" placeholder="To select, begin typing." style="border-bottom: 4px solid rgb(241, 108, 81);">
-      <span class="highlight"></span>
-      <label for="company">Company<sup>*</sup></label>
-      <span class="bar"></span> <span id="alertcompany"><small class="redColor">Please check the <span class="text-capitalize">Company</span> you have entered</small></span> </div>
+      <input type="text" id="company" name="company" title="Company" value="" onblur="validateEmptys_length(this.form.company, 'alertcompany',1);this.setAttribute('value', this.value);" placeholder="To select, begin typing.">
+      
+      <label for="company">Company</label>
+      <span class="bar"></div>
     <div class="clearfix"></div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="title" title="Job Title" name="title" value="" onblur="validateEmptys(this.form.title, 'name', 'alerttitle');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
-      <span class="highlight"></span> <span class="bar"></span>
-      <label for="Job Title">Job Title<sup>*</sup></label>
-      <span id="alerttitle"><small class="redColor">Please check the <span class="text-capitalize">Job Title</span> you have entered</small></span> </div>
+      <input type="text" id="title" title="Job Title" name="title" value="" onblur="validateEmptys(this.form.title, 'name', 'alerttitle');this.setAttribute('value', this.value);">
+       <span class="bar"></span>
+      <label for="Job Title">Job Title</label>
+      </div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
       <input type="text" id="phone" name="phone" value="" title="Phone" onblur="phone_special();this.setAttribute('value', this.value);">
-      <span class="highlight"></span> <span class="bar"></span>
+       <span class="bar"></span>
       <label for="phone">Phone</label>
-      <span id="alertphone"></span> </div>
+      </div>
     <div class="clearfix"></div>
     <div class="field-bg col-md-12 col-sm-12 col-xs-12">
       <textarea id="Message" name="Message" onblur="message_special();this.setAttribute('value', this.value);"></textarea>
-      <span class="highlight"></span> <span class="bar"></span>
+     </span> <span class="bar"></span>
       <label for="Message">Message</label>
-      <span id="alertMessage"></span> </div>
+    </div>
     <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
       <p class="text-left fs-md-16">
         <label class="form-switch">
