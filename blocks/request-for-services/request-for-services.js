@@ -77,9 +77,9 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     <input type="hidden" value="infysp" id="sptext" name="sptext">
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
       <input type="text" id="firstname" name="firstname" title="First Name" value="" onblur="validateEmptys(this.form.firstname, 'name', 'alertYname');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
-      <span class="highlight"></span>
+      <span class="bar"></span>
       <label for="First Name">First Name</label>
-      <span id="alertYname"></span> </div>
+       </div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
       <input type="text" id="lastname" name="lastname" title="Last Name" value="" onblur="validateEmptys(this.form.lastname, 'name', 'alertlname');this.setAttribute('value', this.value);" style="border-bottom: 4px solid rgb(241, 108, 81);">
       <span class="highlight"></span> <span class="bar"></span>
