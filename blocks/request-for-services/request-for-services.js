@@ -52,7 +52,7 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     insideSecondDivForm.setAttribute('id','infy-rfs');
     insideSecondDivForm.setAttribute('onsubmit','return valid_registration(this)');
     insideSecondDivForm.setAttribute('name','infy-rfs');
-    insideSecondDivForm.setAttribute('action','');
+    insideSecondDivForm.setAttribute('action','https://main--boilerplate--arja-sankar.hlx.live/');
     //adding statically data(input tags,...) to form inside container second div
     insideSecondDivForm.innerHTML = `
     <input type="hidden" name="elqFormName" value="request-for-services">
