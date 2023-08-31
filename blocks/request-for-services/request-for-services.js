@@ -163,3 +163,47 @@ emailInput.addEventListener("input", function() {
     // Set the cookie with the email value
     document.cookie = "email=" + emailValue;
 });
+// FORM VALIDATION SCRIPT starts here
+
+function validateEmptys_length(fld, alertID, lenght) {
+      var error = "";
+      var xer = document.getElementById(alertID);
+      if (fld.value.length < lenght) {
+          fld.style.borderBottom = borderFix;
+           xer.innerHTML = '<small class="redColor">Please check the <span class="text-capitalize">'+ fld.title +'</span> you have entered</small>';
+          
+          error = "cancel";
+      } else {
+          fld.removeAttribute('style');
+          xer.innerHTML = '';
+  
+          error = "";
+      }
+      return error;
+  }  
+ 
+function checkemail(fld, alertID) {
+      var error = "";
+      var str = fld.value;
+      var xer = document.getElementById(alertID);
+      var string = '<small class="redColor">Please enter a valid Email ID e.g.: abc@abc.com</small>';
+      var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+      if (fld.value.length == 0) {
+          xer.innerHTML = '<small class="redColor">Please enter a valid Email ID e.g.: abc@abc.com</small>';
+          fld.style.borderBottom = borderFix;
+          error = "cancel";
+      } else if (filter.test(str)) {
+          xer.innerHTML = "";
+          fld.removeAttribute('style');
+          error = "";
+      } else {
+  
+          xer.innerHTML = string;
+          error = "cancel";
+          fld.style.borderBottom = borderFix;
+      }
+      return error;
+  } 
+
+
+// FORM VALIDATION SCRIPT ends here
