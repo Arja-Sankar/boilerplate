@@ -87,7 +87,7 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
        </div>
     <div class="clearfix"></div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="email" title="Email" name="email" value="" onblur="checkemail(this.form.email, 'alertEmail');this.setAttribute('value', this.value);" required>
+      <input type="text" id="email" title="Email" name="email" value="" required>
       <span class="highlight"></span> <span class="bar"></span>
       <label for="Email Address">Email<sup>*</sup></label>
       <span id="alertEmail"></span> </div>
@@ -159,10 +159,11 @@ var emailInput = document.querySelector("#email");
 emailInput.addEventListener("input", function() {
     // Get the value of the email input
     var emailValue = emailInput.value;
-var myDate = new Date();
-myDate.setMonth(myDate.getMonth() + 12);
+//var myDate = new Date();
+//myDate.setMonth(myDate.getMonth() + 12);
     // Set the cookie with the email value
-    document.cookie = "email=" + emailValue;expires=" + myDate + ";domain=.hlx.live;path=https://main--boilerplate--arja-sankar.hlx.live/";
+    document.cookie = "email=" + emailValue;
+    //expires=" + myDate + ";domain=.hlx.live;path=https://main--boilerplate--arja-sankar.hlx.live/";
 });
 
 
