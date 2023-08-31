@@ -54,6 +54,16 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     insideSecondDivForm.setAttribute('name','infy-rfs');
     insideSecondDivForm.setAttribute('action',"https://www.google.com/");
     //adding statically data(input tags,...) to form inside container second div
+serviceContainerSecondDiv.innerHTML =  `<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+    <p id="emailDisplay"></p>
+  </div>
+
+</div>` + insideSecondDivForm;
     insideSecondDivForm.innerHTML = `
     <input type="hidden" name="elqFormName" value="request-for-services">
     <input type="hidden" id="Source" name="Source" value="digital-experience">
@@ -165,16 +175,7 @@ emailInput.addEventListener("input", function() {
     document.cookie = "email=" + emailValue;
    // expires=" + myDate + ";domain=.hlx.live;path=https://main--boilerplate--arja-sankar.hlx.live/";
 });
-`<!-- The Modal -->
-<div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">×</span>
-    <p id="emailDisplay"></p>
-  </div>
-
-</div>`;
 // Get the modal
 var modal = document.getElementById("myModal");
 // Get the email display element in the modal
