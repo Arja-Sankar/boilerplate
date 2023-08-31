@@ -90,7 +90,7 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
       <input type="text" id="email" title="Email" name="email" value="" onblur="checkemail(this.form.email, 'alertEmail');this.setAttribute('value', this.value);">
       <span class="highlight"></span> <span class="bar"></span>
       <label for="Email Address">Email<sup>*</sup></label>
-      <span id="alertEmail"></span> </div>
+      <span id="alertEmail"><small></small></span> </div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
       <input type="text" id="company" name="company" title="Company" value="" onblur="validateEmptys_length(this.form.company, 'alertcompany',1);this.setAttribute('value', this.value);" placeholder="To select, begin typing.">
       
