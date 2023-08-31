@@ -87,7 +87,7 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
        </div>
     <div class="clearfix"></div>
     <div class="field-bg col-md-6 col-sm-6 col-xs-12">
-      <input type="text" id="email" title="Email" name="email" value="" onblur="checkemail(this.form.email, 'alertEmail');this.setAttribute('value', this.value);">
+      <input type="text" id="email" title="Email" name="email" value="" onblur="checkemail(this.form.email, 'alertEmail');this.setAttribute('value', this.value);" required>
       <span class="highlight"></span> <span class="bar"></span>
       <label for="Email Address">Email<sup>*</sup></label>
       <span id="alertEmail"><small></small></span> </div>
@@ -165,23 +165,24 @@ emailInput.addEventListener("input", function() {
 });
 // FORM VALIDATION SCRIPT starts here
 
-function validateEmptys_length(fld, alertID, lenght) {
-      var error = "";
-      var xer = document.getElementById(alertID);
-      if (fld.value.length < lenght) {
-          fld.style.borderBottom = borderFix;
-           xer.innerHTML = '<small class="redColor">Please check the <span class="text-capitalize">'+ fld.title +'</span> you have entered</small>';
-          
-          error = "cancel";
+function valid_registration(theForm) {
+      var empty = "";
+      var reason = "";
+      reason += checkemail(theForm.email, 'alertEmail');
+       //var pattsp = "!@#$%^&*()+=-[]\\\;,/{}|\":<>?";
+      if (reason != "") {
+          return false;
       } else {
-          fld.removeAttribute('style');
-          xer.innerHTML = '';
-  
-          error = "";
-      }
-      return error;
-  }  
- 
+          var email =  document.getElementById('email').value;
+          var dataString = 'https://s672742760.t.eloqua.com/e/f2?elqFormName=request-for-services&elqSiteID=672742760&email=' + email;
+      document.getElementById("blind").innerHTML = '<img src="'+ dataString +'" id="submit" style="width:1px; height:1px;" />';
+      document.getElementById("infy-rfs").style.display = "none"; 
+      document.getElementById("thankyou").style.display = "block";	
+          window.parent.rfsscrollonthankyou();
+  _satellite.track("form_submit");
+              return false;
+      }  
+  }	
 function checkemail(fld, alertID) {
       var error = "";
       var str = fld.value;
