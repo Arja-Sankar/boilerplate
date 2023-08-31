@@ -52,7 +52,7 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     insideSecondDivForm.setAttribute('id','infy-rfs');
     insideSecondDivForm.setAttribute('onsubmit','return valid_registration(this)');
     insideSecondDivForm.setAttribute('name','infy-rfs');
-    insideSecondDivForm.setAttribute('action','https://s672742760.t.eloqua.com/e/f2');
+    insideSecondDivForm.setAttribute('action','#');
     //adding statically data(input tags,...) to form inside container second div
     insideSecondDivForm.innerHTML = `
     <input type="hidden" name="elqFormName" value="request-for-services">
@@ -162,7 +162,7 @@ emailInput.addEventListener("input", function() {
 var myDate = new Date();
 myDate.setMonth(myDate.getMonth() + 12);
     // Set the cookie with the email value
-    document.cookie = "email=" + emailValue;expires=" + myDate + ";domain=.hlx.live;path=https://main--helix-project-boilerplate--ompandeyy.hlx.live/";
+    document.cookie = "email=" + emailValue;expires=" + myDate + ";domain=.hlx.live;path=https://main--boilerplate--arja-sankar.hlx.live/";
 });
 
 function valid_registration(theForm) {
