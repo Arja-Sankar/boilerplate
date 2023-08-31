@@ -50,9 +50,9 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     //setting attributes to form inside container second div
     insideSecondDivForm.setAttribute('method','post');
     insideSecondDivForm.setAttribute('id','infy-rfs');
-    insideSecondDivForm.setAttribute('onsubmit','return valid_registration(this)');
+//    insideSecondDivForm.setAttribute('onsubmit','return valid_registration(this)');
     insideSecondDivForm.setAttribute('name','infy-rfs');
-    insideSecondDivForm.setAttribute('action',"https://main--boilerplate--arja-sankar.hlx.live/");
+    insideSecondDivForm.setAttribute('action',"https://www.google.com/");
     //adding statically data(input tags,...) to form inside container second div
     insideSecondDivForm.innerHTML = `
     <input type="hidden" name="elqFormName" value="request-for-services">
