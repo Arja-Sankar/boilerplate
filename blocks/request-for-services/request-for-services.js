@@ -54,16 +54,16 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     insideSecondDivForm.setAttribute('name','infy-rfs');
     insideSecondDivForm.setAttribute('action',"https://www.google.com/");
     //adding statically data(input tags,...) to form inside container second div
-serviceContainerSecondDiv.innerHTML =  `
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">×</span>
-    <p id="emailDisplay"></p>
-  </div>
-</div>
-` + insideSecondDivForm;
+// serviceContainerSecondDiv.innerHTML =  `
+// <!-- The Modal -->
+// <div id="myModal" class="modal">
+//   <!-- Modal content -->
+//   <div class="modal-content">
+//     <span class="close">×</span>
+//     <p id="emailDisplay"></p>
+//   </div>
+// </div>
+// ` + insideSecondDivForm;
     insideSecondDivForm.innerHTML = `
     <input type="hidden" name="elqFormName" value="request-for-services">
     <input type="hidden" id="Source" name="Source" value="digital-experience">
@@ -162,7 +162,16 @@ serviceContainerSecondDiv.innerHTML =  `
     serviceContainerSecondDiv.appendChild(insideSecondDivForm);
     serviceContainerSecondDiv.appendChild(newElem);
     //append everything ends here
- 
+
+var divmodal = document.createElement('div');
+    divmodal.innerHTML = `<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+    <p id="emailDisplay"></p>
+  </div>
+</div>`;
 var emailInput = document.querySelector("#email");
 
 // Add an event listener to the email input element
