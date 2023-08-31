@@ -149,6 +149,14 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
           <div class="social-share social-icons"><a target="_blank" title="Follow us on Linkedin" class="socialTitle" href="https://www.linkedin.com/company/infosys"><img src="/content/dam/infosys-web/en/careers/Images/2020/linkedin.png" alt="Linkedin" class="img-responsive"></a></div>
           <div class="social-share social-icons"><a target="_blank" title="Follow us on Instagram" class="socialTitle" href="https://www.instagram.com/infosys/"><img src="/content/dam/infosys-web/en/careers/Images/2020/instagram.png" alt="Instagram" class="img-responsive"></a></div>
           </div>
+          <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+    <p id="emailDisplay"></p>
+  </div>
+</div>
     `
     //append everything starts here
     mainDiv.appendChild(serviceSectionElem);
@@ -163,15 +171,15 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     serviceContainerSecondDiv.appendChild(newElem);
     //append everything ends here
 
-var divmodal = document.createElement('div');
-    divmodal.innerHTML = `<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">×</span>
-    <p id="emailDisplay"></p>
-  </div>
-</div>`;
+// var divmodal = document.createElement('div');
+//     divmodal.innerHTML = `<!-- The Modal -->
+// <div id="myModal" class="modal">
+//   <!-- Modal content -->
+//   <div class="modal-content">
+//     <span class="close">×</span>
+//     <p id="emailDisplay"></p>
+//   </div>
+// </div>`;
 var emailInput = document.querySelector("#email");
 
 // Add an event listener to the email input element
