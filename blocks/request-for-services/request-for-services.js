@@ -55,7 +55,7 @@ newElemmodal.innerHTML = ` <!-- Modal content -->
     <span class="close">×</span>
     <p id="emailDisplay"></p>
   </div>`;
-serviceContainerSecondDiv.appendChild(newElemmodal);
+serviceContainerSecondDiv.append(newElemmodal);
     //creating form inside container second div
     var insideSecondDivForm = document.createElement('form');
     //setting attributes to form inside container second div
