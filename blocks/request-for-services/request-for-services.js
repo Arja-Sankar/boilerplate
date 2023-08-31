@@ -52,7 +52,7 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     insideSecondDivForm.setAttribute('id','infy-rfs');
     insideSecondDivForm.setAttribute('onsubmit','return valid_registration(this)');
     insideSecondDivForm.setAttribute('name','infy-rfs');
-    insideSecondDivForm.setAttribute('action','#');
+    insideSecondDivForm.setAttribute('action','');
     //adding statically data(input tags,...) to form inside container second div
     insideSecondDivForm.innerHTML = `
     <input type="hidden" name="elqFormName" value="request-for-services">
@@ -159,11 +159,11 @@ var emailInput = document.querySelector("#email");
 emailInput.addEventListener("input", function() {
     // Get the value of the email input
     var emailValue = emailInput.value;
-//var myDate = new Date();
-//myDate.setMonth(myDate.getMonth() + 12);
+var myDate = new Date();
+myDate.setMonth(myDate.getMonth() + 12);
     // Set the cookie with the email value
     document.cookie = "email=" + emailValue;
-    //expires=" + myDate + ";domain=.hlx.live;path=https://main--boilerplate--arja-sankar.hlx.live/";
+    expires=" + myDate + ";domain=.hlx.live;path=https://main--boilerplate--arja-sankar.hlx.live/";
 });
 
 
