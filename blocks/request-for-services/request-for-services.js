@@ -165,5 +165,30 @@ emailInput.addEventListener("input", function() {
     document.cookie = "email=" + emailValue;
    // expires=" + myDate + ";domain=.hlx.live;path=https://main--boilerplate--arja-sankar.hlx.live/";
 });
+`<!-- The Modal -->
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+    <p id="emailDisplay"></p>
+  </div>
 
+</div>`;
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the email display element in the modal
+var emailDisplay = document.getElementById("emailDisplay");
+
+// When the user submits the form, open the modal and display the email
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    modal.style.display = "block";
+    emailDisplay.innerHTML = "Cookie Email: " + decodeURIComponent(document.cookie).split(';')[0].split('=')[1];;
+});
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
