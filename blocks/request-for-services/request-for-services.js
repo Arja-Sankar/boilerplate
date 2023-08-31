@@ -165,43 +165,4 @@ myDate.setMonth(myDate.getMonth() + 12);
     document.cookie = "email=" + emailValue;expires=" + myDate + ";domain=.hlx.live;path=https://main--boilerplate--arja-sankar.hlx.live/";
 });
 
-function valid_registration(theForm) {
-      var empty = "";
-      var reason = "";
-      reason += checkemail(theForm.email, 'alertEmail');
-       //var pattsp = "!@#$%^&*()+=-[]\\\;,/{}|\":<>?";
-      if (reason != "") {
-          return false;
-      } else {
-          var email =  document.getElementById('email').value;
-          var dataString = 'https://s672742760.t.eloqua.com/e/f2?elqFormName=request-for-services&elqSiteID=672742760&email=' + email;
-      document.getElementById("blind").innerHTML = '<img src="'+ dataString +'" id="submit" style="width:1px; height:1px;" />';
-      document.getElementById("infy-rfs").style.display = "none"; 
-      document.getElementById("thankyou").style.display = "block";	
-          window.parent.rfsscrollonthankyou();
-  _satellite.track("form_submit");
-              return false;
-      }  
-  }	
-function checkemail(fld, alertID) {
-      var error = "";
-      var str = fld.value;
-      var xer = document.getElementById(alertID);
-      var string = '<small class="redColor">Please enter a valid Email ID e.g.: abc@abc.com</small>';
-      var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
-      if (fld.value.length == 0) {
-          xer.innerHTML = '<small class="redColor">Please enter a valid Email ID e.g.: abc@abc.com</small>';
-          fld.style.borderBottom = borderFix;
-          error = "cancel";
-      } else if (filter.test(str)) {
-          xer.innerHTML = "";
-          fld.removeAttribute('style');
-          error = "";
-      } else {
-  
-          xer.innerHTML = string;
-          error = "cancel";
-          fld.style.borderBottom = borderFix;
-      }
-      return error;
-  } 
+
