@@ -52,7 +52,7 @@ var mainRequestContent = document.querySelectorAll('.request-for-services-wrappe
     insideSecondDivForm.setAttribute('id','infy-rfs');
 //    insideSecondDivForm.setAttribute('onsubmit','return valid_registration(this)');
     insideSecondDivForm.setAttribute('name','infy-rfs');
-    insideSecondDivForm.setAttribute('action',"https://www.google.com/");
+   // insideSecondDivForm.setAttribute('action',"");
     //adding statically data(input tags,...) to form inside container second div
 // serviceContainerSecondDiv.innerHTML =  `
 // <!-- The Modal -->
@@ -194,7 +194,8 @@ var emailDisplay = document.getElementById("emailDisplay");
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
     modal.style.display = "block";
-    emailDisplay.innerHTML = "Cookie Email: " + decodeURIComponent(document.cookie).split(';')[0].split('=')[1];;
+    emailDisplay.innerHTML = "Registered Successfully " ;
+   // + decodeURIComponent(document.cookie).split(';')[0].split('=')[1];
 });
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
