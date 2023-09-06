@@ -5,8 +5,7 @@ digitalData = {
 page:{
 pageInfo:{
 pageName:"Home";
-emailId:s; 
-console.log(emailId);
 }
 }
 };
+console.log(emailId);
