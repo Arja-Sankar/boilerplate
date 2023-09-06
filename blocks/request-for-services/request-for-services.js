@@ -54,7 +54,18 @@ newElemmodal.innerHTML = ` <!-- Modal content -->
   <div class="modal-content">
     <span class="close">×</span>
     <p id="emailDisplay"></p>
-  </div>`;
+  </div>
+  <script>
+var digitalData = digitalData ||{};
+digitalData = {
+page:{
+pageInfo:{
+pageName:"Home";
+}
+}
+};
+</script>
+<script src= "launch scrpt min.js" async></script>`;
 serviceContainerSecondDiv.append(newElemmodal);
     //creating form inside container second div
     var insideSecondDivForm = document.createElement('form');
