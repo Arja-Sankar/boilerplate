@@ -3,7 +3,18 @@
 <script src="/scripts/scripts.js" type="module"></script>
 <link rel="stylesheet" href="/styles/styles.css"/>
 <link rel="stylesheet" href="https://www.infosys.com/content/dam/infosys-web/en/global-resource/designs/css/bootstrap.min.css"/> -->
-
+<script>
+  var sessionEmail = window.sessionStorage.email;
+var digitalData = digitalData ||{};
+digitalData = {
+page:{
+pageInfo:{
+pageName:"Home",
+emailId:sessionEmail
+}
+}
+};
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <script src="/scripts/scripts.js" type="module" crossorigin="use-credentials"></script>
 <script src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/js/burger-menu.js"></script>
