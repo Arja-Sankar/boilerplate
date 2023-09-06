@@ -4,7 +4,7 @@ var digitalData = digitalData ||{};
 digitalData = {
 page:{
 pageInfo:{
-pageName:"Home Page";
+pageName:"Home";
 emailId:s; 
 console.log(emailId);
 }
