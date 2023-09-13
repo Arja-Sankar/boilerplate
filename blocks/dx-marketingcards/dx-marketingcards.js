@@ -6,7 +6,7 @@ var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
 
 //getting content from Doc
 var picContainer = document.querySelectorAll('.dx-marketingcards > div > div > picture')[0];
-picContainer.setAttribute('class','cmp-marketingCards__picture');
+picContainer.classList.add('cmp-marketingCards__picture');
 var picContainerSource = document.querySelectorAll('.dx-marketingcards > div > div > picture > source')[0];
 var picContainerSourceOne = document.querySelectorAll('.dx-marketingcards > div > div > picture > source')[1];
 var picContainerImg = document.querySelector('.dx-marketingcards > div > div > picture > img');
