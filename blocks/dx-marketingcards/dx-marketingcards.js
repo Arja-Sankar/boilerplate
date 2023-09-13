@@ -117,10 +117,10 @@ fifteenthDiv.classList.add('marketingCards', 'base', 'teaser');
 thirdDiv.appendChild(fifteenthDiv);
 
 //creating link and appending here at fourth Div
-var cssLinkOne = document.createElement('link');
-cssLinkOne.setAttribute('rel','stylesheet');
-cssLinkOne.setAttribute('href',firstContentCssLink);
-fifteenthDiv.appendChild(cssLinkOne);
+var cssLinkTwo = document.createElement('link');
+cssLinkTwo.setAttribute('rel','stylesheet');
+cssLinkTwo.setAttribute('href',firstContentCssLink);
+fifteenthDiv.appendChild(cssLinkTwo);
 
 //fifth Div adding to fourth div with class list
 var sixteenththDiv = document.createElement('div');
@@ -198,3 +198,42 @@ var twentyFiveDiv = document.createElement('span');
 twentyFiveDiv.classList.add('material-icons', 'pl-4','text-2xl', 'leading-6');
 twentyFiveDiv.innerHTML = `arrow_forward`;
 twentyThreeDiv.appendChild(twentyFiveDiv);
+
+//
+var twentySixDiv = document.createElement('div');
+twentySixDiv.classList.add('actionCards', 'base', 'teaser');
+thirdDiv.appendChild(twentySixDiv);
+
+//creating link and appending here at fourth Div
+var cssLinkThree = document.createElement('link');
+cssLinkThree.setAttribute('rel','stylesheet');
+cssLinkThree.setAttribute('href',firstContentCssLink);
+twentySixDiv.appendChild(cssLinkThree);
+
+//
+var twentySevenDiv = document.createElement('div');
+twentySevenDiv.classList.add('cmp-promoActionCards', 'bg-sapphire-700', 'shadow-container', 'relative', 'grid', 'items-center', 'h-full');
+twentySixDiv.appendChild(twentySevenDiv);
+
+//
+var twentyeightDiv = document.createElement('div');
+twentyeightDiv.classList.add('cmp-promoActionCards__content', 'inset-p-normal');
+twentySevenDiv.appendChild(twentyeightDiv);
+
+//
+var contentFive = document.querySelectorAll('.containerV2 > .dx-marketingcards.block > div >div')[14].innerText;
+var contentSix = document.querySelectorAll('.containerV2 > .dx-marketingcards.block > div >div')[15].innerText;
+var contentSeven = document.querySelectorAll('.containerV2 > .dx-marketingcards.block > div >div')[16].innerText;
+var contentEightLink = document.querySelectorAll('.containerV2 > .dx-marketingcards.block > div >div')[17].innerText;
+
+//
+var twentynineDiv = document.createElement('h3');
+twentynineDiv.classList.add('cmp-promoActionCards__headline', 'h3', 'text-light', 'pb-4');
+twentynineDiv.innerHTML = contentFive;
+twentySevenDiv.appendChild(twentynineDiv);
+
+//
+var thirtyDiv = document.createElement('p');
+thirtyDiv.classList.add('cmp-promoActionCards__subhead', 'body-lg', 'text-light', 'inline-cta--light', 'pb-8');
+thirtyDiv.innerHTML = contentSix;
+twentySevenDiv.appendChild(thirtyDiv);
