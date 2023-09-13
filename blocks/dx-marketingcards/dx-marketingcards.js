@@ -5,11 +5,11 @@ document.querySelector('.dx-marketingcards-wrapper > .dx-marketingcards.block').
 var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
 
 //getting content from Doc
-var picContainer = document.querySelectorAll('.dx-marketingcards > div > div > picture')[0];
-picContainer.classList.add('cmp-marketingCards__picture');
-var picContainerSource = document.querySelectorAll('.dx-marketingcards > div > div > picture > source')[0];
-var picContainerSourceOne = document.querySelectorAll('.dx-marketingcards > div > div > picture > source')[1];
-var picContainerImg = document.querySelector('.dx-marketingcards > div > div > picture > img');
+// var picContainer = document.querySelectorAll('.dx-marketingcards > div > div > picture')[0];
+// picContainer.classList.add('cmp-marketingCards__picture');
+// var picContainerSource = document.querySelectorAll('.dx-marketingcards > div > div > picture > source')[0];
+// var picContainerSourceOne = document.querySelectorAll('.dx-marketingcards > div > div > picture > source')[1];
+// var picContainerImg = document.querySelector('.dx-marketingcards > div > div > picture > img');
 var firstContentCssLink = document.querySelectorAll('.dx-marketingcards > div > div')[1].innerText;
 var secondContent = document.querySelectorAll('.dx-marketingcards > div > div')[2].innerText;
 var thirdContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
