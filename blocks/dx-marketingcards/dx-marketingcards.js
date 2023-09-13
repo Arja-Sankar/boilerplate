@@ -5,12 +5,12 @@ document.querySelector('.dx-marketingcards-wrapper > .dx-marketingcards.block').
 var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
 
 //getting content from Doc
-var firstContentCssLink = document.querySelectorAll('.dx-marketingcards > div > div')[0].innerText;
-var secondContent = document.querySelectorAll('.dx-marketingcards > div > div')[1].innerText;
-var thirdContent = document.querySelectorAll('.dx-marketingcards > div > div')[2].innerText;
-var fourthContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
-var fifthContent = document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
-var SixthContentLink = document.querySelectorAll('.dx-marketingcards > div > div')[5].innerText;
+var firstContentCssLink = document.querySelectorAll('.dx-marketingcards > div > div')[1].innerText;
+var secondContent = document.querySelectorAll('.dx-marketingcards > div > div')[2].innerText;
+var thirdContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
+var fourthContent = document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
+var fifthContent = document.querySelectorAll('.dx-marketingcards > div > div')[5].innerText;
+var SixthContentLink = document.querySelectorAll('.dx-marketingcards > div > div')[6].innerText;
 
 // first div converting class name and adding class list
 mainDiv.setAttribute('class','containerV2');
@@ -38,3 +38,17 @@ var cssLink = document.createElement('link');
 cssLink.setAttribute('rel','stylesheet');
 cssLink.setAttribute('href',firstContentCssLink);
 fourthDiv.appendChild(cssLink);
+
+//fifth Div adding to fourth div with class list
+var fifthDiv = document.createElement('div');
+fifthDiv.classList.add('cmp-marketingCards', 'bg-web-shades-50', 'shadow-container', 'h-full', 'relative', 'flex', 'flex-col');
+fourthDiv.appendChild(fifthDiv);
+
+//sixth Div adding to fifth div with class list
+var sixthDiv = document.createElement('div');
+sixthDiv.classList.add('cmp-marketingCards__imageWrapper', ,relative', 'w-full');
+fifthDiv.appendChild(sixthDiv);
+
+
+
+
