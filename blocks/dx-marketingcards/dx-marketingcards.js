@@ -1,9 +1,6 @@
 //hiding main content
 document.querySelector('.dx-marketingcards-wrapper > .dx-marketingcards.block').style.display = 'none';
 
-// getting main Div 
-var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
-
 //getting content from Doc
 // var picContainer = document.querySelectorAll('.dx-marketingcards > div > div > picture')[0];
 // picContainer.classList.add('cmp-marketingCards__picture');
@@ -15,9 +12,11 @@ var secondContent = document.querySelectorAll('.dx-marketingcards > div > div')[
 var thirdContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
 var fourthContent = document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
 var fifthContent = document.querySelectorAll('.dx-marketingcards > div > div')[5].innerText;
-var SixthLink = document.querySelectorAll('.dx-marketingcards > div > div')[6].innerText;
+var SixthContentLink = document.querySelectorAll('.dx-marketingcards > div > div')[6].innerText;
 
 // first div converting class name and adding class list
+// getting main Div 
+var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
 mainDiv.setAttribute('class','containerV2');
 mainDiv.classList.add('container', 'responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
 
