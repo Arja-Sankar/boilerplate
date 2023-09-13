@@ -14,7 +14,7 @@ var secondContent = document.querySelectorAll('.dx-marketingcards > div > div')[
 var thirdContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
 var fourthContent = document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
 var fifthContent = document.querySelectorAll('.dx-marketingcards > div > div')[5].innerText;
-var SixthContentLink = document.querySelectorAll('.dx-marketingcards > div > div')[6].innerText;
+var SixthLink = document.querySelectorAll('.dx-marketingcards > div > div')[6].innerText;
 
 // first div converting class name and adding class list
 mainDiv.setAttribute('class','containerV2');
@@ -55,9 +55,9 @@ fifthDiv.appendChild(sixthDiv);
 
 //adding picture to inner Div
 picContainer.setAttribute('class','cmp-marketingCards__picture');
-picContainerSource.setAttribute('media','(min-width:1024px)');
-picContainerSourceOne.setAttribute('media','(min-width:768px)');
-picContainerImg.classList.add('cmp-marketingCards__image', 'aspect-[16/9]', 'object-cover', 'w-full');
+// picContainerSource.setAttribute('media','(min-width:1024px)');
+// picContainerSourceOne.setAttribute('media','(min-width:768px)');
+// picContainerImg.classList.add('cmp-marketingCards__image', 'aspect-[16/9]', 'object-cover', 'w-full');
 sixthDiv.appendChild(picContainer);
 
 
