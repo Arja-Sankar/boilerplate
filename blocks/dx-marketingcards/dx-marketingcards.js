@@ -59,6 +59,6 @@ fifthDiv.appendChild(sixthDiv);
 // picContainerSource.setAttribute('media','(min-width:1024px)');
 // picContainerSourceOne.setAttribute('media','(min-width:768px)');
 // picContainerImg.classList.add('cmp-marketingCards__image', 'aspect-[16/9]', 'object-cover', 'w-full');
-sixthDiv.appendChild(picContainer);
+//sixthDiv.appendChild(picContainer);
 
 
