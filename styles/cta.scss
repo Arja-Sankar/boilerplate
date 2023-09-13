@@ -1,0 +1,131 @@
+@layer components {
+  .cta-primary-dark {
+    @apply inline-flex justify-between bg-sapphire-800 bg-center text-white text-sm leading-4 tracking-normal font-demi py-4 px-6 transition-background duration-500;
+    @apply hover:bg-sapphire-700 hover:bg-ripple hover:bg-gradient-radial hover:from-transparent-gradient hover:to-sapphire-gradient;
+    @apply active:bg-sapphire-900 active:bg-full active:transition-background active:duration-0;
+    @apply focus:outline-sapphire-900/80 focus:outline-2 focus:outline-offset-2 focus:outline focus:to-sapphire-gradient-opacity-0.8;
+    @apply disabled:bg-web-shades-600 disabled:text-web-shades-400 disabled:cursor-default;
+  }
+
+  .cta-secondary-dark {
+    @apply inline-flex justify-between bg-transparent bg-center text-sapphire-900 text-sm leading-4 tracking-normal font-demi py-3.5 px-6 border-2 border-sapphire-800 transition-background duration-500;
+    @apply hover:bg-sapphire-700 hover:text-white hover:border-sapphire-700 hover:bg-ripple hover:bg-gradient-radial hover:from-transparent-gradient hover:to-sapphire-gradient-opacity-0.1;
+    @apply active:bg-transparent active:bg-full active:transition-background active:duration-0;
+    @apply focus:outline-sapphire-900/80 focus:outline-2 focus:outline-offset-2 focus:outline focus:to-sapphire-gradient-opacity-0.1;
+    @apply disabled:bg-transparent disabled:border-web-shades-600 disabled:text-web-shades-600 disabled:cursor-default;
+  }
+
+  .cta-tertiary-dark {
+    @apply inline-flex justify-between bg-transparent bg-center text-sapphire-700 text-lg leading-5 tracking-normal py-3.5 font-demi transition-background duration-500 border-sapphire-700;
+    @apply visited:border-transparent;
+    @apply hover:text-sapphire-800 hover:border-sapphire-800 hover:bg-ripple hover:bg-gradient-radial hover:from-transparent-gradient hover:to-sapphire-gradient-opacity-0.1;
+    @apply active:bg-sapphire-700 active:border-transparent active:bg-opacity-0 active:bg-full active:transition-background active:duration-0;
+    @apply focus:outline-sapphire-900/80 focus:outline-2 focus:outline-offset-2 focus:outline;
+    @apply disabled:text-web-shades-600 disabled:border-web-shades-600 disabled:cursor-default;
+  }
+
+  .cta-inline-dark {
+    @apply inline-flex justify-between bg-transparent bg-center text-sapphire-900 text-sm leading-4 tracking-normal py-4 font-demi transition-background duration-500 border-sapphire-900;
+    @apply visited:text-raspberry-700;
+    @apply hover:text-sapphire-700 hover:border-sapphire-700 hover:bg-ripple hover:bg-gradient-radial hover:from-transparent-gradient hover:to-sapphire-gradient-opacity-0.1;
+    @apply active:bg-sapphire-700 active:border-transparent active:bg-opacity-0 active:bg-full active:transition-background active:duration-0;
+    @apply focus:text-sapphire-900 focus:outline-sapphire-900/80 focus:outline-2 focus:outline-offset-2 focus:outline;
+    @apply disabled:text-neutral-500 disabled:border-neutral-300 disabled:cursor-default;
+
+    &:visited span {
+      @apply border-raspberry-700;
+    }
+    &:hover span {
+      @apply border-sapphire-700;
+    }
+    &:active span {
+      @apply border-transparent;
+    }
+    &:focus span {
+      @apply border-sapphire-900;
+    }
+    &:disabled span {
+      @apply border-neutral-300;
+    }
+  }
+
+  .cta-primary-light {
+    @apply inline-flex justify-between bg-white bg-center text-sapphire-900 text-sm leading-4 tracking-normal font-demi py-4 px-6 transition-background duration-500;
+    @apply hover:bg-sapphire-200 hover:bg-ripple hover:bg-gradient-radial hover:from-transparent-gradient hover:to-white-gradient-opacity-0.8;
+    @apply active:bg-white active:bg-full active:transition-background active:duration-0;
+    @apply focus:outline-white focus:outline focus:outline-2 focus:outline-offset-2 focus:to-white-gradient-opacity-0.8;
+    @apply disabled:bg-web-shades-400 disabled:text-web-shades-600 disabled:cursor-default;
+  }
+
+  .cta-secondary-light {
+    @apply inline-flex justify-between bg-transparent bg-center text-white text-sm leading-4 tracking-normal font-demi py-3.5 px-6 border-2 border-white transition-background duration-500;
+    @apply hover:bg-sapphire-200 hover:text-sapphire-900 hover:border-sapphire-200 hover:bg-ripple hover:bg-gradient-radial hover:from-transparent-gradient hover:to-white-gradient-opacity-0.1;
+    @apply active:bg-transparent active:bg-full active:transition-background active:duration-0;
+    @apply focus:outline-white focus:outline focus:outline-2 focus:outline-offset-2 focus:bg-opacity-10 focus:to-white-gradient-opacity-0.1;
+    @apply disabled:bg-transparent disabled:border-web-shades-400 disabled:text-web-shades-400 disabled:cursor-default;
+  }
+
+  .cta-tertiary-light {
+    @apply inline-flex justify-between bg-transparent bg-center text-white text-lg leading-5 tracking-normal py-3.5 font-demi transition-background duration-500 border-white;
+    @apply visited:border-transparent;
+    @apply hover:text-sapphire-100 hover:border-sapphire-100 hover:bg-ripple hover:bg-gradient-radial hover:from-transparent-gradient hover:to-white-gradient-opacity-0.1;
+    @apply active:bg-white active:border-transparent active:bg-opacity-0 active:bg-full active:transition-background active:duration-0;
+    @apply focus:outline-white focus:outline focus:outline-2 focus:outline-offset-2 focus:bg-opacity-10 focus:to-white-gradient-opacity-0.1;
+    @apply disabled:bg-transparent disabled:text-web-shades-400 disabled:border-web-shades-400 disabled:cursor-default;
+  }
+
+  .cta-inline-light {
+    @apply inline-flex justify-between bg-transparent bg-center text-white text-sm leading-4 tracking-normal py-4 font-demi transition-background duration-500 border-white;
+    @apply visited:text-web-shades-200;
+    @apply hover:text-white/80 hover:border-white/80 hover:bg-ripple hover:bg-gradient-radial hover:from-transparent-gradient hover:to-white-gradient-opacity-0.1;
+    @apply active:bg-white active:border-transparent active:bg-opacity-0 active:bg-full active:transition-background active:duration-0;
+    @apply focus:outline-white focus:outline focus:outline-2 focus:outline-offset-2 focus:bg-opacity-10 focus:to-white-gradient-opacity-0.1;
+    @apply disabled:bg-transparent disabled:text-web-shades-400 disabled:border-web-shades-400 disabled:cursor-default;
+
+    &:visited span {
+      @apply border-web-shades-200;
+    }
+    &:hover span {
+      @apply border-white/80;
+    }
+    &:active span {
+      @apply border-transparent;
+    }
+    &:focus span {
+      @apply border-white;
+    }
+    &:disabled span {
+      @apply border-neutral-600;
+    }
+  }
+}
+
+// use these utils to make inline links compliant with global design system
+// follows the same convention as `text-dark` or `text-light`
+// but instead add `inline-cta--dark` or `inline-cta--light` with the text colors
+@layer utilities {
+  .inline-cta--dark
+    a:not(.cta-primary-dark, .cta-primary-light, .cta-secondary-dark, .cta-secondary-light, .cta-tertiary-dark, .cta-tertiary-light, .cta-inline-dark, .cta-inline-light),
+  .inline-cta--light
+    .inline-cta--dark
+    a:not(.cta-primary-dark, .cta-primary-light, .cta-secondary-dark, .cta-secondary-light, .cta-tertiary-dark, .cta-tertiary-light, .cta-inline-dark, .cta-inline-light) {
+    @apply text-sapphire-900 border-sapphire-900 font-demi underline decoration-sapphire-900;
+    @apply visited:text-raspberry-700 visited:decoration-raspberry-700;
+    @apply hover:text-sapphire-700 hover:decoration-sapphire-700;
+    @apply active:bg-sapphire-900 active:decoration-transparent;
+    @apply focus:outline-sapphire-900/80 focus:outline-2 focus:outline-offset-2 focus:outline;
+    @apply disabled:text-neutral-500 disabled:decoration-neutral-500 disabled:cursor-default;
+  }
+  .inline-cta--light
+    a:not(.cta-primary-dark, .cta-primary-light, .cta-secondary-dark, .cta-secondary-light, .cta-tertiary-dark, .cta-tertiary-light, .cta-inline-dark, .cta-inline-light),
+  .inline-cta--dark
+    .inline-cta--light
+    a:not(.cta-primary-dark, .cta-primary-light, .cta-secondary-dark, .cta-secondary-light, .cta-tertiary-dark, .cta-tertiary-light, .cta-inline-dark, .cta-inline-light) {
+    @apply text-white border-white font-demi underline decoration-white inline-flex justify-between;
+    @apply visited:text-web-shades-200 visited:decoration-web-shades-200;
+    @apply hover:text-white/80 hover:decoration-white/80;
+    @apply active:decoration-transparent;
+    @apply focus:outline-white/80 focus:outline-2 focus:outline-offset-2 focus:outline;
+    @apply disabled:text-neutral-600 disabled:decoration-neutral-600 disabled:cursor-default;
+  }
+}
