@@ -1,0 +1,59 @@
+.actionCards {
+    padding-left: 0!important;
+    padding-right: 0!important
+}
+
+.cmp-promoActionCards__eyebrow {
+    text-transform: uppercase!important;
+    letter-spacing: .1em!important;
+    padding-bottom: .75rem!important;
+    font-size: .75rem!important;
+    font-weight: 400!important;
+    line-height: 1rem!important
+}
+
+@media (min-width: 768px) {
+    .cmp-promoActionCards__eyebrow {
+        font-size:.875rem!important;
+        line-height: 1.25rem!important
+    }
+}
+
+.cmp-promoActionCards__headline {
+    letter-spacing: 0!important;
+    padding-bottom: 1rem!important;
+    font-size: 1.25rem!important;
+    font-weight: 400!important;
+    line-height: 1.75rem!important
+}
+
+@media (min-width: 768px) {
+    .cmp-promoActionCards__headline {
+        font-size:1.5rem!important;
+        line-height: 2rem!important
+    }
+}
+
+@media (min-width: 1024px) {
+    .cmp-promoActionCards__headline {
+        font-size:1.875rem!important;
+        line-height: 2.25rem!important
+    }
+}
+
+.cmp-promoActionCards__subhead {
+    letter-spacing: 0!important;
+    font-family: AvenirNextLTCom-Regular,Arial,Helvetica,sans-serif!important;
+    font-size: 1rem!important;
+    font-weight: 400!important;
+    line-height: 1.5rem!important
+}
+
+@media (min-width: 768px) {
+    .cmp-promoActionCards__subhead {
+        font-size:1.125rem!important;
+        line-height: 1.75rem!important
+    }
+}
+
+/*# sourceMappingURL=legacy.css.map */
