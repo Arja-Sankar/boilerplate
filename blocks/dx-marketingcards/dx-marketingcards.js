@@ -237,3 +237,26 @@ var thirtyDiv = document.createElement('p');
 thirtyDiv.classList.add('cmp-promoActionCards__subhead', 'body-lg', 'text-light', 'inline-cta--light', 'pb-8');
 thirtyDiv.innerHTML = contentSix;
 twentySevenDiv.appendChild(thirtyDiv);
+
+//
+var thirtyOneDiv = document.createElement('a');
+thirtyOneDiv.setAttribute('class','cta-primary-light');
+thirtyOneDiv.setAttribute('data-analytics-placement','Button');
+thirtyOneDiv.setAttribute('data-analytics-label','trackLink:buttonClick');
+thirtyOneDiv.setAttribute('data-analytics-id','Get in touch-homepage');
+thirtyOneDiv.setAttribute('href',contentEightLink);
+thirtyOneDiv.setAttribute('target','_self');
+thirtyOneDiv.setAttribute('aria-label','GET IN TOUCH');
+thirtyOneDiv.setAttribute('role','button');
+twentySevenDiv.appendChild(thirtyOneDiv);
+
+//tweleth Div adding to eleventh div with class list
+var thirtyTwoDiv = document.createElement('span');
+thirtyTwoDiv.classList.add('flex', 'flex-row', 'justify-between', 'items-center');
+thirtyOneDiv.appendChild(thirtyTwoDiv);
+
+//thirteenth Div adding to tweleth div with class list
+var thirtyThreeDiv = document.createElement('span');
+thirtyThreeDiv.classList.add('pt-1');
+thirtyThreeDiv.innerHTML = contentSeven;
+thirtyTwoDiv.appendChild(thirtyThreeDiv);
