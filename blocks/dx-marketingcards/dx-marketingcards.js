@@ -4,19 +4,19 @@ document.querySelector('.dx-marketingcards-wrapper > .dx-marketingcards.block').
 // getting main Div 
 var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
 
-
-// var secondContent = document.querySelectorAll('.dx-marketingcards > div > div')[1].innerText;
-// var thirdContent = document.querySelectorAll('.dx-marketingcards > div > div')[2].innerText;
-// var fourthContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
-// var fifthContent = document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
-// var SixthContentLink = document.querySelectorAll('.dx-marketingcards > div > div')[5].innerText;
+//getting content from Doc
+var firstContentCssLink = document.querySelectorAll('.dx-marketingcards > div > div')[0].innerText;
+var secondContent = document.querySelectorAll('.dx-marketingcards > div > div')[1].innerText;
+var thirdContent = document.querySelectorAll('.dx-marketingcards > div > div')[2].innerText;
+var fourthContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
+var fifthContent = document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
+var SixthContentLink = document.querySelectorAll('.dx-marketingcards > div > div')[5].innerText;
 
 // first div converting class name and adding class list
 mainDiv.setAttribute('class','containerV2');
 mainDiv.classList.add('container', 'responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
 
-//getting content from Doc
-var firstContentCssLink = document.querySelectorAll('.containerV2 > div > div')[0].innerText;
+
 
 //second Div adding to main div with class list
 var secondDiv = document.createElement('div');
