@@ -1,4 +1,7 @@
-// getting main Div :document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
+//hiding main content
+document.querySelector('.dx-marketingcards-wrapper > .dx-marketingcards.block').style.display = 'none';
+
+// getting main Div 
 var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
 
 //getting content from Doc
@@ -8,9 +11,6 @@ var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
 // var fourthContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
 // var fifthContent = document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
 // var SixthContentLink = document.querySelectorAll('.dx-marketingcards > div > div')[5].innerText;
-
-//hiding main content
-document.querySelector('.dx-marketingcards-wrapper > .dx-marketingcards').style.display = 'none';
 
 // first div converting class name and adding class list
 var firstDiv = mainDiv.setAttribute('class','containerV2');
