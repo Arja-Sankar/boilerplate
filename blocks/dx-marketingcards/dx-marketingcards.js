@@ -6,6 +6,7 @@ var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
 
 //getting content from Doc
 var picContainer = document.querySelectorAll('.dx-marketingcards > div > div > picture')[0];
+picContainer.setAttribute('class','cmp-marketingCards__picture');
 var picContainerSource = document.querySelectorAll('.dx-marketingcards > div > div > picture > source')[0];
 var picContainerSourceOne = document.querySelectorAll('.dx-marketingcards > div > div > picture > source')[1];
 var picContainerImg = document.querySelector('.dx-marketingcards > div > div > picture > img');
@@ -54,7 +55,7 @@ sixthDiv.classList.add('cmp-marketingCards__imageWrapper', ,relative', 'w-full')
 fifthDiv.appendChild(sixthDiv);
 
 //adding picture to inner Div
-picContainer.setAttribute('class','cmp-marketingCards__picture');
+
 // picContainerSource.setAttribute('media','(min-width:1024px)');
 // picContainerSourceOne.setAttribute('media','(min-width:768px)');
 // picContainerImg.classList.add('cmp-marketingCards__image', 'aspect-[16/9]', 'object-cover', 'w-full');
