@@ -2,12 +2,12 @@
 var mainDiv = document.querySelector('.dx-marketingcards-wrapper');
 
 //getting content from Doc
-var firstContentCssLink = document.querySelectorAll('.dx-marketingcards > div > div')[0].innerText;
-var secondContent = document.querySelectorAll('.dx-marketingcards > div > div')[1].innerText;
-var thirdContent = document.querySelectorAll('.dx-marketingcards > div > div')[2].innerText;
-var fourthContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
-var fifthContent = document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
-var SixthContentLink = document.querySelectorAll('.dx-marketingcards > div > div')[5].innerText;
+// var firstContentCssLink = document.querySelectorAll('.dx-marketingcards > div > div')[0].innerText;
+// var secondContent = document.querySelectorAll('.dx-marketingcards > div > div')[1].innerText;
+// var thirdContent = document.querySelectorAll('.dx-marketingcards > div > div')[2].innerText;
+// var fourthContent = document.querySelectorAll('.dx-marketingcards > div > div')[3].innerText;
+// var fifthContent = document.querySelectorAll('.dx-marketingcards > div > div')[4].innerText;
+// var SixthContentLink = document.querySelectorAll('.dx-marketingcards > div > div')[5].innerText;
 
 //hiding main content
 document.querySelector('.dx-marketingcards-wrapper > .dx-marketingcards').style.display = 'none';
@@ -34,5 +34,5 @@ thirdDiv.appendChild(fourthDiv);
 //creating link and appending here at fourth Div
 var cssLink = document.createElement('link');
 cssLink.setAttribute('rel','stylesheet');
-cssLink.setAttribute('href',firstContentCssLink);
+cssLink.setAttribute('href','');
 fourthDiv.appendChild(cssLink);
