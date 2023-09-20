@@ -187,21 +187,76 @@ SeventhDiv.appendChild(eigthDiv);
 	  elevenDiv.appendChild(footerSpan);
 	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].classList.add('triangle-right'); 
 	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].setAttribute('aria-level','3');
-	  var elevenHeader = document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i];
-	  var elevenUL = document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul')[i];
+	  var elevenHeader = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > h5')[i];
+	  var elevenUL = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > ul')[i];
 	  elevenDiv.appendChild(elevenHeader); 
 	  elevenDiv.appendChild(elevenUL);
 	  tenthDiv.appendChild(elevenDiv);
   }else if(i == 1){
-	  
+	    var footerSpan = document.createElement('span');
+	 footerSpan.classList.add('icon', 'hidden-desktop');
+	  var twleveDiv = document.createElement('div');
+    	 twleveDiv.classList.add('span2', 'inverse');
+	  twleveDiv.appendChild(footerSpan);
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].classList.add('triangle-right'); 
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].setAttribute('aria-level','3');
+	  var twleveHeader = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > h5')[i];
+	  var twleveUL = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > ul')[i];
+	  twleveDiv.appendChild(twleveHeader); 
+	  twleveDiv.appendChild(twleveUL);
+	  tenthDiv.appendChild(twleveDiv);
   }else if(i == 2){
-	  
+	      var footerSpan = document.createElement('span');
+	 footerSpan.classList.add('icon', 'hidden-desktop');
+	  var thirteenDiv = document.createElement('div');
+    	 thirteenDiv.classList.add('span2', 'inverse');
+	  thirteenDiv.appendChild(footerSpan);
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].classList.add('triangle-right'); 
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].setAttribute('aria-level','3');
+	  var thirteenHeader = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > h5')[i];
+	  var thirteenUL = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > ul')[i];
+	  thirteenDiv.appendChild(thirteenHeader); 
+	  thirteenDiv.appendChild(thirteenUL);
+	  tenthDiv.appendChild(thirteenDiv);
   }else if(i == 3){
-	  
+	      var footerSpan = document.createElement('span');
+	 footerSpan.classList.add('icon', 'hidden-desktop');
+	  var fourteenDiv = document.createElement('div');
+    	 fourteenDiv.classList.add('span2', 'inverse');
+	  fourteenDiv.appendChild(footerSpan);
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].classList.add('triangle-right'); 
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].setAttribute('aria-level','3');
+	  var fourteenHeader = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > h5')[i];
+	  var fourteenUL = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > ul')[i];
+	  fourteenDiv.appendChild(fourteenHeader); 
+	  fourteenDiv.appendChild(fourteenUL);
+	  tenthDiv.appendChild(fourteenDiv);
   }else if(i == 4){
-	  
+	  var footerSpan = document.createElement('span');
+	 footerSpan.classList.add('icon', 'hidden-desktop');
+	  var fifteenDiv = document.createElement('div');
+    	 fifteenDiv.classList.add('span2', 'inverse');
+	  fifteenDiv.appendChild(footerSpan);
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].classList.add('triangle-right'); 
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].setAttribute('aria-level','3');
+	  var fifteenHeader = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > h5')[i];
+	  var fifteenUL = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > ul')[i];
+	  fifteenDiv.appendChild(fifteenHeader); 
+	  fifteenDiv.appendChild(fifteenUL);
+	  tenthDiv.appendChild(fifteenDiv);
   }else if(i == 5){
-	  
+	 var footerSpan = document.createElement('span');
+	 footerSpan.classList.add('icon', 'hidden-desktop');
+	  var sixteenDiv = document.createElement('div');
+    	 sixteenDiv.classList.add('span2', 'inverse');
+	  sixteenDiv.appendChild(footerSpan);
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].classList.add('triangle-right'); 
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].setAttribute('aria-level','3');
+	  var sixteenHeader = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > h5')[i];
+	  var sixteenUL = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > ul')[i];
+	  sixteenDiv.appendChild(sixteenHeader); 
+	  sixteenDiv.appendChild(sixteenUL);
+	  tenthDiv.appendChild(sixteenDiv);  
   }
 
  }
