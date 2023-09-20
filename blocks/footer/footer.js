@@ -183,11 +183,12 @@ SeventhDiv.appendChild(eigthDiv);
   if(i == 0){
 	  var elevenDiv = document.createElement('div');
     	 elevenDiv.classList.add('span2', 'inverse');
+	  elevenDiv.appendChild(footerSpan);
 	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].classList.add('triangle-right'); 
 	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].setAttribute('aria-level','3');
 	  var elevenHeader = document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i];
 	  var elevenUL = document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul')[i];
-	  elevenDiv.innerHTML =  elevenHeader + elevenUL;
+	  elevenDiv.appendChild(elevenHeader + elevenUL);  
 	  tenthDiv.appendChild(elevenDiv)
   }else if(i == 1){
 	  
