@@ -29,7 +29,7 @@ export default async function decorate(block) {
     mainFooter.setAttribute('role','contentinfo');
     mainFooter.setAttribute('aria-labelledby','un-footer-id');
     mainFooter.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
-   var footerContentOne = document.querySelectorAll('.footerwt > div > div')[0].innerText
+   //var footerContentOne = document.querySelectorAll('.footerwt > div > div')[0].innerText
    var firstDiv = document.createElement('div');
      firstDiv.classList.add('wrap-footer', 'noindex');
      mainFooter.appendChild(firstDiv);
@@ -127,6 +127,24 @@ export default async function decorate(block) {
 	}
                           `;
 firstDiv.appendChild(firstStyle);
+//footer-wide black10   noindex
+  var secondDiv = document.createElement('div');
+secondDiv.classList.add('footer-wide', 'black10', ' ','noindex');
+secondDiv.setAttribute('data-dig-nav','Footer');
+firstDiv.appendChild(secondDiv);
+	    var thirdDiv = document.createElement('div');
+	 thirdDiv.setAttribute('class','ns-outer-control');
+	  secondDiv.appendChild(thirdDiv);
+	  var footerInsideDiv = document.createElement('footer');
+	  footerInsideDiv.classList.add('container', 'about', 'black10');
+	  footerInsideDiv.setAttribute('role','presentation');
+	  thirdDiv.appendChild(footerInsideDiv);
+	  var fourthDiv = document.createElement('div');
+	 fourthDiv.setAttribute('class','row');
+	  footerInsideDiv.appendChild(fourthDiv);
+	    var fifthDiv = document.createElement('div');
+	 fifthDiv.setAttribute('class','span12');
+	  fourthDiv.appendChild(fifthDiv);
 
 
 
@@ -138,7 +156,56 @@ firstDiv.appendChild(firstStyle);
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
    //console.log(footerContent);
     
 //     var mainFooter = document.querySelector('.footer-wrapper > .footer.block');
