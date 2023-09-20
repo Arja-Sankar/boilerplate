@@ -127,11 +127,11 @@ export default async function decorate(block) {
 	}
                           `;
 firstDiv.append(firstStyle);
-//footer-wide black10   noindex
-  var secondDiv = document.createElement('div');
-secondDiv.classList.add('footer-wide', 'black10', ' ','noindex');
+
+var secondDiv = document.createElement('div');
+secondDiv.classList.add('footer-wide', 'black10','noindex');
 secondDiv.setAttribute('data-dig-nav','Footer');
-firstDiv.append(secondDiv);
+firstDiv.appendChild(secondDiv);
 	    var thirdDiv = document.createElement('div');
 	 thirdDiv.setAttribute('class','ns-outer-control');
 	  secondDiv.appendChild(thirdDiv);
@@ -147,9 +147,9 @@ firstDiv.append(secondDiv);
 	  fourthDiv.appendChild(fifthDiv);
 var fifthDivContent = document.querySelector('.footer-wrapper > .footerwt > div > div >ul');
 	var firstliContent =  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul > li')[3];
-	  var firstUlContent = document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul')[1].classList.add('social-media-badges');
+	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul')[1].classList.add('social-media-badges');
 	  var firstUl =  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul')[1];
-	  firstliContent.innerHTML = firstUl
+	  firstliContent.appendChild(firstUl);
  fifthDiv.appendChild(fifthDivContent);
 
 
