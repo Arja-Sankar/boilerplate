@@ -126,12 +126,12 @@ export default async function decorate(block) {
 		fill: #7f7f7f;
 	}
                           `;
-firstDiv.appendChild(firstStyle);
+firstDiv.append(firstStyle);
 //footer-wide black10   noindex
   var secondDiv = document.createElement('div');
 secondDiv.classList.add('footer-wide', 'black10', ' ','noindex');
 secondDiv.setAttribute('data-dig-nav','Footer');
-firstDiv.appendChild(secondDiv);
+firstDiv.append(secondDiv);
 	    var thirdDiv = document.createElement('div');
 	 thirdDiv.setAttribute('class','ns-outer-control');
 	  secondDiv.appendChild(thirdDiv);
