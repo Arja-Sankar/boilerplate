@@ -33,10 +33,100 @@ export default async function decorate(block) {
    var firstDiv = document.createElement('div');
      firstDiv.classList.add('wrap-footer', 'noindex');
      mainFooter.appendChild(firstDiv);
-    
+ 
+  var firstHeader = document.createElement('h2');
+  firstHeader.setAttribute('class','sr-only');
+    firstHeader.setAttribute('tabindex','-1');
+    firstHeader.setAttribute('id','un-footer-id');
+    firstHeader.setAttribute('data-unptsign','ppr-0101');
+    firstHeader.innerHTML = `Footer`;
+ firstDiv.appendChild(firstHeader);
+   var firstStyle = document.createElement('style'); 
+    firstStyle.innerHTML = `
+                            	a.evidon-consent-link {
+		display: inline-block;
+		line-height: 14px;
+		text-decoration: none;
+		background-color: transparent;
+		color: #00294B !important;
+		padding: 6px;
+	}
 
+	#evidon-prefdiag-tabcontent-2 {
+		margin: 0px 10px !important;
+	}
 
+	#evidon-prefdiag-tabcontainer {
 
+		width: 400px !important;
+	}
+
+	#evidon-prefdiag-nav-1 {
+
+		display: none !important;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.evidon-prefdiag-tabcontainer {
+			max-height: 300px;
+			background-color: #FFF;
+		}
+
+		a.evidon-consent-link {
+			font-size: 12px !important;
+			margin: 0px 13px;
+			padding: 0px;
+		}
+
+		.legal .legalContainer ul.footer-nav {
+			margin: 13px 13px;
+		}
+
+		.row.legalContainer {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		.wrap-footer a.evidon-consent-link {
+			font-size: 12px !important;
+			margin: 0px 13px;
+			padding: 0px;
+		}
+
+		.wrap-footer .legal .legalContainer ul.footer-nav {
+			margin: 13px 13px !important;
+		}
+
+		.wrap-footer .legal .legalContainer ul.footer-nav li:first-child a {
+			padding-left: 0px;
+		}
+
+		.wrap-footer .legal .row.legalContainer {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+
+	.cmp-footer__social-media-icons a {
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		background-color: #f7f7f7;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cmp-footer__social-media-icons svg {
+		width: 15px;
+		height: 15px;
+		fill: #7f7f7f;
+	}
+                          `;
+firstDiv.appendChild(firstStyle);
 
 
 
