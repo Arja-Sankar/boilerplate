@@ -178,9 +178,10 @@ SeventhDiv.appendChild(eigthDiv);
 	 tenthDiv.setAttribute('class','row');
 	  footerInsiderDiv.appendChild(tenthDiv);
  for(let i = 0; i < counter ;i++){
- var footerSpan = document.createElement('span');
-	 footerSpan.classList.add('icon', 'hidden-desktop');
+ 
   if(i == 0){
+	  var footerSpan = document.createElement('span');
+	 footerSpan.classList.add('icon', 'hidden-desktop');
 	  var elevenDiv = document.createElement('div');
     	 elevenDiv.classList.add('span2', 'inverse');
 	  elevenDiv.appendChild(footerSpan);
@@ -188,8 +189,9 @@ SeventhDiv.appendChild(eigthDiv);
 	  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i].setAttribute('aria-level','3');
 	  var elevenHeader = document.querySelectorAll('.footer-wrapper > .footerwt > div > div >h5')[i];
 	  var elevenUL = document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul')[i];
-	  elevenDiv.appendChild(elevenHeader + elevenUL);  
-	  tenthDiv.appendChild(elevenDiv)
+	  elevenDiv.appendChild(elevenHeader); 
+	  elevenDiv.appendChild(elevenUL);
+	  tenthDiv.appendChild(elevenDiv);
   }else if(i == 1){
 	  
   }else if(i == 2){
