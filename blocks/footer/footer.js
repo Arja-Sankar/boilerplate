@@ -151,7 +151,14 @@ var fifthDivContent = document.querySelector('.footer-wrapper > .footerwt > div 
 	  var firstUl =  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul')[1];
 	  firstliContent.appendChild(firstUl);
  fifthDiv.appendChild(fifthDivContent);
-
+	  var sixthDiv = document.createElement('div');
+	  sixthDiv.setAttribute('class','row');
+	 sixthDiv.innerHTML = `
+   			<div class="span12">
+			<ul></ul>
+			</div>
+   			`;
+footerInsideDiv.appendChild(sixthDiv);
 
 
 
