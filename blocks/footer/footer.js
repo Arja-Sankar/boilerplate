@@ -24,6 +24,31 @@ export default async function decorate(block) {
   //hiding content
    var footerContent = document.querySelector('.footer-wrapper > .footer.block > div');
     footerContent.style.display = 'none';
+   var mainFooter = document.querySelector('.footer-wrapper > .footer.block');
+    mainFooter.setAttribute('class','footerwt');
+    mainFooter.setAttribute('role','contentinfo');
+    mainFooter.setAttribute('aria-labelledby','un-footer-id');
+    mainFooter.classList.add('aem-GridColumn', 'aem-GridColumn--default--12');
+   var footerContentOne = document.querySelectorAll('.footerwt > div > div')[0].innerText
+   var firstDiv = document.createElement('div');
+     firstDiv.classList.add('wrap-footer', 'noindex');
+     mainFooter.appendChild(firstDiv);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
    //console.log(footerContent);
     
 //     var mainFooter = document.querySelector('.footer-wrapper > .footer.block');
