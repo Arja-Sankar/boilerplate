@@ -260,10 +260,11 @@ SeventhDiv.appendChild(eigthDiv);
   }
 
  }
+//document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div')[0].innerText;
+	  //document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[0]-5;
 
-
-
-
+// var seventeenthDiv = document.createElement('div');
+// seventeenthDiv.classList.add();
 
 
 
