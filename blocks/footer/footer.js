@@ -178,7 +178,7 @@ SeventhDiv.appendChild(eigthDiv);
 	 tenthDiv.setAttribute('class','row');
 	  footerInsiderDiv.appendChild(tenthDiv);
  for(let i = 0; i < counter ;i++){
- var footerSpan = document. createElement('span');
+ var footerSpan = document.createElement('span');
 	 footerSpan.classList.add('icon', 'hidden-desktop');
   if(i == 0){
 	  var elevenDiv = document.createElement('div');
