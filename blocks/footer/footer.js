@@ -145,8 +145,12 @@ firstDiv.appendChild(secondDiv);
 	    var fifthDiv = document.createElement('div');
 	 fifthDiv.setAttribute('class','span12');
 	  fourthDiv.appendChild(fifthDiv);
-
-
+var fifthDivContent = document.querySelector('.footer-wrapper > .footerwt > div > div >ul');
+	var firstliContent =  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul > li')[3];
+	  var firstUlContent = document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul')[1].classList.add('social-media-badges');
+	  var firstUl =  document.querySelectorAll('.footer-wrapper > .footerwt > div > div >ul')[1];
+	  firstliContent.innerHTML = firstUl
+ fifthDiv.appendChild(fifthDivContent);
 
 
 
