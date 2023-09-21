@@ -1,0 +1,8 @@
+.cg-wt-global-styles .cg-box-shadow-disclosure {
+    padding: 10px 20px;
+    margin: 40px auto 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
+}
+.cg-wt-global-styles * {
+    -webkit-tap-highlight-color: transparent;
+}
