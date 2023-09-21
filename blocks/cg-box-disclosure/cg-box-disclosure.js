@@ -7,5 +7,6 @@ var secondDiv = document.createElement('div');
 secondDiv.setAttribute('class','cmp-text');
 mainFirstDiv.appendChild(secondDiv);
 var thirdDiv = document.createElement('p');
-thirdDiv.style.textalign = 'center';
+thirdDiv.style.textAlign = 'center';
+thirdDiv.appendChild(document.querySelector('.cg-box-disclosure-wrapper > .cg-box-disclosure.block > div >div'));
 secondDiv.appendChild(thirdDiv);
