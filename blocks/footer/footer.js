@@ -293,25 +293,34 @@ firstDiv.appendChild(seventeenthDiv);
 	  var twentyFiveDiv = document.createElement('ul');
 	  twentyFiveDiv.classList.add('nav', 'footer-nav');
 	  twentyFourDiv.appendChild(twentyFiveDiv);
+	  var counterLength = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > div > div > div > a').length;
+	   for(let j = 0; j < counterLength ;j++){
+  if(j == 0){
 	   var twentyFiveLIOne = document.createElement('li');
 	  twentyFiveLIOne.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIOne);
+  } else if(j == 1){
 	   var twentyFiveLITwo = document.createElement('li');
 	  twentyFiveLITwo.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLITwo);
+  } else if(j == 2){
 	   var twentyFiveLIThree = document.createElement('li');
 	  twentyFiveLIThree.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIThree);
-	   var twentyFiveLIFour = document.createElement('li');
+  } else if(j == 3){
+		   var twentyFiveLIFour = document.createElement('li');
 	  twentyFiveLIFour.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIFour);
+  } else if(j == 4){
 	   var twentyFiveLIFive = document.createElement('li');
 	  twentyFiveLIFive.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIFive);
+  } else if(j == 5){
 	   var twentyFiveLISix = document.createElement('li');
 	  twentyFiveLISix.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLISix);
-
+  }
+	   }
 
 
 
