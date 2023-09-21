@@ -24,7 +24,7 @@ fourthDiv.classList.add('cg-global-disclosure-1', 'noindex');
   var secondTwo = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[1];
   var fifthDiv = document.createElement('p');
   fifthDiv.classList.add('cg-global-disclosure-1', 'noindex');
-  fifthDiv.append(firstOne + secondTwo);
+  fifthDiv.innerText = firstOne + secondTwo;
     thirdDiv.appendChild(fifthDiv);
 }else if(i == 2){
     var sixthDiv = document.createElement('p');
