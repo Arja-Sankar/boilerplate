@@ -289,7 +289,7 @@ firstDiv.appendChild(seventeenthDiv);
 	 twentytwoDiv.setAttribute('class','span6');
 	  twentyOneDiv.appendChild(twentytwoDiv);
 	  var twentyThreeDiv = document.createElement('p');
-	twentyThreeDiv.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div')[0].innerText;
+	twentyThreeDiv.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div')[0].innerText);
 	  twentytwoDiv.appendChild(twentyThreeDiv);
  var twentyFourDiv = document.createElement('div');
 	 twentyFourDiv.setAttribute('class','span6');
