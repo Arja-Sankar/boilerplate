@@ -312,15 +312,15 @@ firstDiv.appendChild(seventeenthDiv);
 	  twentyFiveLIFour.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIFour);
   }
-  else if(j == 4){
-	   var twentyFiveLIFive = document.createElement('li');
-	  twentyFiveLIFive.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
-	  	  twentyFiveDiv.appendChild(twentyFiveLIFive);
-  } else if(j == 5){
-	   var twentyFiveLISix = document.createElement('li');
-	  twentyFiveLISix.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
-	  	  twentyFiveDiv.appendChild(twentyFiveLISix);
-  }
+  // else if(j == 4){
+	 //   var twentyFiveLIFive = document.createElement('li');
+	 //  twentyFiveLIFive.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
+	 //  	  twentyFiveDiv.appendChild(twentyFiveLIFive);
+  // } else if(j == 5){
+	 //   var twentyFiveLISix = document.createElement('li');
+	 //  twentyFiveLISix.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
+	 //  	  twentyFiveDiv.appendChild(twentyFiveLISix);
+  // }
 	   }
 
 
