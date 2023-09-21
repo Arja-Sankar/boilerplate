@@ -22,19 +22,19 @@ fourthDiv.classList.add('cg-global-disclosure-1', 'noindex');
     thirdDiv.appendChild(fifthDiv);
   var sixthDiv = document.createElement('p');
   sixthDiv.classList.add('cg-global-disclosure-1', 'noindex');
-  sixthDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
+  sixthDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[2].innerText;
     thirdDiv.appendChild(sixthDiv);
  var sevenDiv = document.createElement('p');
   sevenDiv.classList.add('cg-global-disclosure-1', 'noindex');
-  sevenDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
+  sevenDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[3].innerText;
     thirdDiv.appendChild(sevenDiv);
   var eigthDiv = document.createElement('p');
   eigthDiv.classList.add('cg-global-disclosure-1', 'noindex');
-  eigthDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
+  eigthDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[4].innerText;
     thirdDiv.appendChild(eigthDiv);
  var ninethDiv = document.createElement('p');
   ninethDiv.classList.add('cg-global-disclosure-1', 'noindex');
-  ninethDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
+  ninethDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[5].innerText;
     thirdDiv.appendChild(ninethDiv);
 
 
