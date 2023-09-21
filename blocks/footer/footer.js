@@ -298,7 +298,7 @@ firstDiv.appendChild(seventeenthDiv);
 	  twentyFiveDiv.classList.add('nav', 'footer-nav');
 	  twentyFourDiv.appendChild(twentyFiveDiv);
 	   var twentyFiveLIOne = document.createElement('li');
-	  twentyFiveLIOne.innerHTML = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[0];
+	  twentyFiveLIOne.innerHTML = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > div > div > div > ul > li > a')[0];
 	  	  twentyFiveDiv.appendChild(twentyFiveLIOne);
 	   var twentyFiveLITwo = document.createElement('li');
 	  twentyFiveLITwo.innerText = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[1];
