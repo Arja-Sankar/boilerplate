@@ -301,19 +301,19 @@ firstDiv.appendChild(seventeenthDiv);
 	  twentyFiveLIOne.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIOne);
 	   var twentyFiveLITwo = document.createElement('li');
-	  twentyFiveLITwo.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[1]);
+	  twentyFiveLITwo.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLITwo);
 	   var twentyFiveLIThree = document.createElement('li');
-	  twentyFiveLIThree.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[2]);
+	  twentyFiveLIThree.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIThree);
 	   var twentyFiveLIFour = document.createElement('li');
-	  twentyFiveLIFour.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[3]);
+	  twentyFiveLIFour.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIFour);
 	   var twentyFiveLIFive = document.createElement('li');
-	  twentyFiveLIFive.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[4]);
+	  twentyFiveLIFive.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIFive);
 	   var twentyFiveLISix = document.createElement('li');
-	  twentyFiveLISix.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[5]);
+	  twentyFiveLISix.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLISix);
 
 
