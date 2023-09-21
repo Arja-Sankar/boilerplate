@@ -5,7 +5,7 @@ divName.classList.add('responsivegrid', 'cg-max-width', 'aem-GridColumn', 'aem-G
 var firstDiv = document.createElement('div');
 firstDiv.classList.add('aem-Grid', 'aem-Grid--12', 'aem-Grid--default--12');
 divName.appendChild(firstDiv);
-var counter = document.querySelectorAll('.disclosure-wrapper.responsivegrid > .disclosure.block > div > div').length;
+// var counter = document.querySelectorAll('.disclosure-wrapper.responsivegrid > .disclosure.block > div > div').length;
 var secondDiv = document.createElement('div');
 secondDiv.classList.add('disclosure', 'parbase', 'aem-GridColumn', 'aem-GridColumn--default--12');
 firstDiv.appendChild(secondDiv);
