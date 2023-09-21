@@ -291,8 +291,30 @@ firstDiv.appendChild(seventeenthDiv);
 	  var twentyThreeDiv = document.createElement('p');
 	twentyThreeDiv.innerText = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div')[0].innerText;
 	  twentytwoDiv.appendChild(twentyThreeDiv);
-
-
+ var twentyFourDiv = document.createElement('div');
+	 twentyFourDiv.setAttribute('class','span6');
+	  twentyOneDiv.appendChild(twentyFourDiv);
+	  var twentyFiveDiv = document.createElement('ul');
+	  twentyFiveDiv.classList.add('nav', 'footer-nav');
+	  twentyFourDiv.appendChild(twentyFiveDiv);
+	   var twentyFiveLIOne = document.createElement('li');
+	  twentyFiveLIOne.innerText = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[0];
+	  	  twentyFiveDiv.appendChild(twentyFiveLIOne);
+	   var twentyFiveLITwo = document.createElement('li');
+	  twentyFiveLITwo.innerText = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[1];
+	  	  twentyFiveDiv.appendChild(twentyFiveLITwo);
+	   var twentyFiveLIThree = document.createElement('li');
+	  twentyFiveLIThree.innerText = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[2];
+	  	  twentyFiveDiv.appendChild(twentyFiveLIThree);
+	   var twentyFiveLIFour = document.createElement('li');
+	  twentyFiveLIFour.innerText = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[3];
+	  	  twentyFiveDiv.appendChild(twentyFiveLIFour);
+	   var twentyFiveLIFive = document.createElement('li');
+	  twentyFiveLIFive.innerText = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[4];
+	  	  twentyFiveDiv.appendChild(twentyFiveLIFive);
+	   var twentyFiveLISix = document.createElement('li');
+	  twentyFiveLISix.innerText = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[5];
+	  	  twentyFiveDiv.appendChild(twentyFiveLISix);
 
 
 
