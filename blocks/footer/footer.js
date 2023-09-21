@@ -260,11 +260,7 @@ SeventhDiv.appendChild(eigthDiv);
   }
 
  }
-//document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div')[0].innerText;
-	  //document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > ul > li > a')[0]-5;
 
-// var seventeenthDiv = document.createElement('div');
-// seventeenthDiv.classList.add();
 var seventeenthDiv = document.createElement('div');
 seventeenthDiv.classList.add('footer-wide', 'black10','noindex');
 seventeenthDiv.setAttribute('data-dig-nav','Footer');
@@ -289,7 +285,7 @@ firstDiv.appendChild(seventeenthDiv);
 	 twentytwoDiv.setAttribute('class','span6');
 	  twentyOneDiv.appendChild(twentytwoDiv);
 	  var twentyThreeDiv = document.createElement('p');
-	twentyThreeDiv.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div')[0].innerText);
+	twentyThreeDiv.innerHTML = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div')[0].innerText;
 	  twentytwoDiv.appendChild(twentyThreeDiv);
  var twentyFourDiv = document.createElement('div');
 	 twentyFourDiv.setAttribute('class','span6');
