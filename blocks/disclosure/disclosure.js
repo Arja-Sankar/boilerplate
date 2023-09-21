@@ -12,38 +12,65 @@ firstDiv.appendChild(secondDiv);
 var thirdDiv = document.createElement('div');
 thirdDiv.setAttribute('class','noindex');
 secondDiv.appendChild(thirdDiv);
-
-for(let i = 0; i < counter ;i++){
-if(i == 0){
-  var fourthDiv = document.createElement('p');
+var fourthDiv = document.createElement('p');
 fourthDiv.classList.add('cg-global-disclosure-1', 'noindex');
   fourthDiv.appendChild(document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[0]);
   thirdDiv.appendChild(fourthDiv);
-}else if(i == 1){
-  // var secondTwo = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[1];
-  var fifthDiv = document.createElement('p');
+ var fifthDiv = document.createElement('p');
   fifthDiv.classList.add('cg-global-disclosure-1', 'noindex');
   fifthDiv.appendChild(document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[0]);
     thirdDiv.appendChild(fifthDiv);
-}else if(i == 2){
-    var sixthDiv = document.createElement('p');
+  var sixthDiv = document.createElement('p');
   sixthDiv.classList.add('cg-global-disclosure-1', 'noindex');
   sixthDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
     thirdDiv.appendChild(sixthDiv);
-}else if(i == 3){
-    var sevenDiv = document.createElement('p');
+ var sevenDiv = document.createElement('p');
   sevenDiv.classList.add('cg-global-disclosure-1', 'noindex');
   sevenDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
     thirdDiv.appendChild(sevenDiv);
-}else if(i == 4){
-    var eigthDiv = document.createElement('p');
+  var eigthDiv = document.createElement('p');
   eigthDiv.classList.add('cg-global-disclosure-1', 'noindex');
   eigthDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
     thirdDiv.appendChild(eigthDiv);
-}else if(i == 5){
-    var ninethDiv = document.createElement('p');
+ var ninethDiv = document.createElement('p');
   ninethDiv.classList.add('cg-global-disclosure-1', 'noindex');
   ninethDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
     thirdDiv.appendChild(ninethDiv);
-}
-}
+
+
+
+
+// for(let i = 0; i < counter ;i++){
+// if(i == 0){
+//   var fourthDiv = document.createElement('p');
+// fourthDiv.classList.add('cg-global-disclosure-1', 'noindex');
+//   fourthDiv.appendChild(document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[0]);
+//   thirdDiv.appendChild(fourthDiv);
+// }else if(i == 1){
+//   // var secondTwo = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[1];
+//   var fifthDiv = document.createElement('p');
+//   fifthDiv.classList.add('cg-global-disclosure-1', 'noindex');
+//   fifthDiv.appendChild(document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[0]);
+//     thirdDiv.appendChild(fifthDiv);
+// }else if(i == 2){
+//     var sixthDiv = document.createElement('p');
+//   sixthDiv.classList.add('cg-global-disclosure-1', 'noindex');
+//   sixthDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
+//     thirdDiv.appendChild(sixthDiv);
+// }else if(i == 3){
+//     var sevenDiv = document.createElement('p');
+//   sevenDiv.classList.add('cg-global-disclosure-1', 'noindex');
+//   sevenDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
+//     thirdDiv.appendChild(sevenDiv);
+// }else if(i == 4){
+//     var eigthDiv = document.createElement('p');
+//   eigthDiv.classList.add('cg-global-disclosure-1', 'noindex');
+//   eigthDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
+//     thirdDiv.appendChild(eigthDiv);
+// }else if(i == 5){
+//     var ninethDiv = document.createElement('p');
+//   ninethDiv.classList.add('cg-global-disclosure-1', 'noindex');
+//   ninethDiv.innerText = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div')[0].innerText;
+//     thirdDiv.appendChild(ninethDiv);
+// }
+// }
