@@ -317,7 +317,7 @@ firstDiv.appendChild(seventeenthDiv);
 	  	  twentyFiveDiv.appendChild(twentyFiveLIFive);
   } else if(j == 5){
 	   var twentyFiveLISix = document.createElement('li');
-	  twentyFiveLISix.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[0]);
+	  twentyFiveLISix.innerText.appendChild(document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div > a')[1]);
 	  	  twentyFiveDiv.appendChild(twentyFiveLISix);
   }
 	   }
