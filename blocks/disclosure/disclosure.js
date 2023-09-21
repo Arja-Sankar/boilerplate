@@ -20,11 +20,10 @@ fourthDiv.classList.add('cg-global-disclosure-1', 'noindex');
   fourthDiv.appendChild(document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[0]);
   thirdDiv.appendChild(fourthDiv);
 }else if(i == 1){
-  var firstOne = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[0];
   var secondTwo = document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[1];
   var fifthDiv = document.createElement('p');
   fifthDiv.classList.add('cg-global-disclosure-1', 'noindex');
-  fifthDiv.innerText = firstOne + secondTwo;
+  fifthDiv.appendChild(document.querySelectorAll('.disclosure-wrapper > .disclosure.block > div > div > strong')[0]);
     thirdDiv.appendChild(fifthDiv);
 }else if(i == 2){
     var sixthDiv = document.createElement('p');
