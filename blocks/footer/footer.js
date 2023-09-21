@@ -265,8 +265,32 @@ SeventhDiv.appendChild(eigthDiv);
 
 // var seventeenthDiv = document.createElement('div');
 // seventeenthDiv.classList.add();
-
-
+var seventeenthDiv = document.createElement('div');
+seventeenthDiv.classList.add('footer-wide', 'black10','noindex');
+seventeenthDiv.setAttribute('data-dig-nav','Footer');
+firstDiv.appendChild(seventeenthDiv);
+	    var eighteenthDiv = document.createElement('div');
+	 eighteenthDiv.setAttribute('class','ns-outer-control');
+	  seventeenthDiv.appendChild(eighteenthDiv);
+	  var footerInsideOneDiv = document.createElement('footer');
+	  footerInsideOneDiv.classList.add('container', 'legal', 'black10');
+	  footerInsideOneDiv.setAttribute('role','presentation');
+	  eighteenthDiv.appendChild(footerInsideOneDiv);
+	  var nineteenthDiv = document.createElement('div');
+	 nineteenthDiv.setAttribute('class','row');
+	  footerInsideOneDiv.appendChild(nineteenthDiv);
+	    var twentyDiv = document.createElement('div');
+	 twentyDiv.setAttribute('class','span12');
+	  nineteenthDiv.appendChild(twentyDiv);
+	  var twentyOneDiv = document.createElement('div');
+	 twentyOneDiv.classList.add('row','legalContainer');
+	  footerInsideOneDiv.appendChild(twentyOneDiv);
+	    var twentytwoDiv = document.createElement('div');
+	 twentytwoDiv.setAttribute('class','span6');
+	  twentyOneDiv.appendChild(twentytwoDiv);
+	  var twentyThreeDiv = document.createElement('p');
+	twentyThreeDiv.innerText = document.querySelectorAll('.footer-wrapper > .footerwt > div > div > .copyright > div > div')[0].innerText;
+	  twentytwoDiv.appendChild(twentyThreeDiv);
 
 
 
